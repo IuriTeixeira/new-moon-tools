@@ -118,25 +118,25 @@ export default {
     },
     requirements() {
       if (
-        this.expertise.rapid.value >= 3000 &&
-        this.expertise.gunKnowledge.value >= 2000 &&
-        this.expertise.pursuit.value >= 2000
+        this.expertise.attack.value >= 2000 &&
+        this.expertise.weaponKnowledge.value >= 2000 &&
+        this.expertise.pursuit.value >= 1000
       )
         return true;
       else return false;
     },
     total() {
       
-      let attack = this.expertise.rapid.value * 0.4;
-      let weaponKnowledge = this.expertise.gunKnowledge.value * 0.3;
-      let pursuit = this.expertise.pursuit.value * 0.3;
+      let attack = this.expertise.attack.value * 0.4;
+      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.4;
+      let pursuit = this.expertise.pursuit.value * 0.2;
 
       return Number.parseInt(attack + weaponKnowledge + pursuit);
     },
     classRank() {
       let attack = this.expertise.attack.value * 0.4;
-      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.3;
-      let pursuit = this.expertise.pursuit.value * 0.3;
+      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.4;
+      let pursuit = this.expertise.pursuit.value * 0.2;
 
       var a = Number.parseInt(attack + weaponKnowledge + pursuit) / 100;
       var b = a.toString();
