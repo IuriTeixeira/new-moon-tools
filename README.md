@@ -1,9 +1,9 @@
 # For Project New Moon-tools
-[![Netlify Status](https://api.netlify.com/api/v1/badges/88cc3291-6ab6-4411-94b9-172ac2a9baaa/deploy-status)](https://app.netlify.com/sites/smt-apple-calculator/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1bea73b4-d652-4d87-9a2b-c7f037a30251/deploy-status)](https://app.netlify.com/sites/project-new-moon/deploys)
 
 A collection of tools useful for playing SMT: Imagine Online.
 
-https://project-new-moon.kuenaimaku.com/
+https://newmoon.kuenaimaku.com/
 
 I am not affiliated with the New Moon team.
 
