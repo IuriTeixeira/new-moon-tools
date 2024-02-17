@@ -1277,7 +1277,7 @@
 		},
 		{
 			"name": "Devil Heart Breaker",
-			"rank": 8000,
+			"rank": 7500,
 			"slug": "magic-fist-06",
 			"type": "Active",
 			"affinity": "Almighty",
@@ -1454,11 +1454,11 @@
 			"desc": "Switch Skill. At the cost of Magical Defense, increase the ability of Partners (Demon STR, SPD, & MAG +15, Magical Defense -15)."
 		}
 	],
-	"miitama": [
+	"mitama": [
 		{
 			"name": "Mitama Demon Sympathy 1",
 			"rank": 1000,
-			"slug": "miitama-01",
+			"slug": "mitama-01",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1469,7 +1469,7 @@
 		{
 			"name": "Mitama Demon Encouragement 1",
 			"rank": 2000,
-			"slug": "miitama-05",
+			"slug": "mitama-05",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1480,7 +1480,7 @@
 		{
 			"name": "Mitama Demon Sympathy 2",
 			"rank": 3000,
-			"slug": "miitama-02",
+			"slug": "mitama-02",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1491,7 +1491,7 @@
 		{
 			"name": "Mitama Demon Encouragement 2",
 			"rank": 4000,
-			"slug": "miitama-06",
+			"slug": "mitama-06",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1502,7 +1502,7 @@
 		{
 			"name": "Mitama Demon Sympathy 3",
 			"rank": 5000,
-			"slug": "miitama-03",
+			"slug": "mitama-03",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1513,7 +1513,7 @@
 		{
 			"name": "Mitama Demon Encouragement 3",
 			"rank": 6000,
-			"slug": "miitama-07",
+			"slug": "mitama-07",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1522,9 +1522,9 @@
 			"desc": "-10% Spell damage taken by Mitama Demon"
 		},
 		{
-			"name": "Miitama Demon Command - Offense",
+			"name": "Mitama Demon Command - Offense",
 			"rank": 6500,
-			"slug": "miitama-08",
+			"slug": "mitama-08",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1533,9 +1533,9 @@
 			"desc": "STR, MAG, SPD +20 to Mitama Demon"
 		},
 		{
-			"name": "Miitama Demon Command - Defense",
+			"name": "Mitama Demon Command - Defense",
 			"rank": 6500,
-			"slug": "miitama-08",
+			"slug": "mitama-08",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1546,7 +1546,7 @@
 		{
 			"name": "Mitama Demon Enhancement - Iron Man",
 			"rank": 7000,
-			"slug": "miitama-04",
+			"slug": "mitama-04",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1555,9 +1555,9 @@
 			"desc": "Testimony to your Mitamas' enhancement. Ability granted by Mitama Fusion is increased."
 		},
 		{
-			"name": "Miitama Demon Overgrowth",
+			"name": "Mitama Demon Overgrowth",
 			"rank": 7000,
-			"slug": "miitama-09",
+			"slug": "mitama-09",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,

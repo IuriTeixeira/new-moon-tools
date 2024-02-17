@@ -5,7 +5,7 @@
     :visible="isVisible"
     :classRank="classRank"
     @setValues="setValues"
-    name="Miitama Demon Growth Science"
+    name="Mitama Demon Growth Science"
   >
     <template v-slot:content>
       <table class="table is-hoverable is-fullwidth">
@@ -53,7 +53,7 @@
 import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
-  name: "MiitamaDemonGrowthScience",
+  name: "MitamaDemonGrowthScience",
   components: {
     Skill,
     ChainExpertise,

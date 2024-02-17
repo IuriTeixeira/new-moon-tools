@@ -68,11 +68,11 @@
       :hideLocked="hideLocked"
       :skills="skills('three-forms')"
     />
-    <miitama
+    <mitama
       :expertise="expertise"
       :options="options"
       :hideLocked="hideLocked"
-      :skills="skills('miitama')"
+      :skills="skills('mitama')"
     />
     <rampage
       :expertise="expertise"
@@ -132,7 +132,7 @@ import Enhancement from "@/components/expertise/singletons/Enhancement.vue";
 import EssenceOfMagic from "@/components/expertise/singletons/EssenceMagic.vue";
 import MagicBullet from "@/components/expertise/singletons/MagicBullet.vue";
 import MagicFist from "@/components/expertise/singletons/MagicFist.vue";
-import Miitama from "@/components/expertise/singletons/Miitama.vue";
+import Mitama from "@/components/expertise/singletons/Mitama.vue";
 import Rampage from "@/components/expertise/singletons/Rampage.vue";
 import Retaliation from "@/components/expertise/singletons/Retaliation.vue";
 import SanguineContract from "@/components/expertise/singletons/SanguineContract.vue";
@@ -154,7 +154,7 @@ export default {
     EssenceOfMagic,
     MagicBullet,
     MagicFist,
-    Miitama,
+    Mitama,
     Rampage,
     ThreeForms,
     Retaliation,

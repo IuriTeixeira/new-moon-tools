@@ -3180,7 +3180,7 @@
 		"queryParam": "es",
 		"value": 0,
 		"max": 7000,
-		"tooltip": "Effects 'Miitama Demon Growth Science' by 60%\nEffects 'Sharpshooter' by 40%\nEffects 'Synthesis' by 40%",
+		"tooltip": "Effects 'Mitama Demon Growth Science' by 60%\nEffects 'Sharpshooter' by 40%\nEffects 'Synthesis' by 40%",
 		"skills": [
 			{
 				"name": "Earth Element Sympathy",
@@ -3602,7 +3602,7 @@
 		"queryParam": "ev",
 		"value": 0,
 		"max": 10000,
-		"tooltip": "Effects 'Miitama Demon Growth Science' by 40%",
+		"tooltip": "Effects 'Mitama Demon Growth Science' by 40%",
 		"skills": [
 			{
 				"name": "Demon Sympathy 1",
