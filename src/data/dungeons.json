@@ -90,7 +90,7 @@
 		"reports": 280
 	},
 	{
-		"name": "Ichigaya Camp Bronze",
+		"name": "Old Ichigaya Garrison Bronze",
 		"apples": 5,
 		"cavePoints": 4,
 		"cavePointsBonus": 8,
@@ -100,7 +100,7 @@
 		"reports": 40
 	},
 	{
-		"name": "Ichigaya Camp Silver",
+		"name": "Old Ichigaya Garrison Silver",
 		"apples": 80,
 		"cavePoints": 4,
 		"cavePointsBonus": 8,
@@ -110,7 +110,7 @@
 		"reports": 40
 	},
 	{
-		"name": "Ichigaya Camp Gold (Normal)",
+		"name": "Old Ichigaya Garrison Gold (Normal)",
 		"apples": 340,
 		"cavePoints": 6,
 		"cavePointsBonus": 24,
@@ -120,7 +120,7 @@
 		"reports": 60
 	},
 	{
-		"name": "Ichigaya Camp Gold (2 Kings)",
+		"name": "Old Ichigaya Garrison Gold (2 Kings)",
 		"apples": 340,
 		"cavePoints": 10,
 		"cavePointsBonus": 24,
@@ -130,7 +130,7 @@
 		"reports": 100
 	},
 	{
-		"name": "Ichigaya Camp Gold (3 Kings)",
+		"name": "Old Ichigaya Garrison Gold (3 Kings)",
 		"apples": 340,
 		"cavePoints": 12,
 		"cavePointsBonus": 24,
@@ -140,7 +140,7 @@
 		"reports": 120
 	},
 	{
-		"name": "Ichigaya Camp Gold (4 Kings)",
+		"name": "Old Ichigaya Garrison Gold (4 Kings)",
 		"apples": 340,
 		"cavePoints": 12,
 		"cavePointsBonus": 24,
@@ -150,7 +150,7 @@
 		"reports": 120
 	},
 	{
-		"name": "Ichigaya Camp Gold (Assassins)",
+		"name": "Old Ichigaya Garrison Gold (Assassins)",
 		"apples": 340,
 		"cavePoints": 10,
 		"cavePointsBonus": 24,
@@ -160,7 +160,7 @@
 		"reports": 100
 	},
 	{
-		"name": "Ichigaya Camp Gold (Tokisada)",
+		"name": "Old Ichigaya Garrison Gold (Tokisada)",
 		"apples": 340,
 		"cavePoints": 15,
 		"cavePointsBonus": 24,
