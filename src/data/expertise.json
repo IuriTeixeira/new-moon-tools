@@ -203,7 +203,7 @@
 				"desc": "Slashes at surrounding enemies feet, stopping their movement. Deals varying damage to all enemeies in area, depending on weapon."
 			},
 			{
-				"name": "Max HP UP",
+				"name": "Max HP UP 2",
 				"rank": 4500,
 				"slug": "spin-06",
 				"type": "Passive",
@@ -211,7 +211,7 @@
 				"action": null,
 				"stack": null,
 				"cost": null,
-				"desc": "Passive Skill that increases Max HP. (HP +30, HP Regen + 2)"
+				"desc": "Passive Skill that increases Max HP. (HP +50, HP Regen +3)"
 			},
 			{
 				"name": "Giant Swing",
@@ -226,7 +226,7 @@
 			},
 			{
 				"name": "Three Step Crescent Moon",
-				"rank": 7000,
+				"rank": 6000,
 				"slug": "spin-08",
 				"type": "Active",
 				"affinity": "Weapon-based",
@@ -289,6 +289,17 @@
 				"desc": "Jumps and attacks from the air with fists and inflicts the enemy with damage based on the weapon."
 			},
 			{
+				"name": "Incantation Cut",
+				"rank": 2000,
+				"slug": "rush-10",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "reduced Incantation time for Rush skills by 10%"
+			},
+			{
 				"name": "Max HP UP",
 				"rank": 2500,
 				"slug": "rush-04",
@@ -304,7 +315,7 @@
 				"rank": 3000,
 				"slug": "rush-05",
 				"type": "Active",
-				"affinity": "Self-explosion",
+				"affinity": "Suicide",
 				"action": "Rush",
 				"stack": 1,
 				"cost": "100% HP",
@@ -319,7 +330,7 @@
 				"action": null,
 				"stack": null,
 				"cost": null,
-				"desc": "Passive Skill that increases Max HP. (HP +30, HP Regen + 2)"
+				"desc": "Passive Skill that increases Max HP. (HP +50, HP Regen +3)"
 			},
 			{
 				"name": "Tyrannical Jaw",
@@ -334,7 +345,7 @@
 			},
 			{
 				"name": "Blade of the King Beast",
-				"rank": 7000,
+				"rank": 6000,
 				"slug": "rush-08",
 				"type": "Active",
 				"affinity": "Weapon-based",
@@ -452,7 +463,7 @@
 				"desc": "Passive skill that increases Speed. (Speed +3)"
 			},
 			{
-				"name": null,
+				"name": "Pierce Shot",
 				"rank": 7000,
 				"slug": "shot-09",
 				"type": "Active",
@@ -461,6 +472,17 @@
 				"stack": 1,
 				"cost": "1 Bullet",
 				"desc": "Fire a shot that creates a vacuum behind it. All enemies between the user and the target are damaged. (Type Line AoE)"
+			},
+			{
+				"name": "Heartbreaker",
+				"rank": 8000,
+				"slug": "shot-11",
+				"type": "Active",
+				"affinity": "Weapon-based",
+				"action": "Shot",
+				"stack": 1,
+				"cost": "8 MP, 1 Bullet",
+				"desc": "Aims for your enemy's vitals, momentarily lowering their long-range defense."
 			},
 			{
 				"name": "Speed UP 5",
@@ -474,9 +496,9 @@
 				"desc": "Passive skill that increases Speed. (Speed +3)"
 			},
 			{
-				"name": "Heartbreaker",
+				"name": "Boogie Woogie",
 				"rank": 9000,
-				"slug": "shot-11",
+				"slug": "shot-12",
 				"type": "Active",
 				"affinity": "Weapon-based",
 				"action": "Shot",
@@ -1091,6 +1113,17 @@
 				"desc": "Removes Paralyze affects from nearby allies."
 			},
 			{
+				"name": "Curative Up I",
+				"rank": 2000,
+				"slug": "curative-17",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "Increases your Curative affinity by 15%"
+			},
+			{
 				"name": "Patra",
 				"rank": 2000,
 				"slug": "curative-06",
@@ -1125,7 +1158,7 @@
 			},
 			{
 				"name": "Recarm",
-				"rank": 4000,
+				"rank": 3500,
 				"slug": "curative-09",
 				"type": "Active",
 				"affinity": "Curative",
@@ -1133,6 +1166,28 @@
 				"stack": 1,
 				"cost": "20 MP",
 				"desc": "Resurrects a dead ally with 25% of their MAX HP restored."
+			},
+			{
+				"name": "Curative Up II",
+				"rank": 4000,
+				"slug": "curative-18",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "Increases your Curative affinity by 20%"
+			},
+			{
+				"name": "Petradi",
+				"rank": 4500,
+				"slug": "curative-11",
+				"type": "Active",
+				"affinity": "Curative",
+				"action": "Curative",
+				"stack": 1,
+				"cost": "5 MP",
+				"desc": "Removes Stone effects from nearby allies."
 			},
 			{
 				"name": "Mediarama",
@@ -1146,19 +1201,8 @@
 				"desc": "Curative magic for the HP for an ally in your vicinity."
 			},
 			{
-				"name": "Petradi",
-				"rank": 5500,
-				"slug": "curative-11",
-				"type": "Active",
-				"affinity": "Curative",
-				"action": "Curative",
-				"stack": 1,
-				"cost": "5 MP",
-				"desc": "Removes Stone effects from nearby allies."
-			},
-			{
 				"name": "Etnadi",
-				"rank": 6500,
+				"rank": 5500,
 				"slug": "curative-12",
 				"type": "Active",
 				"affinity": "Curative",
@@ -1169,7 +1213,7 @@
 			},
 			{
 				"name": "Diarahan",
-				"rank": 7000,
+				"rank": 6000,
 				"slug": "curative-13",
 				"type": "Active",
 				"affinity": "Curative",
@@ -1179,8 +1223,19 @@
 				"desc": "Curative magic for an ally's HP."
 			},
 			{
+				"name": "Curative Up III",
+				"rank": 6000,
+				"slug": "curative-19",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "Increases your Curative affinity by 20%"
+			},
+			{
 				"name": "Recarmdora",
-				"rank": 8000,
+				"rank": 6500,
 				"slug": "curative-14",
 				"type": "Active",
 				"affinity": "Curative",
@@ -1191,7 +1246,7 @@
 			},
 			{
 				"name": "Mediarahan",
-				"rank": 9000,
+				"rank": 7000,
 				"slug": "curative-15",
 				"type": "Active",
 				"affinity": "Curative",
@@ -1201,8 +1256,41 @@
 				"desc": "Curative magic for the HP for an ally in your vicinity."
 			},
 			{
+				"name": "Circle of Fire",
+				"rank": 7500,
+				"slug": "curative-20",
+				"type": "Active",
+				"affinity": "Curative",
+				"action": "Curative",
+				"stack": 1,
+				"cost": "30 MP, 30 Magnetite",
+				"desc": "Generates a temporary circle of protection that can negate up to 3 fire-based attacks for yourself and nearby allies."
+			},
+			{
+				"name": "Circle of Ice",
+				"rank": 7500,
+				"slug": "curative-21",
+				"type": "Active",
+				"affinity": "Curative",
+				"action": "Curative",
+				"stack": 1,
+				"cost": "30 MP, 30 Magnetite",
+				"desc": "Generates a temporary circle of protection that can negate up to 3 ice-based attacks for yourself and nearby allies."
+			},
+			{
+				"name": "Curative Up IV",
+				"rank": 8000,
+				"slug": "curative-22",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "Increases your Curative affinity by 20%"
+			},
+			{
 				"name": "Samarecarm",
-				"rank": 10000,
+				"rank": 8500,
 				"slug": "curative-16",
 				"type": "Active",
 				"affinity": "Curative",
@@ -1210,6 +1298,50 @@
 				"stack": 1,
 				"cost": "30 MP",
 				"desc": "Resurrects a dead ally with 50% of their MAX HP restored."
+			},
+			{
+				"name": "Circle of Electricity",
+				"rank": 9000,
+				"slug": "curative-23",
+				"type": "Active",
+				"affinity": "Curative",
+				"action": "Curative",
+				"stack": 1,
+				"cost": "30 MP, 30 Magnetite",
+				"desc": "Generates a temporary circle of protection that can negate up to 3 Electric-based attacks for yourself and nearby allies."
+			},
+			{
+				"name": "Circle of Force",
+				"rank": 9000,
+				"slug": "curative-24",
+				"type": "Active",
+				"affinity": "Curative",
+				"action": "Curative",
+				"stack": 1,
+				"cost": "30 MP, 30 Magnetite",
+				"desc": "Generates a temporary circle of protection that can negate up to 3 Force-based attacks for yourself and nearby allies."
+			},
+			{
+				"name": "Panacea",
+				"rank": 9500,
+				"slug": "curative-25",
+				"type": "Active",
+				"affinity": "Curative",
+				"action": "Curative",
+				"stack": 1,
+				"cost": "40 MP, 100 Magnetite",
+				"desc": "Removes a large variety of negative status effects to all nearby allies"
+			},
+			{
+				"name": "C4U",
+				"rank": 10000,
+				"slug": "curative-25",
+				"type": "Active",
+				"affinity": "Support",
+				"action": "Curative",
+				"stack": 1,
+				"cost": "20% MP",
+				"desc": "Candy for you! Recovers HP of nearby party members and cures Mute and Muddle."
 			}
 		]
 	},
@@ -1312,23 +1444,23 @@
 				"name": "Agi Accel",
 				"rank": 1700,
 				"slug": "destruction-09",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "2 MP",
-				"desc": "Fire up to 2 Agi shots with only spell cast. However, the MP cost is 1.2 times that of a normal Agi."
+				"cost": null,
+				"desc": "Fire up to 2 Agi shots with only spell cast."
 			},
 			{
 				"name": "Bufu Accel",
 				"rank": 1700,
 				"slug": "destruction-10",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "2 MP",
-				"desc": "Fire up to 2 Bufu shots with only one spell cast. However, the MP is 1.2 times that of a normal Bufu."
+				"cost": null,
+				"desc": "Fire up to 2 Bufu shots with only one spell cast."
 			},
 			{
 				"name": "Agilao",
@@ -1367,23 +1499,23 @@
 				"name": "Zio Accel",
 				"rank": 2200,
 				"slug": "destruction-14",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "2 MP",
-				"desc": "Fire up to 2 Zio shots with only one spell cast. However, the MP cost is 1.2 times that of a normal Zio."
+				"cost": null,
+				"desc": "Fire up to 2 Zio shots with only one spell cast."
 			},
 			{
 				"name": "Zan Accel",
 				"rank": 2200,
 				"slug": "destruction-15",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "2 MP",
-				"desc": "Fire up to 2 Zan shots with only one spell cast. However, the MP cost is 1.2 times that of a normal Zan."
+				"cost": null,
+				"desc": "Fire up to 2 Zan shots with only one spell cast."
 			},
 			{
 				"name": "Zanma",
@@ -1411,23 +1543,23 @@
 				"name": "Maragi Accel",
 				"rank": 2700,
 				"slug": "destruction-18",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "3 MP",
-				"desc": "Fire up to 2 Maragi shots with only one spell cast. However, the MP cost is 1.2 times a normal Maragi."
+				"cost": null,
+				"desc": "Fire up to 2 Maragi shots with only one spell cast."
 			},
 			{
 				"name": "Mabufu Accel",
 				"rank": 2700,
 				"slug": "destruction-19",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "3 MP",
-				"desc": "Fire up to 2 Mabufu shots with only one spell cast. However, the MP cost is 1.2 times a normal Mabufu."
+				"cost": null,
+				"desc": "Fire up to 2 Mabufu shots with only one spell cast."
 			},
 			{
 				"name": "Mabufula",
@@ -1455,23 +1587,23 @@
 				"name": "Mazio Accel",
 				"rank": 3200,
 				"slug": "destruction-22",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "3 MP",
-				"desc": "Fire up to 2 Mazio shots with only one spell cast. However, the MP cost is 1.2 times that of a normal Mazio."
+				"cost": null,
+				"desc": "Fire up to 2 Mazio shots with only one spell cast."
 			},
 			{
 				"name": "Mazan Accel",
 				"rank": 3200,
 				"slug": "destruction-23",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "3 MP",
-				"desc": "Fire up to 2 Mazan shots with only one spell cast. However, the MP cost is 1.2 times that of a normal Mazan."
+				"cost": null,
+				"desc": "Fire up to 2 Mazan shots with only one spell cast."
 			},
 			{
 				"name": "Mazanma",
@@ -1488,23 +1620,23 @@
 				"name": "Agilao Accel",
 				"rank": 3700,
 				"slug": "destruction-25",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "3 MP",
-				"desc": "Fire up to 2 Agilao shots with only one spell cast. However, the MP cost is 1.3 times a normal Agilao."
+				"cost": null,
+				"desc": "Fire up to 2 Agilao shots with only one spell cast."
 			},
 			{
 				"name": "Bufula Accel",
 				"rank": 3700,
 				"slug": "destruction-26",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "3 MP",
-				"desc": "Fire up to 2 Bufula shots with only one spell cast. However, the MP cost is 1.3 times a normal Bufula."
+				"cost": null,
+				"desc": "Fire up to 2 Bufula shots with only one spell cast."
 			},
 			{
 				"name": "Maragion",
@@ -1521,23 +1653,23 @@
 				"name": "Zionga Accel",
 				"rank": 4200,
 				"slug": "destruction-28",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "3 MP",
-				"desc": "Fire up to 2 Zionga shots with only one spell cast. However, the MP cost is 1.3 times a normal Zionga."
+				"cost": null,
+				"desc": "Fire up to 2 Zionga shots with only one spell cast."
 			},
 			{
 				"name": "Zanma Accel",
 				"rank": 4200,
 				"slug": "destruction-29",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "3 MP",
-				"desc": "Fire up to 2 Zanma shots with only one spell cast. However, the MP cost is 1.3 times a normal Zanma."
+				"cost": null,
+				"desc": "Fire up to 2 Zanma shots with only one spell cast."
 			},
 			{
 				"name": "Max MP Up",
@@ -1565,23 +1697,23 @@
 				"name": "Maragion Accel",
 				"rank": 5700,
 				"slug": "destruction-32",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "4 MP",
-				"desc": "Fire up to 2 Maragion shots with only one spell cast. However, the MP cost is 1.3 times a normal Maragion."
+				"cost": null,
+				"desc": "Fire up to 2 Maragion shots with only one spell cast."
 			},
 			{
 				"name": "Mabufula Accel",
 				"rank": 5700,
 				"slug": "destruction-33",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "4 MP",
-				"desc": "Fire up to 2 Mabufula shots with only one spell cast. However, the MP cost is 1.3 times a normal Mabufula."
+				"cost": null,
+				"desc": "Fire up to 2 Mabufula shots with only one spell cast."
 			},
 			{
 				"name": "Ziondyne",
@@ -1609,23 +1741,23 @@
 				"name": "Mazionga Accel",
 				"rank": 6200,
 				"slug": "destruction-36",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "4 MP",
-				"desc": "Fire up to 2 Mazionga shots with only one spell cast. However, the MP cost is 1.3 times a normal Mazionga."
+				"cost": null,
+				"desc": "Fire up to 2 Mazionga shots with only one spell cast."
 			},
 			{
 				"name": "Mazanma Accel",
 				"rank": 6200,
 				"slug": "destruction-37",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "4 MP",
-				"desc": "Fire up to 2 Mazanma shots with only one spell cast. However, the MP cost is 1.3 times a normal Mazanma."
+				"cost": null,
+				"desc": "Fire up to 2 Mazanma shots with only one spell cast."
 			},
 			{
 				"name": "Agidyne",
@@ -1935,7 +2067,7 @@
 			},
 			{
 				"name": "Manma",
-				"rank": 7000,
+				"rank": 6500,
 				"slug": "support-20",
 				"type": "Active",
 				"affinity": "Expel",
@@ -1943,6 +2075,17 @@
 				"stack": 1,
 				"cost": "20 MP",
 				"desc": "Purifies the wicked and unclean. Inflicts expel-based damage on all enemies in range."
+			},
+			{
+				"name": "Hamaon",
+				"rank": 7000,
+				"slug": "support-22",
+				"type": "Active",
+				"affinity": "Expel",
+				"action": "Shot",
+				"stack": 1,
+				"cost": "30 MP, 12 Magnetite",
+				"desc": "Purify the wicked and unclean and inflicts expel-based damage on an enemy, with a low probability for immediate destruction. Damage will not affect spellcast, but knockback can."
 			},
 			{
 				"name": "Intelligence UP 5",
@@ -1956,15 +2099,26 @@
 				"desc": "Passive Skill that raises Intelligence. (Intelligence +3)"
 			},
 			{
-				"name": "Hamaon",
+				"name": "Mahamon",
 				"rank": 8000,
-				"slug": "support-22",
+				"slug": "support-23",
 				"type": "Active",
 				"affinity": "Expel",
 				"action": "Shot",
 				"stack": 1,
-				"cost": "30 MP, 12 Magnetite",
-				"desc": "Purify the wicked and unclean and inflicts expel-based damage on an enemy, with a low probability for immediate destruction. Damage will not affect spellcast, but knockback can."
+				"cost": "40 MP, 24 Magnetite",
+				"desc": "Purify the wicked and unclean and inflicts expel-based damage on a group of enemies, with a low probability for immediate destruction. Damage will not affect spellcast, but knockback can."
+			},
+			{
+				"name": "Luster Candy",
+				"rank": 8000,
+				"slug": "support-24",
+				"type": "Active",
+				"affinity": "Expel",
+				"action": "Shot",
+				"stack": 1,
+				"cost": "30 MP",
+				"desc": "Applies Rakukaja, Sukukaja, Makakaja, Samakaja, Tarukaja on all allies in the Area once. Can be simultanesouly cast up to 4 times. (Lasts 10 minutes)"
 			}
 		]
 	},
@@ -2108,6 +2262,17 @@
 				"desc": "Forces an enemy to fall in love with you, inflicting Charm."
 			},
 			{
+				"name": "Death Touch",
+				"rank": 3500,
+				"slug": "curse-25",
+				"type": "Active",
+				"affinity": "Mystic",
+				"action": "Rush",
+				"stack": 1,
+				"cost": "3 MP",
+				"desc": "Heals HP by 30% of damage dealt"
+			},
+			{
 				"name": "Masukunda",
 				"rank": 3500,
 				"slug": "curse-13",
@@ -2139,6 +2304,17 @@
 				"stack": null,
 				"cost": null,
 				"desc": "Passive Skill that raises Magic. (Magic +3)"
+			},
+			{
+				"name": "Soul Suck",
+				"rank": 4500,
+				"slug": "curse-26",
+				"type": "Active",
+				"affinity": "Mystic",
+				"action": "Rush",
+				"stack": 1,
+				"cost": "3% HP",
+				"desc": "Heals MP by 30% of damage dealt"
 			},
 			{
 				"name": "Marakunda",
@@ -2208,7 +2384,7 @@
 			},
 			{
 				"name": "Mamudo",
-				"rank": 7000,
+				"rank": 6500,
 				"slug": "curse-22",
 				"type": "Active",
 				"affinity": "Support",
@@ -2216,6 +2392,17 @@
 				"stack": 1,
 				"cost": "20 MP",
 				"desc": "Takes enemies' lives with a curse and inflicts death-based damage on all enemies in range."
+			},
+			{
+				"name": "Mudoon",
+				"rank": 7000,
+				"slug": "curse-24",
+				"type": "Active",
+				"affinity": "Support",
+				"action": "Shot",
+				"stack": 1,
+				"cost": "30 MP, 12 Magnetite",
+				"desc": "Steals an enemy's life with a curse. Inflicts death-based damage on an enemy, with a low probability of immediate destruction. Damage will not affect spellcast, but knockback can."
 			},
 			{
 				"name": "Magic UP 5",
@@ -2229,15 +2416,26 @@
 				"desc": "Passive Skill that raises Magic. (Magic +3)"
 			},
 			{
-				"name": "Mudoon",
+				"name": "Mamudoon",
 				"rank": 8000,
 				"slug": "curse-24",
 				"type": "Active",
 				"affinity": "Support",
 				"action": "Shot",
 				"stack": 1,
-				"cost": "30 MP, 12 Magnetite",
-				"desc": "Steals an enemy's life with a curse. Inflicts death-based damage on an enemy, with a low probability of immediate destruction. Damage will not affect spellcast, but knockback can."
+				"cost": "40 MP, 24 Magnetite",
+				"desc": "Steals an enemy's life with a curse. Inflicts death-based damage on a group of enemies, with a low probability of immediate destruction. Damage will not affect spellcast, but knockback can."
+			},
+			{
+				"name": "Debilitate",
+				"rank": 8000,
+				"slug": "curse-24",
+				"type": "Active",
+				"affinity": "Support",
+				"action": "Shot",
+				"stack": 1,
+				"cost": "20 MP, 20 Magnetite",
+				"desc": "Applies all -nda debuffs to the target. Can apply 4 stacks. One stack per cast"
 			}
 		]
 	},
@@ -2408,19 +2606,74 @@
 		"tooltip": null,
 		"skills": [
 			{
-				"name": "Expert Summon",
-				"rank": 500,
-				"slug": "summon-01",
+				"name": "Summon Lesson 1",
+				"rank": 1000,
+				"slug": "summon-04",
 				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
 				"cost": null,
-				"desc": "A superior summoning technique. Passive Skill that raises Summoning Speed."
+				"desc": "+15 Summoning speed"
+			},
+			{
+				"name": "Summon Lesson 2",
+				"rank": 2000,
+				"slug": "summon-04",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "+30 Summoning speed"
+			},
+			{
+				"name": "Protected Summon",
+				"rank": 3000,
+				"slug": "summon-04",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "Automatically casts Tetraja on your Demon when summoned"
+			},
+			{
+				"name": "Tuned Summon",
+				"rank": 3500,
+				"slug": "summon-04",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "Automatically casts buffs on your Demon when summoned, depending on Friendship level.\n Sukukaja x4 at 'Good Friends' or higher.\n Rakukaja x4 at 'Trusting' or higher.\n Samakaja x4 at 'Open Hearts' or higher.\n Tarukaja x4 and Makakaja at 'Linked by Fate'"
+			},
+			{
+				"name": "Shielded Summon",
+				"rank": 4000,
+				"slug": "summon-04",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "Automatically casts Defense Etarna Alpha on your Demon when summoned"
+			},
+			{
+				"name": "Armed Summon",
+				"rank": 5000,
+				"slug": "summon-04",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "Automatically casts Attack Etarna Alpha on your Demon when summoned"
 			},
 			{
 				"name": "Summon Overdrive",
-				"rank": 1000,
+				"rank": 6000,
 				"slug": "summon-02",
 				"type": "Active",
 				"affinity": "Support",
@@ -2428,17 +2681,6 @@
 				"stack": 1,
 				"cost": "10 MP",
 				"desc": "Send your COMP into overdrive. The ability to summon demons in succession temporarily."
-			},
-			{
-				"name": "Expert Summon",
-				"rank": 2000,
-				"slug": "summon-03",
-				"type": "Passive",
-				"affinity": null,
-				"action": null,
-				"stack": null,
-				"cost": null,
-				"desc": "A superior summoning technique. Passive Skill that raises Summoning Speed. (+30 Summoning Speed, +10% HP/MP Cost)"
 			}
 		]
 	},
@@ -3969,44 +4211,44 @@
 				"name": "Pursuit of Enlightenment: Strength",
 				"rank": 1000,
 				"slug": "pursuit-01",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "500 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of enlightenment that only those who continue to pursue may remember. When switch skill is enabled the chance of additional damage is increased in accordance with the appropriate values (1% of original damage). ((0.1 * strength) Pursuit chance)"
 			},
 			{
 				"name": "Pursuit of Enlightenment: Magic",
 				"rank": 1000,
 				"slug": "pursuit-02",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "500 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of enlightenment that only those who continue to pursue may remember. When switch skill is enabled the chance of additional damage is increased in accordance with the appropriate values (1% of original damage). ((0.1 * magic) Pursuit chance)"
 			},
 			{
 				"name": "Pursuit of Enlightenment: Intelligence",
 				"rank": 1000,
 				"slug": "pursuit-03",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "500 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of enlightenment that only those who continue to pursue may remember. When switch skill is enabled the chance of additional damage is increased in accordance with the appropriate values (1% of original damage). ((0.1 * intelligence) Pursuit chance)"
 			},
 			{
 				"name": "Pursuit of Enlightenment: Speed",
 				"rank": 1000,
 				"slug": "pursuit-04",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "500 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of enlightenment that only those who continue to pursue may remember. When switch skill is enabled the chance of additional damage is increased in accordance with the appropriate values (1% of original damage). ((0.1 * speed) Pursuit chance)"
 			},
 			{
@@ -4024,44 +4266,44 @@
 				"name": "Pursuit of Mantra: Fire",
 				"rank": 3000,
 				"slug": "pursuit-06",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Fire affinity."
 			},
 			{
 				"name": "Pursuit of Mantra: Ice",
 				"rank": 3000,
 				"slug": "pursuit-07",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Ice affinity."
 			},
 			{
 				"name": "Pursuit of Mantra: Electric",
 				"rank": 3000,
 				"slug": "pursuit-08",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Electric affinity."
 			},
 			{
 				"name": "Pursuit of Mantra: Force",
 				"rank": 3000,
 				"slug": "pursuit-09",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Force affinity."
 			},
 			{
@@ -4079,88 +4321,88 @@
 				"name": "Pursuit of Mantra: Expel",
 				"rank": 5000,
 				"slug": "pursuit-11",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Expel affinity."
 			},
 			{
 				"name": "Pursuit of Mantra: Death",
 				"rank": 5000,
 				"slug": "pursuit-12",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Death affinity."
 			},
 			{
 				"name": "Pursuit of Mantra: Mind",
 				"rank": 6000,
 				"slug": "pursuit-13",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Mind affinity."
 			},
 			{
 				"name": "Pursuit of Mantra: Nerve",
 				"rank": 6000,
 				"slug": "pursuit-14",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Nerve affinity."
 			},
 			{
 				"name": "Pursuit of Mantra: Magic",
 				"rank": 6000,
 				"slug": "pursuit-15",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "40 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of mantra that only those who continue to pursue may remember. Pursuit damage becomes Magic affinity."
 			},
 			{
 				"name": "Pursuit of Enlightenment: Close Range",
 				"rank": 7000,
 				"slug": "pursuit-16",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "500 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of enlightenment that only those who continue to pursue may remember. When switch skill is enabled the chance of additional damage is increased in accordance with the appropriate values. ((0.1 * CLS-RNG) Pursuit chance)"
 			},
 			{
 				"name": "Pursuit of Enlightenment: Long Range",
 				"rank": 7000,
 				"slug": "pursuit-17",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "500 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of enlightenment that only those who continue to pursue may remember. When switch skill is enabled the chance of additional damage is increased in accordance with the appropriate values. ((0.1 * LNG-RNG) Pursuit chance)"
 			},
 			{
 				"name": "Pursuit of Enlightenment: Spell",
 				"rank": 7000,
 				"slug": "pursuit-18",
-				"type": "Switch",
+				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
-				"cost": "500 Magnetite",
+				"cost": null,
 				"desc": "The pursuit of enlightenment that only those who continue to pursue may remember. When switch skill is enabled the chance of additional damage is increased in accordance with the appropriate values. ((0.1 * SPL) Pursuit chance)"
 			},
 			{
@@ -4300,7 +4542,7 @@
 				"action": null,
 				"stack": null,
 				"cost": null,
-				"desc": "By the power of the Moon, all party members' MAX MP +5."
+				"desc": "By the power of the Moon, all party members' MAX MP +25."
 			},
 			{
 				"name": "Blessing of Surya",
@@ -4311,7 +4553,7 @@
 				"action": null,
 				"stack": null,
 				"cost": null,
-				"desc": "By the power of the Sun, all party members' MAX HP +10."
+				"desc": "By the power of the Sun, all party members' MAX HP +50."
 			},
 			{
 				"name": "Blessing of Shani",
@@ -4322,44 +4564,33 @@
 				"action": null,
 				"stack": null,
 				"cost": null,
-				"desc": "By the power of Saturn, all party members' Vitality +2, Magic Defense + 1."
+				"desc": "By the power of Saturn, all party members' Vit+3, Int+3"
 			},
 			{
 				"name": "Blessing of Budha",
-				"rank": 4000,
+				"rank": 3000,
 				"slug": "bless-04",
 				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
 				"cost": null,
-				"desc": "By the power of Mercury, all party members' Intelligence +2."
+				"desc": "By the power of Mercury, all party members' Str+2, Mag+2, Spd+2"
 			},
 			{
-				"name": "Blessing of Ketu",
-				"rank": 5000,
-				"slug": "bless-05",
+				"name": "Blessing of Saraswati",
+				"rank": 3000,
+				"slug": "bless-11",
 				"type": "Passive",
 				"affinity": null,
 				"action": null,
 				"stack": null,
 				"cost": null,
-				"desc": "By the power of the S Lunar Node, damage from the demon of Aerial and Gods group -5%, Magic Defense + 1."
-			},
-			{
-				"name": "Blessing of Rahu",
-				"rank": 5000,
-				"slug": "bless-06",
-				"type": "Passive",
-				"affinity": null,
-				"action": null,
-				"stack": null,
-				"cost": null,
-				"desc": "By the power of the S Lunar Node, damage from the demon of Guardian and Demoniacs group -5%, Physical Defense + 1."
+				"desc": "All Party Members Experience and Expertise Earned +10%"
 			},
 			{
 				"name": "Blessing of Shukra",
-				"rank": 6000,
+				"rank": 5000,
 				"slug": "bless-07",
 				"type": "Passive",
 				"affinity": null,
@@ -4370,7 +4601,7 @@
 			},
 			{
 				"name": "Blessing of Brihaspati",
-				"rank": 7000,
+				"rank": 5000,
 				"slug": "bless-08",
 				"type": "Passive",
 				"affinity": null,
@@ -4381,7 +4612,7 @@
 			},
 			{
 				"name": "Blessing of Mangala",
-				"rank": 8000,
+				"rank": 5000,
 				"slug": "bless-09",
 				"type": "Passive",
 				"affinity": null,
@@ -4391,8 +4622,30 @@
 				"desc": "By the powers of Mars, all party members' Strength +2."
 			},
 			{
+				"name": "Blessing of Ketu",
+				"rank": 6000,
+				"slug": "bless-05",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "By the power of the S Lunar Node, Party Members' Damage dealt increases by 5%"
+			},
+			{
+				"name": "Blessing of Rahu",
+				"rank": 6000,
+				"slug": "bless-06",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "By the power of the S Lunar Node, Party Members' Damage taken decreases by 5%"
+			},
+			{
 				"name": "Blessing of Navagraha",
-				"rank": 9000,
+				"rank": 7000,
 				"slug": "bless-10",
 				"type": "Passive",
 				"affinity": null,
@@ -4400,6 +4653,28 @@
 				"stack": null,
 				"cost": null,
 				"desc": "All party members' Luck +2."
+			},
+			{
+				"name": "Blessing of Kartikeya",
+				"rank": 8000,
+				"slug": "bless-12",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "All Party Members Movement Speed +5%, Speed +10"
+			},
+			{
+				"name": "Blessing of Brahma",
+				"rank": 9000,
+				"slug": "bless-13",
+				"type": "Passive",
+				"affinity": null,
+				"action": null,
+				"stack": null,
+				"cost": null,
+				"desc": "All Party Members Luck, Int +25, HP Regen + 5% MP Regen + 5%"
 			}
 		]
 	}
