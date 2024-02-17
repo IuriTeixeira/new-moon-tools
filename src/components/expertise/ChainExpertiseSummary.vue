@@ -26,24 +26,6 @@
       :hideLocked="hideLocked"
       :skills="skills('berserker')"
     />
-    <conditions-magic
-      :expertise="expertise"
-      :options="options"
-      :hideLocked="hideLocked"
-      :skills="skills('conditions-magic')"
-    />
-    <conditions-melee
-      :expertise="expertise"
-      :options="options"
-      :hideLocked="hideLocked"
-      :skills="skills('conditions-melee')"
-    />
-    <conditions-ranged
-      :expertise="expertise"
-      :options="options"
-      :hideLocked="hideLocked"
-      :skills="skills('conditions-ranged')"
-    />
     <craftsmanship
       :expertise="expertise"
       :options="options"
@@ -144,9 +126,6 @@ import dataService from "@/services/dataService";
 import ArmsMaker from "@/components/expertise/singletons/ArmsMaker.vue";
 import AshesAndDust from "@/components/expertise/singletons/AshesAndDust.vue";
 import Berserker from "@/components/expertise/singletons/Berserker.vue";
-import ConditionsMagic from "@/components/expertise/singletons/ConditionsMagic.vue";
-import ConditionsMelee from "@/components/expertise/singletons/ConditionsMelee.vue";
-import ConditionsRanged from "@/components/expertise/singletons/ConditionsRanged.vue";
 import Craftsmanship from "@/components/expertise/singletons/Craftsmanship.vue";
 import CurseOfTheWretched from "@/components/expertise/singletons/CurseOfTheWretched.vue";
 import Enhancement from "@/components/expertise/singletons/Enhancement.vue";
@@ -169,9 +148,6 @@ export default {
     ArmsMaker,
     AshesAndDust,
     Berserker,
-    ConditionsMagic,
-    ConditionsMelee,
-    ConditionsRanged,
     Craftsmanship,
     CurseOfTheWretched,
     Enhancement,

@@ -5,7 +5,7 @@
     :visible="isVisible"
     :classRank="classRank"
     @setValues="setValues"
-    name="Retaliation"
+    name="Regal Presence"
   >
     <template v-slot:content>
       <table class="table is-hoverable is-fullwidth">
@@ -61,7 +61,7 @@
 import Skill from "@/components/expertise/Skill.vue";
 import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 export default {
-  name: "Retaliation",
+  name: "Regal Presence",
   components: {
     Skill,
     ChainExpertise,
