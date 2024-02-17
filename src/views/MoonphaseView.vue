@@ -88,9 +88,8 @@
                 <thead>
                   <tr>
                     <th>Dungeon</th>
-                    <th>CP</th>
-                    <th>Bonus CP</th>
-                    <th>Bonus Day</th>
+                    <th>Yagiya Reports</th>
+                    <th>Moon Fragments</th>
                     <th>Level</th>
                     <th>DB License</th>
                   </tr>

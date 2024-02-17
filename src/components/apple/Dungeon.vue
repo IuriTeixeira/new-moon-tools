@@ -3,6 +3,8 @@
     <th>{{dungeon.name}}</th>
     <td>{{Number(dungeon.apples* modifier).toLocaleString()}}</td>
     <td>{{Number(runs).toLocaleString()}}</td>
+    <td v-if="displayCell">{{Number(runs * dungeon.reports).toLocaleString()}}</td>
+    <td v-if="displayCell">{{Number(runs * (dungeon.reports / 20)).toLocaleString()}}</td>
   </tr>
 </template>
 
@@ -19,6 +21,10 @@ export default {
     apples:{
       type: Number,
       required: true
+    },
+    options:{
+      type: Object,
+      required: true
     }
   },
   data() {
@@ -30,6 +36,12 @@ export default {
     },
     runs(){
       return Math.ceil(this.apples / (this.dungeon.apples * this.modifier))
+    },
+    displayCell: function(){
+      if(this.options.reports){
+        return true;
+      }
+      return false;
     }
   }
 };

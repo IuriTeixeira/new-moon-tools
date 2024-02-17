@@ -54,6 +54,8 @@
                     <th>Dungeon</th>
                     <th>Apples</th>
                     <th>Runs</th>
+                    <th v-if="displayCell">Reports</th>
+                    <th v-if="displayCell">Moon Fragments</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -62,6 +64,7 @@
                     :key="item.name"
                     :dungeon="item"
                     :apples="this.apples"
+                    :options="this.options"
                   />
                 </tbody>
               </table>
@@ -161,6 +164,13 @@ export default {
       }
       return this.options.start < this.options.end;
     },
+    displayCell: function(){
+      if(this.options.reports){
+        return true;
+      }
+      return false;
+    }
+    
   },
   methods: {
     reset() {

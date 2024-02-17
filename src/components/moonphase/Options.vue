@@ -8,14 +8,6 @@
         </o-tooltip>
       </o-switch>
     </o-field>
-    <o-field>
-      <o-switch v-model.number="options.bonusDungeonsOnly" :leftLabel="true">
-        Bonus Dungeons Only
-        <o-tooltip label="Restrict the Dungeon table to only show dungeons that currently give a CP Bonus." position="right" multiline>
-          <o-icon size="small" icon="help-circle-outline" />
-        </o-tooltip>
-      </o-switch>
-    </o-field>
   </div>
 </template>
 

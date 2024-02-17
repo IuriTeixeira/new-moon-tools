@@ -1,9 +1,8 @@
 <template>
-  <tr v-bind:class="{bonus: isBonusDay}" v-if="displayRow">
+  <tr>
     <th>{{dungeon.name}}</th>
-    <td>{{dungeon.cavePoints}}</td>
-    <td>{{dungeon.cavePointsBonus}}</td>
-    <td>{{dayOfWeek}}</td>
+    <td>{{dungeon.reports}}</td>
+    <td>{{moonfragments}}</td>
     <td>{{dungeon.levelRequirement}}</td>
     <td>{{dungeon.licenseRequirement}}</td>
   </tr>
@@ -55,6 +54,9 @@ export default {
           return "-"
           break;
       }
+    },
+    moonfragments: function(){
+      return this.dungeon.reports / 20;
     },
     isBonusDay: function(){
       return format(this.japan, "i") == this.dungeon.bonusDay

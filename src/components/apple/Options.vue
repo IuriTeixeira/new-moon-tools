@@ -30,6 +30,9 @@
     <o-field label="Sort Table by Apples">
       <o-switch v-model="options.sort"></o-switch>
     </o-field>
+    <o-field label="Show Reports and Moon Fragments">
+      <o-switch v-model="options.reports"></o-switch>
+    </o-field>
     <o-button @click.prevent="reset" icon-left="refresh">Reset Options</o-button>
   </div>
 </template>
