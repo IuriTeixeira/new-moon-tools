@@ -1524,7 +1524,7 @@
 		{
 			"name": "Mitama Demon Command - Offense",
 			"rank": 6500,
-			"slug": "mitama-08",
+			"slug": "mitama-10",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,
@@ -1946,7 +1946,7 @@
 		{
 			"name": "Excalibur",
 			"rank": 7500,
-			"slug": "regal-presence-",
+			"slug": "regal-presence-13",
 			"type": "Passive",
 			"affinity": null,
 			"action": null,

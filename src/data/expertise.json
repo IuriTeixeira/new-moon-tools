@@ -2608,7 +2608,7 @@
 			{
 				"name": "Summon Lesson 1",
 				"rank": 1000,
-				"slug": "summon-04",
+				"slug": "summon-01",
 				"type": "Passive",
 				"affinity": null,
 				"action": null,
@@ -2619,7 +2619,7 @@
 			{
 				"name": "Summon Lesson 2",
 				"rank": 2000,
-				"slug": "summon-04",
+				"slug": "summon-02",
 				"type": "Passive",
 				"affinity": null,
 				"action": null,
@@ -2630,7 +2630,7 @@
 			{
 				"name": "Protected Summon",
 				"rank": 3000,
-				"slug": "summon-04",
+				"slug": "summon-03",
 				"type": "Passive",
 				"affinity": null,
 				"action": null,
@@ -2652,7 +2652,7 @@
 			{
 				"name": "Shielded Summon",
 				"rank": 4000,
-				"slug": "summon-04",
+				"slug": "summon-05",
 				"type": "Passive",
 				"affinity": null,
 				"action": null,
@@ -2663,7 +2663,7 @@
 			{
 				"name": "Armed Summon",
 				"rank": 5000,
-				"slug": "summon-04",
+				"slug": "summon-06",
 				"type": "Passive",
 				"affinity": null,
 				"action": null,
@@ -2674,7 +2674,7 @@
 			{
 				"name": "Summon Overdrive",
 				"rank": 6000,
-				"slug": "summon-02",
+				"slug": "summon-07",
 				"type": "Active",
 				"affinity": "Support",
 				"action": "Curative",
