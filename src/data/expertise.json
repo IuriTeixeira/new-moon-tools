@@ -2602,7 +2602,7 @@
 		"name": "Summon",
 		"queryParam": "ep",
 		"value": 0,
-		"max": 2000,
+		"max": 6000,
 		"tooltip": null,
 		"skills": [
 			{
