@@ -9,7 +9,7 @@
   >
     <template v-slot:content>
       <p>
-        <span class="option-title">Requirement to Unlock</span>: Level 98+, Act
+        <span class="option-title">Requirement to Unlock</span>: Act
         XX Clear, Complete various quests.
       </p>
       <p>1-0 Skill is unlocked by clearing Act XX.</p>
@@ -25,7 +25,6 @@
         1-6 Skill is unlocked by completing the Mastery of Three Forms of Life
         (3) quest from the Slime in Home 2's Residential Area
       </p>
-      <p>All three quests have a Level 98+ requirement.</p>
       <table class="table is-hoverable is-fullwidth">
         <thead>
           <tr>
@@ -124,11 +123,15 @@ export default {
     },
     setValues(to) {
       if (to === "zero") {
-        this.options.level.value = 1;
+        this.options.actxx.value = 0;
       } else if (to === "required") {
-        this.options.level.value = 98;
+        this.options.act7.value = 1000;
+        this.options.act16.value = 2000;
+        this.options.actxx.value = 2000;
       } else if (to === "max") {
-        this.options.level.value = 99;
+        this.options.act7.value = 1000;
+        this.options.act16.value = 2000;
+        this.options.actxx.value = 2000;
       }
     },
   },
@@ -139,7 +142,7 @@ export default {
       else return false;
     },
     requirements() {
-      if (this.options.level.value >= 98) return true;
+      if (this.options.actxx.value == 2000) return true;
       else return false;
     },
     total() {

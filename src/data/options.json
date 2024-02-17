@@ -80,6 +80,21 @@
 			"name": "St. Germain Quests",
 			"queryParam": "om",
 			"value": 0
+		},
+		"act7": {
+			"name": "Act 7 Completed",
+			"queryParam": "on",
+			"value": 0
+		},
+		"act16": {
+			"name": "Act 16 Completed",
+			"queryParam": "oo",
+			"value": 0
+		},
+		"actxx": {
+			"name": "Act XX Completed",
+			"queryParam": "op",
+			"value": 0
 		}
 	},
 	"moonphase": {

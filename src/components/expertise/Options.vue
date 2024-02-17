@@ -132,6 +132,22 @@
         v-model.number="options.saintGermain.value"
       />
     </o-field>
+    <label class="o-field__label">Act Completion Rewards</label>
+		<o-field>
+			<o-switch v-model.number="options.act7.value" :true-value="1000" :false-value="0" :leftLabel="true" @change="onActChange($event)">
+				Act 7
+			</o-switch>
+		</o-field>
+    <o-field>
+			<o-switch v-model.number="options.act16.value" :true-value="2000" :false-value="0" :leftLabel="true" @change="onActChange($event)">
+				Act 16
+			</o-switch>
+		</o-field>
+    <o-field>
+			<o-switch v-model.number="options.actxx.value" :true-value="2000" :false-value="0" :leftLabel="true">
+				Act XX
+			</o-switch>
+		</o-field>
     <o-field grouped>
       <o-button expanded @click="reset" icon-left="refresh">Reset Options</o-button>
       <o-button expanded @click="link" icon-left="link">Generate Link</o-button>
@@ -165,7 +181,11 @@ export default {
     link(){
       this.$emit("open-link-modal");
     },
+    onActChange(event){
+      console.log(event.target.value)
+    }
   }
+  
 };
 </script>
 
