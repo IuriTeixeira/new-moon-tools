@@ -19,17 +19,17 @@
         </thead>
         <tbody>
           <tr>
-            <th>Attack</th>
+            <th>Pursuit</th>
             <td>Class 2 Rank 0</td>
-            <td>20%</td>
-            <td>{{ parseExpertise(expertise.attack.value * 0.2) }}</td>
+            <td>40%</td>
+            <td>{{ parseExpertise(expertise.attack.value * 0.4) }}</td>
           </tr>
           <tr>
             <th>Weapon Knowledge</th>
             <td>Class 1 Rank 0</td>
-            <td>40%</td>
+            <td>20%</td>
             <td>
-              {{ parseExpertise(expertise.weaponKnowledge.value * 0.4) }}
+              {{ parseExpertise(expertise.weaponKnowledge.value * 0.2) }}
             </td>
           </tr>
           <tr>
@@ -100,15 +100,15 @@ export default {
     },
     setValues(to) {
       if (to === "zero") {
-        this.expertise.attack.value = 0;
+        this.expertise.pursuit.value = 0;
         this.expertise.weaponKnowledge.value = 0;
         this.expertise.survivalTechniques.value = 0;
       } else if (to === "required") {
-        this.expertise.attack.value = 2000;
+        this.expertise.pursuit.value = 2000;
         this.expertise.weaponKnowledge.value = 1000;
         this.expertise.survivalTechniques.value = 1000;
       } else if (to === "max") {
-        this.expertise.attack.value = this.expertise.attack.max;
+        this.expertise.pursuit.value = this.expertise.pursuit.max;
         this.expertise.weaponKnowledge.value =
           this.expertise.weaponKnowledge.max;
         this.expertise.survivalTechniques.value =
@@ -124,7 +124,7 @@ export default {
     },
     requirements() {
       if (
-        this.expertise.attack.value >= 2000 &&
+        this.expertise.pursuit.value >= 2000 &&
         this.expertise.weaponKnowledge.value >= 1000 &&
         this.expertise.survivalTechniques.value >= 1000
       )
@@ -132,23 +132,23 @@ export default {
       else return false;
     },
     total() {
-      let attack = this.expertise.attack.value * 0.2;
-      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.4;
+      let pursuit = this.expertise.pursuit.value * 0.4;
+      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.2;
       let survivalTechniques = this.expertise.survivalTechniques.value * 0.4;
 
-      return Number.parseInt(attack + weaponKnowledge + survivalTechniques);
+      return Number.parseInt(pursuit + weaponKnowledge + survivalTechniques);
     },
     classRank() {
-      let attack = this.expertise.attack.value * 0.2;
-      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.4;
+      let pursuit = this.expertise.pursuit.value * 0.4;
+      let weaponKnowledge = this.expertise.weaponKnowledge.value * 0.2;
       let survivalTechniques = this.expertise.survivalTechniques.value * 0.4;
 
       var a =
-        Number.parseInt(attack + weaponKnowledge + survivalTechniques) / 100;
+        Number.parseInt(pursuit + weaponKnowledge + survivalTechniques) / 100;
       var b = a.toString();
       if (
         a === 0 ||
-        this.expertise.attack.value < 2000 ||
+        this.expertise.pursuit.value < 2000 ||
         this.expertise.weaponKnowledge.value < 1000 ||
         this.expertise.survivalTechniques.value < 1000
       ) {

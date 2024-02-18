@@ -1184,6 +1184,17 @@
 			"stack": 1,
 			"cost": "6 MP, 1 Bullet",
 			"desc": "Brings judgement with a bullet."
+		},
+		{
+			"name": "Deadly Shot",
+			"rank": 8000,
+			"slug": "magic-bullet-18",
+			"type": "Active",
+			"affinity": "Weapon-based",
+			"action": "Shot",
+			"stack": 1,
+			"cost": "15 MP, 1 Bullet",
+			"desc": "Brings judgement with a bullet."
 		}
 	],
 	"magic-fist": [

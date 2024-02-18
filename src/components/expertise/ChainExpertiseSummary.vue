@@ -80,7 +80,7 @@
       :hideLocked="hideLocked"
       :skills="skills('rampage')"
     />
-    <retaliation
+    <regal-presence
       :expertise="expertise"
       :options="options"
       :hideLocked="hideLocked"
@@ -134,7 +134,7 @@ import MagicBullet from "@/components/expertise/singletons/MagicBullet.vue";
 import MagicFist from "@/components/expertise/singletons/MagicFist.vue";
 import Mitama from "@/components/expertise/singletons/Mitama.vue";
 import Rampage from "@/components/expertise/singletons/Rampage.vue";
-import Retaliation from "@/components/expertise/singletons/Retaliation.vue";
+import RegalPresence from "@/components/expertise/singletons/RegalPresence.vue";
 import SanguineContract from "@/components/expertise/singletons/SanguineContract.vue";
 import Sharpshooter from "@/components/expertise/singletons/Sharpshooter.vue";
 import SupportBullet from "@/components/expertise/singletons/SupportBullet.vue";
@@ -157,7 +157,7 @@ export default {
     Mitama,
     Rampage,
     ThreeForms,
-    Retaliation,
+    RegalPresence,
     SanguineContract,
     Sharpshooter,
     SupportBullet,
