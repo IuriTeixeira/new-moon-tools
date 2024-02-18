@@ -564,15 +564,15 @@
 			"desc": "A curse that eats at the body and soul of surrounding enemies, and has a low probability of inflicting various adverse effects."
 		},
 		{
-			"name": "Delay Hex Yang",
+			"name": "Curse of the Slow Cure",
 			"rank": 2000,
-			"slug": "curse-of-the-wretched-02",
+			"slug": "curse-of-the-wretched-06",
 			"type": "Active",
-			"affinity": "Support",
+			"affinity": "Nerve",
 			"action": "Shot",
 			"stack": 1,
-			"cost": "12 MP, 1 Bead Of Heaven (South)",
-			"desc": "A curse that interferes with the target's timing. Increases enemy's incantation time by 50%."
+			"cost": "25 MP, 1 Bead of Heaven (South)",
+			"desc": "A curse that slows down the recovery of its victim by eating away at the victim's body. Reduces the target's Curative Resistance by 100%. Effect lasts for 30 seconds."
 		},
 		{
 			"name": "Slash Hex",
@@ -608,26 +608,15 @@
 			"desc": "A curse that eats at the target's spirit and mind. Increases the target's susceptibility to Magic attacks by 100%. Effect lasts until knockback of target, or for 30 seconds."
 		},
 		{
-			"name": "Curse of the Slow Cure",
-			"rank": 3500,
-			"slug": "curse-of-the-wretched-06",
-			"type": "Active",
-			"affinity": "Nerve",
-			"action": "Shot",
-			"stack": 1,
-			"cost": "25 MP, 1 Bead of Heaven (South)",
-			"desc": "A curse that slows down the recovery of its victim by eating away at the victim's body. Reduces the target's Curative Resistance by 100%. Effect lasts for 30 seconds."
-		},
-		{
-			"name": "Delay Hex Yin",
+			"name": "Delay Hex",
 			"rank": 4000,
-			"slug": "curse-of-the-wretched-07",
+			"slug": "curse-of-the-wretched-02",
 			"type": "Active",
 			"affinity": "Support",
 			"action": "Shot",
 			"stack": 1,
 			"cost": "12 MP, 1 Bead of Heaven (North)",
-			"desc": "A curse that interferes with the target's timing. Increases skill cooldown time by 50%."
+			"desc": "Increases skill cooldown time by 50%, increases enemy's incantation time by 50% for 30 seconds."
 		},
 		{
 			"name": "Damage Hex",
