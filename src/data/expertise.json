@@ -289,7 +289,7 @@
 				"desc": "Jumps and attacks from the air with fists and inflicts the enemy with damage based on the weapon."
 			},
 			{
-				"name": "Incantation Cut",
+				"name": "Rush Mastery",
 				"rank": 2000,
 				"slug": "rush-10",
 				"type": "Passive",
