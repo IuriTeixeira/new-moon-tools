@@ -27,14 +27,14 @@
           <tr>
             <th>Gun Knowledge</th>
             <td>Class 2 Rank 0</td>
-            <td>30%</td>
-            <td>{{ parseExpertise(expertise.gunKnowledge.value * 0.3) }}</td>
+            <td>40%</td>
+            <td>{{ parseExpertise(expertise.gunKnowledge.value * 0.4) }}</td>
           </tr>
           <tr>
             <th>Pursuit</th>
             <td>Class 2 Rank 0</td>
-            <td>30%</td>
-            <td>{{ parseExpertise(expertise.pursuit.value * 0.3) }}</td>
+            <td>20%</td>
+            <td>{{ parseExpertise(expertise.pursuit.value * 0.2) }}</td>
           </tr>
         </tbody>
       </table>
@@ -128,15 +128,15 @@ export default {
     total() {
       
       let rapid = this.expertise.rapid.value * 0.4;
-      let gunKnowledge = this.expertise.gunKnowledge.value * 0.3;
-      let pursuit = this.expertise.pursuit.value * 0.3;
+      let gunKnowledge = this.expertise.gunKnowledge.value * 0.4;
+      let pursuit = this.expertise.pursuit.value * 0.2;
 
       return Number.parseInt(rapid + gunKnowledge + pursuit);
     },
     classRank() {
       let rapid = this.expertise.rapid.value * 0.4;
-      let gunKnowledge = this.expertise.gunKnowledge.value * 0.3;
-      let pursuit = this.expertise.pursuit.value * 0.3;
+      let gunKnowledge = this.expertise.gunKnowledge.value * 0.4;
+      let pursuit = this.expertise.pursuit.value * 0.2;
 
       var a = Number.parseInt(rapid + gunKnowledge + pursuit) / 100;
       var b = a.toString();
