@@ -19,28 +19,22 @@
         </thead>
         <tbody>
           <tr>
-            <th>Attack</th>
-            <td>Class 2 Rank 0</td>
-            <td>20%</td>
-            <td>{{ parseExpertise(expertise.attack.value * 0.2) }}</td>
+            <th>Pursuit</th>
+            <td>Class 3 Rank 0</td>
+            <td>40%</td>
+            <td>{{ parseExpertise(expertise.pursuit.value * 0.4) }}</td>
           </tr>
           <tr>
             <th>Spin</th>
             <td>Class 2 Rank 0</td>
             <td>20%</td>
-            <td>{{ parseExpertise(expertise.spin.value * 0.2) }}</td>
+            <td>{{ parseExpertise(expertise.spin.value * 0.3) }}</td>
           </tr>
           <tr>
             <th>Rush</th>
             <td>Class 2 Rank 0</td>
             <td>20%</td>
-            <td>{{ parseExpertise(expertise.rush.value * 0.2) }}</td>
-          </tr>
-          <tr>
-            <th>Pursuit</th>
-            <td>Class 3 Rank 0</td>
-            <td>40%</td>
-            <td>{{ parseExpertise(expertise.pursuit.value * 0.4) }}</td>
+            <td>{{ parseExpertise(expertise.rush.value * 0.3) }}</td>
           </tr>
         </tbody>
       </table>
@@ -102,12 +96,10 @@ export default {
     },
     setValues(to) {
       if (to === "zero") {
-        this.expertise.attack.value = 0;
         this.expertise.spin.value = 0;
         this.expertise.rush.value = 0;
         this.expertise.pursuit.value = 0;
       } else if (to === "required") {
-        this.expertise.attack.value = 2000;
         this.expertise.spin.value = 2000;
         this.expertise.rush.value = 2000;
         this.expertise.pursuit.value = 3000;
@@ -127,7 +119,6 @@ export default {
     },
     requirements() {
       if (
-        this.expertise.attack.value >= 2000 &&
         this.expertise.spin.value >= 2000 &&
         this.expertise.rush.value >= 2000 &&
         this.expertise.pursuit.value >= 3000
@@ -136,24 +127,21 @@ export default {
       else return false;
     },
     total() {
-      let attack = this.expertise.attack.value * 0.2;
-      let spin = this.expertise.spin.value * 0.2;
-      let rush = this.expertise.rush.value * 0.2;
+      let spin = this.expertise.spin.value * 0.3;
+      let rush = this.expertise.rush.value * 0.3;
       let pursuit = this.expertise.pursuit.value * 0.4;
 
-      return Number.parseInt(attack + spin + rush + pursuit);
+      return Number.parseInt(spin + rush + pursuit);
     },
     classRank() {
-      let attack = this.expertise.attack.value * 0.2;
-      let spin = this.expertise.spin.value * 0.2;
-      let rush = this.expertise.rush.value * 0.2;
+      let spin = this.expertise.spin.value * 0.3;
+      let rush = this.expertise.rush.value * 0.3;
       let pursuit = this.expertise.pursuit.value * 0.4;
 
-      let a = Number.parseInt(attack + spin + rush + pursuit) / 100;
+      let a = Number.parseInt(spin + rush + pursuit) / 100;
       let b = a.toString();
       if (
         a === 0 ||
-        this.expertise.attack.value < 2000 ||
         this.expertise.spin.value < 2000 ||
         this.expertise.rush.value < 2000 ||
         this.expertise.pursuit.value < 3000
