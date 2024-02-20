@@ -21,11 +21,11 @@
         <option value=20.10>x2010</option>
       </o-select>
     </o-field>
-    <o-field label="Repeat this Calculation" :message="messages.times" :variant="messages.times ? 'danger' : ''">
-      <o-input type="number" min=1 v-model="options.times" id="times" icon-right="refresh" v-on:keyup="validate" @input="validate"></o-input>
-    </o-field>
     <o-field label="Gear XP Boosts" :message="messages.xp" :variant="messages.xp ? 'danger' : ''">
       <o-input type="number" min=0 v-model="options.gearXpBoost" id="xpboost" icon-right="percent" v-on:keyup="validate" @input="validate"></o-input>
+    </o-field>
+    <o-field label="Repeat this Calculation" :message="messages.times" :variant="messages.times ? 'danger' : ''">
+      <o-input type="number" min=1 v-model="options.times" id="times" icon-right="refresh" v-on:keyup="validate" @input="validate"></o-input>
     </o-field>
     <o-field label="Dame-Du-Lac-Emblem">
       <o-switch v-model="options.talisman"></o-switch>
