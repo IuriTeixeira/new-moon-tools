@@ -21,6 +21,9 @@
         <option value=20.10>x2010</option>
       </o-select>
     </o-field>
+    <o-field label="Repeat this Calcuation" :message="messages.times" :variant="messages.times ? 'danger' : ''">
+      <o-input type="number" min=1 v-model="options.times" id="times" icon-right="refresh" v-on:keyup="validate" @input="validate"></o-input>
+    </o-field>
     <o-field label="Gear XP Boosts" :message="messages.xp" :variant="messages.xp ? 'danger' : ''">
       <o-input type="number" min=0 v-model="options.gearXpBoost" id="xpboost" icon-right="percent" v-on:keyup="validate" @input="validate"></o-input>
     </o-field>
@@ -38,9 +41,12 @@
 </template>
 
 <script>
+import StepNumberInput from "@/components/StepNumberInput.vue";
+
 export default {
   name: "Options",
   components: {
+    StepNumberInput
   },
   props: {
     options: {
@@ -74,6 +80,10 @@ export default {
 
       if (this.options.gearXpBoost < 0 ) {
         this.messages.xp = "Gear XP Boost can't be negative";
+      }
+
+      if (this.options.times < 0){
+        this.messages.times = "Can't run a dungeon negative times"
       }
       this.messages = Object.assign({}, { ...this.messages });
     }

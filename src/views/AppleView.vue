@@ -33,20 +33,31 @@
             <div class="container" v-if="validation">
               <div class="content">
                 <h1>Summary</h1>
-                <h3>
+                <h3 v-if="this.options.times < 1">
+                  <span style="color: red">Times must be a positive number.</span>
+                </h3>
+                <h3 v-if="this.options.times > 0">
                   <span style="color: gold"
                     >{{ Number(apples).toLocaleString() }}
                     <o-icon pack="mdi" icon="food-apple"> </o-icon
                   ></span>
                   {{ pluralize }} required to level from {{ options.start }} to
-                  {{ options.end }}
+                  {{ options.end }} <span style="font-weight:700">{{ numTimesMessage }}</span>
                 </h3>
-                <h4>
+                <h4 v-if="this.options.times > 0">
                   <span style="color: gold">{{
                     Number(experience).toLocaleString()
                   }}</span>
                   experience in total
                 </h4>
+                <h5 v-if="this.options.times > 1">
+                  (<span style="color: gold"
+                    >{{ Number(this.applesPer).toLocaleString() }}
+                    <o-icon pack="mdi" icon="food-apple"> </o-icon
+                  ></span> Apples and <span style="color: gold"
+                    >{{ Number(this.experiencePer).toLocaleString() }}
+                  </span> Experience per reset)
+                </h5>
               </div>
               <table class="table is-hoverable is-striped is-fullwidth">
                 <thead>
@@ -106,6 +117,8 @@ export default {
       levels: {},
       dungeons: [],
       experience: 0,
+      experiencePer: 0,
+      applesPer: 0,
     };
   },
   created() {
@@ -122,6 +135,7 @@ export default {
       let modifier = this.modifier;
       const min = this.options.start - 1;
       const max = this.options.end - 1;
+      const times = this.options.times;
 
       if (max < min) {
         this.experience = 0;
@@ -131,8 +145,11 @@ export default {
       for (i = min; i < max; i++) {
         expRequired += values[i];
       }
-      this.experience = expRequired;
-      let applesRequired = Math.ceil(expRequired / (appleExp * modifier));
+      this.experiencePer = expRequired;
+      this.experience = expRequired * times;
+
+      this.applesPer = Math.ceil(expRequired / (appleExp * modifier));
+      let applesRequired = this.applesPer * times
 
       return applesRequired;
     },
@@ -154,6 +171,12 @@ export default {
         return dungeons;
       }
       return this.dungeons.sort((a, b) => b.apples - a.apples);
+    },
+    numTimesMessage(){
+      if (this.options.times == 1){
+        return "";
+      }
+      return this.options.times + " times"
     },
     validation() {
       if (isNaN(this.apples)) {
