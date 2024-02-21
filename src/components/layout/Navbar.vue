@@ -21,6 +21,7 @@
 				<router-link to="/expertise" class="navbar-item"><o-icon pack="mdi" class="icon has-text-success" icon="arm-flex"/><span>Expertise</span></router-link>
 				<router-link to="/moonphase" class="navbar-item"><o-icon pack="mdi" class="icon has-text-warning" icon="moon-waning-crescent"/><span>Moonphase</span></router-link>
 				<router-link to="/timed-demons" class="navbar-item"><o-icon pack="mdi" class="icon has-text-danger" icon="emoticon-devil-outline"/><span>Demon Schedule</span></router-link>
+				<router-link to="/demon-planner" class="navbar-item"><o-icon pack="mdi" class="icon has-text-danger" icon="emoticon-devil-outline"/><span>Demon Fusion Planner</span></router-link>
 			</div>
 
 			<div class="navbar-end">
