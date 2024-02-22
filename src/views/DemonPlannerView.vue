@@ -12,7 +12,7 @@
                   <div class="vue-flow__node-demon" 
                     v-for="demon in results"
                     :key="demon.ID" 
-                    :draggable="true" @dragstart="onDragStart($event, 'demon', demon)">{{ demon.Name }}</div>
+                    :draggable="true" @dragstart="onDragStart($event, 'demon', demon)">{{ demon.name }}</div>
                 </div>
               </div>
             </div>
@@ -129,6 +129,8 @@ const elements = ref([
   { id: 'e2-3', source: '2', target: '3', animated: true },
 
 ])
+
+
 
 </script>
 

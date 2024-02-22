@@ -7,7 +7,7 @@ export default {
 
     get(id=0){
         if (id != 0){
-            let demon = storage.find(d => d.ID == id);
+            let demon = storage.find(d => d.id == id);
             return demon;
         }
         return null
@@ -16,7 +16,7 @@ export default {
     searchByName(name=''){
         if (name !=''){
             let demons = storage.filter(function (item){
-                return item.Name.toLowerCase().includes(name.toLowerCase()) && item.Negotiation.AffabilityThreshold != 0 && item.Negotiation.FearThreshold != 0
+                return item.name.toLowerCase().includes(name.toLowerCase()) && item.negotiation.affabilityThreshold != 0 && item.negotiation.fearThreshold != 0
             })
             
             return demons;

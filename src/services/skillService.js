@@ -7,7 +7,7 @@ export default {
 
     get(id=0){
         if (id != 0){
-            let skill = storage.find(d => d.ID == id);
+            let skill = storage.find(d => d.id == id);
             return skill;
         }
         return null
@@ -16,7 +16,7 @@ export default {
     searchByName(name=''){
         if (name !=''){
             let skills = storage.filter(function (item){
-                return item.Name.toLowerCase().includes(name.toLowerCase()) 
+                return item.name.toLowerCase().includes(name.toLowerCase()) 
             })
             return skills;
         }

@@ -4,8 +4,11 @@ import { Handle, Position, useVueFlow } from '@vue-flow/core'
 import { NodeToolbar } from '@vue-flow/node-toolbar'
 
 import SkillSummary from '@/components/demon/SkillSummary.vue'
-
 import skillService from "@/services/skillService";
+//---
+import EditDemonModal from "@/components/demon/EditDemonModal.vue"
+import { useOruga } from "@oruga-ui/oruga-next";
+
 
 const props = defineProps({
   data: {
@@ -19,17 +22,35 @@ onMounted(() => {
   console.log (`DemonNode created`)
   props.data.options.skills.forEach((element) => {
     var skill = skillService.get(element);
-    skills.value.push({id: skill.ID, name: skill.Name})
+    skills.value.push({id: skill.id, name: skill.name})
   })
 })
 
 const { updateNodeData } = useVueFlow()
 
+// Link Modal
+const oruga = useOruga();
+
+function editModal() {
+  oruga.modal.open({
+    parent: this,
+    component: EditDemonModal,
+    custom: true,
+    trapFocus: true,
+    props: {
+      id: this.id,
+      demon: this.demon,
+      options: this.options,
+    },
+    width: 600,
+  });
+}
+
 </script>
 
 <template>
   <NodeToolbar :is-visible="data.toolbarVisible" position="right">
-    <button>Edit</button>
+    <button @click="editModal">Edit</button>
     <button>Copy</button>
     <button>Delete</button>
   </NodeToolbar>
@@ -39,11 +60,11 @@ const { updateNodeData } = useVueFlow()
 			<div class="media">
 				<div class="media-left">
 					<figure class="image is-36x36">
-						<img :src="'./img/demon/' + data.demon.BaseDemonID +'.png'" :alt="data.demon.name">
+						<img :src="'./img/demon/' + data.demon.baseDemonID +'.png'" :alt="data.demon.name">
 					</figure>
 				</div>
 				<div class="media-content">
-					<p class="title is-6">{{data.demon.Name}}</p>
+					<p class="title is-6">{{data.demon.name}}</p>
 					<p class="subtitle is-7">Lv {{ data.options.level }}</p>
 				</div>
 			</div>
@@ -51,7 +72,7 @@ const { updateNodeData } = useVueFlow()
 			<div class="content"  v-if="data.options.skills.length > 0">
         <skill-summary
           v-for="skill in skills"
-          :key="skill.ID"
+          :key="skill.id"
           :skill="skill"
         />
 			</div>
