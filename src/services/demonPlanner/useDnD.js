@@ -1,14 +1,6 @@
 import { useVueFlow } from '@vue-flow/core'
 import { ref, watch } from 'vue'
 
-let id = 0
-
-/**
- * @returns {string} - A unique id.
- */
-function getId() {
-  return `dndnode_${id++}`
-}
 
 /**
  * In a real world scenario you'd want to avoid creating refs in a global scope like this as they might not be cleaned up properly.
@@ -24,7 +16,7 @@ const state = {
 }
 
 export default function useDragAndDrop() {
-  const { draggedType, dto, isDragOver, isDragging } = state
+  const { draggedType, isDragOver, isDragging } = state
 
   const { addNodes, screenToFlowCoordinate, onNodesInitialized, updateNode } = useVueFlow()
 
@@ -32,13 +24,14 @@ export default function useDragAndDrop() {
     document.body.style.userSelect = dragging ? 'none' : ''
   })
 
-  function onDragStart(event, type, demon) {
+  function onDragStart(event, type, demon, id) {
     if (event.dataTransfer) {
 			let dto = {
+        id: id,
 				demon: demon,
 				options: {
 					type: "contract",
-					level: demon.BaseLevel,
+					level: demon.baseLevel,
 					skills: [
 					]
 				}
@@ -93,8 +86,8 @@ export default function useDragAndDrop() {
       y: event.clientY,
     })
 
-    const nodeId = getId()
 		const dto = JSON.parse(event.dataTransfer.getData('data'));
+    const nodeId = `${dto.id}`
     const newNode = {
       id: nodeId,
       type: draggedType.value,

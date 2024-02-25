@@ -91,6 +91,10 @@ import ExpertiseSummary from "@/components/expertise/ExpertiseSummary.vue";
 import ChainExpertiseSummary from "@/components/expertise/ChainExpertiseSummary.vue";
 import ExpertiseLinkModal from "@/components/expertise/LinkModal.vue";
 
+import { useOruga } from "@oruga-ui/oruga-next";
+
+const oruga = useOruga();
+
 export default {
   name: "Expertise",
   components: {
@@ -161,7 +165,7 @@ export default {
       this.options = dataService.getExpertiseDefaults();
     },
     expertiseLinkModal() {
-      this.$oruga.modal.open({
+      oruga.modal.open({
         parent: this,
         component: ExpertiseLinkModal,
         custom: true,

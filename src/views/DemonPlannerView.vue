@@ -1,3 +1,90 @@
+
+<script setup>
+import { ref } from 'vue'
+import { VueFlow, useVueFlow } from '@vue-flow/core'
+import { Background } from '@vue-flow/background'
+import { MiniMap } from '@vue-flow/minimap'
+import { Controls } from '@vue-flow/controls'
+//---
+import DemonNode from '@/components/demon/DemonNode.vue'
+import EdgeWithButton from '@/components/demon/EdgeWithButton.vue'
+import useDragAndDrop from '@/services/demonPlanner/useDnD'
+const { onDragStart, onDragOver, onDrop, onDragLeave, isDragging } = useDragAndDrop()
+//---
+import debounce from "@/services/demonPlanner/debounce"
+import demonService from "@/services/demonService";
+import _ from 'lodash'
+
+const search = ref("");
+const results = ref([]);
+
+const nodes = ref([])
+const edges = ref([])
+
+const onInput = debounce(() => {
+    findDemon()
+  }, 500)
+
+function findDemon(){
+  let demons = demonService.searchByName(search.value)
+  results.value = demons;
+}
+
+function nextId() {
+  const n = nodes.value.filter(function(i) {
+    return Object.hasOwn(i, 'position')
+  })
+  if (n.length > 0){
+    const z = [];
+    n.forEach((el) => {
+      var x = parseInt(el.id.replace('demonnode_', ''))
+      z.push(x);
+    })
+    const max = Math.max(...z);
+    return `demonnode_${max + 1}`;
+  }
+  return "demonnode_1";
+}
+
+
+const { addEdges, removeEdges, addNodes, removeNodes } = useVueFlow()
+
+const onConnect = (params) => {
+  var edge = {
+    id: `e_${params.source}-${params.target}`,
+    source: params.source,
+    target: params.target,
+    type: 'button',
+    animated: true,
+    data: { text: 'custom edge' },
+    markerEnd: 'arrowClosed',
+  }
+  addEdges(edge)
+}
+
+function onCloneNode(data){
+  const oldNode = nodes.value.find(n => n.id == data.id);
+  let newData = _.cloneDeep(data);
+  const id = nextId();
+  newData.id = id;
+  const newNode = {
+    id: id,
+    type: 'demon',
+    label: `[${id}]`,
+    data: newData,
+    position: {x: oldNode.position.x + 200, y: oldNode.position.y}
+  }
+  
+  addNodes(newNode);
+}
+
+function onRemoveNode(id){
+  console.log(`removing node ${id}`);
+  removeNodes(id);
+}
+
+</script>
+
 <template>
   <div id="flowchart">
     <section class="section">
@@ -12,19 +99,23 @@
                   <div class="vue-flow__node-demon" 
                     v-for="demon in results"
                     :key="demon.ID" 
-                    :draggable="true" @dragstart="onDragStart($event, 'demon', demon)">{{ demon.name }}</div>
+                    :draggable="true" @dragstart="onDragStart($event, 'demon', demon, nextId())">{{ demon.name }}</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="column">
-            <div class="container" @drop="onDrop" style="width:100%; height:600px; background-color: #07273C;">
-              <VueFlow v-model="elements"  @dragover="onDragOver" @dragleave="onDragLeave">
-                <template #node-demon="props">
-                  <DemonNode v-bind="props"/>
+            <div class="container" @drop="onDrop" style="width:100%; height:600px; background-color: rgb(7, 39, 60);">
+              <VueFlow :nodes="nodes" :edges="edges" @dragover="onDragOver" @dragleave="onDragLeave" @connect="onConnect" :connection-radius="30" connection-mode="strict" :delete-key-code="null">
+                <template #node-demon="nodeDemonProps">
+                  <DemonNode v-bind="nodeDemonProps" @clone-node="onCloneNode" @remove-node="onRemoveNode"/>
+                </template>
+
+                <template #edge-button="edgeButtonProps">
+                  <EdgeWithButton v-bind="edgeButtonProps"/>
                 </template>
                 
-                <MiniMap />
+                <MiniMap node-color="rgb(39, 36, 40)" node-stroke-color="rgb(34, 87, 101)" mask-color="rgb(4, 22, 34, 0.4)" style="background-color: rgb(34, 87, 101, 0.4);" />
                 <Controls />
                 <Background variant="dots" :gap="10" :size="1" patternColor="#225765" />
               </VueFlow>
@@ -36,103 +127,6 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-import { VueFlow } from '@vue-flow/core'
-import { Background } from '@vue-flow/background'
-import { MiniMap } from '@vue-flow/minimap'
-import { Controls } from '@vue-flow/controls'
-//---
-import DemonNode from '@/components/demon/DemonNode.vue'
-import useDragAndDrop from '@/services/demonPlanner/useDnD'
-const { onDragStart, onDragOver, onDrop, onDragLeave, isDragging } = useDragAndDrop()
-//---
-import debounce from "@/services/demonPlanner/debounce"
-import demonService from "@/services/demonService";
-
-const search = ref("");
-const results = ref([]);
-
-const onInput = debounce(() => {
-    findDemon()
-  }, 500)
-
-function findDemon(){
-  let demons = demonService.searchByName(search.value)
-  results.value = demons;
-}
-
-const jackFrost = demonService.get(569);
-const caitSith = demonService.get(549);
-const virtue = demonService.get(183);
-const x = {
-  type: "contract",
-  level: "83",
-  skills: [
-    5012,
-    67
-  ]
-}
-
-const y = {
-  type: "contract",
-  level: "8",
-  skills: [
-  ]
-}
-
-const z = {
-  type: "fusion",
-  level: "51",
-  skills: [
-    5012,
-    67
-  ]
-}
-
-const elements = ref([
-  // nodes
-
-  { 
-    id: '1', 
-    type: 'demon', 
-    data: {
-      demon: jackFrost, 
-      options: x, 
-    },
-    position:{ x: 50, y: 350 }
-  },
-  { 
-    id: '2', 
-    type: 'demon', 
-    data: {
-      demon: caitSith, 
-      options: y, 
-    },
-    position:{ x: 350, y: 350 }
-  },
-  { 
-    id: '3', 
-    type: 'demon', 
-    data: {
-      demon: virtue, 
-      options: z, 
-    },
-    position:{ x: 200, y: 50 }
-  },
-
-
-  // edges
-
-  // an animated edge, specified by using `animated: true`
-  { id: 'e1-3', source: '1', target: '3', animated: true },
-  { id: 'e2-3', source: '2', target: '3', animated: true },
-
-])
-
-
-
-</script>
 
 <style lang="scss">
 /* import the necessary styles for Vue Flow to work */
