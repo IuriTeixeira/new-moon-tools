@@ -19,16 +19,16 @@
         </thead>
         <tbody>
           <tr>
+            <th>Weapon Knowledge</th>
+            <td>Class 3 Rank 0</td>
+            <td>40%</td>
+            <td>{{ parseExpertise(expertise.weaponKnowledge.value * 0.4) }}</td>
+          </tr>
+          <tr>
             <th>Attack</th>
             <td>Class 2 Rank 0</td>
             <td>40%</td>
             <td>{{ parseExpertise(expertise.attack.value * 0.4) }}</td>
-          </tr>
-          <tr>
-            <th>Weapon Knowledge</th>
-            <td>Class 2 Rank 0</td>
-            <td>40%</td>
-            <td>{{ parseExpertise(expertise.weaponKnowledge.value * 0.4) }}</td>
           </tr>
           <tr>
             <th>Pursuit</th>
@@ -101,7 +101,7 @@ export default {
         this.expertise.pursuit.value = 0;
       } else if (to === "required") {
         this.expertise.attack.value = 2000;
-        this.expertise.weaponKnowledge.value = 2000;
+        this.expertise.weaponKnowledge.value = 3000;
         this.expertise.pursuit.value = 1000;
       } else if (to === "max") {
         this.expertise.attack.value = this.expertise.attack.max;
@@ -119,7 +119,7 @@ export default {
     requirements() {
       if (
         this.expertise.attack.value >= 2000 &&
-        this.expertise.weaponKnowledge.value >= 2000 &&
+        this.expertise.weaponKnowledge.value >= 3000 &&
         this.expertise.pursuit.value >= 1000
       )
         return true;
