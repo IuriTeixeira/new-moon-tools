@@ -16,6 +16,7 @@ const props = defineProps({
 const emit = defineEmits(['close'])
 
 const level = ref(props.options.level)
+const type = ref(props.options.type)
 const defaultSkills = ref([])
 const acquiredSkills = ref([])
 const inheritedSkills = ref([])
@@ -24,7 +25,7 @@ onMounted(() => {
 	//Default Skills
   props.demon.skills.forEach((element) => {
     var skill = skillService.get(element);
-		var selected = props.options.skills.some(function(i){
+		var selected = props.options.selectedSkills.some(function(i){
 			return element == i;
 		});
 
@@ -33,7 +34,7 @@ onMounted(() => {
 
 	props.demon.acquiredSkills.forEach((element) => {
     var skill = skillService.get(element.id);
-		var selected = props.options.skills.some(function(i){
+		var selected = props.options.selectedSkills.some(function(i){
 			return element == i;
 		});
     acquiredSkills.value.push({id: skill.id, name: skill.name, inherit: selected})
@@ -42,7 +43,7 @@ onMounted(() => {
 
 function onSave(){
 	props.options.level = level.value;
-
+	props.options.type = type.value;
 	const newSkills = [];
 	defaultSkills.value.forEach((element) => {
     if (element.inherit){
@@ -56,11 +57,8 @@ function onSave(){
 		}
   })
 
-	inheritedSkills.value.forEach((element) => {
-		newSkills.push(element.id)
-  })
 
-	props.options.skills = [... new Set(newSkills)];
+	props.options.selectedSkills = [... new Set(newSkills)];
 	emit('close')
 }
 
@@ -80,6 +78,15 @@ function onSave(){
       <o-field label="Set Level">
 				<o-input type="number" min=1 max=99 v-model="level"></o-input>
 			</o-field>
+			<o-field label="Incense">
+      <o-select v-model="type" class="is-fullwidth">
+        <option value="contract">Contract</option>
+				<option value="double">Double Fusion</option>
+				<option value="triple">Triple Fusion</option>
+				<option value="rebirth">Rebirth</option>
+				<option value="level">Level</option>
+      </o-select>
+    </o-field>
 			<div class="content">
 				<h3>Mark Skills to Inherit</h3>
 				<div class="columns is-mobile is-centered">

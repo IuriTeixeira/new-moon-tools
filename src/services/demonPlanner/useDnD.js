@@ -32,7 +32,9 @@ export default function useDragAndDrop() {
 				options: {
 					type: "contract",
 					level: demon.baseLevel,
-					skills: [
+					selectedSkills: [
+					],
+          inheritedSkills: [
 					]
 				}
 			}

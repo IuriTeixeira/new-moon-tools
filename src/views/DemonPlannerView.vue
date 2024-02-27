@@ -62,7 +62,7 @@ const onConnect = (params) => {
 }
 
 function onCloneNode(data){
-  const oldNode = nodes.value.find(n => n.id == data.id);
+  const oldNode = elements.value.find(n => n.id == data.id);
   let newData = _.cloneDeep(data);
   const id = nextId();
   newData.id = id;
@@ -78,7 +78,7 @@ function onCloneNode(data){
 }
 
 function onRemoveNode(id){
-  console.log(`removing node ${id}`);
+  console.log(`Node ${id} removed.`);
   removeNodes(id);
 }
 

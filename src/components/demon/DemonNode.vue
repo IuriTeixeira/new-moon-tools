@@ -24,23 +24,35 @@ const connections = useHandleConnections({
 const sourceData = useNodesData(() => connections.value.map((connection) => connection.source))
 
 const inheritedSkills = computed(() => {
-  const res = [];
+  const a = [];
   sourceData.value.forEach(node => {
-    node.data.options.skills.forEach(id =>{
+    node.data.options.selectedSkills.forEach(id =>{
       const skill = skillService.get(id);
       if (skill){
-        res.push(skill);
+        a.push(skill);
+        props.data.options.inheritedSkills.push(id);
       }
     })
   });
 
+  const b = [];
+  sourceData.value.forEach(node => {
+    node.data.options.inheritedSkills.forEach(id =>{
+      const skill = skillService.get(id);
+      if (skill){
+        b.push(skill);
+      }
+    })
+  });
+
+  const res = [...new Set([...a, ...b])];
   return res;
 })
 
 
 const selectedSkills = computed(() => {
   const res = [];
-  props.data.options.skills.forEach(id =>{
+  props.data.options.selectedSkills.forEach(id =>{
     const skill = skillService.get(id);
     if (skill){
       res.push(skill);
@@ -110,15 +122,16 @@ export default {
 				</div>
 			</div>
 
-			<div class="content"  v-if="inheritedSkills.length > 0 || selectedSkills.length > 0">
-        <h4>Selected Skills</h4>
+			<div class="content"  v-if="selectedSkills.length > 0">
+        <h5>Selected Skills</h5>
         <skill-summary
           v-for="skill in selectedSkills"
           :key="skill.id"
           :skill="skill"
         />
-
-        <h4>Inhehrited Skills</h4>
+      </div>
+      <div class="content"  v-if="inheritedSkills.length > 0">
+        <h5>Inhehrited Skills</h5>
         <skill-summary
           v-for="skill in inheritedSkills"
           :key="skill.id"
@@ -133,12 +146,29 @@ export default {
 </template>
 
 <style>
+
+div.card.level{
+  margin-bottom: 0 !important;
+}
+
 .contract {
   border: 1px solid greenyellow;
 }
 
-.fusion {
-  border: 1px solid orangered;
+.double {
+  border: 1px solid lightskyblue;
+}
+
+.triple {
+  border: 1px solid lightpink;
+}
+
+.rebirth {
+  border: 1px solid palegoldenrod;
+}
+
+.level {
+  border: 1px solid #9354c0;
 }
 
 .o-modal__content{
