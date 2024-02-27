@@ -18,8 +18,7 @@ import _ from 'lodash'
 const search = ref("");
 const results = ref([]);
 
-const nodes = ref([])
-const edges = ref([])
+const elements = ref([])
 
 const onInput = debounce(() => {
     findDemon()
@@ -31,7 +30,7 @@ function findDemon(){
 }
 
 function nextId() {
-  const n = nodes.value.filter(function(i) {
+  const n = elements.value.filter(function(i) {
     return Object.hasOwn(i, 'position')
   })
   if (n.length > 0){
@@ -106,7 +105,7 @@ function onRemoveNode(id){
           </div>
           <div class="column">
             <div class="container" @drop="onDrop" style="width:100%; height:600px; background-color: rgb(7, 39, 60);">
-              <VueFlow :nodes="nodes" :edges="edges" @dragover="onDragOver" @dragleave="onDragLeave" @connect="onConnect" :connection-radius="30" connection-mode="strict" :delete-key-code="null">
+              <VueFlow v-model="elements" @dragover="onDragOver" @dragleave="onDragLeave" @connect="onConnect" :connection-radius="30" connection-mode="strict" :delete-key-code="null">
                 <template #node-demon="nodeDemonProps">
                   <DemonNode v-bind="nodeDemonProps" @clone-node="onCloneNode" @remove-node="onRemoveNode"/>
                 </template>

@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { Handle, Position, useVueFlow, useNodesData, useHandleConnections } from '@vue-flow/core'
 import { NodeToolbar } from '@vue-flow/node-toolbar'
 
@@ -23,7 +23,38 @@ const connections = useHandleConnections({
 })
 const sourceData = useNodesData(() => connections.value.map((connection) => connection.source))
 
-const skills = ref([]);
+const inheritedSkills = computed(() => {
+  const res = [];
+  sourceData.value.forEach(node => {
+    node.data.options.skills.forEach(id =>{
+      const skill = skillService.get(id);
+      if (skill){
+        res.push(skill);
+      }
+    })
+  });
+
+  return res;
+})
+
+
+const selectedSkills = computed(() => {
+  const res = [];
+  props.data.options.skills.forEach(id =>{
+    const skill = skillService.get(id);
+    if (skill){
+      res.push(skill);
+    }
+  })
+
+
+  return res;
+})
+
+
+onMounted(() => {
+  console.log(`DemonNode ${props.data.id} created`)
+})
 
 // Link Modal
 const oruga = useOruga();
@@ -79,11 +110,19 @@ export default {
 				</div>
 			</div>
 
-			<div class="content"  v-if="skills.length > 0">
+			<div class="content"  v-if="inheritedSkills.length > 0 || selectedSkills.length > 0">
+        <h4>Selected Skills</h4>
         <skill-summary
-          v-for="skill in skills"
+          v-for="skill in selectedSkills"
           :key="skill.id"
-          v-bind="skill"
+          :skill="skill"
+        />
+
+        <h4>Inhehrited Skills</h4>
+        <skill-summary
+          v-for="skill in inheritedSkills"
+          :key="skill.id"
+          :skill="skill"
         />
 			</div>
 		</div>
