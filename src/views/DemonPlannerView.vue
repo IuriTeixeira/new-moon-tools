@@ -14,6 +14,10 @@ const { onDragStart, onDragOver, onDrop, onDragLeave, isDragging } = useDragAndD
 import debounce from "@/services/demonPlanner/debounce"
 import demonService from "@/services/demonService";
 import _ from 'lodash'
+//---
+import ImportExportModal from '@/components/demon/ImportExportModal.vue'
+import { useOruga } from "@oruga-ui/oruga-next";
+const oruga = useOruga();
 
 const search = ref("");
 const results = ref([]);
@@ -45,6 +49,21 @@ function nextId() {
   return "demonnode_1";
 }
 
+function openImportExportModal() {
+  oruga.modal.open({
+    parent: this,
+    component: ImportExportModal,
+    custom: true,
+    trapFocus: true,
+    props: {
+      data: elements
+    },
+    events: {
+      ingest: onIngest
+    },
+    width: 960,
+  });
+}
 
 const { addEdges, removeEdges, addNodes, removeNodes } = useVueFlow()
 
@@ -82,6 +101,11 @@ function onRemoveNode(id){
   removeNodes(id);
 }
 
+function onIngest(json){
+  const data = JSON.parse(json)
+  elements.value = data;
+}
+
 </script>
 
 <template>
@@ -100,6 +124,7 @@ function onRemoveNode(id){
                     :key="demon.ID" 
                     :draggable="true" @dragstart="onDragStart($event, 'demon', demon, nextId())">{{ demon.name }}</div>
                 </div>
+                <o-button type="button" @click="openImportExportModal">Import/Export</o-button>
               </div>
             </div>
           </div>

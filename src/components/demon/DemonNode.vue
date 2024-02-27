@@ -68,7 +68,7 @@ onMounted(() => {
   console.log(`DemonNode ${props.data.id} created`)
 })
 
-// Link Modal
+// EditDemon Modal
 const oruga = useOruga();
 
 function editNode() {
