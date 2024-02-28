@@ -30,6 +30,18 @@ const connections = useHandleConnections({
 })
 const sourceData = useNodesData(() => connections.value.map((connection) => connection.source))
 
+const inheritanceIssues = computed(() => {
+  const response = []
+  const demonInheritanceRestrictions = demon.value.inheritanceRestrictions;
+  inheritedSkills.value.forEach((skill) => {
+    const skillInheritance = skill.inheritanceRestriction;
+    if (!demonInheritanceRestrictions[skillInheritance.toLowerCase()]){
+      response.push(`${demon.value.name} cannot inherit ${skill.name}: Missing inheritance feature '${skillInheritance}'`)
+    }
+  })
+  return response;
+});
+
 const inheritedSkills = computed(() => {
   const inhskills = []
   const a = [];
@@ -131,6 +143,14 @@ export default {
 					<p class="title is-6">{{demon.name}}</p>
 					<p class="subtitle is-7">Lv {{ data.options.level }} - {{ data.options.type }}</p>
 				</div>
+        <o-tooltip position="bottom" multiline v-if="inheritanceIssues.length > 0">
+          <o-icon pack="mdi" class="icon has-text-warning node-alert" icon="alert" />
+          <template #content>
+              <div v-for="msg in inheritanceIssues">
+                <p class="inheritance-issue-message">{{ msg }}</p>
+              </div>
+          </template>
+    </o-tooltip>
 			</div>
 
 			<div class="content"  v-if="selectedSkills.length > 0">
@@ -180,6 +200,11 @@ div.card.level{
 
 .level {
   border: 1px solid #9354c0;
+}
+
+.inheritance-issue-message {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #232323;
 }
 
 .o-modal__content{
