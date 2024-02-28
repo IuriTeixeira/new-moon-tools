@@ -167,4 +167,9 @@ div.nodes {
 @import '@vue-flow/minimap/dist/style.css';
 // import default controls styles
 @import '@vue-flow/controls/dist/style.css';
+
+.vue-flow__handle {
+  width: 12px;
+  height: 12px;
+}
 </style>

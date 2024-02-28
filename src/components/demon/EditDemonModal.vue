@@ -34,7 +34,7 @@ onMounted(() => {
 	props.demon.acquiredSkills.forEach((element) => {
     var skill = skillService.get(element.id);
 		var selected = props.options.selectedSkills.some(function(i){
-			return element == i;
+			return element.id == i;
 		});
     acquiredSkills.value.push({id: skill.id, name: skill.name, inherit: selected})
   })

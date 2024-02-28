@@ -31,13 +31,14 @@ const connections = useHandleConnections({
 const sourceData = useNodesData(() => connections.value.map((connection) => connection.source))
 
 const inheritedSkills = computed(() => {
+  const inhskills = []
   const a = [];
   sourceData.value.forEach(node => {
     node.data.options.selectedSkills.forEach(id =>{
       const skill = skillService.get(id);
       if (skill){
         a.push(skill);
-        props.data.options.inheritedSkills.push(id);
+        inhskills.push(id);
       }
     })
   });
@@ -48,11 +49,14 @@ const inheritedSkills = computed(() => {
       const skill = skillService.get(id);
       if (skill){
         b.push(skill);
+        inhskills.push(id);
       }
     })
   });
 
   const res = [...new Set([...a, ...b])];
+  const distinct = [...new Set(inhskills)];
+  props.data.options.inheritedSkills = distinct;
   return res;
 })
 

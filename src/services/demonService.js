@@ -16,7 +16,7 @@ export default {
     searchByName(name=''){
         if (name !=''){
             let demons = storage.filter(function (item){
-                return item.name.toLowerCase().includes(name.toLowerCase()) && item.negotiation.affabilityThreshold != 0 && item.negotiation.fearThreshold != 0
+                return item.name.toLowerCase().includes(name.toLowerCase())
             })
             
             return demons;
