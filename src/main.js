@@ -8,8 +8,8 @@ const customBulmaConfig = {
 	...bulmaConfig,
 }
 import '@mdi/font/css/materialdesignicons.css'
-import '@oruga-ui/theme-oruga/dist/oruga.css'
 import '@oruga-ui/theme-bulma/dist/bulma.css'
+import '@oruga-ui/theme-oruga/dist/oruga-full.css'
 import './assets/styles/main.scss'
 
 const app = createApp(App)

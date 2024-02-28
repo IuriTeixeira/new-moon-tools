@@ -4,6 +4,7 @@ import { Handle, Position, useVueFlow, useNodesData, useHandleConnections } from
 import { NodeToolbar } from '@vue-flow/node-toolbar'
 
 import SkillSummary from '@/components/demon/SkillSummary.vue'
+import demonService from "@/services/demonService";
 import skillService from "@/services/skillService";
 //---
 import EditDemonModal from "@/components/demon/EditDemonModal.vue"
@@ -17,6 +18,12 @@ const props = defineProps({
 
 const emit = defineEmits(['cloneNode', 'removeNode'])
 //-----
+
+const demon = computed(() => {
+  if(props.data.demonId != 0){
+    return demonService.get(props.data.demonId)
+  }
+})
 
 const connections = useHandleConnections({
   type: 'target'
@@ -78,7 +85,7 @@ function editNode() {
     custom: true,
     trapFocus: true,
     props: {
-      demon: props.data.demon,
+      demon: demon.value,
       options: props.data.options,
     },
     width: 960,
@@ -113,12 +120,12 @@ export default {
 			<div class="media">
 				<div class="media-left">
 					<figure class="image is-36x36">
-						<img :src="'./img/demon/' + data.demon.baseDemonID +'.png'" :alt="data.demon.name">
+						<img :src="'./img/demon/' + demon.baseDemonID +'.png'" :alt="demon.name">
 					</figure>
 				</div>
 				<div class="media-content">
-					<p class="title is-6">{{data.demon.name}}</p>
-					<p class="subtitle is-7">Lv {{ data.options.level }}</p>
+					<p class="title is-6">{{demon.name}}</p>
+					<p class="subtitle is-7">Lv {{ data.options.level }} - {{ data.options.type }}</p>
 				</div>
 			</div>
 

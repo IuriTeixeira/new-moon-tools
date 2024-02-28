@@ -122,14 +122,13 @@ function onIngest(json){
                   <div class="vue-flow__node-demon" 
                     v-for="demon in results"
                     :key="demon.ID" 
-                    :draggable="true" @dragstart="onDragStart($event, 'demon', demon, nextId())">{{ demon.name }}</div>
+                    :draggable="true" @dragstart="onDragStart($event, 'demon', demon, nextId())">{{ demon.name }} Lv. {{ demon.baseLevel }}</div>
                 </div>
-                <o-button type="button" @click="openImportExportModal">Import/Export</o-button>
               </div>
             </div>
           </div>
           <div class="column">
-            <div class="container" @drop="onDrop" style="width:100%; height:600px; background-color: rgb(7, 39, 60);">
+            <div class="container" @drop="onDrop" style="width:100%; height:900px; background-color: rgb(7, 39, 60);">
               <VueFlow v-model="elements" @dragover="onDragOver" @dragleave="onDragLeave" @connect="onConnect" :connection-radius="30" connection-mode="strict" :delete-key-code="null">
                 <template #node-demon="nodeDemonProps">
                   <DemonNode v-bind="nodeDemonProps" @clone-node="onCloneNode" @remove-node="onRemoveNode"/>
@@ -144,6 +143,7 @@ function onIngest(json){
                 <Background variant="dots" :gap="10" :size="1" patternColor="#225765" />
               </VueFlow>
             </div>
+            <o-button type="button" @click="openImportExportModal">Import/Export</o-button>
           </div>
         </div>
       </div>
@@ -153,6 +153,12 @@ function onIngest(json){
 
 
 <style lang="scss">
+div.nodes {
+  overflow-y:auto;
+  overflow-x:hidden;
+  max-height:840px;
+}
+
 /* import the necessary styles for Vue Flow to work */
 @import '@vue-flow/core/dist/style.css';
 /* import the default theme, this is optional but generally recommended */

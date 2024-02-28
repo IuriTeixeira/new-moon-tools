@@ -19,7 +19,6 @@ const level = ref(props.options.level)
 const type = ref(props.options.type)
 const defaultSkills = ref([])
 const acquiredSkills = ref([])
-const inheritedSkills = ref([])
 
 onMounted(() => {
 	//Default Skills
@@ -75,21 +74,24 @@ function onSave(){
         @click.="$emit('close')"/>
     </header>
     <section class="modal-card-body">
-      <o-field label="Set Level">
-				<o-input type="number" min=1 max=99 v-model="level"></o-input>
+      <o-field grouped>
+				<o-field label="Level">
+					<o-input type="number" min=1 max=98 v-model="level"></o-input>
+				</o-field>
+				<o-field label="How is this Demon Obtained?">
+					<o-select v-model="type" class="is-fullwidth">
+						<option value="contract">Contract</option>
+						<option value="double">Double Fusion</option>
+						<option value="triple">Triple Fusion</option>
+						<option value="rebirth">Rebirth</option>
+						<option value="level">Level</option>
+					</o-select>
+				</o-field>
 			</o-field>
-			<o-field label="Incense">
-      <o-select v-model="type" class="is-fullwidth">
-        <option value="contract">Contract</option>
-				<option value="double">Double Fusion</option>
-				<option value="triple">Triple Fusion</option>
-				<option value="rebirth">Rebirth</option>
-				<option value="level">Level</option>
-      </o-select>
-    </o-field>
 			<div class="content">
-				<h3>Mark Skills to Inherit</h3>
-				<div class="columns is-mobile is-centered">
+				<h3 style="text-align:center;">Mark Skills to Inherit</h3>
+				<hr/>
+				<div class="columns is-mobile is-centered" style="overflow-y:auto; overflow-x:hidden; height:700px;">
 					<div class="column">
 						<h4>Default Skills</h4>
 						<skill-selection
@@ -102,14 +104,6 @@ function onSave(){
 						<h4>Acquired Skills</h4>
 						<skill-selection
 							v-for="skill in acquiredSkills"
-							:key="skill.id"
-							:skill="skill"
-						/>
-					</div>
-					<div class="column">
-						<h4>Inherited Skills</h4>
-						<skill-selection
-							v-for="skill in skills"
 							:key="skill.id"
 							:skill="skill"
 						/>

@@ -28,7 +28,7 @@ export default function useDragAndDrop() {
     if (event.dataTransfer) {
 			let dto = {
         id: id,
-				demon: demon,
+				demonId: demon.id,
 				options: {
 					type: "contract",
 					level: demon.baseLevel,
