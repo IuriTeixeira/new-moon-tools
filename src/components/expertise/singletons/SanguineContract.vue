@@ -19,26 +19,22 @@
         </thead>
         <tbody>
           <tr>
-            <th>Summon</th>
-            <td>Class 2 Rank 0</td>
-            <td>40%</td>
-            <td>{{ parseExpertise(expertise.summon.value * 0.4) }}</td>
+            <th>Fusion</th>
+            <td>Class 1 Rank 0</td>
+            <td>20%</td>
+            <td>{{ parseExpertise(expertise.fusion.value * 0.4) }}</td>
           </tr>
           <tr>
             <th>Demonology</th>
             <td>Class 2 Rank 0</td>
             <td>40%</td>
-            <td>
-              {{ parseExpertise(expertise.demonology.value * 0.4) }}
-            </td>
+            <td>{{ parseExpertise(expertise.demonology.value * 0.4) }}</td>
           </tr>
           <tr>
-            <th>Fusion</th>
-            <td>Class 1 Rank 0</td>
-            <td>20%</td>
-            <td>
-              {{ parseExpertise(expertise.fusion.value * 0.2) }}
-            </td>
+            <th>Summon</th>
+            <td>Class 2 Rank 0</td>
+            <td>40%</td>
+            <td>{{ parseExpertise(expertise.summon.value * 0.2) }}</td>
           </tr>
         </tbody>
       </table>
@@ -130,16 +126,16 @@ export default {
       else return false;
     },
     total() {
-      let rapid = this.expertise.summon.value * 0.2;
+      let rapid = this.expertise.summon.value * 0.4;
       let supportMagic = this.expertise.demonology.value * 0.4;
-      let bless = this.expertise.fusion.value * 0.4;
+      let bless = this.expertise.fusion.value * 0.2;
 
       return Number.parseInt(rapid + supportMagic + bless);
     },
     classRank() {
-      let summon = this.expertise.summon.value * 0.2;
+      let summon = this.expertise.summon.value * 0.4;
       let demonology = this.expertise.demonology.value * 0.4;
-      let fusion = this.expertise.fusion.value * 0.4;
+      let fusion = this.expertise.fusion.value * 0.2;
 
       var a = Number.parseInt(summon + demonology + fusion) / 100;
       var b = a.toString();
