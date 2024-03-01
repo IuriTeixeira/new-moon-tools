@@ -24,7 +24,7 @@ const dropFile = ref({});
 function copy() {
 	navigator.clipboard.writeText(output.value);
 	oruga.notification.open({
-			message: 'Link copied to clipboard!',
+			message: 'Demon Planner Data copied to clipboard!',
 			rootClass: 'toast-notification',
 			position: 'top',
 			duration: 2000
@@ -80,56 +80,55 @@ function ingest() {
     </header>
     <section class="modal-card-body">
 			<div class="container">
-				<o-tabs v-model="activeTab" :expanded="true">
+				<o-tabs v-model="activeTab" class="is-fullwidth" type="boxed">
 					<o-tab-item :value="0" label="Export">
 						<div class="columns">
 							<div class="column">
-								<o-field @click="copy" label="Click to Copy to Clipboard">
-									<o-input type="textarea" class="is-fullwidth" style="resize:none;" disabled v-model="output"></o-input>
+								<o-field @click="copy" label="Copy Planner Data">
+									<o-input type="textarea" class="is-fullwidth" style="resize:none; cursor:crosshair !important;" disabled v-model="output"></o-input>
 								</o-field>
 							</div>
-							<div class="column is-narrow is-centered is-vcentered">
-								<div class="content"> or </div>
-							</div>
+							<div class="is-divider-vertical" data-content="OR"></div>
 							<div class="column">
 								<o-field label="Save plan to File">
 									<o-input v-model="fname" placeholder="filename..." />
+									<o-button variant="primary" label="Save" @click="download" />
 								</o-field>
-								<o-button variant="primary" label="Save" @click="download" />
 							</div>
 						</div>
 					</o-tab-item>
 					<o-tab-item :value="1" label="Import">
 						<div class="columns">
 							<div class="column">
-								<o-field label="Paste Demon Planner Data Here">
+								<o-field label="Paste Planner Data">
 									<o-input type="textarea" class="is-fullwidth" style="resize:none;" v-model="input"></o-input>
 								</o-field>
-								<o-button type="button" @click="ingest">Import</o-button>
+								<o-button type="button" class="is-fullwidth" variant="primary" @click="ingest">Import</o-button>
 							</div>
-							<div class="column is-narrow is-centered is-vcentered">
-								<div class="content"> or </div>
-							</div>
+							<div class="is-divider-vertical" data-content="OR"></div>
 							<div class="column">
-								<o-field>
-									<o-upload v-model="dropFile" drag-drop :multiple="false">
-										<section class="ex-center">
-											<p style="text-align:center;">
+								<o-field label="Import a File">
+									<o-upload v-model="dropFile" drag-drop :multiple="false" style="height:128px;">
+										<section class="upload-text-center">
+											<p style="margin-top: 16px;">
 												<o-icon icon="upload" size="is-large" />
 											</p>
-											<p style="text-align:center;">Drop your file here or click to upload</p>
+											<p>Drop your file here or click to upload</p>
 										</section>
 									</o-upload>
 									</o-field>
 									<div class="tags" v-if="dropFile.name">
 										<span>
 											{{ dropFile.name }}
-											<o-button
-												icon-left="upload"
-												size="small"
-												native-type="button"
-												@click="upload()">
-											</o-button>
+											<o-tooltip label="Upload this File" variant="primary" position="top">
+												<o-button
+													icon-left="upload"
+													size="small"
+													variant="primary"
+													class="is-circular"
+													@click="upload()">
+												</o-button>
+											</o-tooltip>
 										</span>
 								</div>
 							</div>
@@ -139,7 +138,6 @@ function ingest() {
 			</div>
     </section>
     <footer class="modal-card-foot">
-      <o-button type="button" @click="$emit('close')">Close</o-button>
     </footer>
   </div>
 </template>
@@ -168,5 +166,9 @@ function ingest() {
 
 	.is-fullwidth {
 		width:100%;
+	}
+	
+	.upload-text-center {
+		text-align: center;
 	}
 </style>

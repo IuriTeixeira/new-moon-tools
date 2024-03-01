@@ -126,9 +126,15 @@ export default {
 
 <template>
   <NodeToolbar :is-visible="data.toolbarVisible" position="right">
-    <button @click="editNode">Edit</button>
-    <button @click="cloneNode">Clone</button>
-    <button @click="removeNode">Delete</button>
+    <o-tooltip label="Edit Demon Properties" variant="primary" position="top">
+      <o-button variant="primary" size="small" icon-left="pencil" class="is-circular" @click="editNode"/>
+    </o-tooltip>
+    <o-tooltip label="Clone this Demon" variant="primary" position="top">
+      <o-button variant="primary" size="small" icon-left="content-copy" class="is-circular" @click="cloneNode"/>
+    </o-tooltip>
+    <o-tooltip label="Remove this Demon" variant="primary" position="top">
+      <o-button variant="primary" size="small" icon-left="close-thick" class="is-circular" @click="removeNode"/>
+    </o-tooltip>
   </NodeToolbar>
 
   <div class="card" :class="data.options.type">
@@ -198,7 +204,7 @@ div.card.level{
   border: 1px solid palegoldenrod;
 }
 
-.level {
+.vue-flow__node .level {
   border: 1px solid #9354c0;
 }
 
@@ -209,5 +215,9 @@ div.card.level{
 
 .o-modal__content{
 	background-color: rgba(0,0,0,0) !important;
+}
+
+.vue-flow__node-toolbar button {
+  margin: 0 0.1em;
 }
 </style>

@@ -13,13 +13,15 @@ const { onDragStart, onDragOver, onDrop, onDragLeave, isDragging } = useDragAndD
 //---
 import debounce from "@/services/demonPlanner/debounce"
 import demonService from "@/services/demonService";
+import DemonDrag from '@/components/demon/DemonDrag.vue'
 import _ from 'lodash'
 //---
 import ImportExportModal from '@/components/demon/ImportExportModal.vue'
 import { useOruga } from "@oruga-ui/oruga-next";
 const oruga = useOruga();
 
-const search = ref("");
+const filterByDemonName = ref("");
+const filterBySkillName = ref("");
 const results = ref([]);
 
 const elements = ref([])
@@ -28,8 +30,18 @@ const onInput = debounce(() => {
     findDemon()
   }, 500)
 
-function findDemon(){
-  let demons = demonService.searchByName(search.value)
+async function findDemon(){
+
+  let demons = [];
+
+  if (filterByDemonName.value.length > 0){
+    demons = await demonService.searchByName(filterByDemonName.value)
+  }
+
+  if (filterBySkillName.value.length > 0){
+    demons = await demonService.searchBySkill(filterBySkillName.value)
+  }
+  
   results.value = demons;
 }
 
@@ -110,20 +122,62 @@ function onIngest(json){
 
 <template>
   <div id="flowchart">
+    <section class="hero is-warning is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-2 has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img alt="New Moon logo" src="@/assets/logo.png" />
+              </figure>
+            </div>
+            <div class="column is-10">
+              <!-- Left side -->
+              <h1 class="title">Demon Planner</h1>
+              <p class="subtitle">In Beta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="section">
       <div class="container">
         <div class="columns">
           <div class="column is-one-quarter">
             <div class="container">
               <div class="content">
-                <h1>Demons</h1>
-                <o-input v-model="search" @input="onInput"></o-input>
-                <div class="nodes">
-                  <div class="vue-flow__node-demon" 
-                    v-for="demon in results"
-                    :key="demon.ID" 
-                    :draggable="true" @dragstart="onDragStart($event, 'demon', demon, nextId())">{{ demon.name }} Lv. {{ demon.baseLevel }}</div>
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      Filters
+                    </p>
+                  </header>
+                  <div class="card-content">
+                    <o-field>
+                      <o-input v-model="filterByDemonName" @input="onInput" placeholder="Search by Demon Name..." :disabled="filterBySkillName.length > 0"></o-input>
+                    </o-field>
+                    <o-field>
+                      <o-input v-model="filterBySkillName" @input="onInput" placeholder="Search by Skills..." :disabled="filterByDemonName.length > 0"></o-input>
+                    </o-field>
+                  </div>
                 </div>
+                <div class="card mt-2 pb-4" v-if="results.length > 0">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      Results
+                    </p>
+                  </header>
+                  <div class="nodes">
+                    <DemonDrag
+                      v-for="demon in results"
+                      :key="demon.ID" 
+                      :demon="demon"
+                      :draggable="true" 
+                      @dragstart="onDragStart($event, 'demon', demon, nextId())">
+                    </DemonDrag>
+                  </div>
+                </div> 
+                <o-button variant="primary" type="button" class="is-fullwidth mt-2" @click="openImportExportModal">Import/Export</o-button> 
               </div>
             </div>
           </div>
@@ -143,7 +197,6 @@ function onIngest(json){
                 <Background variant="dots" :gap="10" :size="1" patternColor="#225765" />
               </VueFlow>
             </div>
-            <o-button type="button" @click="openImportExportModal">Import/Export</o-button>
           </div>
         </div>
       </div>
@@ -156,8 +209,10 @@ function onIngest(json){
 div.nodes {
   overflow-y:auto;
   overflow-x:hidden;
-  max-height:840px;
+  max-height:592px;
 }
+
+@import '@/assets/styles/main.scss';
 
 /* import the necessary styles for Vue Flow to work */
 @import '@vue-flow/core/dist/style.css';
@@ -171,5 +226,18 @@ div.nodes {
 .vue-flow__handle {
   width: 12px;
   height: 12px;
+}
+
+.vue-flow__controls-button {
+  background-color: $lavender;
+  border-bottom-color: $lavender-dark;
+}
+
+.vue-flow__controls-button svg path{
+  fill:$text;
+}
+
+.vue-flow__controls-button:hover {
+  background-color: $lavender-dark;
 }
 </style>

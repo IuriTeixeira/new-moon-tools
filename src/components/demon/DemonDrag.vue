@@ -10,13 +10,11 @@ const props = defineProps({
 </script>
 
 <script>
-export default {
-  inheritAttrs: false
-}
+
 </script>
 
 <template>
-  <div class="card">
+	<div class="vue-flow__node-demon">
 		<div class="card-content">
 			<div class="media">
 				<div class="media-left">

@@ -22,6 +22,11 @@ $body-color: hsl(0, 0%, 80%);
 $custom-colors: null !default;
 $custom-shades: null !default;
 
+$secondary: hsl(273, 29%, 24%);
+$secondary-dark: findDarkColor($secondary);
+$secondary-light: findLightColor($secondary);
+$secondary-invert: findColorInvert($secondary);
+
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: mergeColorMaps(
     (
@@ -77,6 +82,12 @@ $colors: mergeColorMaps(
             $danger-light,
             $danger-dark,
         ),
+        "secondary": (
+            $secondary,
+            $secondary-dark,
+            $secondary-light,
+            $secondary-invert,
+        ),
     ),
     $custom-colors
 );
@@ -88,6 +99,7 @@ $link-focus-border: $primary;
 
 @import "bulma/bulma";
 @import '@oruga-ui/theme-bulma/dist/scss/bulma';
+@import "bulma-extensions/bulma-divider/src/sass/index.sass";
 
 .o-ctrl-sel{
 	width:100%;
@@ -136,4 +148,70 @@ $link-focus-border: $primary;
 		border-bottom: 1px solid #222;
 		border-right: 0px solid #222;
 	}
+}
+
+div.control.select:has(.is-fullwidth){
+    width:100%;  
+}
+
+select {
+    border-color:$lavender !important;
+}
+
+select.is-fullwidth{
+    width:100%;
+}
+
+.select select option {
+    color: $text;
+}
+
+input[type=text] {
+    border-color: $lavender;
+}
+
+.textarea {
+    border-color: $lavender;
+}
+
+.is-circular { 
+    border-radius: 50% !important; 
+}
+.b-tooltip.is-secondary .b-tooltip-content {
+    color: $text
+}
+
+.is-divider[data-content]::after, .is-divider-vertical[data-content]::after {
+    background-color: $grey-darker;
+}
+
+.modal-card-head {
+    background-color: $lavender;
+    border-bottom-color: $lavender-dark;
+}
+
+.modal-card hr {
+    background-color: $lavender-dark;
+}
+
+.modal-card-foot {
+    border-top-color: $lavender;
+}
+
+.b-tabs .tabs:not(.is-toggle), .b-tabs .tabs:not(.is-toggle-rounded) {
+    border-bottom-color: $lavender-dark;
+}
+
+.is-fullwidth > nav > div {
+    width:100%;
+}
+
+.b-tabs .tabs.is-boxed div a.is-active{
+    background-color: $lavender;
+    border-color: $lavender-dark;
+    color: $text-strong;
+}
+
+.level {
+    border-color: transparent;
 }

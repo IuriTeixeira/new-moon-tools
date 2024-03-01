@@ -36,7 +36,7 @@
     <o-field label="Show Reports and Moon Fragments">
       <o-switch v-model="options.reports"></o-switch>
     </o-field>
-    <o-button @click.prevent="reset" icon-left="refresh">Reset Options</o-button>
+    <o-button @click="reset" variant="primary" class="is-fullwidth" icon-left="refresh">Reset Options</o-button>
   </div>
 </template>
 

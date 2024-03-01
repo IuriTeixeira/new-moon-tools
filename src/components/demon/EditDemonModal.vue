@@ -66,7 +66,7 @@ function onSave(){
 <template>
   <div class="modal-card" style="width: auto">
     <header class="modal-card-head">
-      <p class="modal-card-title">Editing {{demon.name}}</p>
+      <p class="modal-card-title">Editing <span class="has-text-weight-bold">{{demon.name}}</span></p>
       <o-icon
         clickable
         native-type="button"
@@ -91,7 +91,7 @@ function onSave(){
 			<div class="content">
 				<h3 style="text-align:center;">Mark Skills to Inherit</h3>
 				<hr/>
-				<div class="columns is-mobile is-centered" style="overflow-y:auto; overflow-x:hidden; height:700px;">
+				<div class="columns is-mobile is-centered" style="overflow-y:auto; overflow-x:hidden; height:650px;">
 					<div class="column">
 						<h4>Default Skills</h4>
 						<skill-selection
@@ -112,19 +112,15 @@ function onSave(){
 			</div>
     </section>
     <footer class="modal-card-foot">
-      <o-button type="button" @click="onSave">Save Changes</o-button>
+      <o-button variant="primary" type="button" size="large" class="is-fullwidth" @click="onSave">Save Changes</o-button>
     </footer>
   </div>
 </template>
 
 
 <style lang="scss" scoped>
-  .modal-card {
-    display: flex;
-    flex-direction: column;
-    max-height: calc(100vh - 40px);
-    overflow: hidden;
-  }
+
+@import '@/assets/styles/main.scss';
 
   @media screen and (min-width: 769px) {
     .modal-card {
@@ -138,4 +134,5 @@ function onSave(){
     overflow: auto;
     position: relative;
   }
+
 </style>

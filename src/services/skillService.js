@@ -13,13 +13,21 @@ export default {
         return null
     },
 
+    getByName(name=''){
+        const skill = storage.find((item)=>{
+            return item.name.toLowerCase() == name.toLowerCase()
+        })
+
+        return skill;
+    },
+
     searchByName(name=''){
         if (name !=''){
             let skills = storage.filter(function (item){
-                return item.name.toLowerCase().includes(name.toLowerCase()) 
+                return item.name != null && item.name.length > 0 && item.name.toLowerCase().includes(name.toLowerCase()) 
             })
             return skills;
         }
-        return null;
+        return [];
     }
 }

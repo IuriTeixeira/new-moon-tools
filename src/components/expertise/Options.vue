@@ -149,8 +149,8 @@
 			</o-switch>
 		</o-field>
     <o-field grouped>
-      <o-button expanded @click="reset" icon-left="refresh">Reset Options</o-button>
-      <o-button expanded @click="link" icon-left="link">Generate Link</o-button>
+      <o-button expanded variant="primary" @click="reset" icon-left="refresh">Reset Options</o-button>
+      <o-button expanded variant="info" @click="link" icon-left="link">Generate Link</o-button>
     </o-field>
   </div>
 </template>

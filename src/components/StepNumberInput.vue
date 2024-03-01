@@ -4,7 +4,7 @@
     <template v-else>{{ title }}</template>
     <o-field>
       <p class="control" @click="stepLeft(step)">
-        <o-button type="is-info" :disabled="disabledMin">
+        <o-button variant="primary" :disabled="disabledMin">
           <o-icon icon="chevron-left"></o-icon>
         </o-button>
       </p>
@@ -15,7 +15,7 @@
         v-model="computedValue"
       ></o-input>
       <p class="control" @click="stepRight(step)">
-        <o-button type="is-info" :disabled="disabledMax">
+        <o-button variant="primary" :disabled="disabledMax">
           <o-icon icon="chevron-right"></o-icon>
         </o-button>
       </p>

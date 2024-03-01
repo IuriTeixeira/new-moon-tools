@@ -4,12 +4,12 @@
     <template v-else>{{ title }}</template>
     <o-field>
       <p class="control" @click="stepLeft(step2)">
-        <o-button type="is-primary" :disabled="disabledMin">
+        <o-button variant="primary" :disabled="disabledMin">
           <o-icon icon="chevron-double-left"></o-icon>
         </o-button>
       </p>
       <p class="control" @click="stepLeft(step1)">
-        <o-button type="is-info" :disabled="disabledMin">
+        <o-button variant="primary" :disabled="disabledMin">
           <o-icon icon="chevron-left"></o-icon>
         </o-button>
       </p>
@@ -20,12 +20,12 @@
         v-model.number="computedValue"
       ></o-input>
       <p class="control" @click="stepRight(step1)">
-        <o-button type="is-info" :disabled="disabledMax">
+        <o-button variant="primary" :disabled="disabledMax">
           <o-icon icon="chevron-right"></o-icon>
         </o-button>
       </p>
       <p class="control" @click="stepRight(step2)">
-        <o-button type="is-primary" :disabled="disabledMax">
+        <o-button variant="primary" :disabled="disabledMax">
           <o-icon icon="chevron-double-right"></o-icon>
         </o-button>
       </p>
@@ -139,6 +139,7 @@ export default {
 
 input[type="number"] {
   text-align: center;
+  border-color: hsl(275, 20%, 50%);
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

@@ -3,6 +3,10 @@ import _ from 'lodash'
 
 const storage = Demons;
 
+import skillService from "@/services/skillService.js"
+
+
+
 export default {
 
     get(id=0){
@@ -16,9 +20,26 @@ export default {
     searchByName(name=''){
         if (name !=''){
             let demons = storage.filter(function (item){
-                return item.name.toLowerCase().includes(name.toLowerCase())
+                return item.name != null && item.name.toLowerCase().includes(name.toLowerCase())
             })
             
+            return demons;
+        }
+        return [];
+    },
+
+    searchBySkill(name=''){
+        if (name !=''){
+            let skill = skillService.getByName(name);
+            if (!skill){
+                skill = skillService.searchByName(name)[0];
+            }
+            const demons = [];
+            for (const demon of storage){
+                if (demon.skills.includes(skill.id) || demon.acquiredSkills.some((item) => { return item.id === skill.id})){
+                    demons.push(demon);
+                }
+            }
             return demons;
         }
         return [];

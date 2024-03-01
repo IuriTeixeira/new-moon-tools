@@ -9,7 +9,7 @@
       <o-input expanded type="number" min=0 max=9 v-model="options.endRank" v-on:keyup="validate" @input="validate"></o-input>
     </o-field>
     <o-field label="Incense">
-      <o-select v-model="options.incense" class="is-fullwidth">
+      <o-select v-model="options.incense" class="is-fullwidth" style="width:100%">
         <option value=0>No Incense</option>
         <option value=1>x2</option>
         <option value=4>x5</option>
@@ -20,7 +20,7 @@
     <o-field label="Gear XP Boosts" :message="messages.xp" :variant="messages.xp ? 'danger' : ''">
       <o-input type="number" min=0 v-model="options.gearXpBoost" id="xpboost" icon-right="percent" v-on:keyup="validate" @input="validate"></o-input>
     </o-field>
-    <o-button @click="reset" icon-left="refresh">Reset Options</o-button>
+    <o-button @click="reset" variant="primary" class="is-fullwidth" icon-left="refresh">Reset Options</o-button>
   </div>
 </template>
 
@@ -56,4 +56,5 @@ export default {
 input:invalid {
   border: 2px dashed red;
 }
+
 </style>
