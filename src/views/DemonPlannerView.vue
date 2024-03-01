@@ -71,10 +71,34 @@ function openImportExportModal() {
       data: elements
     },
     events: {
-      ingest: onIngest
+      copy: onCopy,
+      download: onDownload,
+      ingest: onIngest,
     },
     width: 960,
   });
+}
+
+function onCopy() {
+  oruga.notification.open({
+    message: 'Demon planner data has been copied to the clipboard!',
+    rootClass: 'toast-notification',
+    position: 'top',
+    duration: 5000,
+    closable: true,
+    variant: 'success'
+  })
+}
+
+function onDownload(filename) {
+  oruga.notification.open({
+    message: `Demon planner data has been saved to ${filename}!`,
+    rootClass: 'toast-notification',
+    position: 'top',
+    duration: 5000,
+    closable: true,
+    variant: 'success'
+  })
 }
 
 const { addEdges, removeEdges, addNodes, removeNodes } = useVueFlow()
@@ -116,6 +140,14 @@ function onRemoveNode(id){
 function onIngest(json){
   const data = JSON.parse(json)
   elements.value = data;
+  oruga.notification.open({
+    message: 'Demon planner data has been imported!',
+    rootClass: 'toast-notification',
+    position: 'top',
+    duration: 5000,
+    closable: true,
+    variant: 'success'
+  })
 }
 
 </script>

@@ -215,3 +215,11 @@ input[type=text] {
 .level {
     border-color: transparent;
 }
+
+.is-clickable {
+    display:none;
+}
+
+.modal-card-head .is-clickable {
+    display:flex;
+}

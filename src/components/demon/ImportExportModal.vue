@@ -8,7 +8,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['close', 'ingest'])
+const emit = defineEmits(['copy', 'close', 'download', 'ingest'])
 
 const activeTab = ref(0);
 
@@ -21,28 +21,31 @@ const output = computed(() =>{
 
 const dropFile = ref({});
 
-function copy() {
-	navigator.clipboard.writeText(output.value);
-	oruga.notification.open({
-			message: 'Demon Planner Data copied to clipboard!',
-			rootClass: 'toast-notification',
-			position: 'top',
-			duration: 2000
-		})
+async function saveFile(filename, contents) {
+	var opts = {
+		suggestedName: filename,
+		types: [{
+        description: 'JSON file',
+        accept: {'application/json': ['.json']},
+      }],
+	}
+  // create a new handle
+  const newHandle = await window.showSaveFilePicker(opts);
+  // create a FileSystemWritableFileStream to write to
+  const writableStream = await newHandle.createWritable();
+  // write our file
+  await writableStream.write(contents);
+  // close the file and write the contents to disk.
+  await writableStream.close();
 }
 
-function download() {
+async function download() {
 	let text = JSON.stringify(output.value);
 	let filename = `${fname.value}.json`;
-	let element = document.createElement('a');
-	element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(text));
-	element.setAttribute('download', filename);
+	
+	await saveFile(filename, text).then(() => emit('download', filename))
 
-	element.style.display = 'none';
-	document.body.appendChild(element);
-
-	element.click();
-	document.body.removeChild(element);     
+	emit('close')
 }
 
 async function upload() {
@@ -59,6 +62,12 @@ async function parseJsonFile(file) {
     fileReader.onerror = error => reject(error)
     fileReader.readAsText(file)
   })
+}
+
+function copy() {
+	navigator.clipboard.writeText(output.value);
+  emit('close')
+  emit('copy')
 }
 
 function ingest() {
@@ -78,14 +87,14 @@ function ingest() {
         icon="close"
         @click.="$emit('close')"/>
     </header>
-    <section class="modal-card-body">
+    <section class="modal-card-body" style="height:330px;">
 			<div class="container">
 				<o-tabs v-model="activeTab" class="is-fullwidth" type="boxed">
 					<o-tab-item :value="0" label="Export">
 						<div class="columns">
 							<div class="column">
-								<o-field @click="copy" label="Copy Planner Data">
-									<o-input type="textarea" class="is-fullwidth" style="resize:none; cursor:crosshair !important;" disabled v-model="output"></o-input>
+								<o-field label="Copy Planner Data">
+									<o-input @click="copy" type="textarea" class="is-fullwidth" style="resize:none; cursor:crosshair !important;" v-model="output"></o-input>
 								</o-field>
 							</div>
 							<div class="is-divider-vertical" data-content="OR"></div>

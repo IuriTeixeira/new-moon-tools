@@ -32,7 +32,9 @@ if (uri != "") {
     message: "Build Loaded!",
     rootClass: "toast-notification",
     position: "top",
-    duration: 2000,
+    variant: "success",
+    closable: true,
+    duration: 5000,
   });
 }
 
@@ -75,17 +77,30 @@ function reset() {
 }
 
 function expertiseLinkModal() {
-  this.$oruga.modal.open({
-    parent: this,
+  oruga.modal.open({
     component: ExpertiseLinkModal,
     custom: true,
     trapFocus: true,
     props: {
-      options: this.options,
-      expertise: this.expertise,
+      options: options.value,
+      expertise: expertise.value,
+    },
+    events: {
+      copy: onCopy
     },
     width: 400,
   });
+}
+
+function onCopy() {
+  oruga.notification.open({
+    message: 'Link copied to clipboard!',
+    rootClass: 'toast-notification',
+    position: 'top',
+    duration: 5000,
+    closable: true,
+    variant: 'success'
+  })
 }
 </script>
 
