@@ -166,7 +166,7 @@ export default {
           Math.min(weaponKnowledge + gunKnowledge + magicControl + bless, 6600)
         ) / 100;
       var b = a.toString();
-      if (a === 0 || this.options.level.value < 98) {
+      if (a === 0 || this.options.level.actxx == 0) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {
         return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);
