@@ -101,7 +101,7 @@ function ingest() {
 							<div class="column">
 								<o-field label="Save plan to File">
 									<o-input v-model="fname" placeholder="filename..." />
-									<o-button variant="primary" label="Save" @click="download" />
+									<o-button variant="primary" label="Save" @click="download" :disabled="output <= 4"/>
 								</o-field>
 							</div>
 						</div>
@@ -129,7 +129,7 @@ function ingest() {
 									<div class="tags" v-if="dropFile.name">
 										<span>
 											{{ dropFile.name }}
-											<o-tooltip label="Upload this File" variant="primary" position="top">
+											<o-tooltip label="Upload this File" variant="primary" position="top" :teleport="true">
 												<o-button
 													icon-left="upload"
 													size="small"

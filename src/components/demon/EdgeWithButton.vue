@@ -66,7 +66,10 @@ export default {
       }"
       class="nodrag nopan"
     >
-      <button class="edgebutton" @click="removeEdges(id)">×</button>
+      <o-tooltip label="Remove this Connection" variant="primary" position="top" :teleport="true">
+        <o-button class="is-circular" size="small" variant="info" icon-left="close-thick" @click="removeEdges(id)"/>
+      </o-tooltip>
+      
     </div>
   </EdgeLabelRenderer>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="skill-wrapper">
-    <o-tooltip multiline size="large">
+    <o-tooltip multiline size="large" :teleport="true">
       <template v-slot:content>
         <skill-tooltip :skill="skill"/>
       </template>

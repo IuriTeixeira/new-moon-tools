@@ -126,13 +126,13 @@ export default {
 
 <template>
   <NodeToolbar :is-visible="data.toolbarVisible" position="right">
-    <o-tooltip label="Edit Demon Properties" variant="primary" position="top">
+    <o-tooltip label="Edit Demon Properties" variant="primary" position="top" :teleport="true">
       <o-button variant="primary" size="small" icon-left="pencil" class="is-circular" @click="editNode"/>
     </o-tooltip>
-    <o-tooltip label="Clone this Demon" variant="primary" position="top">
+    <o-tooltip label="Clone this Demon" variant="primary" position="top" :teleport="true">
       <o-button variant="primary" size="small" icon-left="content-copy" class="is-circular" @click="cloneNode"/>
     </o-tooltip>
-    <o-tooltip label="Remove this Demon" variant="primary" position="top">
+    <o-tooltip label="Remove this Demon" variant="primary" position="top" :teleport="true">
       <o-button variant="primary" size="small" icon-left="close-thick" class="is-circular" @click="removeNode"/>
     </o-tooltip>
   </NodeToolbar>
