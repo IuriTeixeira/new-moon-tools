@@ -101,7 +101,7 @@ function ingest() {
 							<div class="column">
 								<o-field label="Save plan to File">
 									<o-input v-model="fname" placeholder="filename..." />
-									<o-button variant="primary" label="Save" @click="download" :disabled="output <= 4"/>
+									<o-button variant="primary" label="Save" @click="download" />
 								</o-field>
 							</div>
 						</div>
