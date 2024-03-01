@@ -26,8 +26,8 @@ let params = new URLSearchParams(uri);
 reset();
 if (uri != "") {
   let hydratedValues = dataService.fromExpertiseQueryParams(params);
-  expertise = hydratedValues.expertise;
-  options = hydratedValues.options;
+  expertise.value = hydratedValues.expertise;
+  options.value = hydratedValues.options;
   oruga.notification.open({
     message: "Build Loaded!",
     rootClass: "toast-notification",
