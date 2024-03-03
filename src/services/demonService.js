@@ -17,11 +17,17 @@ export default {
         return null
     },
 
-    searchByName(name=''){
+    searchByName(name='', obtainableOnly=true){
         if (name !=''){
             let demons = storage.filter(function (item){
                 return item.name != null && item.name.toLowerCase().includes(name.toLowerCase())
             })
+
+            if (obtainableOnly) {
+                demons = demons.filter(function (item){
+                    return item.acquisition.contract || item.acquisition.fusion || item.acquisition.specialFusion || item.acquisition.itemReward || item.acquisition.eventReward
+                })
+            }
             
             return demons;
         }
