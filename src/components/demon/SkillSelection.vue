@@ -1,31 +1,37 @@
 <script setup>
 
+import { ref, onMounted } from 'vue'
+
 const props = defineProps({
-  skill: {
+  data: {
     type: Object,
     required: true,
   }
 })
+onMounted(() => {
+	console.log(props.data);
+})
+
 </script>
 
 <template>
 	<div class="columns is-mobile is-centered is-vcentered">
 		<div class="column is-narrow">
-			<o-switch v-model="skill.inherit"></o-switch>
+			<o-switch v-model="data.inherit"></o-switch>
 		</div>
 		<div class="column is-narrow">
-			<figure class="image is-24x24">
-				<img :src="'./img/skill/' + skill.id +'.png'" :alt="skill.name">
+			<figure class="image is-32x32">
+				<img :src="'./img/skill/' + data.skill.icon +'.png'" :alt="data.skill.name">
 			</figure>
 		</div>
 		<div class="column">
-			<span>{{ skill.name }}</span>
+			<span>{{ data.skill.name }}</span>
 		</div>
 	</div>
 </template>
 
-<style>
-.content figure {
+<style scoped>
+figure {
 	margin-left: 5px;
 	margin-right: -10px;
 }

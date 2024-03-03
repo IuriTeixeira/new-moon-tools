@@ -19,7 +19,7 @@ const props = defineProps({
 			<div class="columns  is-vcentered">
 				<div class="column is-narrow" style="height:100%">
 					<figure class="image is-32x32">
-						<img :src="'./img/demon/' + demon.baseDemonID +'.png'">
+						<img :src="'./img/demon/' + demon.icon +'.png'">
 					</figure>
 				</div>
 				<div class="column">

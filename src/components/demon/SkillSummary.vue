@@ -13,7 +13,7 @@ const props = defineProps({
 	<div class="columns is-mobile is-centered is-vcentered">
 		<div class="column is-narrow">
 			<figure class="image is-24x24">
-				<img :src="'./img/skill/' + skill.id +'.png'" :alt="skill.name">
+				<img :src="'./img/skill/' + skill.icon +'.png'" :alt="skill.name">
 			</figure>
 		</div>
 		<div class="column">

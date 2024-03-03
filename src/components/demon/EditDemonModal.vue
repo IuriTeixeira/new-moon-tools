@@ -28,7 +28,7 @@ onMounted(() => {
 			return element == i;
 		});
 
-    defaultSkills.value.push({id: skill.id, name: skill.name, inherit: selected})
+    defaultSkills.value.push({id: skill.id, skill: skill, inherit: selected})
   })
 
 	props.demon.acquiredSkills.forEach((element) => {
@@ -36,7 +36,7 @@ onMounted(() => {
 		var selected = props.options.selectedSkills.some(function(i){
 			return element.id == i;
 		});
-    acquiredSkills.value.push({id: skill.id, name: skill.name, inherit: selected})
+    acquiredSkills.value.push({id: skill.id, skill: skill, inherit: selected})
   })
 })
 
@@ -95,17 +95,17 @@ function onSave(){
 					<div class="column">
 						<h4>Default Skills</h4>
 						<skill-selection
-							v-for="skill in defaultSkills"
-							:key="skill.id"
-							:skill="skill"
+							v-for="data in defaultSkills"
+							:key="data.id"
+							:data="data"
 						/>
 					</div>
 					<div class="column">
 						<h4>Acquired Skills</h4>
 						<skill-selection
-							v-for="skill in acquiredSkills"
-							:key="skill.id"
-							:skill="skill"
+							v-for="data in acquiredSkills"
+							:key="data.id"
+							:data="data"
 						/>
 					</div>
 				</div>

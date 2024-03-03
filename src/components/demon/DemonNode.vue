@@ -142,7 +142,7 @@ export default {
 			<div class="media">
 				<div class="media-left">
 					<figure class="image is-36x36">
-						<img :src="'./img/demon/' + demon.baseDemonID +'.png'" :alt="demon.name">
+						<img :src="'./img/demon/' + demon.icon +'.png'" :alt="demon.name">
 					</figure>
 				</div>
 				<div class="media-content">

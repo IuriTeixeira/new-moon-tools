@@ -34,18 +34,25 @@ export default {
         return [];
     },
 
-    searchBySkill(name=''){
+    searchBySkill(name='', obtainableOnly=true){
         if (name !=''){
             let skill = skillService.getByName(name);
             if (!skill){
                 skill = skillService.searchByName(name)[0];
             }
-            const demons = [];
+            let demons = [];
             for (const demon of storage){
                 if (demon.skills.includes(skill.id) || demon.acquiredSkills.some((item) => { return item.id === skill.id})){
                     demons.push(demon);
                 }
             }
+
+            if (obtainableOnly) {
+                demons = demons.filter(function (item){
+                    return item.acquisition.contract || item.acquisition.fusion || item.acquisition.specialFusion || item.acquisition.itemReward || item.acquisition.eventReward
+                })
+            }
+
             return demons;
         }
         return [];
