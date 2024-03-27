@@ -4,9 +4,10 @@ import { ref } from 'vue'
 import { VueFlow, useVueFlow } from '@vue-flow/core'
 import { Background } from '@vue-flow/background'
 import { MiniMap } from '@vue-flow/minimap'
-import { Controls } from '@vue-flow/controls'
+import { Controls, ControlButton} from '@vue-flow/controls'
 //---
 import DemonNode from '@/components/demon/DemonNode.vue'
+import NoteNode from '@/components/demon/NoteNode.vue'
 import EdgeWithButton from '@/components/demon/EdgeWithButton.vue'
 import useDragAndDrop from '@/services/demonPlanner/useDnD'
 const { onDragStart, onDragOver, onDrop, onDragLeave, isDragging } = useDragAndDrop()
@@ -18,47 +19,67 @@ import _ from 'lodash'
 //---
 import ImportExportModal from '@/components/demon/ImportExportModal.vue'
 import { useOruga } from "@oruga-ui/oruga-next";
+import skillService from '../services/skillService'
 const oruga = useOruga();
 
 const filterByDemonName = ref("");
 const filterBySkillName = ref("");
-const results = ref([]);
+const selectedSkill = ref(null);
 
+const results = ref([]);
 const elements = ref([])
+
+const skills = ref([]);
+const isFetchingSkills = ref(false);
+
+async function onSelect (select){
+  selectedSkill.value = select;
+  let demons = []
+  demons = await demonService.searchBySkill(select.id);
+  results.value = demons;
+}
+
 
 const onInput = debounce(() => {
     findDemon()
-  }, 500)
+  }, 500
+)
+
+async function findSkills(_name){
+  isFetchingSkills.value = true;
+  if (_name.length > 2){
+    skills.value = await skillService.searchByName(_name)
+  }
+  else {
+    skills.value = []
+    results.value = []
+  }
+  isFetchingSkills.value = false;
+}
 
 async function findDemon(){
-
   let demons = [];
-
   if (filterByDemonName.value.length > 0){
     demons = await demonService.searchByName(filterByDemonName.value)
   }
 
-  if (filterBySkillName.value.length > 0){
-    demons = await demonService.searchBySkill(filterBySkillName.value)
-  }
-  
   results.value = demons;
 }
 
-function nextId() {
+function nextId(type) {
   const n = elements.value.filter(function(i) {
-    return Object.hasOwn(i, 'position')
+    return Object.hasOwn(i, 'position') && i.type === type
   })
   if (n.length > 0){
     const z = [];
     n.forEach((el) => {
-      var x = parseInt(el.id.replace('demonnode_', ''))
+      var x = parseInt(el.id.replace(`${type}node_`, ''))
       z.push(x);
     })
     const max = Math.max(...z);
-    return `demonnode_${max + 1}`;
+    return `${type}node_${max + 1}`;
   }
-  return "demonnode_1";
+  return `${type}node_1`;
 }
 
 function openImportExportModal() {
@@ -77,6 +98,65 @@ function openImportExportModal() {
     },
     width: 960,
   });
+}
+
+const { addEdges, removeEdges, addNodes, removeNodes } = useVueFlow()
+
+const onConnect = (params) => {
+  var edge = {
+    id: `e_${params.source}-${params.target}`,
+    source: params.source,
+    target: params.target,
+    type: 'button',
+    animated: true,
+    data: { text: 'custom edge' },
+    markerEnd: 'arrowClosed',
+  }
+  addEdges(edge)
+}
+
+function addNoteNode(){
+  const id = nextId('note');
+
+  const dto = {
+    id: id,
+    options: {
+      notes: "",
+      selectedSkills: [
+      ],
+    }
+  }
+
+  const newNode = {
+    id: id,
+    type: 'note',
+    label: `[${id}]`,
+    data: dto,
+    position: { x: 200, y: 200 },
+  }
+  
+  elements.value.push(newNode)
+}
+
+function onCloneNode(data){
+  const oldNode = elements.value.find(n => n.id == data.id);
+  let newData = _.cloneDeep(data);
+  const id = nextId('demon');
+  newData.id = id;
+  const newNode = {
+    id: id,
+    type: 'demon',
+    label: `[${id}]`,
+    data: newData,
+    position: {x: oldNode.position.x + 200, y: oldNode.position.y}
+  }
+  
+  addNodes(newNode);
+}
+
+function onRemoveNode(id){
+  console.log(`Node ${id} removed.`);
+  removeNodes(id);
 }
 
 function onCopy() {
@@ -99,42 +179,6 @@ function onDownload(filename) {
     closable: true,
     variant: 'success'
   })
-}
-
-const { addEdges, removeEdges, addNodes, removeNodes } = useVueFlow()
-
-const onConnect = (params) => {
-  var edge = {
-    id: `e_${params.source}-${params.target}`,
-    source: params.source,
-    target: params.target,
-    type: 'button',
-    animated: true,
-    data: { text: 'custom edge' },
-    markerEnd: 'arrowClosed',
-  }
-  addEdges(edge)
-}
-
-function onCloneNode(data){
-  const oldNode = elements.value.find(n => n.id == data.id);
-  let newData = _.cloneDeep(data);
-  const id = nextId();
-  newData.id = id;
-  const newNode = {
-    id: id,
-    type: 'demon',
-    label: `[${id}]`,
-    data: newData,
-    position: {x: oldNode.position.x + 200, y: oldNode.position.y}
-  }
-  
-  addNodes(newNode);
-}
-
-function onRemoveNode(id){
-  console.log(`Node ${id} removed.`);
-  removeNodes(id);
 }
 
 function onIngest(json){
@@ -189,7 +233,35 @@ function onIngest(json){
                       <o-input v-model="filterByDemonName" @input="onInput" placeholder="Search by Demon Name..." :disabled="filterBySkillName.length > 0"></o-input>
                     </o-field>
                     <o-field>
-                      <o-input v-model="filterBySkillName" @input="onInput" placeholder="Search by Skills..." :disabled="filterByDemonName.length > 0"></o-input>
+                      <o-autocomplete 
+                        expanded
+                        clearable
+                        open-on-focus
+                        :data="skills"
+                        placeholder="e.g. Bufu"
+                        :keep-first="true"
+                        field="name"
+                        :loading="isFetchingSkills"
+                        :debounce="500"
+                        :disabled="filterByDemonName.length > 0"
+                        @input="findSkills"
+                        @select="onSelect"
+                        class="is-fullwidth"
+                      >
+                        <template #default="props">
+                          <div class="media">
+                              <div class="media-left">
+                                  <img
+                                      width="32"
+                                      :src="`./img/skill/${props.option.icon}.png`" />
+                              </div>
+                              <div class="media-content">
+                                  {{ props.option.name }}
+                              </div>
+                          </div>
+                        </template>
+                        <template #empty>No results found</template>
+                      </o-autocomplete>
                     </o-field>
                   </div>
                 </div>
@@ -205,7 +277,7 @@ function onIngest(json){
                       :key="demon.ID" 
                       :demon="demon"
                       :draggable="true" 
-                      @dragstart="onDragStart($event, 'demon', demon, nextId())">
+                      @dragstart="onDragStart($event, 'demon', demon, nextId('demon'))">
                     </DemonDrag>
                   </div>
                 </div> 
@@ -220,12 +292,20 @@ function onIngest(json){
                   <DemonNode v-bind="nodeDemonProps" @clone-node="onCloneNode" @remove-node="onRemoveNode"/>
                 </template>
 
+                <template #node-note="nodeNoteProps">
+                  <NoteNode v-bind="nodeNoteProps" @remove-node="onRemoveNode"/>
+                </template>
+
                 <template #edge-button="edgeButtonProps">
                   <EdgeWithButton v-bind="edgeButtonProps"/>
                 </template>
                 
                 <MiniMap node-color="rgb(39, 36, 40)" node-stroke-color="rgb(34, 87, 101)" mask-color="rgb(4, 22, 34, 0.4)" style="background-color: rgb(34, 87, 101, 0.4);" />
-                <Controls />
+                <Controls>
+                  <ControlButton @click="addNoteNode">
+                    <o-icon icon="note-plus" style="color:#FFF"></o-icon>
+                  </ControlButton>
+                </Controls>
                 <Background variant="dots" :gap="10" :size="1" patternColor="#225765" />
               </VueFlow>
             </div>

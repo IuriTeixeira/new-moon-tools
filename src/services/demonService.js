@@ -34,15 +34,11 @@ export default {
         return [];
     },
 
-    searchBySkill(name='', obtainableOnly=true){
-        if (name !=''){
-            let skill = skillService.getByName(name);
-            if (!skill){
-                skill = skillService.searchByName(name)[0];
-            }
+    searchBySkill(skillId='', obtainableOnly=true){
+        if (skillId !=''){
             let demons = [];
             for (const demon of storage){
-                if (demon.skills.includes(skill.id) || demon.acquiredSkills.some((item) => { return item.id === skill.id})){
+                if (demon.skills.includes(skillId) || demon.acquiredSkills.some((item) => { return item.id === skillId})){
                     demons.push(demon);
                 }
             }

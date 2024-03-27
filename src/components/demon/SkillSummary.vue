@@ -22,8 +22,13 @@ const props = defineProps({
 	</div>
 </template>
 
-<style>
-.content figure {
+<style scoped>
+
+.column {
+	padding: 0.5rem;
+}
+
+figure {
 	margin-left: 5px;
 	margin-right: -10px;
 }

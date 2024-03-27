@@ -7,6 +7,7 @@ import Damage from "@/views/DamageView.vue";
 import Moonphase from "@/views/MoonphaseView.vue";
 import TimedDemons from "@/views/TimedDemonView.vue";
 import DemonPlanner from "@/views/DemonPlannerView.vue";
+import Fusion from "@/views/FusionView.vue";
 
 const DEFAULT_TITLE = 'Project New Moon Tools';
 const routes = [
@@ -54,9 +55,15 @@ const routes = [
 	},
 	{
 		path: "/demon-planner",
-		name: "Demon Fusion Planner",
+		name: "Demon Inheritance Planner",
 		component: DemonPlanner,
-		meta: { title: "Demon Fusion Planner" }
+		meta: { title: "Demon Inheritance Planner" }
+	},
+	{
+		path: "/fusion",
+		name: "Fusion Simulator",
+		component: Fusion,
+		meta: { title: "Fusion Simulator" }
 	},
 ];
 

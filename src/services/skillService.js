@@ -21,6 +21,10 @@ export default {
         return skill;
     },
 
+    all(){
+        return storage;
+    },
+
     searchByName(name=''){
         if (name !=''){
             let skills = storage.filter(function (item){
