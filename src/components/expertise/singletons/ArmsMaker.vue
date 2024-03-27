@@ -26,7 +26,7 @@
           </tr>
           <tr>
             <th>Gun Knowledge</th>
-            <td>Class 2 Rank 0</td>
+            <td>Class 1 Rank 0</td>
             <td>20%</td>
             <td>{{ parseExpertise(expertise.gunKnowledge.value * 0.2) }}</td>
           </tr>
@@ -94,7 +94,7 @@ export default {
         this.expertise.gunKnowledge.value = 0;
       } else if (to === "required") {
         this.expertise.crafts.value = 1000;
-        this.expertise.gunKnowledge.value = 2000;
+        this.expertise.gunKnowledge.value = 1000;
       } else if (to === "max") {
         this.expertise.crafts.value = this.expertise.crafts.max;
         this.expertise.gunKnowledge.value = this.expertise.gunKnowledge.max;
@@ -110,7 +110,7 @@ export default {
     requirements() {
       if (
         this.expertise.crafts.value >= 1000 &&
-        this.expertise.gunKnowledge.value >= 2000
+        this.expertise.gunKnowledge.value >= 1000
       )
         return true;
       else return false;
@@ -130,7 +130,7 @@ export default {
       if (
         a === 0 ||
         this.expertise.crafts.value < 1000 ||
-        this.expertise.gunKnowledge.value < 2000
+        this.expertise.gunKnowledge.value < 1000
       ) {
         return "Class 0 Rank 0";
       } else if (a >= 100) {

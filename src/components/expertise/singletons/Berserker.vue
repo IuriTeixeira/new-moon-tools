@@ -26,7 +26,7 @@
           </tr>
           <tr>
             <th>Attack</th>
-            <td>Class 2 Rank 0</td>
+            <td>Class 3 Rank 0</td>
             <td>40%</td>
             <td>{{ parseExpertise(expertise.attack.value * 0.4) }}</td>
           </tr>

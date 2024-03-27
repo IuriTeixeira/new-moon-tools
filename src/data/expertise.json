@@ -4056,7 +4056,7 @@
 		"name": "Blades",
 		"queryParam": "eac",
 		"value": 0,
-		"max": 7200,
+		"max": 10000,
 		"tooltip": "Effects 'Swordsmith' by 80%\nUsed in 'Spiritual Mixing' Mechanic",
 		"skills": []
 	},
@@ -4080,7 +4080,7 @@
 		"name": "Crafts",
 		"queryParam": "eaf",
 		"value": 0,
-		"max": 7200,
+		"max": 10000,
 		"tooltip": "Effects 'Arms Maker' by 80%\nUsed in 'Spiritual Mixing' Mechanic",
 		"skills": []
 	},
