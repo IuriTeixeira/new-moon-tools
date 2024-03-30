@@ -4,7 +4,7 @@
     <td>{{Number(dungeon.apples* modifier).toLocaleString()}}</td>
     <td>{{Number(runs).toLocaleString()}}</td>
     <td v-if="displayCell">{{Number(runs * dungeon.reports).toLocaleString()}}</td>
-    <td v-if="displayCell">{{Number(runs * (dungeon.reports / 20)).toLocaleString()}}</td>
+    <td v-if="displayCell">{{Number(runs * (dungeon.reports / 10)).toLocaleString()}}</td>
   </tr>
 </template>
 

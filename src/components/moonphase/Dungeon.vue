@@ -56,7 +56,7 @@ export default {
       }
     },
     moonfragments: function(){
-      return this.dungeon.reports / 20;
+      return this.dungeon.reports / 10;
     },
     isBonusDay: function(){
       return format(this.japan, "i") == this.dungeon.bonusDay
