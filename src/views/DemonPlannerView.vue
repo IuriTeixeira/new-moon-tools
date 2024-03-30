@@ -124,6 +124,8 @@ function addNoteNode(){
       notes: "",
       selectedSkills: [
       ],
+      inheritedSkills: [
+      ],
     }
   }
 

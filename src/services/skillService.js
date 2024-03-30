@@ -15,7 +15,11 @@ export default {
 
     getByName(name=''){
         const skill = storage.find((item)=>{
-            return item.name.toLowerCase() == name.toLowerCase()
+            return item.name.toLowerCase() == name.toLowerCase() && (
+                item.family === "Technique" || 
+                item.family === "Arcane Art"|| 
+                item.family === "Special Skill"
+            )
         })
 
         return skill;
@@ -28,7 +32,11 @@ export default {
     searchByName(name=''){
         if (name !=''){
             let skills = storage.filter(function (item){
-                return item.name != null && item.name.length > 0 && item.name.toLowerCase().includes(name.toLowerCase()) 
+                return item.name != null && item.name.length > 0 && item.name.toLowerCase().includes(name.toLowerCase()) && (
+                    item.family === "Technique" || 
+                    item.family === "Arcane Art"|| 
+                    item.family === "Special Skill"
+                )
             })
             return skills;
         }

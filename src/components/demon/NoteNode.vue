@@ -3,6 +3,9 @@ import { computed, onMounted, ref } from 'vue'
 import { Handle, Position, useVueFlow, useNodesData, useHandleConnections } from '@vue-flow/core'
 import { NodeToolbar } from '@vue-flow/node-toolbar'
 
+import SkillSummary from '@/components/demon/SkillSummary.vue'
+import skillService from "@/services/skillService";
+
 import EditNotesModal from "@/components/demon/EditNotesModal.vue"
 import { useOruga } from "@oruga-ui/oruga-next";
 
@@ -12,15 +15,23 @@ const props = defineProps({
   }
 })
 
-const selectedSkill = ref(null);
-const skills = ref([]);
-const isFetchingSkills = ref(false);
-
 const emit = defineEmits(['removeNode'])
 //-----
 
 onMounted(() => {
   console.log(`NotesNode ${props.data.id} created`)
+})
+
+const selectedSkills = computed(() => {
+  const res = [];
+  props.data.options.selectedSkills.forEach(id =>{
+    const skill = skillService.get(id);
+    if (skill){
+      res.push(skill);
+    }
+  })
+
+  return res;
 })
 
 // EditDemon Modal
@@ -70,12 +81,17 @@ export default {
 				</div>
 			</div>
 
-			<div class="content">
-        {{ data.options.note }}
+			<div class="content notes">
+        {{ data.options.notes }}
       </div>
-      <div class="content">
+      <div class="content"  v-if="selectedSkills.length > 0">
         <h5>Important Skills</h5>
-			</div>
+        <skill-summary
+          v-for="skill in selectedSkills"
+          :key="skill.id"
+          :skill="skill"
+        />
+      </div>
 		</div>
 	</div>
 
@@ -94,5 +110,9 @@ div.card.level{
 
 .vue-flow__node-toolbar button {
   margin: 0 0.1em;
+}
+
+.notes {
+  white-space: pre-line;
 }
 </style>
