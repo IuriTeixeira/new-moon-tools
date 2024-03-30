@@ -6,7 +6,6 @@ import DemonSummary from "@/components/fusion/DemonSummary.vue"
 
 import demonService from "@/services/demonService";
 import skillService from "@/services/skillService";
-import itemService from "@/services/itemService";
 
 const demon = demonService.get(569);
 
