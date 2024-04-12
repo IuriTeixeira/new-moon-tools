@@ -88,6 +88,19 @@
         <p>
           Find out what time-sensitive demons are currently available in all fields.
         </p>
+        <h2>
+          Demon Inheritance Planner
+          <router-link to="/demon-planner"
+            ><o-icon
+              pack="mdi"
+              class="icon has-text-info"
+              icon="ballot"
+            />Link</router-link
+          >
+        </h2>
+        <p>
+          Plan out a demon using fusion and inheritance.
+        </p>
         <hr />
         <p>
           Find an issue? Have a suggestion for a new feature or tool? <a href="https://github.com/Kuenaimaku/new-moon-tools/issues">Create an issue on GitHub</a> and I'll see what I can do. <br/>
