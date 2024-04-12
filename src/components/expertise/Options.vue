@@ -1,15 +1,13 @@
 <template>
   <div>
 		<o-field label="Level">
-			<multistep-number-input
+			<step-number-input
 				v-model.number="options.level.value"
-				:editable="false"
-				:step1="1"
-				:step2="10"
+				:step="10"
 				:min="1"
 				:max="99"
 			>
-    </multistep-number-input>
+    </step-number-input>
 		</o-field>
     <o-field label="Golden Arc Casino">
       <step-number-input
@@ -30,7 +28,7 @@
     <o-field>
       <template v-slot:label>
 				Tier 1 Demon Digitalize
-				<o-tooltip label="Races: Divines, Wild Birds, Earth Elements, Fairies, Beasts, Elementals, Brutes, Evil Dragons, Haunts" multiline position="right">
+				<o-tooltip label="Races: Divines, Wild Birds, Earth Elements, Fairies, Beasts, Elementals, Brutes, Evil Dragons, Haunts" multiline position="right" :teleport="true">
 					<o-icon  size="small" icon="help-circle-outline" />
 				</o-tooltip>
       </template>
@@ -44,7 +42,7 @@
     <o-field>
       <template v-slot:label>
 				Tier 2 Demon Digitalize
-				<o-tooltip label="Races: Raptor, Yoma, Nocturne, Wilder, Dragon King, Femme, Foul" multiline position="right">
+				<o-tooltip label="Races: Raptor, Yoma, Nocturne, Wilder, Dragon King, Femme, Foul" multiline position="right" :teleport="true">
 					<o-icon  size="small" icon="help-circle-outline" />
 				</o-tooltip>
       </template>
@@ -58,7 +56,7 @@
     <o-field>
       <template v-slot:label>
 				Tier 3 Demon Digitalize
-				<o-tooltip label="Races: Fallen Angel, Dragon, Avian, Evil Demon, Godly Beast, Holy Beast" multiline position="right">
+				<o-tooltip label="Races: Fallen Angel, Dragon, Avian, Evil Demon, Godly Beast, Holy Beast" multiline position="right" :teleport="true">
 					<o-icon  size="small" icon="help-circle-outline" />
 				</o-tooltip>
       </template>
@@ -73,7 +71,7 @@
 		<o-field>
 			<o-switch v-model.number="options.levelTenDDS1.value" :true-value="3000" :false-value="0" :leftLabel="true">
 				Group 1
-				<o-tooltip label="Races: Demigod" position="right">
+				<o-tooltip label="Races: Demigod" position="right" :teleport="true">
 					<o-icon size="small" icon="help-circle-outline" />
 				</o-tooltip>
 			</o-switch>
@@ -81,7 +79,7 @@
 		<o-field>
 			<o-switch v-model.number="options.levelTenDDS2.value" :true-value="3000" :false-value="0" :leftLabel="true">
 				Group 2
-				<o-tooltip label="Races: Goddess, Vile, Heavenly God" position="right">
+				<o-tooltip label="Races: Goddess, Vile, Heavenly God" position="right" :teleport="true">
 					<o-icon size="small" icon="help-circle-outline" />
 				</o-tooltip>
 			</o-switch>
@@ -89,7 +87,7 @@
 		<o-field>
 			<o-switch v-model.number="options.levelTenDDS3.value" :true-value="3000" :false-value="0" :leftLabel="true">
 				Group 3
-				<o-tooltip label="Races: Reaper" position="right">
+				<o-tooltip label="Races: Reaper" position="right" :teleport="true">
 					<o-icon size="small" icon="help-circle-outline" />
 				</o-tooltip>
 			</o-switch>
@@ -97,7 +95,7 @@
 		<o-field>
 			<o-switch v-model.number="options.levelTenDDS4.value" :true-value="3000" :false-value="0" :leftLabel="true">
 				Group 4
-				<o-tooltip label="Races: Guardian, Earth Mother, Nation Ruler" position="right">
+				<o-tooltip label="Races: Guardian, Earth Mother, Nation Ruler" position="right" :teleport="true">
 					<o-icon size="small" icon="help-circle-outline" />
 				</o-tooltip>
 			</o-switch>
@@ -105,7 +103,7 @@
 		<o-field>
 			<o-switch v-model.number="options.levelTenDDS5.value" :true-value="3000" :false-value="0" :leftLabel="true">
 				Group 5
-				<o-tooltip label="Races: Entity" position="right">
+				<o-tooltip label="Races: Entity" position="right" :teleport="true">
 					<o-icon size="small" icon="help-circle-outline" />
 				</o-tooltip>
 			</o-switch>
@@ -149,8 +147,8 @@
 			</o-switch>
 		</o-field>
     <o-field grouped>
-      <o-button expanded @click="reset" icon-left="refresh">Reset Options</o-button>
-      <o-button expanded @click="link" icon-left="link">Generate Link</o-button>
+      <o-button expanded variant="primary" @click="reset" icon-left="refresh">Reset Options</o-button>
+      <o-button expanded variant="info" @click="link" icon-left="link">Generate Link</o-button>
     </o-field>
   </div>
 </template>

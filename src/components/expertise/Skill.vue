@@ -1,11 +1,11 @@
 <template>
   <div class="skill-wrapper">
-    <o-tooltip multiline size="large">
+    <o-tooltip multiline size="large" :teleport="true">
       <template v-slot:content>
         <skill-tooltip :skill="skill"/>
       </template>
 		<figure class="image is-32x32 is-skill">
-			<img :src="'./img/expertise/' + skill.slug +'.png'">
+			<img :src="'./img/skill/' + skill.icon +'.png'">
 		</figure>
     </o-tooltip>
   </div>
@@ -31,6 +31,7 @@ export default {
 <style lang="scss" scoped>
 .skill-wrapper{
   margin: 0px 0.2em;
+  display: inline-block;
 }
 
 .is-skill{

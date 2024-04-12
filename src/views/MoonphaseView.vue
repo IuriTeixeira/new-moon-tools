@@ -51,7 +51,7 @@
               <div class="content">
                 <h1>
                   Moon Phases
-                  <o-tooltip label="Phase Changes are in Local Time Zone" position="right" multiline>
+                  <o-tooltip label="Phase Changes are in Local Time Zone" position="right" multiline :teleport="true">
                     <o-icon  icon="help-circle-outline" />
                   </o-tooltip>
                 </h1>
@@ -79,7 +79,7 @@
               <div class="content">
                 <h1>
                   Dungeons
-                  <o-tooltip label="Day Rotates at 12:00 AM JST" position="right" multiline>
+                  <o-tooltip label="Day Rotates at 12:00 AM JST" position="right" multiline :teleport="true">
                     <o-icon  icon="help-circle-outline" />
                   </o-tooltip>
                 </h1>

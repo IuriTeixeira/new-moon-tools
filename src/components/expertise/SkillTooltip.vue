@@ -4,17 +4,17 @@
 			<div class="media">
 				<div class="media-left">
 					<figure class="image is-48x48">
-						<img :src="'./img/expertise/' + skill.slug +'.png'" :alt="skill.name">
+						<img :src="'./img/skill/' + skill.icon +'.png'" :alt="skill.name">
 					</figure>
 				</div>
 				<div class="media-content">
 					<p class="title is-6">{{skill.name}}</p>
-					<p class="subtitle is-7">{{classRank(skill.rank)}} • {{info}}</p>
+					<p class="subtitle is-7">{{info}}</p>
 				</div>
 			</div>
 
 			<div class="content">
-				{{skill.desc}}
+				{{ skill.description }}
 			</div>
 		</div>
 	</div>
@@ -48,23 +48,40 @@ export default {
 	},
 	computed:{
 		info(){
-			let r = this.skill.type;
+			let r = `${this.skill.family}`;
+			r += ` • ${this.skill.categoryType}`
+			r += ` • ${this.skill.activationType}`
+			r += ` • ${this.skill.actionType}`
+			r += ` • ${this.skill.affinity}`
 
-			if(this.skill.action){
-				r += ` • ${this.skill.action}`
-			}
-			if(this.skill.cost){
-				r += ` • ${this.skill.cost}`
-			}
-			if(this.skill.affinity){
-				r += ` • ${this.skill.affinity}`
-			}
-			if(this.skill.stack && this.skill.stack === 1){
-				r += ` • ${this.skill.stack} stack`
-			}
-			else if(this.skill.stack && this.skill.stack !== 1){
+			if (this.skill.stack > 1){
 				r += ` • ${this.skill.stack} stacks`
 			}
+
+			if (this.skill.damage > 0){
+				r += ` • ${this.skill.damage} modifier`
+			}
+
+			if (this.skill.stiffness > 0){
+				r += ` • ${this.skill.stiffness} stiffness`
+			}
+
+			if (this.skill.range > 0){
+				r += ` • ${this.skill.range} range`
+			}
+
+			if (this.skill.incantation > 0){
+				r += ` • ${this.skill.incantation}ms incantation`
+			}
+
+			if (this.skill.cooldown > 0){
+				r += ` • ${this.skill.cooldown}ms cooldown`
+			}
+
+			if (this.skill.statDependency !== "None"){
+				r += ` • ${this.skill.statDependency} scaling`
+			}
+
 			return r;
 		},
 	

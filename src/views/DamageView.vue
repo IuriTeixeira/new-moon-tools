@@ -26,7 +26,7 @@
               <div class="content">
                 <h1>Input</h1>
               </div>
-              <o-tabs v-model="activeTab" :expanded="true">
+              <o-tabs v-model="activeTab" class="is-fullwidth" type="boxed">
                 <o-tab-item value="0" label="Statistics">
                   <div class="content">
                     <h1>Step 1</h1>

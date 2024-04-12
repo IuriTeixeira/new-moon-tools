@@ -1,3 +1,38 @@
+<script setup>
+import { computed } from 'vue'
+import dataService from "@/services/dataService.js";
+import { useRoute } from 'vue-router'
+const route = useRoute();
+
+const props = defineProps({
+  selection: {
+    type: Object,
+  },
+  options: {
+    type: Object,
+  }
+})
+
+const emit = defineEmits(['copy'])
+
+const link = computed(() => {
+  let baseUrl = window.location.origin + route.path;
+  let params = dataService.toExpertiseQueryParams(props.selection, props.options);
+  if (params !== "") {
+    return baseUrl + "?" + params.toString();
+  } else {
+    return baseUrl;
+  }
+})
+
+function copy() {
+  navigator.clipboard.writeText(link.value);
+  emit('close')
+  emit('copy')
+}
+
+</script>
+
 <template>
   <div class="modal-card" style="width: auto">
     <header class="modal-card-head">
@@ -9,58 +44,16 @@
         @click.="$emit('close')"/>
     </header>
     <section class="modal-card-body">
-      <o-field @click="copy" label="Click to Copy to Clipboard">
-        <o-input maxlength="200" type="textarea" class="is-fullwidth" style="resize:none;" disabled v-model="link"></o-input>
+      <o-field label="Click to Copy to Clipboard">
+        <o-input @click="copy" maxlength="200" type="textarea" class="is-fullwidth" style="resize:none; cursor:crosshair !important;" v-model="link"></o-input>
       </o-field>
     </section>
     <footer class="modal-card-foot">
-      <o-button type="button" @click="$emit('close')">Close</o-button>
+      <o-button type="button" variant="primary" class="is-fullwidth" @click="$emit('close')">Close</o-button>
     </footer>
   </div>
 </template>
 
-<script>
-import dataService from "@/services/dataService.js";
-export default {
-  name: "linkModal",
-  props: {
-    expertise: {
-      type: Object,
-      required: true,
-    },
-    options: {
-      type: Object,
-      required: true,
-    },
-  },
-  data() {
-    return {
-    };
-  },
-  computed: {
-    link() {
-      let baseUrl = window.location.origin + this.$route.path;
-      let params = dataService.toExpertiseQueryParams(this.expertise, this.options);
-      if (params !== "") {
-        return baseUrl + "?" + params.toString();
-      } else {
-        return baseUrl;
-      }
-    },
-  },
-  methods:{
-    copy() {
-      navigator.clipboard.writeText(this.link);
-      this.$oruga.notification.open({
-          message: 'Link copied to clipboard!',
-          rootClass: 'toast-notification',
-          position: 'top',
-          duration: 2000
-        })
-    }
-  }
-};
-</script>
 
 <style lang="scss" scoped>
   .modal-card {

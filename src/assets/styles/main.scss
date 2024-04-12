@@ -1,7 +1,8 @@
 @charset "utf-8";
 
-@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/_all";
 
+// Set your colors
 $lavender: hsl(275, 20%, 50%);
 $lavender-dark: hsl(275, 20%, 40%);
 $primary: $lavender;
@@ -17,12 +18,88 @@ $text-strong: hsl(0, 0%, 90%);
 $background: hsl(275, 5%, 10%);
 $body-color: hsl(0, 0%, 80%);
 
-@import "../node_modules/bulma/sass/utilities/_all";
-@import "../node_modules/bulma/sass/base/_all";
-@import "../node_modules/bulma/sass/elements/_all";
-@import "../node_modules/bulma/sass/components/_all";
-@import "../node_modules/bulma/sass/grid/_all";
-@import "../node_modules/bulma/sass/layout/_all";
+// Lists and maps
+$custom-colors: null !default;
+$custom-shades: null !default;
+
+$secondary: hsl(273, 29%, 24%);
+$secondary-dark: findDarkColor($secondary);
+$secondary-light: findLightColor($secondary);
+$secondary-invert: findColorInvert($secondary);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: mergeColorMaps(
+    (
+        "white": (
+            $white,
+            $black,
+        ),
+        "black": (
+            $black,
+            $white,
+        ),
+        "light": (
+            $light,
+            $light-invert,
+        ),
+        "dark": (
+            $dark,
+            $dark-invert,
+        ),
+        "primary": (
+            $primary,
+            $primary-invert,
+            $primary-light,
+            $primary-dark,
+        ),
+        "link": (
+            $link,
+            $link-invert,
+            $link-light,
+            $link-dark,
+        ),
+        "info": (
+            $info,
+            $info-invert,
+            $info-light,
+            $info-dark,
+        ),
+        "success": (
+            $success,
+            $success-invert,
+            $success-light,
+            $success-dark,
+        ),
+        "warning": (
+            $warning,
+            $warning-invert,
+            $warning-light,
+            $warning-dark,
+        ),
+        "danger": (
+            $danger,
+            $danger-invert,
+            $danger-light,
+            $danger-dark,
+        ),
+        "secondary": (
+            $secondary,
+            $secondary-dark,
+            $secondary-light,
+            $secondary-invert,
+        ),
+    ),
+    $custom-colors
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+@import "bulma/bulma";
+@import '@oruga-ui/theme-bulma/dist/scss/bulma';
+@import "bulma-extensions/bulma-divider/src/sass/index.sass";
 
 .o-ctrl-sel{
 	width:100%;
@@ -71,4 +148,78 @@ $body-color: hsl(0, 0%, 80%);
 		border-bottom: 1px solid #222;
 		border-right: 0px solid #222;
 	}
+}
+
+div.control.select:has(.is-fullwidth){
+    width:100%;  
+}
+
+select {
+    border-color:$lavender !important;
+}
+
+select.is-fullwidth{
+    width:100%;
+}
+
+.select select option {
+    color: $text;
+}
+
+input[type=text] {
+    border-color: $lavender;
+}
+
+.textarea {
+    border-color: $lavender;
+}
+
+.is-circular { 
+    border-radius: 50% !important; 
+}
+.b-tooltip.is-secondary .b-tooltip-content {
+    color: $text
+}
+
+.is-divider[data-content]::after, .is-divider-vertical[data-content]::after {
+    background-color: $grey-darker;
+}
+
+.modal-card-head {
+    background-color: $lavender;
+    border-bottom-color: $lavender-dark;
+}
+
+.modal-card hr {
+    background-color: $lavender-dark;
+}
+
+.modal-card-foot {
+    border-top-color: $lavender;
+}
+
+.b-tabs .tabs:not(.is-toggle), .b-tabs .tabs:not(.is-toggle-rounded) {
+    border-bottom-color: $lavender-dark;
+}
+
+.is-fullwidth > nav > div {
+    width:100%;
+}
+
+.b-tabs .tabs.is-boxed div a.is-active{
+    background-color: $lavender;
+    border-color: $lavender-dark;
+    color: $text-strong;
+}
+
+.level {
+    border-color: transparent;
+}
+
+.is-clickable {
+    display:none;
+}
+
+.modal-card-head .is-clickable {
+    display:flex;
 }

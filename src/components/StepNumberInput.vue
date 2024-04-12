@@ -4,7 +4,7 @@
     <template v-else>{{ title }}</template>
     <o-field>
       <p class="control" @click="stepLeft(step)">
-        <o-button type="is-info" :disabled="disabledMin">
+        <o-button variant="primary" :disabled="disabledMin">
           <o-icon icon="chevron-left"></o-icon>
         </o-button>
       </p>
@@ -13,9 +13,10 @@
         expanded
         :editable="editable"
         v-model="computedValue"
+        class="step-input"
       ></o-input>
       <p class="control" @click="stepRight(step)">
-        <o-button type="is-info" :disabled="disabledMax">
+        <o-button variant="primary" :disabled="disabledMax">
           <o-icon icon="chevron-right"></o-icon>
         </o-button>
       </p>
@@ -109,7 +110,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 .option-title {
   font-weight: bold;
   font-size: 1.1em;
@@ -119,8 +120,16 @@ export default {
   font-size: 1em;
 }
 
-input[type="number"] {
-  text-align: center;
+.step-input {
+  text-align: center !important;
+  border-top: 1px solid hsl(275, 20%, 50%) !important;
+  border-bottom: 1px solid hsl(275, 20%, 50%) !important;
+  border-left: 0px solid #000 !important;
+  border-right: 0px solid #000 !important;
+}
+
+.input{
+  border: 1px solid hsl(275, 20%, 50%) !important;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

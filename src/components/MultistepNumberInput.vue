@@ -4,28 +4,28 @@
     <template v-else>{{ title }}</template>
     <o-field>
       <p class="control" @click="stepLeft(step2)">
-        <o-button type="is-primary" :disabled="disabledMin">
+        <o-button variant="primary" :disabled="disabledMin">
           <o-icon icon="chevron-double-left"></o-icon>
         </o-button>
       </p>
       <p class="control" @click="stepLeft(step1)">
-        <o-button type="is-info" :disabled="disabledMin">
+        <o-button variant="primary" :disabled="disabledMin">
           <o-icon icon="chevron-left"></o-icon>
         </o-button>
       </p>
       <o-input
-        type="number"
+        type="text"
         expanded
-        :editable="editable"
-        v-model.number="computedValue"
+        :disabled="disabled"
+        v-model="classRank"
       ></o-input>
       <p class="control" @click="stepRight(step1)">
-        <o-button type="is-info" :disabled="disabledMax">
+        <o-button variant="primary" :disabled="disabledMax">
           <o-icon icon="chevron-right"></o-icon>
         </o-button>
       </p>
       <p class="control" @click="stepRight(step2)">
-        <o-button type="is-primary" :disabled="disabledMax">
+        <o-button variant="primary" :disabled="disabledMax">
           <o-icon icon="chevron-double-right"></o-icon>
         </o-button>
       </p>
@@ -64,9 +64,9 @@ export default {
       type: Number,
       required: false,
     },
-    editable: {
+    disabled: {
       type: Boolean,
-      default: true,
+      default: false,
     },
   },
   methods: {
@@ -111,6 +111,19 @@ export default {
         this.$emit("update:modelValue", newValue);
       },
     },
+    classRank() {
+      var a = this.computedValue;
+      var b = a.toString();
+      if (a === 0) {
+        return "Class 0 Rank 0";
+      } else if (a >= 100) {
+        return "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2);
+      } else if (a >= 10) {
+        return "Class " + b.charAt(0) + " Rank " + b.charAt(1);
+      } else {
+        return "Class 0 Rank " + b.charAt(0);
+      }
+    },
   },
   watch: {
     /**
@@ -137,8 +150,12 @@ export default {
   font-size: 1em;
 }
 
-input[type="number"] {
-  text-align: center;
+[disabled].input {
+  color: #CCC !important;
+  cursor: auto !important;
+  text-align: center !important;
+  border-top: 1px solid hsl(275, 20%, 50%) !important;
+  border-bottom: 1px solid hsl(275, 20%, 50%) !important;
 }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
