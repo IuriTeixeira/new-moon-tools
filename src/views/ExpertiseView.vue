@@ -1,6 +1,7 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
 import dataService from "@/services/dataService";
+import expertiseService from "@/services/expertiseService";
 
 import Progressbar from "@/components/Progressbar.vue";
 
@@ -16,17 +17,18 @@ const oruga = useOruga();
 //-- Data
 const activeTab = ref("0");
 const expertiseFloor = ref(17000);
-const expertise = ref({});
+const selection = ref([]);
 const options = ref({});
 
-
-//-- OnCreate
 let uri = window.location.search.substring(0);
 let params = new URLSearchParams(uri);
+
+//-- OnCreate
+const expertise = expertiseService.all();
 reset();
 if (uri != "") {
   let hydratedValues = dataService.fromExpertiseQueryParams(params);
-  expertise.value = hydratedValues.expertise;
+  selection.value = hydratedValues.expertise;
   options.value = hydratedValues.options;
   oruga.notification.open({
     message: "Build Loaded!",
@@ -38,12 +40,10 @@ if (uri != "") {
   });
 }
 
-
 const currentExpertise = computed(() => {
-  const values = Object.values(expertise.value);
   let e = 0;
-  values.forEach(function (v) {
-    e += v.value;
+  selection.value.forEach(function (v) {
+    e += v.value * 100;
   });
   return e;
 });
@@ -72,7 +72,19 @@ const progressType = computed(() => {
 
 
 function reset() {
-  expertise.value = dataService.getExpertise();
+  let s = [];
+  expertise.forEach(e => {
+    let obj = {};
+    obj.id = e.id,
+    obj.name = e.name,
+    obj.description = e.description,
+    obj.value = 0,
+    obj.max = Number.parseInt( e.maxClass.toString() + e.maxRank.toString())
+    if (e.singularExpertise.length === 0 && e.name !== "--Unused--"){
+      s.push(obj);
+    }
+  });
+  selection.value = s;
   options.value = dataService.getExpertiseDefaults();
 }
 
@@ -83,7 +95,7 @@ function expertiseLinkModal() {
     trapFocus: true,
     props: {
       options: options.value,
-      expertise: expertise.value,
+      selection: selection.value,
     },
     events: {
       copy: onCopy
@@ -102,6 +114,8 @@ function onCopy() {
     variant: 'success'
   })
 }
+
+
 </script>
 
 <template>
@@ -135,8 +149,8 @@ function onCopy() {
               <o-tabs v-model="activeTab" class="is-fullwidth" type="boxed">
                 <o-tab-item value="0" label="Expertise">
                   <ExpertiseInput
-                    v-for="item in expertise"
-                    :key="item.queryParam"
+                    v-for="item in selection"
+                    :key="item.id"
                     :expertise="item"
                   />
                 </o-tab-item>
@@ -164,18 +178,19 @@ function onCopy() {
                 >
                   {{ currentExpertise }}/{{ expertiseFloor + bonusExpertise }}
                 </progressbar>
-              </div>
-              <div class="columns">
-                <div class="column is-one-third">
-                  <expertise-summary
-                    :expertise="Object.values(expertise)"
-                  />
-                </div>
-                <div class="column">
-                  <chain-expertise-summary
-                    :expertise="expertise"
-                    :options="options"
-                  />
+                <div class="columns">
+                  <div class="column is-one-third">
+                    <expertise-summary
+                      :selection="selection"
+                      :options="options"
+                    />
+                  </div>
+                  <div class="column">
+                    <chain-expertise-summary
+                      :selection="selection"
+                      :options="options"
+                    />
+                  </div> 
                 </div>
               </div>
             </div>

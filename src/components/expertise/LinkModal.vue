@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router'
 const route = useRoute();
 
 const props = defineProps({
-  expertise: {
+  selection: {
     type: Object,
   },
   options: {
@@ -17,7 +17,7 @@ const emit = defineEmits(['copy'])
 
 const link = computed(() => {
   let baseUrl = window.location.origin + route.path;
-  let params = dataService.toExpertiseQueryParams(props.expertise, props.options);
+  let params = dataService.toExpertiseQueryParams(props.selection, props.options);
   if (params !== "") {
     return baseUrl + "?" + params.toString();
   } else {

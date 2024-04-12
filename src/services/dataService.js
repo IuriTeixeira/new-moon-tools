@@ -1,9 +1,9 @@
 import Levels from "@/data/levels.json"
 import Dungeons from "@/data/dungeons.json"
 import Expertise from "@/data/expertise.json"
-import ChainExpertise from "@/data/chain-expertise.json"
 import Fields from "@/data/fields.json"
 
+import expertiseService from "@/services/expertiseService.js"
 
 import OptionDefaults from  "@/data/options.json"
 import _ from 'lodash'
@@ -16,9 +16,6 @@ export default {
     },
     getExpertise(){
         return _.cloneDeep(Expertise);
-    },
-    getChainExpertise(){
-        return _.cloneDeep(ChainExpertise);
     },
     getFields(){
         return _.cloneDeep(Fields);
@@ -52,8 +49,8 @@ export default {
     toExpertiseQueryParams(expertiseList, optionsList) {
         var urlParams = new URLSearchParams();
         Object.keys(expertiseList).forEach(function (v) {
-            let slim = Number.parseInt(expertiseList[v].value / 100);
-            if (slim !== 0) urlParams.append(expertiseList[v].queryParam, slim)
+            let slim = Number.parseInt(expertiseList[v].value);
+            if (slim !== 0) urlParams.append(expertiseList[v].id, slim)
         })
         Object.keys(optionsList).forEach(function (v) {
             if (v === "level") {
@@ -67,12 +64,25 @@ export default {
         return urlParams.toString();
     },
     fromExpertiseQueryParams(url) {
-        let ed = this.getExpertise();
-        Object.keys(ed).forEach(function (item) {
-            let queryValue = url.get(ed[item].queryParam)
+        const expertise = expertiseService.all();
+        const selection = [];
+        expertise.forEach(e => {
+            let obj = {};
+            obj.id = e.id,
+            obj.name = e.name,
+            obj.description = e.description,
+            obj.value = 0,
+            obj.max = Number.parseInt( e.maxClass.toString() + e.maxRank.toString())
+            if (e.singularExpertise.length === 0 && e.name !== "--Unused--"){
+                selection.push(obj);
+            }
+            });
+
+        selection.forEach(function (item) {
+            let queryValue = url.get(item.id)
             if (queryValue !== null) {
-                let hydrated = Number.parseInt(queryValue) * 100
-                ed[item].value = hydrated;
+                let hydrated = Number.parseInt(queryValue);
+                item.value = hydrated;
             }
         })
 
@@ -91,7 +101,7 @@ export default {
         })
 
         var response = {
-            expertise: ed,
+            expertise: selection,
             options: od
         }
         return response

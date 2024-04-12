@@ -1,15 +1,13 @@
 <template>
   <div>
 		<o-field label="Level">
-			<multistep-number-input
+			<step-number-input
 				v-model.number="options.level.value"
-				:editable="false"
-				:step1="1"
-				:step2="10"
+				:step="10"
 				:min="1"
 				:max="99"
 			>
-    </multistep-number-input>
+    </step-number-input>
 		</o-field>
     <o-field label="Golden Arc Casino">
       <step-number-input
