@@ -453,6 +453,33 @@
     "singularExpertise": []
   },
   {
+    "id": 5,
+    "name": "Guard",
+    "description": "[Technique]\r\nA basic Expertise for protecting oneself from\r\nenemy attacks.\r\nStrong against: Attack, Spin \r\nWeak against: Rush, Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "maxClass": 0,
+    "maxRank": 0,
+    "breakpoints": [],
+    "singularExpertise": []
+  },
+  {
+    "id": 6,
+    "name": "Counter",
+    "description": "[Technique]\r\nA Technical Expertise for nullifying an enemy\u0027s\r\nattack and responding with a counterattack.\r\nStrong against: Attack, Rush\r\nWeak against: Spin, Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "maxClass": 0,
+    "maxRank": 0,
+    "breakpoints": [],
+    "singularExpertise": []
+  },
+  {
+    "id": 7,
+    "name": "Dodge",
+    "description": "[Technique]\r\nA technical Expertise for evading long-distance\r\nattacks and creating an opportunity to respond.\r\nStrong against: Long-range attacks\r\nWeak against: Close-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "maxClass": 0,
+    "maxRank": 0,
+    "breakpoints": [],
+    "singularExpertise": []
+  },
+  {
     "id": 8,
     "name": "Curative Magic",
     "description": "[Technique]\r\nAn Expertise that provides magic to heal allies.\r\n\r\n\u25B3: Skill Count\u2191, Recovery\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 10",
@@ -583,15 +610,6 @@
         ]
       },
       {
-        "class": 7,
-        "rank": 5,
-        "pickAmount": 2,
-        "skills": [
-          160640,
-          160641
-        ]
-      },
-      {
         "class": 8,
         "rank": 0,
         "pickAmount": 1,
@@ -605,15 +623,6 @@
         "pickAmount": 1,
         "skills": [
           5308
-        ]
-      },
-      {
-        "class": 9,
-        "rank": 0,
-        "pickAmount": 2,
-        "skills": [
-          160642,
-          160643
         ]
       },
       {
@@ -1060,7 +1069,7 @@
         "rank": 7,
         "pickAmount": 1,
         "skills": [
-          5811
+          5806
         ]
       },
       {
@@ -1101,7 +1110,7 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          5812
+          5807
         ]
       },
       {
@@ -1127,7 +1136,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5218
+          5808
         ]
       },
       {
@@ -1135,7 +1144,6 @@
         "rank": 5,
         "pickAmount": 2,
         "skills": [
-          5813,
           115
         ]
       },
@@ -1170,7 +1178,7 @@
         "rank": 5,
         "pickAmount": 2,
         "skills": [
-          5814,
+          5809,
           5038
         ]
       },
@@ -1187,7 +1195,7 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          5815
+          5810
         ]
       },
       {
@@ -1206,126 +1214,27 @@
     "id": 12,
     "name": "Talk",
     "description": "[Technique]\r\nAn Expertise for negotiation. Gently approach and\r\nbefriend others.\r\n\r\n\u25B3: Skill Count\u2191, Negotiation Success Rate\u2191\r\n\r\nCan be increased up to Class 2",
-    "maxClass": 2,
+    "maxClass": 0,
     "maxRank": 0,
-    "breakpoints": [
-      {
-        "class": 0,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5601
-        ]
-      },
-      {
-        "class": 0,
-        "rank": 3,
-        "pickAmount": 1,
-        "skills": [
-          5605
-        ]
-      },
-      {
-        "class": 0,
-        "rank": 7,
-        "pickAmount": 1,
-        "skills": [
-          5608
-        ]
-      },
-      {
-        "class": 1,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5611
-        ]
-      },
-      {
-        "class": 1,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5614
-        ]
-      },
-      {
-        "class": 2,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5617
-        ]
-      }
-    ],
+    "breakpoints": [],
     "singularExpertise": []
   },
   {
     "id": 13,
     "name": "Threaten",
     "description": "[Technique]\r\nAn Expertise for negotiation. Coerce others into\r\ncompliance.\r\n\r\n\u25B3: Skill Count\u2191, Negotiation Success Rate\u2191\r\n\r\nCan be increased up to Class 2",
-    "maxClass": 2,
+    "maxClass": 0,
     "maxRank": 0,
-    "breakpoints": [
-      {
-        "class": 0,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5619
-        ]
-      },
-      {
-        "class": 1,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5630
-        ]
-      },
-      {
-        "class": 2,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          50412
-        ]
-      }
-    ],
+    "breakpoints": [],
     "singularExpertise": []
   },
   {
     "id": 14,
     "name": "Taunt",
     "description": "[Technique]\r\nAn Expertise for negotiation. Provoke an opponent\r\nand direct their attacks.\r\n\r\n\u25B3: Skill Count\u2191, Negotiation Success Rate\u2191\r\n\r\nCan be increased up to Class 2",
-    "maxClass": 2,
+    "maxClass": 0,
     "maxRank": 0,
-    "breakpoints": [
-      {
-        "class": 0,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5622
-        ]
-      },
-      {
-        "class": 1,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5623
-        ]
-      },
-      {
-        "class": 2,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          50413
-        ]
-      }
-    ],
+    "breakpoints": [],
     "singularExpertise": []
   },
   {
@@ -1607,7 +1516,7 @@
       {
         "class": 0,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5764,
           5777
@@ -1616,7 +1525,7 @@
       {
         "class": 1,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5763,
           5778
@@ -1625,7 +1534,7 @@
       {
         "class": 1,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5762,
           5779
@@ -1634,7 +1543,7 @@
       {
         "class": 2,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5768,
           5773
@@ -1643,7 +1552,7 @@
       {
         "class": 2,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5767,
           5774
@@ -1652,7 +1561,7 @@
       {
         "class": 3,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5760,
           5781
@@ -1661,7 +1570,7 @@
       {
         "class": 3,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5759,
           5782
@@ -1670,7 +1579,7 @@
       {
         "class": 4,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5766,
           5775
@@ -1679,7 +1588,7 @@
       {
         "class": 4,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5756,
           5785
@@ -1688,7 +1597,7 @@
       {
         "class": 5,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5757,
           5784
@@ -1697,7 +1606,7 @@
       {
         "class": 5,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5761,
           5780
@@ -1706,7 +1615,7 @@
       {
         "class": 6,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5758,
           5783
@@ -1715,7 +1624,7 @@
       {
         "class": 7,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 3,
         "skills": [
           5755,
           5772,
@@ -1957,11 +1866,47 @@
     "maxRank": 0,
     "breakpoints": [
       {
-        "class": 1,
+        "class": 0,
         "rank": 0,
+        "pickAmount": 3,
+        "skills": [
+          5601,
+          5619,
+          5622
+        ]
+      },
+      {
+        "class": 0,
+        "rank": 5,
         "pickAmount": 1,
         "skills": [
-          5797
+          5605
+        ]
+      },
+      {
+        "class": 1,
+        "rank": 0,
+        "pickAmount": 3,
+        "skills": [
+          5611
+        ]
+      },
+      {
+        "class": 1,
+        "rank": 1,
+        "pickAmount": 3,
+        "skills": [
+          5797,
+          5630,
+          5623
+        ]
+      },
+      {
+        "class": 1,
+        "rank": 5,
+        "pickAmount": 1,
+        "skills": [
+          5614
         ]
       },
       {
@@ -1970,6 +1915,15 @@
         "pickAmount": 1,
         "skills": [
           5130
+        ]
+      },
+      {
+        "class": 2,
+        "rank": 1,
+        "pickAmount": 2,
+        "skills": [
+          5617,
+          50412
         ]
       },
       {
@@ -2031,9 +1985,10 @@
       {
         "class": 10,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
-          50396
+          50396,
+          170000
         ]
       }
     ],
@@ -2132,7 +2087,9 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5146
+          5146,
+          170001,
+          170002
         ]
       }
     ],
@@ -4681,9 +4638,10 @@
       {
         "class": 4,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
-          5490
+          160640,
+          160641
         ]
       },
       {
@@ -4693,6 +4651,15 @@
         "skills": [
           5487,
           5488
+        ]
+      },
+      {
+        "class": 5,
+        "rank": 5,
+        "pickAmount": 2,
+        "skills": [
+          160642,
+          160643
         ]
       },
       {
@@ -5177,7 +5144,7 @@
   },
   {
     "id": 57,
-    "name": "Retaliation",
+    "name": "Regal Presence",
     "description": "A battle Expertise for assuming combat stances\r\nwith various close-range weapons.\r\n\r\n\u25B3: Skill Count\u2191, Durability loss on Armor\u2193\r\n   Attack Action Type Damage Dealt\u2191",
     "maxClass": 10,
     "maxRank": 0,
@@ -5202,7 +5169,7 @@
       },
       {
         "class": 2,
-        "rank": 5,
+        "rank": 2,
         "pickAmount": 1,
         "skills": [
           5164
@@ -5214,14 +5181,6 @@
         "pickAmount": 1,
         "skills": [
           5542
-        ]
-      },
-      {
-        "class": 3,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5543
         ]
       },
       {
@@ -5250,6 +5209,14 @@
         ]
       },
       {
+        "class": 5,
+        "rank": 5,
+        "pickAmount": 1,
+        "skills": [
+          5165
+        ]
+      },
+      {
         "class": 6,
         "rank": 0,
         "pickAmount": 1,
@@ -5268,17 +5235,11 @@
       {
         "class": 7,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 3,
         "skills": [
-          5166
-        ]
-      },
-      {
-        "class": 7,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          160746
+          5166,
+          50398,
+          50397
         ]
       },
       {
@@ -5286,22 +5247,39 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
+          160746
+        ]
+      },
+      {
+        "class": 8,
+        "rank": 5,
+        "pickAmount": 1,
+        "skills": [
           50403
+        ]
+      },
+      {
+        "class": 8,
+        "rank": 6,
+        "pickAmount": 2,
+        "skills": [
+          160675,
+          170006
         ]
       }
     ],
     "singularExpertise": [
       {
         "expertiseID": 19,
-        "classRequired": 1,
+        "classRequired": 2,
         "rankRequired": 0,
-        "percentage": 0.2
+        "percentage": 0.4
       },
       {
         "expertiseID": 20,
         "classRequired": 1,
         "rankRequired": 0,
-        "percentage": 0.4
+        "percentage": 0.2
       },
       {
         "expertiseID": 35,
