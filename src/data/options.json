@@ -21,7 +21,7 @@
 		"level": {
 			"name": "Level",
 			"queryParam": "oa",
-			"value": 1
+			"value": 90
 		},
 		"casino": {
 			"name": "Golden Arc Casino",
@@ -76,6 +76,11 @@
 		"diaspora": {
 			"name": "Diaspora",
 			"queryParam": "ol",
+			"value": 0
+		},
+		"sigil": {
+			"name": "Devouring Sigils",
+			"queryParam": "op",
 			"value": 0
 		},
 		"saintGermain": {
@@ -111,7 +116,7 @@
 		"level": {
 			"name": "Level",
 			"queryParam": "oa",
-			"value": 1
+			"value": 90
 		},
 		"casino": {
 			"name": "Golden Arc Casino",
@@ -166,6 +171,11 @@
 		"diaspora": {
 			"name": "Diaspora",
 			"queryParam": "ol",
+			"value": 0
+		},
+		"sigil": {
+			"name": "Devouring Sigils",
+			"queryParam": "op",
 			"value": 0
 		},
 		"saintGermain": {

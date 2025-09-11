@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Attack",
     "description": "[Technique]\r\nA basic Expertise for close-range combat.\r\nStrong against: Rush\r\nWeak against: Spin, Guard, Counter,\r\n    Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
-    "maxClass": 9,
+    "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
       {
@@ -80,14 +80,6 @@
       },
       {
         "class": 8,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5420
-        ]
-      },
-      {
-        "class": 8,
         "rank": 5,
         "pickAmount": 1,
         "skills": [
@@ -100,6 +92,14 @@
         "pickAmount": 1,
         "skills": [
           5422
+        ]
+      },
+      {
+        "class": 10,
+        "rank": 0,
+        "pickAmount": 1,
+        "skills": [
+          5420
         ]
       }
     ],
@@ -249,7 +249,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5428
+          5430
         ]
       },
       {
@@ -257,7 +257,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5430
+          5428
         ]
       }
     ],
@@ -344,14 +344,6 @@
       },
       {
         "class": 8,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5438
-        ]
-      },
-      {
-        "class": 8,
         "rank": 5,
         "pickAmount": 1,
         "skills": [
@@ -363,7 +355,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5517
+          5438
         ]
       }
     ],
@@ -373,7 +365,7 @@
     "id": 4,
     "name": "Rapid",
     "description": "[Technique]\r\nA technical Expertise for delivering successive\r\nattacks in long-distance combat.\r\nStrong against: Attack, Spin,\r\n     Guard, Counter\r\nWeak against: Dodge\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 8",
-    "maxClass": 9,
+    "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
       {
@@ -448,295 +440,13 @@
         "skills": [
           5439
         ]
-      }
-    ],
-    "singularExpertise": []
-  },
-  {
-    "id": 5,
-    "name": "Guard",
-    "description": "[Technique]\r\nA basic Expertise for protecting oneself from\r\nenemy attacks.\r\nStrong against: Attack, Spin \r\nWeak against: Rush, Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
-    "maxClass": 9,
-    "maxRank": 0,
-    "breakpoints": [
+      },
       {
-        "class": 0,
+        "class": 10,
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5416
-        ]
-      },
-      {
-        "class": 0,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5816
-        ]
-      },
-      {
-        "class": 1,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5417,
-          5418
-        ]
-      },
-      {
-        "class": 1,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5445
-        ]
-      },
-      {
-        "class": 2,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5817
-        ]
-      },
-      {
-        "class": 3,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5446
-        ]
-      },
-      {
-        "class": 4,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5818
-        ]
-      },
-      {
-        "class": 5,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5444
-        ]
-      },
-      {
-        "class": 6,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5819
-        ]
-      },
-      {
-        "class": 7,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5447
-        ]
-      },
-      {
-        "class": 8,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5820
-        ]
-      },
-      {
-        "class": 9,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5448
-        ]
-      }
-    ],
-    "singularExpertise": []
-  },
-  {
-    "id": 6,
-    "name": "Counter",
-    "description": "[Technique]\r\nA Technical Expertise for nullifying an enemy\u0027s\r\nattack and responding with a counterattack.\r\nStrong against: Attack, Rush\r\nWeak against: Spin, Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
-    "maxClass": 9,
-    "maxRank": 0,
-    "breakpoints": [
-      {
-        "class": 0,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5501
-        ]
-      },
-      {
-        "class": 0,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5507
-        ]
-      },
-      {
-        "class": 1,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5502,
-          5503
-        ]
-      },
-      {
-        "class": 2,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5509
-        ]
-      },
-      {
-        "class": 3,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5510
-        ]
-      },
-      {
-        "class": 5,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5508
-        ]
-      },
-      {
-        "class": 7,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5511
-        ]
-      },
-      {
-        "class": 7,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5449
-        ]
-      },
-      {
-        "class": 9,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          50389
-        ]
-      }
-    ],
-    "singularExpertise": []
-  },
-  {
-    "id": 7,
-    "name": "Dodge",
-    "description": "[Technique]\r\nA technical Expertise for evading long-distance\r\nattacks and creating an opportunity to respond.\r\nStrong against: Long-range attacks\r\nWeak against: Close-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
-    "maxClass": 9,
-    "maxRank": 0,
-    "breakpoints": [
-      {
-        "class": 0,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5504
-        ]
-      },
-      {
-        "class": 0,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5826
-        ]
-      },
-      {
-        "class": 1,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5505,
-          5506
-        ]
-      },
-      {
-        "class": 2,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5827
-        ]
-      },
-      {
-        "class": 3,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5512
-        ]
-      },
-      {
-        "class": 4,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5828
-        ]
-      },
-      {
-        "class": 5,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5513
-        ]
-      },
-      {
-        "class": 6,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5829
-        ]
-      },
-      {
-        "class": 7,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5514,
-          5515
-        ]
-      },
-      {
-        "class": 8,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5830
-        ]
-      },
-      {
-        "class": 9,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": [
-          5516
+          5517
         ]
       }
     ],
@@ -2103,7 +1813,140 @@
     "description": "[Knowledge]\r\nAn Expertise for developing survival know-how.\r\n\r\n\u25B3: Critical Defense\u2191, \r\n   Durability loss on Armor\u2193\r\n\r\nCan be increased up to Class 7",
     "maxClass": 7,
     "maxRank": 0,
-    "breakpoints": [],
+    "breakpoints": [
+      {
+        "class": 0,
+        "rank": 0,
+        "pickAmount": 3,
+        "skills": [
+          5416,
+          5501,
+          5504
+        ]
+      },
+      {
+        "class": 0,
+        "rank": 5,
+        "pickAmount": 3,
+        "skills": [
+          5507,
+          5816,
+          5826
+        ]
+      },
+      {
+        "class": 1,
+        "rank": 0,
+        "pickAmount": 2,
+        "skills": [
+          5502,
+          5503
+        ]
+      },
+      {
+        "class": 1,
+        "rank": 1,
+        "pickAmount": 2,
+        "skills": [
+          5417,
+          5418
+        ]
+      },
+      {
+        "class": 1,
+        "rank": 2,
+        "pickAmount": 1,
+        "skills": [
+          5506,
+          5505
+        ]
+      },
+      {
+        "class": 1,
+        "rank": 5,
+        "pickAmount": 2,
+        "skills": [
+          5817,
+          5827
+        ]
+      },
+      {
+        "class": 2,
+        "rank": 0,
+        "pickAmount": 3,
+        "skills": [
+          5510,
+          5446,
+          5512
+        ]
+      },
+      {
+        "class": 2,
+        "rank": 5,
+        "pickAmount": 2,
+        "skills": [
+          5818,
+          5828
+        ]
+      },
+      {
+        "class": 3,
+        "rank": 0,
+        "pickAmount": 3,
+        "skills": [
+          5508,
+          5444,
+          5513
+        ]
+      },
+      {
+        "class": 4,
+        "rank": 0,
+        "pickAmount": 2,
+        "skills": [
+          5819,
+          5829
+        ]
+      },
+      {
+        "class": 5,
+        "rank": 0,
+        "pickAmount": 3,
+        "skills": [
+          5511,
+          5447,
+          5514
+        ]
+      },
+      {
+        "class": 6,
+        "rank": 0,
+        "pickAmount": 2,
+        "skills": [
+          5449,
+          5515
+        ]
+      },
+      {
+        "class": 6,
+        "rank": 5,
+        "pickAmount": 2,
+        "skills": [
+          5820,
+          5830
+        ]
+      },
+      {
+        "class": 7,
+        "rank": 0,
+        "pickAmount": 3,
+        "skills": [
+          50389,
+          5448,
+          5516
+        ]
+      }
+    ],
     "singularExpertise": []
   },
   {

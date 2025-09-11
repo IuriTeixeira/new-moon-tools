@@ -121,6 +121,17 @@
     </o-field>
     <o-field>
       <template v-slot:label>
+        <span class="option-title">Devouring Sigils</span>
+      </template>
+      <step-number-input
+        :min="0"
+        :max="1000"
+        :step="1000"
+        v-model.number="options.sigil.value"
+      />
+    </o-field>
+    <o-field>
+      <template v-slot:label>
         <span class="option-title">St. Germain Quests</span>
       </template>
       <step-number-input
