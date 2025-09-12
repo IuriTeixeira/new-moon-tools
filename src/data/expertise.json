@@ -4362,7 +4362,7 @@
   },
   {
     "id": 51,
-    "name": "Magic Fist",
+    "name": "Demolition Dash",
     "description": "A battle Expertise for staging an assault while\r\nenveloped in destructive magical energy.\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193",
     "maxClass": 10,
     "maxRank": 0,
@@ -4370,17 +4370,28 @@
       {
         "class": 1,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
-          5434
+          5434,
+          900
         ]
       },
       {
         "class": 2,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
-          5432
+          5432,
+          5190
+        ]
+      },
+      {
+        "class": 3,
+        "rank": 0,
+        "pickAmount": 2,
+        "skills": [
+          5433,
+          109
         ]
       },
       {
@@ -4388,7 +4399,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5433
+          5095
         ]
       },
       {
@@ -4396,7 +4407,8 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5431
+          5431,
+          112
         ]
       },
       {
@@ -4404,7 +4416,15 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          160688
+         160727
+        ]
+      },
+      {
+        "class": 5,
+        "rank": 5,
+        "pickAmount": 1,
+        "skills": [
+          5101
         ]
       },
       {
@@ -4412,7 +4432,8 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          50401
+          50401,
+          1158
         ]
       },
       {
@@ -4420,7 +4441,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          160689
+         160727
         ]
       },
       {
@@ -4428,12 +4449,21 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          50402
+          50402,
+          804
         ]
       },
       {
         "class": 8,
         "rank": 0,
+        "pickAmount": 1,
+        "skills": [
+          160682
+        ]
+      },
+      {
+        "class": 8,
+        "rank": 2,
         "pickAmount": 1,
         "skills": [
           160620
@@ -4441,10 +4471,11 @@
       },
       {
         "class": 8,
-        "rank": 5,
-        "pickAmount": 1,
+        "rank": 4,
+        "pickAmount": 2,
         "skills": [
-          160687
+         160727,
+         160727
         ]
       }
     ],
@@ -4456,16 +4487,22 @@
         "percentage": 0.3
       },
       {
-        "expertiseID": 9,
+        "expertiseID": 19,
         "classRequired": 1,
         "rankRequired": 0,
-        "percentage": 0.3
+        "percentage": 0.2
+      },
+      {
+        "expertiseID": 35,
+        "classRequired": 1,
+        "rankRequired": 0,
+        "percentage": 0.2
       },
       {
         "expertiseID": 36,
         "classRequired": 1,
         "rankRequired": 0,
-        "percentage": 0.4
+        "percentage": 0.3
       }
     ]
   },
@@ -4791,12 +4828,20 @@
         ]
       },
       {
-        "class": 5,
-        "rank": 0,
+        "class": 4,
+        "rank": 8,
         "pickAmount": 2,
         "skills": [
           5464,
           5465
+        ]
+      },
+      {
+        "class": 5,
+        "rank": 0,
+        "pickAmount": 1,
+        "skills": [
+         160757
         ]
       },
       {
@@ -4821,7 +4866,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          160621
+          50400
         ]
       },
       {
@@ -4829,9 +4874,15 @@
         "rank": 0,
         "pickAmount": 3,
         "skills": [
-          50400,
-          160623,
-          160757
+          160621
+        ]
+      },
+      {
+        "class": 8,
+        "rank": 9,
+        "pickAmount": 3,
+        "skills": [
+          160623
         ]
       }
     ],
@@ -4982,7 +5033,8 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          160622
+          160727,
+          50404
         ]
       },
       {
@@ -4990,89 +5042,104 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          50404
+          160622
+        ]
+      },
+      {
+        "class": 8,
+        "rank": 4,
+        "pickAmount": 1,
+        "skills": [
+          160727,
+          160727
         ]
       }
     ],
     "singularExpertise": [
       {
-        "expertiseID": 3,
+        "expertiseID": 35,
         "classRequired": 2,
         "rankRequired": 0,
-        "percentage": 0.4
+        "percentage": 0.3
       },
       {
         "expertiseID": 18,
         "classRequired": 2,
         "rankRequired": 0,
-        "percentage": 0.4
+        "percentage": 0.3
       },
       {
         "expertiseID": 34,
-        "classRequired": 1,
+        "classRequired": 2,
         "rankRequired": 0,
-        "percentage": 0.2
+        "percentage": 0.4
       }
     ]
   },
   {
     "id": 56,
-    "name": "Rampage",
+    "name": "Vanguard",
     "description": "A battle Expertise for harnessing violent attacks\r\nin close-quarters combat.\r\n\r\n\u25B3: Skill Count\u2191",
     "maxClass": 9,
     "maxRank": 0,
     "breakpoints": [
       {
-        "class": 2,
-        "rank": 0,
-        "pickAmount": 2,
-        "skills": [
-          109,
-          112
-        ]
-      },
-      {
-        "class": 3,
+        "class": 1,
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5094,
-          5095
-        ]
-      },
-      {
-        "class": 3,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          71
-        ]
-      },
-      {
-        "class": 4,
-        "rank": 0,
-        "pickAmount": 2,
-        "skills": [
-          66,
-          67
-        ]
-      },
-      {
-        "class": 4,
-        "rank": 5,
-        "pickAmount": 2,
-        "skills": [
-          68,
           637
         ]
       },
       {
-        "class": 5,
+        "class": 2,
         "rank": 0,
+        "pickAmount": 1,
+        "skills": [
+          81
+        ]
+      },
+      {
+        "class": 3,
+        "rank": 0,
+        "pickAmount": 3,
+        "skills": [
+          5094,
+          5445,
+          5509
+        ]
+      },
+      {
+        "class": 3,
+        "rank": 5,
         "pickAmount": 2,
         "skills": [
-          5190,
-          900
+          71,
+          5218
+        ]
+      },
+      {
+        "class": 4,
+        "rank": 0,
+        "pickAmount": 1,
+        "skills": [
+          66
+        ]
+      },
+      {
+        "class": 4,
+        "rank": 5,
+        "pickAmount": 1,
+        "skills": [
+          68
+        ]
+      },
+      {
+        "class": 5,
+        "rank": 0,
+        "pickAmount": 1,
+        "skills": [
+         160727
         ]
       },
       {
@@ -5080,26 +5147,15 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          5101,
           5100
         ]
       },
       {
         "class": 6,
         "rank": 0,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
-          50397,
-          50398
-        ]
-      },
-      {
-        "class": 6,
-        "rank": 5,
-        "pickAmount": 2,
-        "skills": [
-          1158,
-          160682
+         160727
         ]
       },
       {
@@ -5107,8 +5163,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          50425,
-          804
+          50425
         ]
       },
       {
@@ -5116,8 +5171,24 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          160684,
-          160683
+          160684
+        ]
+      },
+      {
+        "class": 7,
+        "rank": 6,
+        "pickAmount": 2,
+        "skills": [
+         160727,
+         160727
+        ]
+      },
+      {
+        "class": 7,
+        "rank": 8,
+        "pickAmount": 1,
+        "skills": [
+         160727
         ]
       }
     ],
@@ -5135,7 +5206,7 @@
         "percentage": 0.3
       },
       {
-        "expertiseID": 2,
+        "expertiseID": 20,
         "classRequired": 2,
         "rankRequired": 0,
         "percentage": 0.3
