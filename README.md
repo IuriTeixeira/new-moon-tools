@@ -1,6 +1,4 @@
 # For Project New Moon-tools
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1bea73b4-d652-4d87-9a2b-c7f037a30251/deploy-status)](https://app.netlify.com/sites/project-new-moon/deploys)
-
 A collection of tools useful for playing SMT: Imagine Online.
 
 https://newmoon.kuenaimaku.com/

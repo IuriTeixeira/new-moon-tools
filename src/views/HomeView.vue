@@ -103,9 +103,9 @@
         </p>
         <hr />
         <p>
-          Find an issue? Have a suggestion for a new feature or tool? <a href="https://github.com/Kuenaimaku/new-moon-tools/issues">Create an issue on GitHub</a> and I'll see what I can do. <br/>
+          Find an issue? Have a suggestion for a new feature or tool? <a href="https://github.com/IuriTeixeira/new-moon-tools/issues">Create an issue on GitHub</a> and I'll see what I can do. <br/>
           And for anything else not covered, check out the 
-          <a href="https://wiki.project-new-moon.online/Main_Page">Project New Moon Wiki</a>.
+          <a href="https://wiki.megatenonline.ru/Main_Page">IMAGINE Wiki</a> or the Discord.
         </p>
       </div>
     </section>
