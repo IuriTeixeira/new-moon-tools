@@ -63,6 +63,19 @@
           skill unlocks. Supports loading data from saved urls.
         </p>
         <h2>
+          Skill List
+          <router-link to="/skill"
+            ><o-icon
+              pack="mdi"
+              class="icon has-text-info"
+              icon="link"
+            />Link</router-link
+          >
+        </h2>
+        <p>
+          A list with all the skills in the game. Note that not all skills listed are available to be learned in this server.
+        </p>
+        <h2>
           Moon Phase Simulator
           <router-link to="/moonphase"
             ><o-icon
@@ -94,7 +107,7 @@
             ><o-icon
               pack="mdi"
               class="icon has-text-info"
-              icon="ballot"
+              icon="link"
             />Link</router-link
           >
         </h2>

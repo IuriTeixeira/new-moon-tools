@@ -19,6 +19,7 @@
 				<router-link to="/books" class="navbar-item"><o-icon pack="mdi" class="icon has-text-info" icon="book-open-page-variant"/><span class="is-hidden-touch">Expertise Textbooks</span><span class="is-hidden-widescreen is-hidden-desktop-only">Books</span></router-link>
 				<router-link to="/damage" class="navbar-item"><o-icon pack="mdi" class="icon has-text-primary" icon="calculator-variant"/><span>Damage</span></router-link>
 				<router-link to="/expertise" class="navbar-item"><o-icon pack="mdi" class="icon has-text-success" icon="arm-flex"/><span>Expertise</span></router-link>
+				<router-link to="/skill" class="navbar-item"><o-icon pack="mdi" class="icon has-text-danger" icon="sword"/><span>Skill List</span></router-link>
 				<router-link to="/moonphase" class="navbar-item"><o-icon pack="mdi" class="icon has-text-warning" icon="moon-waning-crescent"/><span>Moonphase</span></router-link>
 				<router-link to="/timed-demons" class="navbar-item"><o-icon pack="mdi" class="icon has-text-danger" icon="emoticon-devil-outline"/><span>Demon Schedule</span></router-link>
 				<router-link to="/demon-planner" class="navbar-item"><o-icon pack="mdi" class="icon has-text-info" icon="ballot"/><span>Demon Inheritance Planner</span></router-link>
