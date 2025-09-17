@@ -13,7 +13,7 @@
 				</div>
 			</div>
 
-			<div class="content">
+			<div class="description-text">
 				{{ skill.description }}
 			</div>
 		</div>
@@ -59,6 +59,9 @@ export default {
 
 			if (this.skill.stack > 1) {
 				r += ` • ${this.skill.stack} stacks`
+				if(this.skill.skillFlags.fixedStack){
+					r += ` (fixed)`
+				}
 			}
 
 			if (this.skill.damage > 0) {
@@ -78,11 +81,17 @@ export default {
 			}
 
 			if (this.skill.incantation > 0) {
-				r += ` • ${this.skill.incantation}ms incantation`
+				r += ` • ${this.skill.incantation/1000}s incantation`
+				if(this.skill.skillFlags.fixedCooldown){
+					r += ` (fixed)`
+				}
 			}
 
 			if (this.skill.cooldown > 0) {
-				r += ` • ${this.skill.cooldown}ms cooldown`
+				r += ` • ${this.skill.cooldown/1000}s cooldown`
+				if(this.skill.skillFlags.fixedCharge){
+					r += ` (fixed)`
+				}
 			}
 
 			if (this.skill.statDependency !== "None") {
@@ -103,6 +112,11 @@ export default {
 
 .o-tip__content {
 	max-width: 300px;
+}
+
+.description-text {
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .subtitle.is-7 {
