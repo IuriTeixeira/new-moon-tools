@@ -73,6 +73,10 @@ export default {
 				r += ` • ${this.skill.range} range`
 			}
 
+			if (this.skill.areaOfEffect.distance > 0) {
+				r += ` • ${this.skill.areaOfEffect.distance} AoE (${this.skill.areaOfEffect.areaType})`
+			}
+
 			if (this.skill.incantation > 0) {
 				r += ` • ${this.skill.incantation}ms incantation`
 			}
