@@ -1,166 +1,118 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
-import dataService from "@/services/dataService";
-import expertiseService from "@/services/expertiseService";
+import { ref, computed } from "vue"
 import SkillList from "@/components/skill/SkillList.vue"
-import ExpertiseSummary from "@/components/expertise/ExpertiseSummary.vue";
-import ExpertiseLinkModal from "@/components/expertise/LinkModal.vue";
+import skillService from "@/services/skillService"
 
-import { useOruga } from "@oruga-ui/oruga-next";
-const oruga = useOruga();
+// 🔹 State
+const selectedAttribute = ref("") // "affinity" | "actionType" | ""
+const selectedValue = ref("") // e.g. "Fire"
 
-//-- Data
-const activeTab = ref("0");
-const expertiseFloor = ref(17000);
-const selection = ref([]);
-const options = ref({});
+// Get all skills
+const allSkills = computed(() =>
+  skillService.all().filter(
+    skill =>
+      (skill.family === "Arcane Art" ||
+        skill.family === "Technique" ||
+        skill.family === "Special Skill") &&
+      skill.activationType !== "Special" &&
+      !skill.name.toLowerCase().includes("debug")
+  )
+)
 
-let uri = window.location.search.substring(0);
-let params = new URLSearchParams(uri);
-
-//-- OnCreate
-const expertise = expertiseService.all();
-reset();
-if (uri != "") {
-  let hydratedValues = dataService.fromExpertiseQueryParams(params);
-  selection.value = hydratedValues.expertise;
-  options.value = hydratedValues.options;
-  oruga.notification.open({
-    message: "Build Loaded!",
-    rootClass: "toast-notification",
-    position: "top",
-    variant: "success",
-    closable: true,
-    duration: 5000,
-  });
+// 🔹 Helper: safely read nested property values
+function getNestedValue(obj, path) {
+  return path.split(".").reduce((acc, key) => acc?.[key], obj)
 }
 
-const currentExpertise = computed(() => {
-  let e = 0;
-  selection.value.forEach(function (v) {
-    e += v.value * 100;
-  });
-  return e;
-});
-
-const bonusExpertise = computed(() => {
-  const values = Object.values(options.value);
-  let e = 0;
-  values.forEach(function (v) {
-    e += v.value;
-  });
-  e -= options.value.level.value;
-  if (options.value.level.value !== 1) {
-    e += Math.floor(options.value.level.value / 10) * 1000;
-  }
-  if (options.value.level.value === 99) {
-    e += 1000;
-  }
-  return e;
+// 🔹 Dynamically compute possible values based on selected attribute
+const availableValues = computed(() => {
+  if (!selectedAttribute.value) return []
+  const values = allSkills.value.map(skill =>
+    getNestedValue(skill, selectedAttribute.value)
+  )
+  return [...new Set(values.filter(Boolean))].sort()
 })
 
-const progressType = computed(() => {
-  if (currentExpertise.value <= expertiseFloor.value + bonusExpertise.value)
-    return "is-warning";
-  else return "is-danger";
+// 🔹 Filtered skills
+const filteredSkills = computed(() => {
+  if (!selectedAttribute.value || !selectedValue.value) return allSkills.value
+  return allSkills.value.filter(
+    skill => getNestedValue(skill, selectedAttribute.value) === selectedValue.value
+  )
 })
 
-
-function reset() {
-  let s = [];
-  expertise.forEach(e => {
-    let obj = {};
-    obj.id = e.id,
-    obj.name = e.name,
-    obj.description = e.description,
-    obj.value = 0,
-    obj.max = Number.parseInt( e.maxClass.toString() + e.maxRank.toString())
-    if (e.singularExpertise.length === 0 && e.name !== "--Unused--"){
-      s.push(obj);
-    }
-  });
-  selection.value = s;
-  options.value = dataService.getExpertiseDefaults();
-}
-
-function expertiseLinkModal() {
-  oruga.modal.open({
-    component: ExpertiseLinkModal,
-    custom: true,
-    trapFocus: true,
-    props: {
-      options: options.value,
-      selection: selection.value,
-    },
-    events: {
-      copy: onCopy
-    },
-    width: 400,
-  });
-}
-
-function onCopy() {
-  oruga.notification.open({
-    message: 'Link copied to clipboard!',
-    rootClass: 'toast-notification',
-    position: 'top',
-    duration: 5000,
-    closable: true,
-    variant: 'success'
-  })
-}
-
+const filterOptions = [
+  { path: "statDependency", label: "Stat" },
+  { path: "affinity", label: "Affinity" },
+  { path: "categoryType", label: "Category" },
+  { path: "actionType", label: "Action Type" },
+  { path: "activationType", label: "Activation Type" },
+  { path: "areaOfEffect.areaType", label: "Area of Effect Type" }
+]
 
 </script>
 
 <template>
   <div id="expertise">
-    <section class="hero is-primary is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column is-2 has-text-centered">
-              <figure class="image is-128x128 is-inline-block">
-                <img alt="New Moon logo" src="@/assets/logo.png" />
-              </figure>
-            </div>
-            <div class="column is-10">
-              <!-- Left side -->
-              <h1 class="title">Skill List</h1>
-              <p class="subtitle">For Project New Moon</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="section">
       <div class="container">
-        <div class="columns">
-          <div class="column">
-            <div class="container">
-              <div class="content">
-                <h1>All Skills</h1>
-                <div class="columns">
-                  <div class="column">
-                    <skill-list
-                      :selection="selection"
-                      :options="options"
-                    />
-                  </div>
+        <!-- Filter Row -->
+        <div class="columns is-variable is-2">
+          <!-- Attribute Dropdown -->
+          <div class="column is-one-quarter">
+            <div class="field">
+              <label class="label">Filter by:</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select v-model="selectedAttribute" @change="selectedValue = ''">
+                    <option value="">All Skills</option>
+                    <option v-for="option in filterOptions" :key="option.path" :value="option.path">
+                      {{ option.label }}
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Value Dropdown -->
+          <div class="column is-one-quarter">
+            <div class="field">
+              <label class="label">
+                Select
+                {{
+                  filterOptions.find(option => option.path === selectedAttribute)?.label || "Value"
+                }}:
+              </label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select v-model="selectedValue" :disabled="!selectedAttribute">
+                    <option value="">All</option>
+                    <option v-for="value in availableValues" :key="value" :value="value">
+                      {{ value }}
+                    </option>
+                  </select>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Skill List -->
+        <skill-list :skills="filteredSkills" />
       </div>
     </section>
   </div>
 </template>
 
-
 <style lang="scss">
 .o-tabs__content {
   padding: 0px;
+}
+
+.field-container {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
 }
 
 .toast-notification {

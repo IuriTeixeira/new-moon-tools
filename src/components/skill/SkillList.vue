@@ -1,30 +1,21 @@
 <script setup>
-import { computed } from 'vue'
-import skillService from "@/services/skillService";
+import Skill from "@/components/expertise/Skill.vue"
+import { defineProps } from "vue"
 
-import Skill from "@/components/expertise/Skill.vue";
-
-//-- Data
-
-const skills = computed(() => {
-    return skillService.all().filter(skill =>
-        (skill.family === "Arcane Art" || skill.family === "Technique" || skill.family === "Special Skill")
-        && !skill.name.toLowerCase().includes("debug")
-    );
-});
-
-
+const props = defineProps({
+  skills: {
+    type: Array,
+    required: true
+  }
+})
 </script>
 
 <template>
-    <div>
-        <div class="skill-summary">
-            <Skill v-for="skill in skills" :key="skill.id" :skill="skill" />
-        </div>
-    </div>
+  <div class="skill-summary">
+    <Skill v-for="skill in props.skills" :key="skill.id" :skill="skill" />
+  </div>
 </template>
-<script>
-</script>
+
 
 <style lang="scss">
 .toggle-header {
