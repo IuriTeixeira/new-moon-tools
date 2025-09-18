@@ -3,9 +3,9 @@ import { ref, computed } from "vue"
 import SkillList from "@/components/skill/SkillList.vue"
 import skillService from "@/services/skillService"
 
-// 🔹 State
-const selectedAttribute = ref("") // "affinity" | "actionType" | ""
-const selectedValue = ref("") // e.g. "Fire"
+// State
+const selectedAttribute = ref("")
+const selectedValue = ref("")
 
 // Get all skills
 const allSkills = computed(() =>
@@ -19,12 +19,12 @@ const allSkills = computed(() =>
   )
 )
 
-// 🔹 Helper: safely read nested property values
+// Helper: safely read nested property values
 function getNestedValue(obj, path) {
   return path.split(".").reduce((acc, key) => acc?.[key], obj)
 }
 
-// 🔹 Dynamically compute possible values based on selected attribute
+// Dynamically compute possible values based on selected attribute
 const availableValues = computed(() => {
   if (!selectedAttribute.value) return []
   const values = allSkills.value.map(skill =>
@@ -33,7 +33,7 @@ const availableValues = computed(() => {
   return [...new Set(values.filter(Boolean))].sort()
 })
 
-// 🔹 Filtered skills
+// Filtered skills
 const filteredSkills = computed(() => {
   if (!selectedAttribute.value || !selectedValue.value) return allSkills.value
   return allSkills.value.filter(
