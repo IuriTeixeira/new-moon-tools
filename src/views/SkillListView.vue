@@ -15,7 +15,9 @@ const allSkills = computed(() =>
         skill.family === "Technique" ||
         skill.family === "Special Skill") &&
       skill.activationType !== "Special" &&
-      !skill.name.toLowerCase().includes("debug")
+      !skill.description.toLowerCase().includes("fusion skill") &&
+      !skill.name.toLowerCase().includes("debug") &&
+      !skill.name.toLowerCase().includes("ＧＭ")
   )
 )
 
@@ -53,7 +55,25 @@ const filterOptions = [
 </script>
 
 <template>
-  <div id="expertise">
+  <div id="skill-list">
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-2 has-text-centered">
+              <figure class="image is-128x128 is-inline-block">
+                <img alt="New Moon logo" src="@/assets/logo.png" />
+              </figure>
+            </div>
+            <div class="column is-10">
+              <!-- Left side -->
+              <h1 class="title">Skill List</h1>
+              <p class="subtitle">For Project New Moon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="section">
       <div class="container">
         <!-- Filter Row -->

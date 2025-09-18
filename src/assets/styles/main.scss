@@ -177,8 +177,15 @@ input[type=text] {
 .is-circular { 
     border-radius: 50% !important; 
 }
+
 .b-tooltip.is-secondary .b-tooltip-content {
     color: $text
+}
+
+.b-tooltip-content.is-multiline {
+  min-width: 30vw;
+  max-width: none;
+  white-space: normal;
 }
 
 .is-divider[data-content]::after, .is-divider-vertical[data-content]::after {

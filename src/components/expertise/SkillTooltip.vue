@@ -106,14 +106,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.o-tip__content--multiline {
-	width: 300px;
-}
-
-.o-tip__content {
-	max-width: 300px;
-}
-
 .description-text {
   white-space: pre-wrap;
   word-break: break-word;
