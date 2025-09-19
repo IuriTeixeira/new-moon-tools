@@ -2,6 +2,7 @@
 import { ref, computed } from "vue"
 import SkillList from "@/components/skill/SkillList.vue"
 import skillService from "@/services/skillService"
+import expertiseService from "@/services/expertiseService";
 
 // State
 const selectedAttribute = ref("")
@@ -21,6 +22,17 @@ const allSkills = computed(() =>
   )
 )
 
+// Extract all skill IDs from breakpoints across all expertises
+const expertiseSkillIDs = new Set(
+  expertiseService.all().flatMap(expertise =>
+    expertise.breakpoints.flatMap(bp => bp.skills)
+  )
+);
+
+const expertiseSkills = computed(() =>
+  allSkills.value.filter(skill => expertiseSkillIDs.has(Number(skill.id)))
+);
+
 // Helper: safely read nested property values
 function getNestedValue(obj, path) {
   return path.split(".").reduce((acc, key) => acc?.[key], obj)
@@ -29,6 +41,18 @@ function getNestedValue(obj, path) {
 // Dynamically compute possible values based on selected attribute
 const availableValues = computed(() => {
   if (!selectedAttribute.value) return []
+
+  if (selectedAttribute.value === "expertise"){
+    return expertiseService.all()
+    .filter(
+      exp => exp.name &&
+      exp.name !== "--Unused--" &&
+      Array.isArray(exp.breakpoints) &&
+      exp.breakpoints.some(bp => Array.isArray(bp.skills) && bp.skills.length > 0) 
+    )
+    .map(exp => exp.name)
+  }
+
   const values = allSkills.value.map(skill =>
     getNestedValue(skill, selectedAttribute.value)
   )
@@ -37,13 +61,31 @@ const availableValues = computed(() => {
 
 // Filtered skills
 const filteredSkills = computed(() => {
-  if (!selectedAttribute.value || !selectedValue.value) return allSkills.value
+  if (!selectedAttribute.value || !selectedValue.value) {
+    return selectedAttribute.value === "expertise"
+      ? expertiseSkills.value
+      : allSkills.value
+  }
+
+  if (selectedAttribute.value === "expertise") {
+    // Find the selected expertise
+    const selectedExpertise = expertiseService.all().find(
+      exp => exp.name === selectedValue.value
+    )
+    if (!selectedExpertise) return []
+    const selectedSkillIDs = new Set(
+      selectedExpertise.breakpoints.flatMap(bp => bp.skills)
+    )
+    return allSkills.value.filter(skill => selectedSkillIDs.has(Number(skill.id)))
+  }
+  
   return allSkills.value.filter(
     skill => getNestedValue(skill, selectedAttribute.value) === selectedValue.value
   )
 })
 
 const filterOptions = [
+  { path: "expertise", label: "Expertise" },
   { path: "statDependency", label: "Stat" },
   { path: "affinity", label: "Affinity" },
   { path: "categoryType", label: "Category" },
