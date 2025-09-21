@@ -50,7 +50,7 @@ const availableValues = computed(() => {
       Array.isArray(exp.breakpoints) &&
       exp.breakpoints.some(bp => Array.isArray(bp.skills) && bp.skills.length > 0) 
     )
-    .map(exp => exp.name)
+    .map(exp => exp.name).sort()
   }
 
   const values = allSkills.value.map(skill =>
