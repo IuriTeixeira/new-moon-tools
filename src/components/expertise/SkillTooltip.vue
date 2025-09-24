@@ -9,10 +9,25 @@
 				</div>
 				<div class="media-content">
 					<p class="title is-6">{{ skill.name }}</p>
-					<p class="subtitle is-7">{{ info }}</p>
+					<div class="subtitle is-7">
+						{{ info.family }}
+					</div>
+					<div class="info-columns subtitle is-7">
+						<div class="column">
+							<div v-for="(body, index) in info.body.slice(0, Math.ceil(info.body.length / 2))"
+								:key="'left-' + index">
+								{{ body }}
+							</div>
+						</div>
+						<div class="column">
+							<div v-for="(body, index) in info.body.slice(Math.ceil(info.body.length / 2))"
+								:key="'right-' + index">
+								{{ body }}
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-
 			<div class="description-text">
 				{{ skill.description }}
 			</div>
@@ -21,6 +36,8 @@
 </template>
 
 <script>
+import { info } from 'sass';
+
 export default {
 	name: 'SkillTooltip',
 	components: {
@@ -51,54 +68,44 @@ export default {
 	},
 	computed: {
 		info() {
-			let r = `${this.skill.family}`;
-			r += ` • ${this.skill.categoryType}`
-			r += ` • ${this.skill.activationType}`
-			r += ` • ${this.skill.actionType}`
-			r += ` • ${this.skill.affinity}`
+			let family = `${this.skill.family} • ${this.skill.categoryType} • ${this.skill.activationType}`
+			let body = []
+			body.push(`• Action: ${this.skill.actionType}\n`)
+			body.push(`• Affinity: ${this.skill.affinity}\n`)
+
+			if (this.skill.statDependency !== "None") {
+				body.push(` • Stat: ${this.skill.statDependency}`)
+			}
 
 			if (this.skill.stack > 1) {
-				r += ` • ${this.skill.stack} stacks`
-				if(this.skill.skillFlags.fixedStack){
-					r += ` (fixed)`
-				}
+				this.skill.skillFlags.fixedStack ? body.push(` • Stacks: ${this.skill.stack} (fixed)\n`) : body.push(` • Stacks: ${this.skill.stack}\n`)
 			}
 
 			if (this.skill.damage > 0) {
-				r += ` • ${this.skill.damage} modifier`
+				body.push(` • Modifier: ${this.skill.damage}\n`)
 			}
 
 			if (this.skill.stiffness > 0) {
-				r += ` • ${this.skill.stiffness} stiffness`
+				body.push(` • Stiffness: ${this.skill.stiffness}\n`)
 			}
 
 			if (this.skill.range > 0) {
-				r += ` • ${this.skill.range} range`
+				body.push(` • Range: ${this.skill.range}\n`)
 			}
 
 			if (this.skill.areaOfEffect.distance > 0) {
-				r += ` • ${this.skill.areaOfEffect.distance} AoE (${this.skill.areaOfEffect.areaType})`
+				body.push(` • AoE: ${this.skill.areaOfEffect.distance} (${this.skill.areaOfEffect.areaType})\n`)
 			}
 
 			if (this.skill.incantation > 0) {
-				r += ` • ${this.skill.incantation/1000}s incantation`
-				if(this.skill.skillFlags.fixedCooldown){
-					r += ` (fixed)`
-				}
+				this.skill.skillFlags.fixedIncantation ? body.push(` • Incantation: ${this.skill.incantation / 1000}s (fixed)\n`) : body.push(` • Incantation: ${this.skill.incantation / 1000}s\n`)
 			}
 
 			if (this.skill.cooldown > 0) {
-				r += ` • ${this.skill.cooldown/1000}s cooldown`
-				if(this.skill.skillFlags.fixedCharge){
-					r += ` (fixed)`
-				}
+				this.skill.skillFlags.fixedCooldown ? body.push(` • Cooldown: ${this.skill.cooldown / 1000}s (fixed)\n`) : body.push(` • Cooldown: ${this.skill.cooldown / 1000}s\n`)
 			}
 
-			if (this.skill.statDependency !== "None") {
-				r += ` • ${this.skill.statDependency} scaling`
-			}
-
-			return r;
+			return { family, body };
 		},
 
 	}
@@ -106,24 +113,42 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.info-columns {
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
 .description-text {
-  white-space: pre-wrap;
-  word-break: break-word;
+	white-space: pre-wrap;
+	word-break: break-word;
+	margin-top: 0;
+}
+
+.title.is-6 {
+	margin-left: 0.25rem;
 }
 
 .subtitle.is-7 {
 	font-style: italic;
+	margin-bottom: 0.1rem;
+	margin-left: 0.25rem;
 }
 
 .card {
 	text-align: left;
 
 	.media:not(:last-child) {
-		margin-bottom: 0.5rem;
+		margin-bottom: 0rem;
 	}
 
 	.media-left {
-		margin-right: 0.5rem;
+		margin-right: 0;
 	}
 }
 </style>
