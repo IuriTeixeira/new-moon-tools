@@ -68,7 +68,7 @@ export default {
 	},
 	computed: {
 		info() {
-			let family = `${this.skill.family} • ${this.skill.categoryType} • ${this.skill.activationType}`
+			let family = `${this.skill.family} • ${this.skill.activationType} • ${this.skill.categoryType}`
 			let body = []
 			body.push(`• Action: ${this.skill.actionType}\n`)
 			body.push(`• Affinity: ${this.skill.affinity}\n`)
@@ -93,7 +93,7 @@ export default {
 				body.push(` • Range: ${this.skill.range}\n`)
 			}
 
-			if (this.skill.areaOfEffect.distance > 0) {
+			if (this.skill.areaOfEffect.areaType !== "None") {
 				body.push(` • AoE: ${this.skill.areaOfEffect.distance} (${this.skill.areaOfEffect.areaType})\n`)
 			}
 
