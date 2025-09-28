@@ -21,7 +21,7 @@ const allSkills = computed(() =>
       skill.activationType !== "Special" &&
       !skill.description?.toLowerCase().includes("fusion skill") &&
       !skill.name?.toLowerCase().includes("debug") &&
-      !skill.name?.includes("ＧＭ")
+      !skill.name?.includes("【ＧＭ】")
   )
 )
 
@@ -72,7 +72,7 @@ async function findSkills() {
       skill.activationType !== "Special" &&
       !skill.description?.toLowerCase().includes("fusion skill") &&
       !skill.name?.toLowerCase().includes("debug") &&
-      !skill.name?.includes("ＧＭ")
+      !skill.name?.includes("【ＧＭ】")
   )))
   results.value = Array.isArray(found) ? found : []
 }
