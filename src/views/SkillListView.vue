@@ -48,23 +48,17 @@ const onInput = debounce(() => {
 )
 
 async function findSkills() {
-  if (!filterBySkillName.value) {
-    results.value = []
-    return
-
-  }
-
-  if (filterBySkillName.value.length < 3) {
+  if (!filterBySkillName.value || filterBySkillName.value.length < 3) {
     results.value = []
     return
   }
 
-  if (filterBySkillName.value.length === 0) {
-    results.value = []
-    return
-  }
+  const found = await Promise.resolve(
+    skillService.searchByName(filterBySkillName.value)
+  )
 
-  const found = await Promise.resolve(skillService.searchByName(filterBySkillName.value.filter(
+  // Apply the same filters you use for allSkills
+  results.value = (found ?? []).filter(
     skill =>
       (skill.family === "Arcane Art" ||
         skill.family === "Technique" ||
@@ -73,8 +67,7 @@ async function findSkills() {
       !skill.description?.toLowerCase().includes("fusion skill") &&
       !skill.name?.toLowerCase().includes("debug") &&
       !skill.name?.includes("【ＧＭ】")
-  )))
-  results.value = Array.isArray(found) ? found : []
+  )
 }
 
 // Dynamically compute possible values based on selected attribute
