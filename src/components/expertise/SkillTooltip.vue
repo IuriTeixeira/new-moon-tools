@@ -77,7 +77,7 @@ export default {
 				body.push(` • Stat: ${this.skill.statDependency}`)
 			}
 
-			if (this.skill.stack > 1) {
+			if (this.skill.stack) {
 				this.skill.skillFlags.fixedStack ? body.push(` • Stacks: ${this.skill.stack} (fixed)\n`) : body.push(` • Stacks: ${this.skill.stack}\n`)
 			}
 
