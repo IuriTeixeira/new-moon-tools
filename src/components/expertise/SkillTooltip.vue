@@ -98,7 +98,7 @@ export default {
 			}
 
 			if (this.skill.incantation > 0) {
-				this.skill.skillFlags.fixedIncantation ? body.push(` • Incantation: ${this.skill.incantation / 1000}s (fixed)\n`) : body.push(` • Incantation: ${this.skill.incantation / 1000}s\n`)
+				this.skill.skillFlags.fixedCharge ? body.push(` • Incantation: ${this.skill.incantation / 1000}s (fixed)\n`) : body.push(` • Incantation: ${this.skill.incantation / 1000}s\n`)
 			}
 
 			if (this.skill.cooldown > 0) {
