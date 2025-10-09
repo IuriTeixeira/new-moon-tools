@@ -4,12 +4,12 @@
 			<div class="media">
 				<div class="media-left">
 					<figure class="image is-48x48">
-						<img :src="'./img/df/' + df.icon + '.png'" :alt="df.name" @error="handleImageError">
+						<img :src="'./img/items/' + df.icon + '.png'" :alt="df.name" @error="handleImageError">
 					</figure>
 				</div>
 				<div class="media-content">
 					<p class="title is-6">{{ df.name }}</p>
-					<div class="info-columns subtitle is-7">
+					<!-- <div class="info-columns subtitle is-7">
 						<div class="column">
 							<div v-for="(body, index) in info.body.slice(0, Math.ceil(info.body.length / 2))"
 								:key="'left-' + index">
@@ -22,18 +22,18 @@
 								{{ body }}
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
-			<!-- <div class="description-text">
-				{{ df.effects }}
-			</div> -->
+			<div class="description-text">
+				{{ df.tokusei_description }}
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-import { info } from 'sass';
+//import { info } from 'sass';
 
 export default {
 	name: 'DFTooltip',
@@ -60,11 +60,6 @@ export default {
 
 			body.push(`• ID: ${this.df.id}`)
 			body.push(`• Name: ${this.df.name}`)
-			if (this.df.effects?.length) {
-				body.push("• Effects:")
-				this.df.effects.forEach(e => body.push(`  - ${e}`))
-			}
-
 			return { body }
 		}
 	}

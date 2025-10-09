@@ -5,7 +5,7 @@
         <DFTooltip :df="df" />
       </template>
       <figure class="image is-32x32 is-df">
-        <img :src="'./img/df/' + df.icon + '.png'" @error="handleImageError">
+        <img :src="'./img/items/' + df.icon + '.png'" @error="handleImageError">
       </figure>
     </o-tooltip>
   </div>
