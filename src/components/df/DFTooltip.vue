@@ -26,14 +26,19 @@
 				</div>
 			</div>
 			<div class="description-text">
-				{{ df.tokusei_description }}
+				<div v-for="(body, index) in info.body" :key="'left-' + index">
+					{{ body }}
+				</div>
+				<div v-for="(tokusei, index) in df.tokusei_description" :key="'left-' + index">
+					{{ '• ' + tokusei }}
+				</div>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-//import { info } from 'sass';
+import { info } from 'sass';
 
 export default {
 	name: 'DFTooltip',
@@ -58,8 +63,79 @@ export default {
 				return { body: ["No data"] }
 			}
 
-			body.push(`• ID: ${this.df.id}`)
-			body.push(`• Name: ${this.df.name}`)
+			for (let i = 0; i < this.df.boost_data.length; i++) {
+				body.push(`[${i + 1}]\n`)
+				let checkTypeReq = false
+				for (let j = 0; j <= 2; j++) {
+					if (this.df.boost_data[i].requirements[j].type !== "NONE") {
+						checkTypeReq = true
+					}
+				}
+
+				if (
+					this.df.boost_data[i].minLevel > -1 || this.df.boost_data[i].maxLevel > -1 ||
+					this.df.boost_data[i].benefitGauge > -1 || checkTypeReq) {
+					body.push(`The summoned demon must meet the following criteria:`)
+					if (this.df.boost_data[i].minLevel > -1) body.push(`• Level ${this.df.boost_data[i].minLevel} or higher`)
+					if (this.df.boost_data[i].maxLevel > -1) body.push(`• Level ${this.df.boost_data[i].maxLevel} or lower`)
+					if (checkTypeReq) {
+						for (let j = 0; j < 3; j++) {
+							if (this.df.boost_data[i].requirements[j].type !== "NONE") {
+								switch (this.df.boost_data[i].requirements[j].type) {
+									case 'LNC':
+										let lnc = this.df.boost_data[i].requirements[j].value1 === 0 ? 'LAW' : this.df.boost_data[i].requirements[j].value1 === 1 ? 'NEUTRAL' : 'CHAOS'
+										body.push(`• Demon alignment is ${lnc}`)
+										break
+									case 'FAMILIARITY':
+										let loyalty = this.df.boost_data[i].requirements[j].value1 === "1" ? 'Linked by Fate' : 'Wishes Death'
+										body.push(`• Loyalty is "${loyalty}"`)
+										break
+								}
+							}
+						}
+					}
+				}
+				body.push(`If all criteria above are met, the following conditional changes occur:\n[Effect]:`)
+				if (this.df.tokusei_description.length === 0) {
+					body.push(`• The Benefit Gauge is increased by 1`)
+					for (let j = 0; j < 8; j++) {
+						if (this.df.boost_data[i].results[j].type > -1) {
+							let parameter ='a'
+							switch (this.df.boost_data[i].results[j].type) {
+								case 0: parameter = 'HP'; break
+								case 1: parameter = 'MP'; break
+								case 2: parameter = 'Strength'; break
+								case 3: parameter = 'Magic'; break
+								case 4: parameter = 'Vitality'; break
+								case 5: parameter = 'Intelligence'; break
+								case 6: parameter = 'Speed'; break
+								case 7: parameter = 'Luck'; break
+								case 8: parameter = 'HP Regeneration'; break
+								case 9: parameter = 'MP Regeneration'; break
+								case 10: parameter = 'Close-range'; break
+								case 11: parameter = 'Long-range'; break
+								case 12: parameter = 'Spell'; break
+								case 13: parameter = 'Support'; break
+								case 14: parameter = 'Critical'; break
+								case 15: parameter = 'Physical Defense'; break
+								case 16: parameter = 'Magical Defense'; break
+								case 17: parameter = 'Critical Defense'; break
+								case 18: parameter = 'Experience'; break
+								case 19: parameter = 'Ailment Resistance'; break
+							}
+							body.push(`• Force Parameter [${parameter}]`)
+							let minPoints = this.df.boost_data[i].results[j].minPoints/100
+							let maxPoints = this.df.boost_data[i].results[j].maxPoints/100
+							let points = this.df.boost_data[i].results[j].points/100
+							body.push(`If this parameter is ${minPoints > 0 ? minPoints + ' or higher\n' : ''}${maxPoints > 0 ? maxPoints + ' or lower' : ''}, it is increased by ${points}`)
+						}
+					}
+				}
+
+			}
+
+			//body.push(`• ID: ${this.df.id}`)
+			//body.push(`• Name: ${this.df.name}`)
 			return { body }
 		}
 	}
