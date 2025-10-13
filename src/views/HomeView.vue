@@ -76,6 +76,19 @@
           A list with all the skills in the game. Note that not all skills listed are available to be learned in this server.
         </p>
         <h2>
+          Demon Force Item List
+          <router-link to="/df"
+            ><o-icon
+              pack="mdi"
+              class="icon has-text-info"
+              icon="link"
+            />Link</router-link
+          >
+        </h2>
+        <p>
+          A list with all the Demon Force items in the game. Note that not all the items listed are available to be learned in this server.
+        </p>
+        <h2>
           Moon Phase Simulator
           <router-link to="/moonphase"
             ><o-icon

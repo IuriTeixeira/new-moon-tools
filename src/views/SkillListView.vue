@@ -57,7 +57,7 @@ async function findSkills() {
     skillService.searchByName(filterBySkillName.value)
   )
 
-  // Apply the same filters you use for allSkills
+  // Apply the same filters used for allSkills
   results.value = (found ?? []).filter(
     skill =>
       (skill.family === "Arcane Art" ||
