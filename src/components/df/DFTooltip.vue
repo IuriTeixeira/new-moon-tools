@@ -9,29 +9,17 @@
 				</div>
 				<div class="media-content">
 					<p class="title is-6">{{ df.name }}</p>
-					<!-- <div class="info-columns subtitle is-7">
-						<div class="column">
-							<div v-for="(body, index) in info.body.slice(0, Math.ceil(info.body.length / 2))"
-								:key="'left-' + index">
-								{{ body }}
-							</div>
-						</div>
-						<div class="column">
-							<div v-for="(body, index) in info.body.slice(Math.ceil(info.body.length / 2))"
-								:key="'right-' + index">
-								{{ body }}
-							</div>
-						</div>
-					</div> -->
 				</div>
 			</div>
 			<div class="description-text">
-				<div v-for="(body, index) in info.body" :key="'left-' + index">
-					{{ body }}
-				</div>
-				<div v-for="(tokusei, index) in df.tokusei_description" :key="'left-' + index">
-					{{ '• ' + tokusei }}
-				</div>
+				<o-tabs v-model="toggle">
+					<o-tab-item v-for="(body, index) in info.body" :key="'tab-' + index" :value="index"
+						:label="String(index + 1)">
+						<div v-for="(line, i) in body" :key="i">
+							{{ line }}
+						</div>
+					</o-tab-item>
+				</o-tabs>
 			</div>
 		</div>
 	</div>
@@ -43,6 +31,11 @@ import { info } from 'sass';
 export default {
 	name: 'DFTooltip',
 	components: {
+	},
+	data() {
+		return {
+			toggle: 0
+		}
 	},
 	props: {
 		df: {
@@ -60,11 +53,22 @@ export default {
 			let body = []
 
 			if (!this.df || Object.keys(this.df).length === 0) {
-				return { body: ["No data"] }
+				return { body: [["No data"]] }
+			}
+
+			if (this.df.tokusei_description.length > 0) {
+				let tab = []
+				tab.push(`Effect:\n• The Benefit Gauge is increased by 1\n\nUses one Demon Force slot to set this ability:`)
+				for (let i = 0; i < this.df.tokusei_description.length; i++) {
+					tab.push(`• ${this.df.tokusei_description[i]}`)
+				}
+				tab.push(`\n* Note that an item's ability cannot be set to multiple Demon Force slots`)
+				body.push(tab)
+				return { body }
 			}
 
 			for (let i = 0; i < this.df.boost_data.length; i++) {
-				body.push(`[${i + 1}]\n`)
+				let tab = []
 				let checkTypeReq = false
 				for (let j = 0; j <= 2; j++) {
 					if (this.df.boost_data[i].requirements[j].type !== "NONE") {
@@ -72,35 +76,35 @@ export default {
 					}
 				}
 
+				tab.push(`The summoned demon must meet the following criteria:\n`)
 				if (
 					this.df.boost_data[i].minLevel > -1 || this.df.boost_data[i].maxLevel > -1 ||
 					this.df.boost_data[i].benefitGauge > -1 || checkTypeReq) {
-					body.push(`The summoned demon must meet the following criteria:`)
-					if (this.df.boost_data[i].minLevel > -1) body.push(`• Level ${this.df.boost_data[i].minLevel} or higher`)
-					if (this.df.boost_data[i].maxLevel > -1) body.push(`• Level ${this.df.boost_data[i].maxLevel} or lower`)
+					if (this.df.boost_data[i].minLevel > -1) tab.push(`• Level ${this.df.boost_data[i].minLevel} or higher`)
+					if (this.df.boost_data[i].maxLevel > -1) tab.push(`• Level ${this.df.boost_data[i].maxLevel} or lower`)
 					if (checkTypeReq) {
 						for (let j = 0; j < 3; j++) {
 							if (this.df.boost_data[i].requirements[j].type !== "NONE") {
 								switch (this.df.boost_data[i].requirements[j].type) {
 									case 'LNC':
 										let lnc = this.df.boost_data[i].requirements[j].value1 === 0 ? 'LAW' : this.df.boost_data[i].requirements[j].value1 === 1 ? 'NEUTRAL' : 'CHAOS'
-										body.push(`• Demon alignment is ${lnc}`)
+										tab.push(`• Demon alignment is ${lnc}`)
 										break
 									case 'FAMILIARITY':
 										let loyalty = this.df.boost_data[i].requirements[j].value1 === "1" ? 'Linked by Fate' : 'Wishes Death'
-										body.push(`• Loyalty is "${loyalty}"`)
+										tab.push(`• Loyalty is "${loyalty}"`)
 										break
 								}
 							}
 						}
 					}
 				}
-				body.push(`If all criteria above are met, the following conditional changes occur:\n[Effect]:`)
+				tab.push(`\nIf all criteria above are met, the following conditional changes occur:\n\nEffect:`)
 				if (this.df.tokusei_description.length === 0) {
-					body.push(`• The Benefit Gauge is increased by 1`)
+					tab.push(`• The Benefit Gauge is increased by 1`)
 					for (let j = 0; j < 8; j++) {
 						if (this.df.boost_data[i].results[j].type > -1) {
-							let parameter ='a'
+							let parameter = ''
 							switch (this.df.boost_data[i].results[j].type) {
 								case 0: parameter = 'HP'; break
 								case 1: parameter = 'MP'; break
@@ -123,19 +127,16 @@ export default {
 								case 18: parameter = 'Experience'; break
 								case 19: parameter = 'Ailment Resistance'; break
 							}
-							body.push(`• Force Parameter [${parameter}]`)
-							let minPoints = this.df.boost_data[i].results[j].minPoints/100
-							let maxPoints = this.df.boost_data[i].results[j].maxPoints/100
-							let points = this.df.boost_data[i].results[j].points/100
-							body.push(`If this parameter is ${minPoints > 0 ? minPoints + ' or higher\n' : ''}${maxPoints > 0 ? maxPoints + ' or lower' : ''}, it is increased by ${points}`)
+							tab.push(`• Force Parameter [${parameter}]`)
+							let minPoints = this.df.boost_data[i].results[j].minPoints / 100
+							let maxPoints = this.df.boost_data[i].results[j].maxPoints / 100
+							let points = this.df.boost_data[i].results[j].points / 100
+							tab.push(`If this parameter is ${minPoints > 0 ? minPoints + ' or higher and ' : ''}${maxPoints > 0 ? maxPoints + ' or lower' : ''}, it is increased by ${points}`)
 						}
 					}
 				}
-
+				body.push(tab)
 			}
-
-			//body.push(`• ID: ${this.df.id}`)
-			//body.push(`• Name: ${this.df.name}`)
 			return { body }
 		}
 	}
@@ -144,17 +145,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.info-columns {
-	display: flex;
-	flex-direction: row;
-}
-
-.column {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-}
-
 .description-text {
 	white-space: pre-wrap;
 	word-break: break-word;

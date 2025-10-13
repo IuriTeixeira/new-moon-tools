@@ -18,23 +18,25 @@ const props = defineProps({
 
 <style lang="scss">
 .toggle-header {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-#chain-expertise {
-    margin: 0.25em auto;
+.df-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .is-label {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .option-title {
-    font-weight: bold;
-    font-size: 1.1em;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .collapse.card {
-    margin: 1em auto;
+  margin: 1em auto;
 }
 </style>
