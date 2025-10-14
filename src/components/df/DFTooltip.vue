@@ -103,31 +103,8 @@ export default {
 				if (this.df.tokusei_description.length === 0) {
 					tab.push(`• The Benefit Gauge is increased by 1`)
 					for (let j = 0; j < 8; j++) {
-						if (this.df.boost_data[i].results[j].type > -1) {
-							let parameter = ''
-							switch (this.df.boost_data[i].results[j].type) {
-								case 0: parameter = 'HP'; break
-								case 1: parameter = 'MP'; break
-								case 2: parameter = 'Strength'; break
-								case 3: parameter = 'Magic'; break
-								case 4: parameter = 'Vitality'; break
-								case 5: parameter = 'Intelligence'; break
-								case 6: parameter = 'Speed'; break
-								case 7: parameter = 'Luck'; break
-								case 8: parameter = 'HP Regeneration'; break
-								case 9: parameter = 'MP Regeneration'; break
-								case 10: parameter = 'Close-range'; break
-								case 11: parameter = 'Long-range'; break
-								case 12: parameter = 'Spell'; break
-								case 13: parameter = 'Support'; break
-								case 14: parameter = 'Critical'; break
-								case 15: parameter = 'Physical Defense'; break
-								case 16: parameter = 'Magical Defense'; break
-								case 17: parameter = 'Critical Defense'; break
-								case 18: parameter = 'Experience'; break
-								case 19: parameter = 'Ailment Resistance'; break
-							}
-							tab.push(`• Force Parameter [${parameter}]`)
+						if (this.df.boost_data[i].results[j].type !== 'NONE') {
+							tab.push(`• Force Parameter [${this.df.boost_data[i].results[j].type}]`)
 							let minPoints = this.df.boost_data[i].results[j].minPoints / 100
 							let maxPoints = this.df.boost_data[i].results[j].maxPoints / 100
 							let points = this.df.boost_data[i].results[j].points / 100
