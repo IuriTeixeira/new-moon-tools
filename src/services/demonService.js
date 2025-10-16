@@ -5,8 +5,6 @@ const storage = Demons;
 
 import skillService from "@/services/skillService.js"
 
-
-
 export default {
 
     get(id=0){
@@ -15,6 +13,11 @@ export default {
             return demon;
         }
         return null
+    },
+
+    all(){
+        let demons = storage.filter(demon => demon.name)
+        return demons
     },
 
     searchByName(name='', obtainableOnly=true){

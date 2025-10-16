@@ -2,12 +2,14 @@
 import { ref, computed } from "vue"
 import SkillList from "@/components/skill/SkillList.vue"
 import skillService from "@/services/skillService"
+import demonService from "@/services/demonService"
 import expertiseService from "@/services/expertiseService";
 import { debounce } from "lodash";
 
 // State
 const selectedAttribute = ref("")
 const selectedValue = ref("")
+const selectedSource = ref("")
 const filterBySkillName = ref("");
 const results = ref([]);
 
@@ -25,6 +27,11 @@ const allSkills = computed(() =>
   )
 )
 
+const allDemons = computed(() =>
+  (demonService.all() ?? []).filter(
+    demon => demon.skills.length > 0
+  )
+)
 // Extract all skill IDs from breakpoints across all expertises
 const expertiseSkillIDs = new Set(
   (expertiseService.all() ?? []).flatMap(expertise =>
@@ -53,7 +60,7 @@ async function findSkills() {
     return
   }
 
-  const found = await Promise.resolve(
+  let found = await Promise.resolve(
     skillService.searchByName(filterBySkillName.value)
   )
 
@@ -105,6 +112,27 @@ const filteredSkills = computed(() => {
       : skillsToFilter
   }
 
+  if (selectedSource !== "") {
+    switch (selectedSource) {
+      case "player":
+      case "alliedDemons":
+        skillsToFilter = (skillsToFilter ?? []).filter(
+          (skill) => allDemons.value.some((demon) => (
+            demon.skills.includes(skill.id) ||
+            demon.acquiredSkills.includes(skill.id)
+          ))
+        )
+        break
+      case "enemyDemons":
+        skillsToFilter = (skillsToFilter ?? []).filter(
+          (skill) => allDemons.value.some((demon) => (
+            demon.enemyOnlySkills.includes(skill.id)
+          ))
+        )
+        break
+    }
+  }
+
   if (selectedAttribute.value === "expertise") {
     const selectedExpertise = expertiseService.all().find(
       exp => exp.name === selectedValue.value
@@ -128,7 +156,14 @@ const filterOptions = [
   { path: "categoryType", label: "Category" },
   { path: "actionType", label: "Action Type" },
   { path: "activationType", label: "Activation Type" },
-  { path: "areaOfEffect.areaType", label: "Area of Effect Type" }
+  { path: "areaOfEffect.areaType", label: "Area of Effect Type" },
+]
+
+const filterSource = [
+  //{ path: "player", label: "Player" },
+  { path: "allDemons", label: "All Demons" },
+  { path: "alliedDemons", label: "Allied Demons" },
+  { path: "enemyDemons", label: "Enemy Demons" }
 ]
 
 </script>
@@ -156,9 +191,9 @@ const filterOptions = [
     <section class="section">
       <div class="container">
         <!-- Filter Row -->
-        <div class="columns is-variable is-3">
+        <div class="columns is-variable is-4">
           <!--Search Field-->
-          <div class="column is-one-quarter">
+          <div class="column is-one-fifth">
             <div class="field">
               <label class="label">Search:</label>
               <o-field>
@@ -167,7 +202,7 @@ const filterOptions = [
             </div>
           </div>
           <!-- Attribute Dropdown -->
-          <div class="column is-one-quarter">
+          <div class="column is-one-fifth">
             <div class="field">
               <label class="label">Filter by:</label>
               <div class="control">
@@ -185,7 +220,7 @@ const filterOptions = [
           </div>
 
           <!-- Value Dropdown -->
-          <div class="column is-one-quarter">
+          <div class="column is-one-fifth">
             <div class="field">
               <label class="label">
                 Select
@@ -202,6 +237,22 @@ const filterOptions = [
                       {{ value }}
                     </option>
                   </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Source of Skill Radio Buttons -->
+          <div class="column is-one-third">
+            <div class="field">
+              <label class="label">Skill is available for:</label>
+              <div class="control">
+                <div class="radio is-fullwidth">
+                  <o-field :disabled="filterBySkillName.length > 0">
+                    <o-radio v-model="selectedSource" value="" name="Source">All</o-radio>
+                    <o-radio v-model="selectedSource" v-for="radio in filterSource" :key="radio.path" :native-value="radio.path" name="Source">
+                      {{ radio.label }}
+                    </o-radio>
+                  </o-field>
                 </div>
               </div>
             </div>
