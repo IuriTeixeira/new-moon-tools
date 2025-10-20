@@ -1,0 +1,4542 @@
+[
+    {
+        "type": "SKILL_DEMON",
+        "id": 455,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 456,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 5592,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 5029,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 5887,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 5177,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50386,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50414,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50416,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50417,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50418,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50419,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50425,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 5517,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 5848,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 5849,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 5178,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50385,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50415,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50420,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50421,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50422,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50423,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50424,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50000,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50001,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50002,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50003,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50004,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50005,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50006,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50007,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50008,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50009,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50010,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50011,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50012,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50013,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50014,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50015,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50016,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50017,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50018,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50019,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50020,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50021,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50022,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50023,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50024,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50025,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50026,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50027,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50028,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50029,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50030,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50031,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50032,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50033,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50034,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50035,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50036,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50037,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50038,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50039,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50040,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50041,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50042,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50043,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50044,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50045,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50046,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50047,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50048,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50049,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50050,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50051,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50052,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50053,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50054,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50055,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50056,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50057,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50058,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50059,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50060,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50061,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50062,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50063,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50064,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50065,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50066,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50067,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50068,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50069,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50070,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50071,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50072,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50073,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50074,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50075,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50076,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50077,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50078,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50079,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50080,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50081,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50082,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50083,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50084,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50085,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50086,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50087,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50088,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50089,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50090,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50091,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50092,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50093,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50094,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50095,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50096,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50097,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50098,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50099,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50100,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50101,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50102,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50103,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50104,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50105,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50106,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50107,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50108,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50109,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50110,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50111,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50112,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50113,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50114,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50115,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50116,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50117,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50118,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50119,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50120,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50121,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50122,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50123,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50124,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50125,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50126,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50127,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50128,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50129,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50130,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50131,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50132,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50133,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50134,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50135,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50136,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50137,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50138,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50139,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50140,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50141,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50142,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50143,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50144,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50145,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50146,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50147,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50148,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50149,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50150,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50151,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50152,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50153,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50154,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50165,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50166,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50167,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50168,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50169,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50170,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50171,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50172,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50173,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50174,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50175,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50176,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50177,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50178,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50179,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50180,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50181,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50182,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50183,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50184,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50185,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50186,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50187,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50188,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50189,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50190,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50191,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50192,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50193,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50194,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50205,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50206,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50207,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50208,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50209,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50210,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50211,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50212,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50213,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50214,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50215,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50216,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50217,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50218,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50219,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50220,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50221,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50222,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50223,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50224,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50225,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50226,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50227,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50228,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50229,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50230,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50231,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50232,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50233,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50234,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50235,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50236,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50237,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50238,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50239,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50240,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50241,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50242,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50243,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50244,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50245,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50246,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50247,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50248,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50249,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50250,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50251,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50252,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50253,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50254,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50255,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50256,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50257,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50258,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50259,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50260,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50261,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50262,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50263,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50264,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50265,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50266,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50267,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50268,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50269,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50270,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50271,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50272,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50273,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50274,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50275,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50276,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50277,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50278,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50279,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50280,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50281,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50282,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50283,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50284,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50285,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50286,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50287,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50288,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50289,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50290,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50291,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50292,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50293,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50294,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50295,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50296,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50297,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50298,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50299,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50300,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50301,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50302,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50303,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50304,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50305,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50306,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50307,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50308,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50309,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50310,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50311,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50312,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50313,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50314,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50315,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50316,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50317,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50318,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50319,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50320,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50321,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50322,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50323,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50324,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50345,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50346,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50347,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50348,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50349,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50350,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50351,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50352,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50353,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50354,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50355,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50356,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50357,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50358,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50359,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50360,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50361,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50362,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50363,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50364,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50365,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50366,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50367,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50368,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50369,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50370,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50371,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50372,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50373,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 50374,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5025,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5006,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5012,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5018,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5024,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5026,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 161,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 162,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 163,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5303,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5308,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5306,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 521,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 522,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 523,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 524,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 525,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 526,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 570,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 571,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 572,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 573,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 574,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 575,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 946,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5025,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5006,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5012,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5018,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5024,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5026,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 161,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 162,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 163,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5303,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5308,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5306,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 521,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 522,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 523,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 524,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 525,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 526,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 570,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 571,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 572,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 573,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 574,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 575,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 946,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 580,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 581,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 594,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 580,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 581,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 594,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 813,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 814,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 815,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 816,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 817,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 818,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 820,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 821,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 822,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 823,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 824,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 825,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 826,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 827,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 828,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 829,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 830,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 821,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 822,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 823,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 824,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 825,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 826,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 827,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 828,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 829,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 814,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 815,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 816,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 818,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 813,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 817,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 820,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 830,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 906,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 907,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 908,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 909,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 910,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 911,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 912,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 913,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 914,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 915,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 916,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 98,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 649,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 658,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 659,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 650,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 651,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 652,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 653,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 654,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 655,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 656,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 657,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170018,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170019,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170020,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 729,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 730,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 731,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 723,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 724,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 725,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 726,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 727,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 728,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 732,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 733,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 734,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 735,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 736,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 737,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 738,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 739,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 740,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 741,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 742,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 743,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 7,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 9,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 107,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 15,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 116,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 157,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 117,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 156,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 54,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 204,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 206,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 207,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 106,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 55,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5187,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5188,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5189,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 59,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 61,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 808,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 807,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 806,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 62,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 63,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 57,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5191,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 115,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 114,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 113,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5190,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 66,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 67,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 68,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 637,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 71,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5185,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 638,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 620,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 618,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 873,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 619,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 633,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 636,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 634,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 635,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 845,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170021,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170022,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5001,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5007,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5013,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5019,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5002,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5008,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5014,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5020,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5030,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5035,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5568,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 353,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5004,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5010,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5016,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5022,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5033,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5038,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5003,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5009,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5015,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5021,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5025,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5005,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5011,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5017,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5023,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 639,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5565,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 429,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5032,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5037,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5006,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5012,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5018,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5024,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 8004,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5026,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 161,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 162,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 163,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 621,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 622,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5182,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5180,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5027,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5034,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5039,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5301,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5312,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5304,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5302,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5307,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5305,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5303,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5308,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5306,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5309,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5110,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5108,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5218,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5106,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5109,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5107,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5116,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5115,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5113,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5121,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5206,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5111,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5114,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5112,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5122,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5119,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 501,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 502,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 503,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 504,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 505,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 506,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 507,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 508,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5117,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5118,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5212,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5210,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5208,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5211,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5209,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5217,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5215,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5213,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5216,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5214,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 351,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 354,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5228,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 352,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 65,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 64,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5186,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 364,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5473,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5181,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5184,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 874,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 251,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 253,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 255,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 252,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 254,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 256,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 875,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 876,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 877,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5183,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 2,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 152,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 601,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 605,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 609,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 613,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 3,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 153,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 602,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 606,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 610,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 614,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 185,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 188,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 4,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 154,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 47,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 582,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 583,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 584,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 585,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 586,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 603,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 607,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 611,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 615,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 186,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 189,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 570,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 571,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 572,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 573,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 885,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 6,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 155,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 45,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 48,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 632,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 604,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 608,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 612,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 616,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 187,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 190,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 574,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 575,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 946,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 46,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 647,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 880,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 881,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 883,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 884,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 49,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 587,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 588,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 589,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 590,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 591,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 580,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 581,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 594,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 623,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 640,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 624,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 641,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 644,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 128,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 438,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 627,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 628,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 625,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 629,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 642,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 645,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 127,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1162,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 626,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 643,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 471,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 347,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 348,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 646,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 630,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 648,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 445,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1095,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 882,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 931,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 444,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1093,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1191,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 812,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 197,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 930,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 900,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 804,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 878,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 465,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1105,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 442,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1092,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 810,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 879,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1193,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 714,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1119,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1096,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1097,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1098,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1099,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1100,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1101,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1102,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1103,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1157,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1158,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 631,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1192,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 8158,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1104,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1161,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160632,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170016,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 26212,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 963,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 8166,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 800,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 801,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 802,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 803,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 847,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 887,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 886,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 888,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 889,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 943,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 944,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1132,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1133,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1135,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1134,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1159,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 1160,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 959,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 955,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 951,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 947,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 960,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 956,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 952,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 948,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 961,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 957,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 953,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 949,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 962,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 958,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 954,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 950,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 130101,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130101,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130102,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130103,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 8144,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 8145,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 8146,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 8147,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 8148,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130179,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130180,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130181,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130182,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130183,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130184,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130185,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130186,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130187,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130188,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130189,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130190,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130191,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130192,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130193,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130194,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130195,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130196,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130197,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130198,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130199,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130200,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130201,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130202,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130203,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130204,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130205,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 130213,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160676,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160677,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160685,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160686,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 26,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 27,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160690,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160691,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160692,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160693,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160694,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160695,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160696,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160697,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160698,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160699,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160731,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160747,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160748,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160749,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160753,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 112,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 109,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 900,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5431,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5432,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5433,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 5434,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 576,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 577,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 578,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 579,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160769,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160769,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160769,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160769,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160769,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 160769,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 170009,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 170010,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 170011,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 170015,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 130108,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160777,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160778,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160779,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 160780,
+        "name": null
+    }
+]

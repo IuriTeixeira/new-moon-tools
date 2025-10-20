@@ -4,6 +4,7 @@ import SkillList from "@/components/skill/SkillList.vue"
 import skillService from "@/services/skillService"
 import demonService from "@/services/demonService"
 import expertiseService from "@/services/expertiseService";
+import exchangeSkills from "@/data/exchange_skills.json";
 import { debounce } from "lodash";
 
 // State
@@ -125,33 +126,41 @@ const filteredSkills = computed(() => {
     return skillsToFilter.filter(skill => selectedSkillIDs.has(Number(skill.id)))
   }
 
-  if (selectedSource !== "") {
-    let demonSkills = []
+  if (selectedSource.value !== "") {
+    let acquireSkills = []
     switch (selectedSource.value) {
       case "player":
-        //TODO
+        const expertise = expertiseService.all()
+        const exp_skills = expertise.flatMap(exp => exp.breakpoints.flatMap(bp => bp.skills))
+        acquireSkills = skillsToFilter.filter(
+          (skill) => exp_skills.includes(skill.id) ||
+            exchangeSkills.find(sk => sk.id === skill.id && sk.type === "SKILL_CHARACTER")
+        )
         break
       case "allDemons":
-        demonSkills = skillsToFilter.filter(
+        acquireSkills = skillsToFilter.filter(
           (skill) => allDemons.value.some((demon) =>
             demon.skills.includes(skill.id) ||
             demon.acquiredSkills.includes(skill.id) ||
-            demon.enemyOnlySkills.includes(skill.id)
+            demon.enemyOnlySkills.includes(skill.id) ||
+            exchangeSkills.find(sk => sk.id === skill.id && sk.type === "SKILL_DEMON")
           )
         )
         break
       case "alliedDemons":
-        demonSkills = skillsToFilter.filter(
+        acquireSkills = skillsToFilter.filter(
           (skill) => allDemons.value.some((demon) =>
             (demon.skills.includes(skill.id) ||
-            demon.acquiredSkills.includes(skill.id))
+              demon.acquiredSkills.includes(skill.id) ||
+              exchangeSkills.find(sk => sk.id === skill.id && sk.type === "SKILL_DEMON")
+            )
             &&
             Object.values(demon.acquisition).some(value => value === true)
           )
         )
         break
       case "enemyDemons":
-        demonSkills = skillsToFilter.filter(
+        acquireSkills = skillsToFilter.filter(
           (skill) => allDemons.value.some((demon) =>
             demon.enemyOnlySkills.includes(skill.id)
             &&
@@ -160,8 +169,12 @@ const filteredSkills = computed(() => {
         )
         break
     }
-    return demonSkills
+    skillsToFilter = acquireSkills
   }
+
+  return skillsToFilter.filter(
+    skill => getNestedValue(skill, selectedAttribute.value) === selectedValue.value
+  )
 })
 
 const filterOptions = [
@@ -175,7 +188,7 @@ const filterOptions = [
 ]
 
 const filterSource = [
-  //{ path: "player", label: "Player" },
+  { path: "player", label: "Player" },
   { path: "allDemons", label: "All Demons" },
   { path: "alliedDemons", label: "Allied Demons" },
   { path: "enemyDemons", label: "Enemy Demons" }
@@ -265,10 +278,9 @@ const filterSource = [
                   <o-field :disabled="filterBySkillName.length > 0">
                     <o-radio v-model="selectedSource" native-value="" name="Source">All</o-radio>
                     <o-radio v-model="selectedSource" v-for="radio in filterSource" :key="radio.path"
-                    :native-value="radio.path" name="Source">
-                    {{ radio.label }}
-                  </o-radio>
-                  <o-radio v-model="selectedSource" native-value="player" name="Source" disabled="true">Player</o-radio>
+                      :native-value="radio.path" name="Source">
+                      {{ radio.label }}
+                    </o-radio>
                   </o-field>
                 </div>
               </div>
