@@ -288,7 +288,7 @@ const filterSource = [
                       :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill'">All</o-radio>
                     <o-radio v-model="selectedSource" v-for="radio in filterSource" :key="radio.path"
                       :native-value="radio.path" name="Source"
-                      :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill'">
+                      :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill' || selectedAttribute === 'expertise'">
                       {{ radio.label }}
                     </o-radio>
                   </o-field>
