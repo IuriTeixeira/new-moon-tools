@@ -9,10 +9,10 @@ import gearSkills from "@/data/gear_skills.json";
 import { debounce } from "lodash";
 
 // State
-//const selectedAttribute = ref("")
-const selectedAttribute = ref("actionType") //test value
-//const selectedValue = ref("")
-const selectedValue = ref("Attack") //test value
+const selectedAttribute = ref("")
+//const selectedAttribute = ref("actionType") //test value
+const selectedValue = ref("")
+//const selectedValue = ref("Attack") //test value
 const selectedSource = ref("")
 const filterBySkillName = ref("");
 const results = ref([]);
