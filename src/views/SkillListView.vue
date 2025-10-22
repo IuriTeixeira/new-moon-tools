@@ -114,25 +114,6 @@ const filteredSkills = computed(() => {
 
   let skillsToFilter = results.value.length > 0 ? results.value : allSkills.value
 
-  if (!selectedAttribute.value || !selectedValue.value) {
-    return selectedAttribute.value === "expertise"
-      ? expertiseSkills.value
-      : selectedAttribute.value === "gearSkill"
-        ? allGearSkills.value
-        : skillsToFilter
-  }
-
-  if (selectedAttribute.value === "expertise") {
-    const selectedExpertise = expertiseService.all().find(
-      exp => exp.name === selectedValue.value
-    )
-    if (!selectedExpertise) return []
-    const selectedSkillIDs = new Set(
-      selectedExpertise.breakpoints.flatMap(bp => bp.skills)
-    )
-    return skillsToFilter.filter(skill => selectedSkillIDs.has(Number(skill.id)))
-  }
-
   if (selectedSource.value !== "") {
     let acquireSkills = []
     switch (selectedSource.value) {
@@ -178,6 +159,25 @@ const filteredSkills = computed(() => {
         break
     }
     skillsToFilter = acquireSkills
+  }
+
+  if (!selectedAttribute.value || !selectedValue.value) {
+    return selectedAttribute.value === "expertise"
+      ? expertiseSkills.value
+      : selectedAttribute.value === "gearSkill"
+        ? allGearSkills.value
+        : skillsToFilter
+  }
+
+  if (selectedAttribute.value === "expertise") {
+    const selectedExpertise = expertiseService.all().find(
+      exp => exp.name === selectedValue.value
+    )
+    if (!selectedExpertise) return []
+    const selectedSkillIDs = new Set(
+      selectedExpertise.breakpoints.flatMap(bp => bp.skills)
+    )
+    return skillsToFilter.filter(skill => selectedSkillIDs.has(Number(skill.id)))
   }
 
   return skillsToFilter.filter(
@@ -267,10 +267,9 @@ const filterSource = [
               </label>
               <div class="control">
                 <div class="select is-fullwidth">
-                  <select v-model="selectedValue" :disabled="!selectedAttribute || selectedAttribute === 'gearSkill'">
+                  <select v-model="selectedValue" :disabled="!selectedAttribute || selectedAttribute === 'gearSkill' || filterBySkillName.length > 0">
                     <option value="">All</option>
-                    <option v-for="value in availableValues" :key="value" :value="value"
-                      :disabled="filterBySkillName.length > 0">
+                    <option v-for="value in availableValues" :key="value" :value="value">
                       {{ value }}
                     </option>
                   </select>
@@ -285,9 +284,11 @@ const filterSource = [
               <div class="control">
                 <div class="radio is-fullwidth">
                   <o-field>
-                    <o-radio v-model="selectedSource" native-value="" name="Source" :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill'">All</o-radio>
+                    <o-radio v-model="selectedSource" native-value="" name="Source"
+                      :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill'">All</o-radio>
                     <o-radio v-model="selectedSource" v-for="radio in filterSource" :key="radio.path"
-                      :native-value="radio.path" name="Source" :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill'">
+                      :native-value="radio.path" name="Source"
+                      :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill'">
                       {{ radio.label }}
                     </o-radio>
                   </o-field>
