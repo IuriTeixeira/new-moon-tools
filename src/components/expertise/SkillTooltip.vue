@@ -68,7 +68,7 @@ export default {
 	},
 	computed: {
 		info() {
-			let family = `${this.skill.family} • ${this.skill.activationType} • ${this.skill.categoryType}`
+			let family = `${this.skill.family} • ${this.skill.activationType} • ${this.skill.categoryType} • ID: ${this.skill.id}`
 			let body = []
 			body.push(`• Action: ${this.skill.actionType}\n`)
 			body.push(`• Affinity: ${this.skill.affinity}\n`)
