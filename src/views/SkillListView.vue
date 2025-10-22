@@ -5,6 +5,7 @@ import skillService from "@/services/skillService"
 import demonService from "@/services/demonService"
 import expertiseService from "@/services/expertiseService";
 import exchangeSkills from "@/data/exchange_skills.json";
+import gearSkills from "@/data/gear_skills.json";
 import { debounce } from "lodash";
 
 // State
@@ -46,6 +47,10 @@ const expertiseSkills = computed(() =>
   allSkills.value.filter(skill => expertiseSkillIDs.has(Number(skill.id)))
 );
 
+const allGearSkills = computed(() =>
+  allSkills.value.filter(skill => gearSkills.flatMap(sk => sk.id).includes(Number(skill.id))).filter(skill => skill.affinity !== "Special" && skill.affinity !== "Unknown")
+)
+
 // Helper: safely read nested property values
 function getNestedValue(obj, path) {
   return path.split(".").reduce((acc, key) => acc?.[key], obj)
@@ -82,7 +87,7 @@ async function findSkills() {
 
 // Dynamically compute possible values based on selected attribute
 const availableValues = computed(() => {
-  if (!selectedAttribute.value) return []
+  if (!selectedAttribute.value || selectedAttribute.value === "gearSkill") return []
 
   if (selectedAttribute.value === "expertise") {
     return expertiseService.all()
@@ -112,7 +117,9 @@ const filteredSkills = computed(() => {
   if (!selectedAttribute.value || !selectedValue.value) {
     return selectedAttribute.value === "expertise"
       ? expertiseSkills.value
-      : skillsToFilter
+      : selectedAttribute.value === "gearSkill"
+        ? allGearSkills.value
+        : skillsToFilter
   }
 
   if (selectedAttribute.value === "expertise") {
@@ -134,7 +141,8 @@ const filteredSkills = computed(() => {
         const exp_skills = expertise.flatMap(exp => exp.breakpoints.flatMap(bp => bp.skills))
         acquireSkills = skillsToFilter.filter(
           (skill) => exp_skills.includes(skill.id) ||
-            exchangeSkills.find(sk => sk.id === skill.id && sk.type === "SKILL_CHARACTER")
+            exchangeSkills.find(sk => sk.id === skill.id && sk.type === "SKILL_CHARACTER") ||
+            gearSkills.find(sk => sk.id === skill.id)
         )
         break
       case "allDemons":
@@ -185,6 +193,7 @@ const filterOptions = [
   { path: "actionType", label: "Action Type" },
   { path: "activationType", label: "Activation Type" },
   { path: "areaOfEffect.areaType", label: "Area of Effect Type" },
+  { path: "gearSkill", label: "Gear Skills" },
 ]
 
 const filterSource = [
@@ -258,7 +267,7 @@ const filterSource = [
               </label>
               <div class="control">
                 <div class="select is-fullwidth">
-                  <select v-model="selectedValue" :disabled="!selectedAttribute">
+                  <select v-model="selectedValue" :disabled="!selectedAttribute || selectedAttribute === 'gearSkill'">
                     <option value="">All</option>
                     <option v-for="value in availableValues" :key="value" :value="value"
                       :disabled="filterBySkillName.length > 0">
@@ -275,10 +284,10 @@ const filterSource = [
               <label class="label">Skill is available for:</label>
               <div class="control">
                 <div class="radio is-fullwidth">
-                  <o-field :disabled="filterBySkillName.length > 0">
-                    <o-radio v-model="selectedSource" native-value="" name="Source">All</o-radio>
+                  <o-field>
+                    <o-radio v-model="selectedSource" native-value="" name="Source" :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill'">All</o-radio>
                     <o-radio v-model="selectedSource" v-for="radio in filterSource" :key="radio.path"
-                      :native-value="radio.path" name="Source">
+                      :native-value="radio.path" name="Source" :disabled="filterBySkillName.length > 0 || selectedAttribute === 'gearSkill'">
                       {{ radio.label }}
                     </o-radio>
                   </o-field>
