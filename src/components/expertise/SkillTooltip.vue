@@ -70,6 +70,57 @@ export default {
 		info() {
 			let family = `${this.skill.family} • ${this.skill.activationType} • ${this.skill.categoryType} • ID: ${this.skill.id}`
 			let body = []
+			if(this.skill.costs.length > 0){
+				let cost = []
+				this.skill.costs.forEach((element, index) => {
+					let text = index === 0 ? '' : ' '
+					if (element.costType !== 'ITEM') {
+						if (element.costType !== 'BULLET') {
+							const percent = element.numberOrPercent === 'PERCENT' ? '% ' : ' '
+							text += element.amount + percent + element.costType
+						}else{
+							text += element.amount + ' Bullet'
+							element.amount > 1 ? text += 's' : ''
+						}
+					} else {
+						switch (element.itemID) {
+							case 13:
+								text += element.amount + ' Magic Stone'
+								break
+							case 14:
+								text += element.amount + ' Jewel'
+								break
+							case 133:
+								text += element.amount + ' Bead of Heaven (North)'
+								break
+							case 134:
+								text += element.amount + ' Bead of Heaven (South)'
+								break
+							case 715:
+								text += element.amount + ' Philosopher\'s Stone'
+								break
+							case 799:
+								text += element.amount + ' Macca'
+								break
+							case 800:
+								text += element.amount + ' Magnetite'
+								break
+							case 12485:
+								text += element.amount + ' Dragon\'s Pearl'
+								break
+							case 5512:
+								text += element.amount + ' Gift Melon (Link)'
+								break
+							case 2746:
+								text += element.amount + ' 図南鵬翼の玉'
+								break
+						}
+					}
+					cost.push(text)
+				});
+				body.push(`• Cost: ${cost}\n`)
+			}
+
 			body.push(`• Action: ${this.skill.actionType}\n`)
 			body.push(`• Affinity: ${this.skill.affinity}\n`)
 
