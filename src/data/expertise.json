@@ -4201,13 +4201,13 @@
     "singularExpertise": [
       {
         "expertiseID": 15,
-        "classRequired": 2,
+        "classRequired": 1,
         "rankRequired": 0,
         "percentage": 0.2
       },
       {
         "expertiseID": 17,
-        "classRequired": 1,
+        "classRequired": 2,
         "rankRequired": 0,
         "percentage": 0.4
       },
