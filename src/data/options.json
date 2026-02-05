@@ -80,7 +80,7 @@
 		},
 		"sigil": {
 			"name": "Devouring Sigils",
-			"queryParam": "op",
+			"queryParam": "oq",
 			"value": 0
 		},
 		"saintGermain": {
