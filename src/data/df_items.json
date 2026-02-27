@@ -113313,6 +113313,225 @@
         ]
     },
     {
+        "icon": "ChipAstralEye",
+        "id": 55340,
+        "name": "Mark of Skill - Astral Eye",
+        "boost_data": [
+            {
+                "ID": 1301310,
+                "minLevel": -1,
+                "maxLevel": -1,
+                "growthType": -1,
+                "growthRank": -1,
+                "benefitGauge": -1,
+                "extraID": 2556,
+                "requirements": [
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    }
+                ],
+                "results": [
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    }
+                ]
+            }
+        ],
+        "tokusei_description": [
+            "\"Astral Eye\" damage +100%",
+            "\"Astral Eye\" stiffness\nis reduced by 50",
+            "\"Astral Eye\" LB Cap is\nincreased by (Spell x 1)"
+        ]
+    },
+    {
+        "icon": "ChipPhotonEdge",
+        "id": 55341,
+        "name": "Mark of Skill - Photon Edge",
+        "boost_data": [
+            {
+                "ID": 1301311,
+                "minLevel": -1,
+                "maxLevel": -1,
+                "growthType": -1,
+                "growthRank": -1,
+                "benefitGauge": -1,
+                "extraID": 2557,
+                "requirements": [
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    }
+                ],
+                "results": [
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    }
+                ]
+            }
+        ],
+        "tokusei_description": [
+            "\"Photon Edge\" damage +100%",
+            "\"Photon Edge\" LB Cap is\nincreased by (CLSR x 1)"
+        ]
+    },
+    {
         "icon": "I99_130126",
         "id": 130126,
         "name": "Demon Soul [Arioch]",
@@ -114687,6 +114906,323 @@
         "tokusei_description": [
             "Almighty Affinity Cap +30%",
             "Attack Skills' \n　　Limit Break Cap +500"
+        ]
+    },
+    {
+        "icon": "I70_0208a",
+        "id": 123499,
+        "name": "Primordial Egg",
+        "boost_data": [
+            {
+                "ID": 1301312,
+                "minLevel": -1,
+                "maxLevel": -1,
+                "growthType": -1,
+                "growthRank": -1,
+                "benefitGauge": -1,
+                "extraID": 2558,
+                "requirements": [
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    }
+                ],
+                "results": [
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    }
+                ]
+            },
+            {
+                "ID": 1301313,
+                "minLevel": -1,
+                "maxLevel": -1,
+                "growthType": -1,
+                "growthRank": -1,
+                "benefitGauge": -1,
+                "extraID": 0,
+                "requirements": [
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    }
+                ],
+                "results": [
+                    {
+                        "type": "Long-range",
+                        "minPoints": -1,
+                        "maxPoints": 10000000,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 20000
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    }
+                ]
+            }
+        ],
+        "tokusei_description": [
+            "Almighty Affinity Cap +30%",
+            "Shot Skills' \nLimit Break Cap +500",
+            "Rapid Skills' \nLimit Break Cap +500"
+        ]
+    },
+    {
+        "icon": "ChipCosmicNeedles",
+        "id": 55343,
+        "name": "Mark of Skill - Cosmic Needles",
+        "boost_data": [
+            {
+                "ID": 1301314,
+                "minLevel": -1,
+                "maxLevel": -1,
+                "growthType": -1,
+                "growthRank": -1,
+                "benefitGauge": -1,
+                "extraID": 2559,
+                "requirements": [
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    }
+                ],
+                "results": [
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    }
+                ]
+            }
+        ],
+        "tokusei_description": [
+            "\"Photon Edge\" damage +100%",
+            "\"Photon Edge\" LB Cap is\nincreased by (CLSR x 1)"
         ]
     }
 ]
