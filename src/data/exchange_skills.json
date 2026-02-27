@@ -3941,6 +3941,16 @@
     },
     {
         "type": "SKILL_DEMON",
+        "id": 170024,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170025,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
         "id": 26212,
         "name": null
     },
@@ -4537,6 +4547,26 @@
     {
         "type": "SKILL_DEMON",
         "id": 160780,
+        "name": null
+    },
+    {
+        "type": "SKILL_CHARACTER",
+        "id": 170023,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170026,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170027,
+        "name": null
+    },
+    {
+        "type": "SKILL_DEMON",
+        "id": 170028,
         "name": null
     }
 ]
