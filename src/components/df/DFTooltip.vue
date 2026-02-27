@@ -56,6 +56,7 @@ export default {
 				return { body: [["No data"]] }
 			}
 
+			//adds direct effect on slots from tokusei data
 			if (this.df.tokusei_description.length > 0) {
 				let tab = []
 				tab.push(`Effect:\n• The Benefit Gauge is increased by 1\n\nUses one Demon Force slot to set this ability:`)
@@ -64,12 +65,15 @@ export default {
 				}
 				tab.push(`\n* Note that an item's ability cannot be set to multiple Demon Force slots`)
 				body.push(tab)
-				return { body }
 			}
 
-			for (let i = 0; i < this.df.boost_data.length; i++) {
+			//adds generic parameters
+			//if tokusei data was added, starts from 1, otherwise starts from 0
+			for (let i = body.length > 0 ? 1 : 0; i < this.df.boost_data.length; i++) {
 				let tab = []
 				let checkTypeReq = false
+
+				//checks if there are requirements for any of the effects
 				for (let j = 0; j <= 2; j++) {
 					if (this.df.boost_data[i].requirements[j].type !== "NONE") {
 						checkTypeReq = true
@@ -82,6 +86,8 @@ export default {
 					this.df.boost_data[i].benefitGauge > -1 || checkTypeReq) {
 					if (this.df.boost_data[i].minLevel > -1) tab.push(`• Level ${this.df.boost_data[i].minLevel} or higher`)
 					if (this.df.boost_data[i].maxLevel > -1) tab.push(`• Level ${this.df.boost_data[i].maxLevel} or lower`)
+
+					//adds requirements that were checked earlier
 					if (checkTypeReq) {
 						for (let j = 0; j < 3; j++) {
 							if (this.df.boost_data[i].requirements[j].type !== "NONE") {
@@ -99,8 +105,11 @@ export default {
 						}
 					}
 				}
+
+				//adds actual stats
 				tab.push(`\nIf all criteria above are met, the following conditional changes occur:\n\nEffect:`)
-				if (this.df.tokusei_description.length === 0) {
+				//if it's not direct effect from tokusei, or direct effect has already been added
+				if (this.df.tokusei_description.length === 0 || body.length > 0) {
 					tab.push(`• The Benefit Gauge is increased by 1`)
 					for (let j = 0; j < 8; j++) {
 						if (this.df.boost_data[i].results[j].type !== 'NONE') {
