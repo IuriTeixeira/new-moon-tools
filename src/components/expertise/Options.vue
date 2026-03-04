@@ -121,32 +121,32 @@
     </o-field>
     <o-field>
       <template v-slot:label>
-        <span class="option-title">Devouring Sigils</span>
-      </template>
-      <step-number-input
-        :min="0"
-        :max="1000"
-        :step="1000"
-        v-model.number="options.sigil.value"
-      />
-    </o-field>
-    <o-field>
-      <template v-slot:label>
         <span class="option-title">St. Germain Quests</span>
       </template>
       <step-number-input
-        :min="0"
-        :max="2000"
-        :step="1000"
+      :min="0"
+      :max="2000"
+      :step="1000"
         v-model.number="options.saintGermain.value"
-      />
-    </o-field>
-    <label class="o-field__label">Act Completion Rewards</label>
-		<o-field>
-			<o-switch v-model.number="options.act7.value" :true-value="1000" :false-value="0" :leftLabel="true" @change="onActChange($event)">
-				Act 7
-			</o-switch>
-		</o-field>
+        />
+      </o-field>
+      <label class="o-field__label option-title">Dark Babel</label>
+      <o-field>
+      <o-switch v-model.number="options.sigil.value" :true-value="1000" :false-value="0" :leftLabel="true" @change="onActChange($event)">
+          Devouring Sigils
+        </o-switch>
+      </o-field>
+      <o-field>
+      <o-switch v-model.number="options.fragment.value" :true-value="1000" :false-value="0" :leftLabel="true" @change="onActChange($event)">
+          Fragments of Creation
+        </o-switch>
+      </o-field>
+      <label class="o-field__label option-title">Act Completion Rewards</label>
+      <o-field>
+        <o-switch v-model.number="options.act7.value" :true-value="1000" :false-value="0" :leftLabel="true" @change="onActChange($event)">
+          Act 7
+        </o-switch>
+      </o-field>
     <o-field>
 			<o-switch v-model.number="options.act16.value" :true-value="2000" :false-value="0" :leftLabel="true" @change="onActChange($event)">
 				Act 16

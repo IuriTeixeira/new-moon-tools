@@ -83,6 +83,11 @@
 			"queryParam": "oq",
 			"value": 0
 		},
+		"fragment": {
+			"name": "Fragment of Creation",
+			"queryParam": "or",
+			"value": 0
+		},
 		"saintGermain": {
 			"name": "St. Germain Quests",
 			"queryParam": "om",
