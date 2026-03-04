@@ -67,7 +67,7 @@
         v-model.number="options.tierThreeDDS.value"
       />
     </o-field>
-		<label class="o-field__label">Level 10 Demon Digitalize</label>
+		<label class="o-field__label option-title">Level 10 Demon Digitalize</label>
 		<o-field>
 			<o-switch v-model.number="options.levelTenDDS1.value" :true-value="3000" :false-value="0" :leftLabel="true">
 				Group 1
