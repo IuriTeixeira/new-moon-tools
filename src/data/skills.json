@@ -4601,7 +4601,7 @@
     {
         "id": 156,
         "name": "Kiss Throw",
-        "icon": "SD12_0021a",
+        "icon": "SD04_0006a",
         "description": "Special skill. Throws a kiss with a special feeling and inflicts mind-based damage attack.\nModifier: 100 | Stiffness: 1500",
         "affinity": "Mind",
         "family": "Technique",
