@@ -9686,7 +9686,7 @@
     {
         "id": 312,
         "name": "Naga Loca",
-        "icon": "SP09_0014a",
+        "icon": "SD11_0009a",
         "description": "Special skill. The protection of a Naga Loca. All party members in the user's vicinity have their physical and magic attacks raised.",
         "affinity": "Support",
         "family": "Technique",
@@ -59281,7 +59281,7 @@
     {
         "id": 5564,
         "name": "Naga Loca",
-        "icon": "SP09_0014a",
+        "icon": "SD11_0009a",
         "description": "Provides the blessing of a Naga Tribe Demigoddess, temporarily increasing the power of physical and magic attack of all party members in the area.",
         "affinity": "Support",
         "family": "Special Skill",
