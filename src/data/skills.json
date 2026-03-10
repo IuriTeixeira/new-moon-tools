@@ -284746,7 +284746,7 @@
     {
         "id": 170024,
         "name": "Astral Eye",
-        "icon": null,
+        "icon": "AstralEye",
         "description": "An otherworldly light emitted from the eyes. Inflict Spell-based Almighty damage to a target\nModifier: 150 | Stiffness: 500",
         "affinity": "Almighty",
         "family": "Technique",
@@ -284795,7 +284795,7 @@
     {
         "id": 170025,
         "name": "Cosmic Needles",
-        "icon": null,
+        "icon": "CosmicNeedles",
         "description": "Countless points of creation pierce the target.\nDeals Almighty damage to the target in rapid succession, based on the user's LNGR.\n\nModifier: 135 | Stiffness: 200",
         "affinity": "Almighty",
         "family": "Technique",
@@ -284838,7 +284838,7 @@
     {
         "id": 170026,
         "name": "ARS Full Booster 2",
-        "icon": null,
+        "icon": "ARS2",
         "description": "Passive skill.\n・Attack +50% ・Rush +50% ・Spin +50% ・LB Upper Limit Increase +1000",
         "affinity": "Special",
         "family": "Technique",
@@ -284874,7 +284874,7 @@
     {
         "id": 170027,
         "name": "SR Full Booster 2",
-        "icon": null,
+        "icon": "SR2",
         "description": "Passive skill.\n・Shot +50% 　※Includes Destruction Magic ・Rapid +50% ・LB Upper Limit Increase +1000",
         "affinity": "Special",
         "family": "Technique",
@@ -284910,7 +284910,7 @@
     {
         "id": 170028,
         "name": "Noble Evolve",
-        "icon": null,
+        "icon": "NobleEvolve",
         "description": "Passive skill.\n・Limit Break Chance +40% ・Limit Break Power +60% ・Technical Attack power +10% ・Critical +340",
         "affinity": "Special",
         "family": "Technique",
