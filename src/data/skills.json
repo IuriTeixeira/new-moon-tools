@@ -6404,8 +6404,8 @@
         "id": 212,
         "name": "Exorcism Bow",
         "icon": "SD01_0099a",
-        "description": "A technique which manifests six demon-sealing arrows that can strike at enemies in rapid succession.\nThis skill allows for two consecutive uses after one incantation, with each use dealing physical damage against one target based upon the user's Long-Range.\nAfter the incantation is completed, MP is gradually drained from the caster until the skill's uses are exhausted.\nModifier: 125 | Stiffness: 1000",
-        "affinity": "Handgun",
+        "description": "A technique which manifests six demon-sealing arrows that can strike at enemies in rapid succession.\nThis skill allows for two consecutive uses after one incantation, with each use dealing physical damage against one target based upon the user's Long-Range.\nAfter the incantation is completed, MP is gradually drained from the caster until the skill's uses are exhausted.\nModifier: 125 | Stiffness: 200",
+        "affinity": "Penetrate",
         "family": "Technique",
         "actionType": "Rapid",
         "activationType": "Active",
@@ -6416,7 +6416,7 @@
         "statDependency": "Long-Range",
         "formula": "Normal",
         "damage": 125,
-        "stiffness": 1000,
+        "stiffness": 200,
         "cooldown": 5000,
         "incantation": 1000,
         "inheritanceRestriction": "Needle",
@@ -55308,6 +55308,54 @@
         ]
     },
     {
+        "id": 170032,
+        "name": "Thunder Bullet Hole",
+        "icon": "SP04_0022a",
+        "description": "Vajrayaksa Myo-O mantra magic shot. Changes bullet to electric-based and inflicts Electrification effect at a low success rate.\nModifier: 175 | Stiffness: 700",
+        "affinity": "Electric",
+        "family": "Technique",
+        "actionType": "Shot",
+        "activationType": "Active",
+        "categoryType": "Physical",
+        "stack": 1,
+        "range": 120,
+        "targetType": "Enemy",
+        "statDependency": "Long-Range + Spell/2",
+        "formula": "Normal",
+        "damage": 175,
+        "stiffness": 500,
+        "cooldown": 3000,
+        "incantation": 1250,
+        "inheritanceRestriction": "All",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Enemy",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 5,
+                "itemID": 0
+            }
+        ],
+        "statuses": [
+            {
+                "statusID": 9,
+                "percentChance": 40
+            }
+        ]
+    },
+    {
         "id": 5466,
         "name": "Squall Bullet Hole",
         "icon": "SP04_0023a",
@@ -60107,7 +60155,7 @@
         "statDependency": "None",
         "formula": "Static",
         "damage": 1,
-        "stiffness": 0,
+        "stiffness": 150,
         "cooldown": 30000,
         "incantation": 0,
         "inheritanceRestriction": "Impossible",
@@ -158424,7 +158472,7 @@
         "id": 23180,
         "name": "Beelzebub's Servant",
         "icon": null,
-        "description": ".If partied with Fly: +100 Max HP\n.If partied with Beelzebub(Fly): +50 Support\n.When using Astral Eye, 6% Chance to receive [Beelzebub's Blessing] status, gaining (Support x 1) LB Cap for 15 seconds.",
+        "description": ".If partied with Fly: +10 Support\n.If partied with Beelzebub(Fly): +50 Support\n.When using Astral Eye, 6% Chance to receive [Beelzebub's Blessing] status, gaining (Support x 1) LB Cap for 15 seconds.",
         "affinity": "Special",
         "family": "Demonic Feature",
         "actionType": "Support",
@@ -284942,6 +284990,150 @@
         },
         "costs": [],
         "statuses": []
+    },
+    {
+        "id": 170029,
+        "name": "Squall Bullet Hole",
+        "icon": "SP04_0023a",
+        "description": "Atavaka mantra magic shot. Changes bullet to force-based and inflicts Stun effect at low success rate.\nModifier: 175 | Stiffness: 700",
+        "affinity": "Force",
+        "family": "Technique",
+        "actionType": "Shot",
+        "activationType": "Active",
+        "categoryType": "Physical",
+        "stack": 1,
+        "range": 120,
+        "targetType": "Enemy",
+        "statDependency": "Long-Range + Spell/2",
+        "formula": "Normal",
+        "damage": 175,
+        "stiffness": 700,
+        "cooldown": 3000,
+        "incantation": 1250,
+        "inheritanceRestriction": "All",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Enemy",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 5,
+                "itemID": 0
+            }
+        ],
+        "statuses": [
+            {
+                "statusID": 10,
+                "percentChance": 40
+            }
+        ]
+    },
+    {
+        "id": 170030,
+        "name": "Scorching Bullet Hole",
+        "icon": "SP04_0020a",
+        "description": "Ucchusama mantra magic-shot. Changes bullet to fire-based and inflicts fire-based effect.\nModifier: 175 | Stiffness: 700",
+        "affinity": "Fire",
+        "family": "Technique",
+        "actionType": "Shot",
+        "activationType": "Active",
+        "categoryType": "Physical",
+        "stack": 1,
+        "range": 120,
+        "targetType": "Enemy",
+        "statDependency": "Long-Range + Spell/2",
+        "formula": "Normal",
+        "damage": 175,
+        "stiffness": 700,
+        "cooldown": 3000,
+        "incantation": 1250,
+        "inheritanceRestriction": "All",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Enemy",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 5,
+                "itemID": 0
+            }
+        ],
+        "statuses": [
+            {
+                "statusID": 7,
+                "percentChance": 40
+            }
+        ]
+    },
+    {
+        "id": 170031,
+        "name": "Hailing Bullet Hole",
+        "icon": "SP04_0021a",
+        "description": "Yamantaka Myo-O mantra magic shot. Changes bullet to ice-based property and inflicts freeze effect with a high success rate.\nModifier: 175 | Stiffness: 700",
+        "affinity": "Ice",
+        "family": "Technique",
+        "actionType": "Shot",
+        "activationType": "Active",
+        "categoryType": "Physical",
+        "stack": 1,
+        "range": 120,
+        "targetType": "Enemy",
+        "statDependency": "Long-Range + Spell/2",
+        "formula": "Normal",
+        "damage": 175,
+        "stiffness": 500,
+        "cooldown": 3000,
+        "incantation": 1250,
+        "inheritanceRestriction": "All",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Enemy",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 5,
+                "itemID": 0
+            }
+        ],
+        "statuses": [
+            {
+                "statusID": 8,
+                "percentChance": 40
+            }
+        ]
     },
     {
         "id": 180000,
