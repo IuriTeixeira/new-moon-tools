@@ -4924,19 +4924,19 @@
         ]
       },
       {
-        "class": 8,
-        "rank": 0,
-        "pickAmount": 3,
+        "class": 7,
+        "rank": 5,
+        "pickAmount": 1,
         "skills": [
-          160621
+          160623
         ]
       },
       {
         "class": 8,
-        "rank": 9,
-        "pickAmount": 3,
+        "rank": 0,
+        "pickAmount": 2,
         "skills": [
-          160623
+          160621
         ]
       }
     ],
