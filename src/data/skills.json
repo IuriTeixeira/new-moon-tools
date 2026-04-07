@@ -279135,12 +279135,7 @@
             "fixedMPCost": false
         },
         "costs": [],
-        "statuses": [
-            {
-                "statusID": 7028,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 160668,
@@ -282320,8 +282315,8 @@
             {
                 "costType": "ITEM",
                 "numberOrPercent": "NUMERIC",
-                "amount": 1,
-                "itemID": 699
+                "amount": 666,
+                "itemID": 799
             }
         ],
         "statuses": []
@@ -282728,12 +282723,7 @@
             "fixedMPCost": false
         },
         "costs": [],
-        "statuses": [
-            {
-                "statusID": 7047,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 160752,
@@ -282769,12 +282759,7 @@
             "fixedMPCost": false
         },
         "costs": [],
-        "statuses": [
-            {
-                "statusID": 7048,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 160753,
