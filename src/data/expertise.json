@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Attack",
-    "description": "[Technique]\r\nA basic Expertise for close-range combat.\r\nStrong against: Rush\r\nWeak against: Spin, Guard, Counter,\r\n    Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "description": "[Technique]\n• basic Expertise for close-range combat. Strong against: Rush Weak against: Spin, Guard, Counter, Long-range attacks\n△: Skill Count↑, Damage↑, Incantation↓\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -108,7 +108,7 @@
   {
     "id": 1,
     "name": "Spin",
-    "description": "[Technique]\r\nA technical Expertise for attacking multiple\r\nenemies in close-quarters combat.\r\n\r\nStrong against: Attack, Counter\r\nWeak against: Guard, Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 7",
+    "description": "[Technique]\n• technical Expertise for attacking multiple enemies in close-quarters combat.\nStrong against: Attack, Counter Weak against: Guard, Long-range attacks\n△: Skill Count↑, Damage↑, Incantation↓\nCan be increased up to Class 7",
     "maxClass": 7,
     "maxRank": 0,
     "breakpoints": [
@@ -183,7 +183,7 @@
   {
     "id": 2,
     "name": "Rush",
-    "description": "[Technique]\r\nAn Expertise that breaks down an opponent\u0027s Guard\r\nwith a mighty blow.\r\n\r\nStrong against: Guard\r\nWeak against: Attack, Counter\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 7",
+    "description": "[Technique]\nAn Expertise that breaks down an opponent's Guard with a mighty blow.\nStrong against: Guard Weak against: Attack, Counter\n△: Skill Count↑, Damage↑, Incantation↓\nCan be increased up to Class 7",
     "maxClass": 7,
     "maxRank": 0,
     "breakpoints": [
@@ -266,7 +266,7 @@
   {
     "id": 3,
     "name": "Shot",
-    "description": "[Technique]\r\nA basic Expertise for long-distance combat.\r\nStrong against: Attack, Spin,\r\n     Guard, Counter\r\nWeak against: Dodge\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "description": "[Technique]\n• basic Expertise for long-distance combat. Strong against: Attack, Spin, Guard, Counter Weak against: Dodge\n△: Skill Count↑, Damage↑, Incantation↓\nCan be increased up to Class 9",
     "maxClass": 9,
     "maxRank": 0,
     "breakpoints": [
@@ -364,7 +364,7 @@
   {
     "id": 4,
     "name": "Rapid",
-    "description": "[Technique]\r\nA technical Expertise for delivering successive\r\nattacks in long-distance combat.\r\nStrong against: Attack, Spin,\r\n     Guard, Counter\r\nWeak against: Dodge\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 8",
+    "description": "[Technique]\n• technical Expertise for delivering successive attacks in long-distance combat. Strong against: Attack, Spin, Guard, Counter Weak against: Dodge\n△: Skill Count↑, Damage↑, Incantation↓\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -455,7 +455,7 @@
   {
     "id": 5,
     "name": "Guard",
-    "description": "[Technique]\r\nA basic Expertise for protecting oneself from\r\nenemy attacks.\r\nStrong against: Attack, Spin \r\nWeak against: Rush, Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "description": "[Technique]\nUnimplemented",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -464,7 +464,7 @@
   {
     "id": 6,
     "name": "Counter",
-    "description": "[Technique]\r\nA Technical Expertise for nullifying an enemy\u0027s\r\nattack and responding with a counterattack.\r\nStrong against: Attack, Rush\r\nWeak against: Spin, Long-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "description": "[Technique]\nUnimplemented",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -473,7 +473,7 @@
   {
     "id": 7,
     "name": "Dodge",
-    "description": "[Technique]\r\nA technical Expertise for evading long-distance\r\nattacks and creating an opportunity to respond.\r\nStrong against: Long-range attacks\r\nWeak against: Close-range attacks\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "description": "[Technique]\nUnimplemented",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -482,7 +482,7 @@
   {
     "id": 8,
     "name": "Curative Magic",
-    "description": "[Technique]\r\nAn Expertise that provides magic to heal allies.\r\n\r\n\u25B3: Skill Count\u2191, Recovery\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 10",
+    "description": "[Technique]\nAn Expertise that provides magic to heal allies.\n△: Skill Count↑, Recovery↑, Incantation↓\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -647,7 +647,7 @@
   {
     "id": 9,
     "name": "Destruction Magic",
-    "description": "[Technique]\r\nAn Expertise that provides offensive magic to\r\nattack enemies from a distance.\r\nStrong against: Attack, Spin,\r\n     Guard, Counter\r\nWeak against: Dodge\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 10",
+    "description": "[Technique]\nAn Expertise that provides offensive magic to attack enemies from a distance. Strong against: Attack, Spin, Guard, Counter Weak against: Dodge\n△: Skill Count↑, Damage↑, Incantation↓\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -884,7 +884,7 @@
   {
     "id": 10,
     "name": "Support Magic",
-    "description": "[Technique]\r\nAn Expertise that provides magic to strengthen\r\nallies.\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 8",
+    "description": "[Technique]\nAn Expertise that provides magic to strengthen allies.\n△: Skill Count↑, Incantation↓\nCan be increased up to Class 8",
     "maxClass": 8,
     "maxRank": 0,
     "breakpoints": [
@@ -1043,7 +1043,7 @@
   {
     "id": 11,
     "name": "Curse Magic",
-    "description": "[Technique]\r\nAn Expertise that provides magic to weaken\r\nenemies.\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n\r\nCan be increased up to Class 8",
+    "description": "[Technique]\nAn Expertise that provides magic to weaken enemies.\n△: Skill Count↑, Incantation↓\nCan be increased up to Class 8",
     "maxClass": 8,
     "maxRank": 0,
     "breakpoints": [
@@ -1069,7 +1069,7 @@
         "rank": 7,
         "pickAmount": 1,
         "skills": [
-          5806
+          5811
         ]
       },
       {
@@ -1110,7 +1110,7 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          5807
+          5812
         ]
       },
       {
@@ -1136,13 +1136,13 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-          5808
+          5813
         ]
       },
       {
         "class": 4,
         "rank": 5,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
           115
         ]
@@ -1178,7 +1178,7 @@
         "rank": 5,
         "pickAmount": 2,
         "skills": [
-          5809,
+          5814,
           5038
         ]
       },
@@ -1195,7 +1195,7 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          5810
+          5815
         ]
       },
       {
@@ -1213,7 +1213,7 @@
   {
     "id": 12,
     "name": "Talk",
-    "description": "[Technique]\r\nAn Expertise for negotiation. Gently approach and\r\nbefriend others.\r\n\r\n\u25B3: Skill Count\u2191, Negotiation Success Rate\u2191\r\n\r\nCan be increased up to Class 2",
+    "description": "Cannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -1222,7 +1222,7 @@
   {
     "id": 13,
     "name": "Threaten",
-    "description": "[Technique]\r\nAn Expertise for negotiation. Coerce others into\r\ncompliance.\r\n\r\n\u25B3: Skill Count\u2191, Negotiation Success Rate\u2191\r\n\r\nCan be increased up to Class 2",
+    "description": "Cannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -1231,7 +1231,7 @@
   {
     "id": 14,
     "name": "Taunt",
-    "description": "[Technique]\r\nAn Expertise for negotiation. Provoke an opponent\r\nand direct their attacks.\r\n\r\n\u25B3: Skill Count\u2191, Negotiation Success Rate\u2191\r\n\r\nCan be increased up to Class 2",
+    "description": "Cannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -1240,7 +1240,7 @@
   {
     "id": 15,
     "name": "Summon",
-    "description": "[Technique]\r\nAn Expertise for mastering demon summoning\r\ntechnology.\r\n\r\n\u25B3: Skill Count\u2191, Summon Speed\u2191\r\n\r\nCan be increased up to Class 2",
+    "description": "[Technique]\nAn Expertise for mastering demon summoning technology.\n△: Skill Count↑, Summon Speed↑\nCan be increased up to Class 6",
     "maxClass": 6,
     "maxRank": 0,
     "breakpoints": [
@@ -1306,7 +1306,7 @@
   {
     "id": 16,
     "name": "Occultism",
-    "description": "[Knowledge]\r\nAn Expertise for developing an understanding of\r\nphenomena that cannot be explained by common\r\nsense or modern science.\r\n\r\n\u25B3: Gain Intelligence raising passives\r\n\r\nCan be increased up to Class 7",
+    "description": "[Knowledge]\nAn Expertise for developing an understanding of phenomena that cannot be explained by common sense or modern science.\n△: Gain Intelligence raising passives\nCan be increased up to Class 7",
     "maxClass": 7,
     "maxRank": 0,
     "breakpoints": [
@@ -1372,7 +1372,7 @@
   {
     "id": 17,
     "name": "Fusion",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of demon\r\nfusion technology.\r\n\r\n\u25B3: Demon Experience Gain \u2191 Every 3 Classes\r\n\r\nCan be increased up to Class 10",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of demon fusion technology.\n△: Demon Experience Gain ↑ Every 3 Classes\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -1509,7 +1509,7 @@
   {
     "id": 18,
     "name": "Demonology",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of demons\u0027\r\necology.\r\n\r\n\u25B3: Negotiation Success Rate\u2191\r\n\u3000\u3000\u3000Demon Experience Gain \u2191 Every 2 Classes\r\n\r\nCan be increased up to Class 7",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of demons' ecology.\n△: Negotiation Success Rate↑ 　　　Demon Experience Gain ↑ Every 2 Classes\nCan be increased up to Class 7",
     "maxClass": 7,
     "maxRank": 0,
     "breakpoints": [
@@ -1637,7 +1637,7 @@
   {
     "id": 19,
     "name": "Weapon Knowledge",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of swords\r\nand other close-combat weapons.\r\n\r\n\u25B3: Critical\u2191, \r\n   Durability loss on Close-Range weapons\u2193\r\n\r\nCan be increased up to Class 9",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of swords and other close-combat weapons.\n△: Critical↑, Durability loss on Close-Range weapons↓\nCan be increased up to Class 9",
     "maxClass": 9,
     "maxRank": 0,
     "breakpoints": [
@@ -1719,7 +1719,7 @@
   {
     "id": 20,
     "name": "Survival Techniques",
-    "description": "[Knowledge]\r\nAn Expertise for developing survival know-how.\r\n\r\n\u25B3: Critical Defense\u2191, \r\n   Durability loss on Armor\u2193\r\n\r\nCan be increased up to Class 7",
+    "description": "[Knowledge]\nAn Expertise for developing survival know-how.\n△: Critical Defense↑, Durability loss on Armor↓\nCan be increased up to Class 7",
     "maxClass": 7,
     "maxRank": 0,
     "breakpoints": [
@@ -1728,8 +1728,8 @@
         "rank": 0,
         "pickAmount": 3,
         "skills": [
-          5416,
           5501,
+          5416,
           5504
         ]
       },
@@ -1764,7 +1764,7 @@
       {
         "class": 1,
         "rank": 2,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5506,
           5505
@@ -1839,20 +1839,20 @@
       {
         "class": 6,
         "rank": 5,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
-          5820,
           5830
         ]
       },
       {
         "class": 7,
         "rank": 0,
-        "pickAmount": 3,
+        "pickAmount": 4,
         "skills": [
           50389,
           5448,
-          5516
+          5516,
+          5820
         ]
       }
     ],
@@ -1861,7 +1861,7 @@
   {
     "id": 21,
     "name": "Psychology",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of demons\u0027\r\npsychology.\r\n\r\nCan be increased up to Class 10",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of demons' psychology.\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -1871,8 +1871,8 @@
         "pickAmount": 3,
         "skills": [
           5601,
-          5619,
-          5622
+          5622,
+          5619
         ]
       },
       {
@@ -1884,11 +1884,19 @@
         ]
       },
       {
+        "class": 0,
+        "rank": 7,
+        "pickAmount": 1,
+        "skills": [
+          5608
+        ]
+      },
+      {
         "class": 1,
         "rank": 0,
-        "pickAmount": 3,
+        "pickAmount": 1,
         "skills": [
-          5611
+          5797
         ]
       },
       {
@@ -1896,9 +1904,9 @@
         "rank": 1,
         "pickAmount": 3,
         "skills": [
-          5797,
-          5630,
-          5623
+          5611,
+          5623,
+          5630
         ]
       },
       {
@@ -1997,7 +2005,7 @@
   {
     "id": 22,
     "name": "Medical Sciences",
-    "description": "[Knowledge]\r\nAn Expertise for developing medical knowledge.\r\n\r\n\u25B3: Curative Item Effect\u2191, \r\n\u3000\u3000Regeneration While Resting\u2191\r\n\r\nCan be increased up to Class 6",
+    "description": "[Knowledge]\nAn Expertise for developing medical knowledge.\n△: Curative Item Effect↑, 　　Regeneration While Resting↑\nCan be increased up to Class 6",
     "maxClass": 6,
     "maxRank": 0,
     "breakpoints": [],
@@ -2006,7 +2014,7 @@
   {
     "id": 23,
     "name": "Crushing Technique",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge on how to\r\nquickly defeat numerous enemies.\r\n\r\nCan be increased up to Class 10",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge on how to quickly defeat numerous enemies.\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -2098,7 +2106,7 @@
   {
     "id": 24,
     "name": "Mineralogy",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge regarding\r\nmineral ores.\r\n\r\n\u25B3: Ore-Collecting Bonus (unimplemented)\r\n\r\nCan be increased up to Class 10",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge regarding mineral ores.\n△: Ore-Collecting Bonus (unimplemented)\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [],
@@ -2107,7 +2115,7 @@
   {
     "id": 25,
     "name": "Biology",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of living\r\nthings, with a focus on self-improvement.\r\n\r\nCan be increased up to Class 7",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of living things, with a focus on self-improvement.\nCan be increased up to Class 7",
     "maxClass": 7,
     "maxRank": 0,
     "breakpoints": [
@@ -2189,7 +2197,7 @@
   {
     "id": 26,
     "name": "Botany",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of plants.\r\n\r\nCannot be increased at this time",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of plants.\nCannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -2198,7 +2206,7 @@
   {
     "id": 27,
     "name": "Mechanical Engineering",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of various\r\nmechanisms.\r\n\r\nCannot be increased at this time",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of various mechanisms.\nCannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -2207,7 +2215,7 @@
   {
     "id": 28,
     "name": "Information Engineering",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of\r\ncomputers.\r\n\r\nCannot be increased at this time",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of computers.\nCannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -2216,7 +2224,7 @@
   {
     "id": 29,
     "name": "Blades",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of the\r\nproper handling of blades.\r\n\r\nCan be increased up to Class 10",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of the proper handling of blades.\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [],
@@ -2225,7 +2233,7 @@
   {
     "id": 30,
     "name": "Sketching",
-    "description": "[Knowledge]\r\nAn Expertise for developing an understanding of\r\nhandicrafts.\r\n\r\nCan be increased up to Class 8",
+    "description": "[Knowledge]\nAn Expertise for developing an understanding of handicrafts.\nCan be increased up to Class 8",
     "maxClass": 8,
     "maxRank": 0,
     "breakpoints": [],
@@ -2234,7 +2242,7 @@
   {
     "id": 31,
     "name": "Creation",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of the basic\r\nprinciples of cultivation.\r\n\r\nCan be increased up to Class 5",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of the basic principles of cultivation.\nCan be increased up to Class 5",
     "maxClass": 5,
     "maxRank": 0,
     "breakpoints": [],
@@ -2243,7 +2251,7 @@
   {
     "id": 32,
     "name": "Crafts",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of the\r\nproper handling of objects with complex\r\nstructures.\r\n\r\nCan be increased up to Class 10",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of the proper handling of objects with complex structures.\nCan be increased up to Class 10",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [],
@@ -2252,7 +2260,7 @@
   {
     "id": 33,
     "name": "Firearms Knowledge",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of the\r\nproper handling of fire and firearms.\r\n\r\nCannot be increased at this time",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of the proper handling of fire and firearms.\nCannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -2261,7 +2269,7 @@
   {
     "id": 34,
     "name": "Gun Knowledge",
-    "description": "[Knowledge]\r\nAn Expertise for developing knowledge of the\r\nproper handling of guns.\r\n\r\n\u25B3: Critical\u2191, \r\n   Reduced durability loss on Long-Range weapons\r\n\r\nCan be increased up to Class 9",
+    "description": "[Knowledge]\nAn Expertise for developing knowledge of the proper handling of guns.\n△: Critical↑, Reduced durability loss on Long-Range weapons\nCan be increased up to Class 9",
     "maxClass": 9,
     "maxRank": 0,
     "breakpoints": [
@@ -2343,7 +2351,7 @@
   {
     "id": 35,
     "name": "Pursuit",
-    "description": "[Knowledge]\r\nAn Expertise for understanding the common\r\nprinciples underlying various kinds of\r\nattacks.\r\n\r\nCan be increased up to Class 9",
+    "description": "[Knowledge]\nAn Expertise for understanding the common principles underlying various kinds of attacks.\nCan be increased up to Class 9",
     "maxClass": 9,
     "maxRank": 0,
     "breakpoints": [
@@ -2436,7 +2444,7 @@
   {
     "id": 36,
     "name": "Magic Control",
-    "description": "[Knowledge]\r\nAn Expertise for understanding how to control\r\nmagical powers and how to improve various\r\nkinds of attacks.\r\n\r\n\u25B3: All Skill MP Cost\u2193\r\n\u3000\u3000 All Skill Incantation\u2193\r\n\r\nCan be increased up to Class 9",
+    "description": "[Knowledge]\nAn Expertise for understanding how to control magical powers and how to improve various kinds of attacks.\n△: All Skill MP Cost↓ 　　 All Skill Incantation↓\nCan be increased up to Class 9",
     "maxClass": 9,
     "maxRank": 0,
     "breakpoints": [
@@ -2510,7 +2518,7 @@
   {
     "id": 37,
     "name": "Bless",
-    "description": "[Knowledge]\r\nAn Expertise for understanding how to use magic\r\nto give others various benefits.\r\n\r\nCan be increased up to Class 9",
+    "description": "[Knowledge]\nAn Expertise for understanding how to use magic to give others various benefits.\nCan be increased up to Class 9",
     "maxClass": 9,
     "maxRank": 0,
     "breakpoints": [
@@ -2596,7 +2604,7 @@
   {
     "id": 38,
     "name": "--Unused--",
-    "description": "A production Expertise for developing various\r\nkinds of hardware and software.\r\n\r\nCannot be increased at this time",
+    "description": "A production Expertise for developing various kinds of hardware and software.\nCannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
@@ -2605,9 +2613,9 @@
   {
     "id": 39,
     "name": "Mitama Demon Growth Science",
-    "description": "An Expertise for promoting the development of\r\nMitama-enhanced demons.",
-    "maxClass": 7,
-    "maxRank": 4,
+    "description": "An Expertise for promoting the development of Mitama-enhanced demons.",
+    "maxClass": 8,
+    "maxRank": 2,
     "breakpoints": [
       {
         "class": 1,
@@ -2710,7 +2718,7 @@
   {
     "id": 40,
     "name": "Swordsmith",
-    "description": "A production Expertise for creating close-range\r\nweapons such as swords by following various\r\nrecipes.",
+    "description": "A production Expertise for creating close-range weapons such as swords by following various recipes.",
     "maxClass": 9,
     "maxRank": 5,
     "breakpoints": [
@@ -3208,8 +3216,8 @@
   {
     "id": 41,
     "name": "Berserker",
-    "description": "Lose yourself in the bloodlust of the\r\nfight and achieve your true strength.",
-    "maxClass": 9,
+    "description": "Lose yourself in the bloodlust of the fight and achieve your true strength.",
+    "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
       {
@@ -3237,14 +3245,6 @@
         ]
       },
       {
-        "class": 3,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          5093
-        ]
-      },
-      {
         "class": 4,
         "rank": 0,
         "pickAmount": 1,
@@ -3263,7 +3263,7 @@
       {
         "class": 6,
         "rank": 0,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
           160672
         ]
@@ -3271,7 +3271,7 @@
       {
         "class": 6,
         "rank": 5,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
           160679
         ]
@@ -3287,9 +3287,10 @@
       {
         "class": 7,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
-          160680
+          160680,
+          5093
         ]
       },
       {
@@ -3301,7 +3302,7 @@
         ]
       },
       {
-        "class": 8,
+        "class": 9,
         "rank": 0,
         "pickAmount": 2,
         "skills": [
@@ -3311,7 +3312,7 @@
       },
       {
         "class": 9,
-        "rank": 0,
+        "rank": 4,
         "pickAmount": 1,
         "skills": [
           160730
@@ -3342,7 +3343,7 @@
   {
     "id": 42,
     "name": "--Unused--",
-    "description": "A battle Expertise for those who have mastered\r\nlong-distance combat.",
+    "description": "A battle Expertise for those who have mastered long-distance combat.",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [],
@@ -3351,7 +3352,7 @@
   {
     "id": 43,
     "name": "Essence of Magic",
-    "description": "A battle Expertise for those who have mastered\r\nmagical combat.",
+    "description": "A battle Expertise for those who have mastered magical combat.",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -3445,6 +3446,14 @@
         "skills": [
           170004
         ]
+      },
+      {
+        "class": 9,
+        "rank": 3,
+        "pickAmount": 1,
+        "skills": [
+          160611
+        ]
       }
     ],
     "singularExpertise": [
@@ -3471,7 +3480,7 @@
   {
     "id": 44,
     "name": "Craftsmanship",
-    "description": "A production Expertise for developing and\r\nmanufacturing various substances through\r\ntechniques such as cultivation.",
+    "description": "A production Expertise for developing and manufacturing various substances through techniques such as cultivation.",
     "maxClass": 6,
     "maxRank": 0,
     "breakpoints": [
@@ -3519,12 +3528,6 @@
           5334,
           5343
         ]
-      },
-      {
-        "class": 6,
-        "rank": 0,
-        "pickAmount": 1,
-        "skills": []
       }
     ],
     "singularExpertise": [
@@ -3551,7 +3554,7 @@
   {
     "id": 45,
     "name": "Mastery of the Three Forms of Life",
-    "description": "A battle Expertise for bringing out a specialized\r\npower that can reach the dragon of the end.",
+    "description": "A battle Expertise for bringing out a specialized power that can reach the dragon of the end.",
     "maxClass": 1,
     "maxRank": 8,
     "breakpoints": [
@@ -3627,7 +3630,7 @@
   {
     "id": 46,
     "name": "Arms Maker",
-    "description": "A production Expertise for creating guns by\r\nfollowing various recipes.",
+    "description": "A production Expertise for creating guns by following various recipes.",
     "maxClass": 9,
     "maxRank": 5,
     "breakpoints": [
@@ -4015,7 +4018,7 @@
   {
     "id": 47,
     "name": "Support Bullet",
-    "description": "A battle Expertise for supporting allies using\r\na firearm.",
+    "description": "A battle Expertise for supporting allies using a firearm.",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -4100,9 +4103,9 @@
   {
     "id": 48,
     "name": "Sanguine Contract",
-    "description": "An Expertise for empowering\r\nyour partner in combat. ",
-    "maxClass": 7,
-    "maxRank": 2,
+    "description": "An Expertise for empowering your partner in combat. ",
+    "maxClass": 8,
+    "maxRank": 0,
     "breakpoints": [
       {
         "class": 1,
@@ -4223,7 +4226,7 @@
   {
     "id": 49,
     "name": "Synthesis",
-    "description": "A production Expertise for transforming demons\r\ninto magical crystals and fusing them into\r\nequipment.",
+    "description": "A production Expertise for transforming demons into magical crystals and fusing them into equipment.",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -4282,7 +4285,7 @@
   {
     "id": 50,
     "name": "Ashes and Dust",
-    "description": "A Battle Expertise Skill for\r\nempowering rapid-fire combat style using\r\na firearm.",
+    "description": "A Battle Expertise Skill for empowering rapid-fire combat style using a firearm.",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -4319,14 +4322,6 @@
         ]
       },
       {
-        "class": 4,
-        "rank": 5,
-        "pickAmount": 1,
-        "skills": [
-          160736
-        ]
-      },
-      {
         "class": 5,
         "rank": 0,
         "pickAmount": 1,
@@ -4356,6 +4351,14 @@
         "pickAmount": 1,
         "skills": [
           160738
+        ]
+      },
+      {
+        "class": 7,
+        "rank": 5,
+        "pickAmount": 1,
+        "skills": [
+          160736
         ]
       },
       {
@@ -4415,7 +4418,7 @@
   {
     "id": 51,
     "name": "Demolition Dash",
-    "description": "A battle Expertise for staging an assault while\r\nenveloped in destructive magical energy.\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193",
+    "description": "A battle Expertise for staging an assault while enveloped in destructive magical energy.\n△: Skill Count↑, Damage↑, Incantation↓",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -4448,7 +4451,7 @@
       },
       {
         "class": 3,
-        "rank": 0,
+        "rank": 5,
         "pickAmount": 1,
         "skills": [
           5095
@@ -4457,7 +4460,7 @@
       {
         "class": 4,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           5431,
           112
@@ -4468,7 +4471,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-         160688
+          160688
         ]
       },
       {
@@ -4482,7 +4485,7 @@
       {
         "class": 6,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           50401,
           1158
@@ -4493,13 +4496,13 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-         160689
+          160689
         ]
       },
       {
         "class": 7,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           50402,
           804
@@ -4526,8 +4529,8 @@
         "rank": 4,
         "pickAmount": 2,
         "skills": [
-         160683,
-         160687
+          160683,
+          160687
         ]
       }
     ],
@@ -4561,7 +4564,7 @@
   {
     "id": 52,
     "name": "Curse of the Wretched",
-    "description": "A battle Expertise for controlling wide-area curse\r\nmagic and providing indirect support.\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193\r\n   Ailment infliction rate\u2191",
+    "description": "A battle Expertise for controlling wide-area curse magic and providing indirect support.\n△: Skill Count↑, Incantation↓ Ailment infliction rate↑",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -4635,7 +4638,7 @@
       {
         "class": 8,
         "rank": 4,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
           5477
         ]
@@ -4645,7 +4648,8 @@
         "rank": 5,
         "pickAmount": 2,
         "skills": [
-          5546
+          5546,
+          170033
         ]
       }
     ],
@@ -4673,7 +4677,7 @@
   {
     "id": 53,
     "name": "Enhancement",
-    "description": "A battle Expertise for controlling wide-area\r\nrecovery and support magic to assist allies.\r\n\r\n\u25B3: Skill Count\u2191, Incantation\u2193",
+    "description": "A battle Expertise for controlling wide-area recovery and support magic to assist allies.\n△: Skill Count↑, Incantation↓",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -4819,7 +4823,7 @@
   {
     "id": 54,
     "name": "Magic Bullet",
-    "description": "A battle Expertise for infusing bullets with curse\r\nand destruction magic.\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193\r\n\u3000\u3000Ailment infliction rate\u2191",
+    "description": "A battle Expertise for infusing bullets with curse and destruction magic.\n△: Skill Count↑, Damage↑, Incantation↓ 　　Ailment infliction rate↑",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -4895,7 +4899,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-         170003
+          170003
         ]
       },
       {
@@ -4926,15 +4930,16 @@
       {
         "class": 7,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
+          160782,
           160623
         ]
       },
       {
         "class": 8,
         "rank": 0,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
           160621
         ]
@@ -4970,7 +4975,7 @@
   {
     "id": 55,
     "name": "Sharpshooter",
-    "description": "A battle Expertise for precisely targeting the\r\nweaknesses of demons.\r\n\r\n\u25B3: Skill Count\u2191, Damage\u2191, Incantation\u2193",
+    "description": "A battle Expertise for precisely targeting the weaknesses of demons.\n△: Skill Count↑, Damage↑, Incantation↓",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -5085,10 +5090,10 @@
       {
         "class": 7,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
-          160740,
-          50404
+          50404,
+          160740
         ]
       },
       {
@@ -5102,7 +5107,7 @@
       {
         "class": 8,
         "rank": 4,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
           160757,
           160756
@@ -5117,23 +5122,23 @@
         "percentage": 0.3
       },
       {
-        "expertiseID": 18,
-        "classRequired": 2,
-        "rankRequired": 0,
-        "percentage": 0.3
-      },
-      {
         "expertiseID": 34,
         "classRequired": 2,
         "rankRequired": 0,
         "percentage": 0.4
+      },
+      {
+        "expertiseID": 18,
+        "classRequired": 2,
+        "rankRequired": 0,
+        "percentage": 0.3
       }
     ]
   },
   {
     "id": 56,
     "name": "Vanguard",
-    "description": "A battle Expertise for harnessing violent wide-area\r\nattacks in close-quarters combat and defensive\r\nmastery.\r\n\r\n\u25B3: Skill Count\u2191",
+    "description": "A battle Expertise for harnessing violent wide-area attacks in close-quarters combat and defensive mastery.\n△: Skill Count↑",
     "maxClass": 9,
     "maxRank": 0,
     "breakpoints": [
@@ -5156,11 +5161,10 @@
       {
         "class": 3,
         "rank": 0,
-        "pickAmount": 3,
+        "pickAmount": 2,
         "skills": [
           5094,
-          5445,
-          5509
+          5445
         ]
       },
       {
@@ -5193,7 +5197,7 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-         160758
+          160758
         ]
       },
       {
@@ -5209,7 +5213,15 @@
         "rank": 0,
         "pickAmount": 1,
         "skills": [
-         50403
+          50403
+        ]
+      },
+      {
+        "class": 6,
+        "rank": 4,
+        "pickAmount": 1,
+        "skills": [
+          5509
         ]
       },
       {
@@ -5233,8 +5245,8 @@
         "rank": 6,
         "pickAmount": 2,
         "skills": [
-         170007,
-         170008
+          170007,
+          170008
         ]
       },
       {
@@ -5242,7 +5254,7 @@
         "rank": 8,
         "pickAmount": 1,
         "skills": [
-         5543
+          5543
         ]
       }
     ],
@@ -5270,7 +5282,7 @@
   {
     "id": 57,
     "name": "Regal Presence",
-    "description": "A battle Expertise for assuming combat stances\r\nwith various close-range weapons.\r\n\r\n\u25B3: Skill Count\u2191, Durability loss on Armor\u2193\r\n   Attack Action Type Damage Dealt\u2191",
+    "description": "A battle Expertise for assuming combat stances with various close-range weapons.\n△: Skill Count↑, Durability loss on Armor↓ Attack Action Type Damage Dealt↑",
     "maxClass": 10,
     "maxRank": 0,
     "breakpoints": [
@@ -5297,7 +5309,7 @@
         "rank": 2,
         "pickAmount": 1,
         "skills": [
-          5193
+          5196
         ]
       },
       {
@@ -5338,7 +5350,7 @@
         "rank": 5,
         "pickAmount": 1,
         "skills": [
-          5194
+          5197
         ]
       },
       {
@@ -5354,7 +5366,7 @@
         "rank": 0,
         "pickAmount": 3,
         "skills": [
-          5195,
+          5198,
           50397,
           50398
         ]
@@ -5369,7 +5381,7 @@
       },
       {
         "class": 8,
-        "rank": 5,
+        "rank": 4,
         "pickAmount": 1,
         "skills": [
           170012
@@ -5409,7 +5421,7 @@
   {
     "id": 58,
     "name": "--Unused--",
-    "description": "A battle Expertise for using illusions to chain\r\ntogether low-power attacks.\r\n\r\nCannot be increased at this time",
+    "description": "A battle Expertise for using illusions to chain together low-power attacks.\nCannot be increased at this time",
     "maxClass": 0,
     "maxRank": 0,
     "breakpoints": [],
