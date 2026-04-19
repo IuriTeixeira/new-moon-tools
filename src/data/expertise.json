@@ -4049,8 +4049,9 @@
       {
         "class": 5,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
+          170034,
           50405
         ]
       },
@@ -4065,9 +4066,10 @@
       {
         "class": 8,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
-          5168
+          5168,
+          170035
         ]
       },
       {
@@ -4093,7 +4095,7 @@
         "percentage": 0.4
       },
       {
-        "expertiseID": 3,
+        "expertiseID": 4,
         "classRequired": 2,
         "rankRequired": 0,
         "percentage": 0.2
@@ -4189,6 +4191,14 @@
           160750,
           160751,
           160752
+        ]
+      },
+      {
+        "class": 7,
+        "rank": 5,
+        "pickAmount": 1,
+        "skills": [
+          170036
         ]
       },
       {
