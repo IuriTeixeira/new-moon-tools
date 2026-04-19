@@ -22365,7 +22365,7 @@
         "formula": "Source Percentage",
         "damage": 1000,
         "stiffness": 1600,
-        "cooldown": 30000,
+        "cooldown": 5000,
         "incantation": 500,
         "inheritanceRestriction": "Slam",
         "areaOfEffect": {
@@ -42286,7 +42286,7 @@
         "id": 5093,
         "name": "Spellblade Stance",
         "icon": "RaijinStrike",
-        "description": "Switch Skill.\n[Plus Effect]\n• Spell Damage +50%\n• When Essence of Magic is Class 8-0 or higher: - Galting Strike, Cleave and Devastate's Range increased by 40 - Spell is increased by (CLS-R x 0.75) - Converts Gatling Strike, Cleave, and Devastate into spell-based attacks. Their damage calculation changes to (Spell + CLS-R/2) \n• If Einheri and Destructive Mind are also active, Flame/Freezing/Thunder/Sonic Weapon also grants (Spell x 1) LB Cap Damage for all Attack-based skills\n[Minus Effect]\n• Long-range Damage -200%\n• Close-range Damage -500%\n• Max MP -10%",
+        "description": "Switch Skill.\n[Plus Effect]\n• Spell Damage +50%\n• When Essence of Magic is Class 8-0 or higher: - Gatling Strike, Cleave and Devastate's Range increased by 40 - Spell is increased by (CLS-R x 0.75) - Converts Gatling Strike, Cleave, and Devastate into spell-based attacks. Their damage calculation changes to (Spell + CLS-R/2) \n• If Einheri and Destructive Mind are also active, Flame/Freezing/Thunder/Sonic Weapon also grants (Spell x 1) LB Cap Damage for all Attack-based skills\n• If Einheri and Cataclysmic Mind are active, Flame/Freezing/Thunder/Sonic Weapon also grants 3% chance to trigger an advanced spell of the same affinity: Ma-dyne (Fire/Ice/Elec/Force) when using Gatling Strike or Cleave.\n[Minus Effect]\n• Long-range Damage -200%\n• Close-range Damage -500%\n• Max MP -10%",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -45336,25 +45336,25 @@
         "id": 5167,
         "name": "Assault Tuner",
         "icon": "SD01_0094a",
-        "description": "A Special Technique to shoot bullets filled with energy. Shoot a bullet and increase you or your allies general damage for 5 minutes. (Every 10 Support Stat = +1%, Capped at 100%).",
-        "affinity": "Support",
+        "description": "A Special Technique to shoot bullets filled with energy. Deal Support Damage to the target and applies [Offense Up] to nearby party members for 10 seconds.\n[Offense Up]\n• General damage increased \n(Every 15 Support Stat = +1%, Capped at +100%)\nModifier: 140 | Stiffness: 200",
+        "affinity": "Weapon-Based",
         "family": "Technique",
-        "actionType": "Support",
+        "actionType": "Rapid",
         "activationType": "Active",
         "categoryType": "Magical",
         "stack": 6,
-        "range": 150,
-        "targetType": "Ally",
+        "range": 40,
+        "targetType": "Enemy",
         "statDependency": "Support",
-        "formula": "None",
-        "damage": 0,
-        "stiffness": 370,
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 200,
         "cooldown": 5000,
         "incantation": 150,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
             "areaType": "None",
-            "validTargetType": "Ally",
+            "validTargetType": "Enemy",
             "distance": 0,
             "lineWidth": 0
         },
@@ -45385,36 +45385,31 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 2190,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 5168,
         "name": "Critical Tuner",
         "icon": "SD01_0095a",
-        "description": "A Special Technique to shoot bullets filled with energy. Shoot a bullet and increase you or your allies Final Crit Correction for 3 minutes. (Every 20 Support Stat = +1%, Capped at 50% and shares buff slot with Intensive Break Tuner)",
-        "affinity": "Support",
+        "description": "A Special Technique to shoot bullets filled with energy. Deal Support Damage to the target and applies [Critical Up] to nearby party members for 10 seconds.\n[Critical Up]\n• Final Crit Correction increased \n(Every 20 Support Stat = +1%, Capped at +100%)\nModifier: 140 | Stiffness: 200",
+        "affinity": "Weapon-Based",
         "family": "Technique",
-        "actionType": "Support",
+        "actionType": "Rapid",
         "activationType": "Active",
         "categoryType": "Magical",
         "stack": 6,
-        "range": 150,
-        "targetType": "Ally",
+        "range": 40,
+        "targetType": "Enemy",
         "statDependency": "Support",
-        "formula": "None",
-        "damage": 0,
-        "stiffness": 370,
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 200,
         "cooldown": 5000,
         "incantation": 150,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
             "areaType": "None",
-            "validTargetType": "Ally",
+            "validTargetType": "Enemy",
             "distance": 0,
             "lineWidth": 0
         },
@@ -45445,36 +45440,31 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 2191,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 5169,
         "name": "Elemental Tuner",
         "icon": "SD01_0096a",
-        "description": "A Special Technique to shoot bullets filled with energy. Shoot a bullet and increase you or your allies Fire, Ice, Electric and Force damage for 5 minutes. (Every 10 Support Stat = +1%, Capped at 100%)",
-        "affinity": "Support",
+        "description": "A Special Technique to shoot bullets filled with energy. Deal Support Damage to the target and applies [Element Up] to nearby party members for 10 seconds.\n[Element Up]\n• Fire, Ice, Electric and Force damage increased \n(Every 15 Support Stat = +1%, Capped at +100%)\nModifier: 140 | Stiffness: 200",
+        "affinity": "Weapon-Based",
         "family": "Technique",
-        "actionType": "Support",
+        "actionType": "Rapid",
         "activationType": "Active",
         "categoryType": "Magical",
         "stack": 6,
-        "range": 150,
-        "targetType": "Ally",
+        "range": 40,
+        "targetType": "Enemy",
         "statDependency": "Support",
-        "formula": "None",
-        "damage": 0,
-        "stiffness": 370,
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 200,
         "cooldown": 5000,
         "incantation": 150,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
             "areaType": "None",
-            "validTargetType": "Ally",
+            "validTargetType": "Enemy",
             "distance": 0,
             "lineWidth": 0
         },
@@ -45505,12 +45495,7 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 2192,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 5170,
@@ -51162,7 +51147,7 @@
         "id": 5352,
         "name": "UB Evil Shot",
         "icon": "SE01_0003a",
-        "description": "Create a force field in the area where the bullet hits with the power obtained in Hades. Inflicts weapon-based damage to all enemies in the range. Under [Accursed Ranger], the shot also applies an unblockable debuff that lowers the target's Long-range Damage by 10% per shot (50% at max stack).\nModifier: 140 | Stiffness: 650",
+        "description": "Create a force field in the area where the bullet hits with the power obtained in Hades. Inflicts weapon-based damage to all enemies in the range. Under [Accursed Ranger], the shot also applies an unblockable debuff that lowers the target's Long-range Damage by 10% per shot (50% at max stack).\nModifier: 140 | Stiffness: 800",
         "affinity": "Weapon-Based",
         "family": "Technique",
         "actionType": "Shot",
@@ -51174,7 +51159,7 @@
         "statDependency": "Long-Range + Spell/2",
         "formula": "Normal",
         "damage": 140,
-        "stiffness": 650,
+        "stiffness": 800,
         "cooldown": 5000,
         "incantation": 1200,
         "inheritanceRestriction": "All",
@@ -53385,24 +53370,7 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 214,
-                "percentChance": 100
-            },
-            {
-                "statusID": 215,
-                "percentChance": 100
-            },
-            {
-                "statusID": 216,
-                "percentChance": 100
-            },
-            {
-                "statusID": 7086,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 5422,
@@ -54352,24 +54320,7 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 217,
-                "percentChance": 100
-            },
-            {
-                "statusID": 218,
-                "percentChance": 100
-            },
-            {
-                "statusID": 219,
-                "percentChance": 100
-            },
-            {
-                "statusID": 7087,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 5443,
@@ -56361,7 +56312,7 @@
         "id": 5485,
         "name": "Radiant Hands",
         "icon": "SD02_0039a",
-        "description": "A switch skill that grants Super Armor to the user and improves their Healing and Enhancing skills while lowering their overall damage.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Curative Boost +50%, Curative MP Cost -50%\n• When Blood Ties or Seal of Command switches are not active and using Diarahan, Mediarahan, and Divine Blessing, 45% chance to apply [Radiance] on the target(s) and [Inspiring Presence] on the user. When using Salvation, 100% chance to apply [Radiance] on the target(s) and [Inspiring Presence] on the user.\n• Various skills in Enhancement are improved when using them while under Radiance Hands.\n[Minus Effect]\n• Spell, Close-range, Long-range Damage -500%\n• Max MP -10%\n[Radiance]\n• Increases HP by 5%, Gains 5% General Damage Reduction for 30 seconds.\n[Inspiring Presence]\n• All nearby party members' Limit Break Cap is increased by their (CLSR x 0.2 + Spell x 0.2 + LNGR x 0.2) for 20 seconds.",
+        "description": "A switch skill that grants Super Armor to the user and improves their Healing and Enhancing skills while lowering their overall damage.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Curative Boost +50%, Curative MP Cost -50%\n• When Blood Ties or Seal of Command switches are not active and using Diarahan, Mediarahan, and Divine Blessing, 45% chance to apply [Radiance] on the target(s) and [Inspiring Presence] on the user. When using Salvation, 100% chance to apply [Radiance] on the target(s) and [Inspiring Presence] on the user for 10 seconds.\n• Various skills in Enhancement are improved when using them while under Radiance Hands.\n[Minus Effect]\n• Spell, Close-range, Long-range Damage -500%\n• Max MP -10%\n[Radiance]\n• Increases HP by 5%, Gains 5% General Damage Reduction for 30 seconds.\n[Inspiring Presence]\n• All nearby party members' Limit Break Cap is increased by the user's (Support x 1.5)\n• Nearby Party Members' Received Healing +15%",
         "affinity": "Curative",
         "family": "Technique",
         "actionType": "Support",
@@ -57439,7 +57390,7 @@
         "id": 5509,
         "name": "Rally",
         "icon": "SP07_0006a",
-        "description": "Devoted to the role of protector, the user extends their own defensive capabilities to the party, bolstering offense and defense. Applies a stack of [Rallying Cry] to self for 30 seconds. Consumes all [Protective Vortex] stacks and every consumed [Protective Vortex] stacks applies an addition [Rallying Cry] stack.\n[Rallying Cry] To all Party members:\n• HP Regen +5%\n• General Damage Received -5%\n• When Enhancement is Class 7-0 or higher, movement speed +2%\n• When Regal Presence is C8-0 and Gale Form is active, increases LB Cap Damage by (VIT x 0.1)",
+        "description": "Devoted to the role of protector, the user extends their own defensive capabilities to the party, bolstering offense and defense. Applies a stack of [Rallying Cry] to self for 30 seconds. Consumes all [Protective Vortex] stacks and every consumed [Protective Vortex] stacks applies an addition [Rallying Cry] stack.\n[Rallying Cry] To all Party members:\n• HP Regen +5%\n• General Damage Received -5%\n• Movement speed +2%\n• When Regal Presence is Class 8-0+ increases LB Cap Damage by the user's (VIT x 0.1)",
         "affinity": "Support",
         "family": "Technique",
         "actionType": "Support",
@@ -262425,25 +262376,25 @@
         "id": 50405,
         "name": "Ability Tuner",
         "icon": "SD01_0129a",
-        "description": "A Special Technique to shoot bullets filled with energy. Shoot a bullet and increase you or your allies Str, Vit, Mag, Spd, Lck for 5 minutes. (Every 10 Support Stat = +1, Capped at +100).",
-        "affinity": "Support",
+        "description": "A Special Technique to shoot bullets filled with energy. Deal Support Damage to the target and applies [Ability Boost] to nearby party members for 10 seconds.\n[Ability Boost]\n• Str, Vit, Mag, Spd, Lck increased \n(Every 15 Support Stat = +1, Capped at +100)\nModifier: 140 | Stiffness: 200",
+        "affinity": "Weapon-Based",
         "family": "Technique",
-        "actionType": "Support",
+        "actionType": "Rapid",
         "activationType": "Active",
         "categoryType": "Magical",
         "stack": 6,
-        "range": 150,
-        "targetType": "Ally",
+        "range": 40,
+        "targetType": "Enemy",
         "statDependency": "Support",
-        "formula": "None",
-        "damage": 0,
-        "stiffness": 370,
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 200,
         "cooldown": 5000,
         "incantation": 150,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
             "areaType": "None",
-            "validTargetType": "Ally",
+            "validTargetType": "Enemy",
             "distance": 0,
             "lineWidth": 0
         },
@@ -262474,18 +262425,13 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 904,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 50406,
         "name": "Sanctuary",
         "icon": "SK_964",
-        "description": "Passive skill.\n\n• User's Support increased by (Int x 0.5)\n• Nearby Party Members' Received Healing +15%\n• Nearby Party Members' General Damage +10%",
+        "description": "Passive skill.\n\n• User's Support increased by (Int x 0.5)\n• Nearby Party Members' General Damage +10%",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -276625,7 +276571,7 @@
         "id": 160610,
         "name": "Dyne Accel",
         "icon": "DyneAccel",
-        "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n• +3 extra skill stacks to Agidyne, Bufudyne, Ziodyne, Zandyne, Maragidyne, Mabufudyne, Maziodyne and Mazandyne\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When [Full Momentum] is active, casting -dyne spells from Destruction Magic and Essence of Magic skills (except Ethereal Greatsword) will also grant [Arcane Overdrive] of its respective affinity for 30 seconds.\n[Penalty]\n• -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Fire/Ice/Electric/Force/Mystic affinity and affinity cap is increased by +5%.\n• Enhancement is Class 8-0+, Fire/Ice/Electric/Force/Mystic affinity based skills' Limit Break Cap increased by their (Spell x 1).",
+        "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n• +3 extra skill stacks to Agidyne, Bufudyne, Ziodyne, Zandyne, Maragidyne, Mabufudyne, Maziodyne and Mazandyne\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When [Full Momentum] is active, casting -dyne spells from Destruction Magic and Essence of Magic skills (except Ethereal Greatsword) will also grant [Arcane Overdrive] of its respective affinity for 30 seconds.\n[Penalty]\n• -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Fire/Ice/Electric/Force/Mystic affinity and affinity cap is increased by +5%.\n• When Enhancement is Class 8-0+, Limit Break Cap increased by the user's (Spell x 0.5).",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -276668,7 +276614,7 @@
         "id": 160612,
         "name": "Megi Accel",
         "icon": "MegiAccel",
-        "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n• +3 extra skill stacks to Megido, Megidora and Megidoraon\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When [Full Momentum] is active, casting Megido and Megidora will also grant [Arcane Overdrive: Almighty] for 30 seconds.\n[Penalty]\n• -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Almighty affinity and affinity cap is increased by +5%\n• When Enhancement is Class 8-0+, Almighty Limit Break Cap is increased by their (Spell x 1).",
+        "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n• +3 extra skill stacks to Megido, Megidora and Megidoraon\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When [Full Momentum] is active, casting Megido and Megidora will also grant [Arcane Overdrive: Almighty] for 30 seconds.\n[Penalty]\n• -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Almighty affinity and affinity cap is increased by +5%\n• When Enhancement is Class 8-0+, Almighty Limit Break Cap is increased by their (Spell x 0.5).",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -277350,7 +277296,7 @@
         "id": 160627,
         "name": "Doping",
         "icon": "SI_Doping",
-        "description": "Increase MAX HP and LB Cap of an ally for 10 minutes.\n[Effect]\n• Increase the target's MAX HP by 50 for every 10 SUPPORT of the caster (Cap at +5000 HP)\n• Increase the target's LB Cap by +30 for every 10 SUPPORT of the caster (Cap at +3000)",
+        "description": "Increase MAX HP and LB Cap of an ally for 10 minutes.\n[Effect]\n• Increase the target's MAX HP by 50 for every 10 SUPPORT of the caster (Cap at +5000 HP)\n• Increase the target's LB Cap by +10 for every 10 SUPPORT of the caster (Cap at +1000)",
         "affinity": "Support",
         "family": "Arcane Art",
         "actionType": "Support",
@@ -277404,19 +277350,19 @@
         "id": 160628,
         "name": "Healing Tuner",
         "icon": "SD_HealingTuner",
-        "description": "A Special Technique to shoot bullets filled with energy. Shoot a bullet and increase you or your allies HP Regen, MP Regen and Received Healing for 2 minutes and heals the target from a long distance. (Every 10 Support Stat = +1%, Capped at 50%)\nModifier: 150 | Stiffness: 370",
+        "description": "A Special Technique to shoot bullets filled with energy. Shoot a bullet and increase you or your allies HP Regen, MP Regen and Received Healing for 2 minutes and heals the target from a long distance. If Radiant Hands is active, also restores MP and grants [Radiance] to the target, and 45% chance to trigger [Inspiring Presence].\n(Every 10 Support Stat = +1%, Capped at 50%)\nModifier: 150 | Stiffness: 200",
         "affinity": "Curative",
         "family": "Technique",
         "actionType": "Support",
         "activationType": "Active",
         "categoryType": "Magical",
         "stack": 6,
-        "range": 125,
+        "range": 175,
         "targetType": "Ally",
         "statDependency": "Support",
         "formula": "Normal Healing",
         "damage": 150,
-        "stiffness": 370,
+        "stiffness": 200,
         "cooldown": 5000,
         "incantation": 150,
         "inheritanceRestriction": "Impossible",
@@ -277453,36 +277399,31 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 7023,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 160629,
         "name": "Physical Tuner",
         "icon": "SD_LimitTuner",
-        "description": "A Special Technique to shoot bullets filled with energy. Shoot bullets and increase you or your allies Slash, Thrust, Blunt, Penetrate, Spread, and Handgun by (Caster's Support x 0.1)% for 5 minutes. (Capped at 100%)",
-        "affinity": "Support",
+        "description": "A Special Technique to shoot bullets filled with energy. Deal Support Damage to the target and applies [Physical Enhancement] to nearby party members for 10 seconds.\n[Physical Enhancement]\n• Slash, Thrust, Blunt, Penetrate, Spread, and Handgun damage increased \n(Every 15 Support Stat = +1%, Capped at +100%)\nModifier: 140 | Stiffness: 200",
+        "affinity": "Weapon-Based",
         "family": "Technique",
-        "actionType": "Support",
+        "actionType": "Rapid",
         "activationType": "Active",
         "categoryType": "Magical",
         "stack": 6,
-        "range": 150,
-        "targetType": "Ally",
+        "range": 40,
+        "targetType": "Enemy",
         "statDependency": "Support",
-        "formula": "None",
-        "damage": 0,
-        "stiffness": 370,
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 200,
         "cooldown": 5000,
         "incantation": 150,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
             "areaType": "None",
-            "validTargetType": "Ally",
+            "validTargetType": "Enemy",
             "distance": 0,
             "lineWidth": 0
         },
@@ -277513,36 +277454,31 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 7024,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 160630,
         "name": "Intensive Break Tuner",
         "icon": "SD01_0066a",
-        "description": "A Special Technique to shoot bullets filled with energy. Shoot a bullet and increase you or your allies Limit Break Cap for 3 minutes. (Every 10 Support Stat = +20, Capped at +2000 and shares buff slot with Critical Tuner)",
-        "affinity": "Support",
+        "description": "A Special Technique to shoot bullets filled with energy. Deal Support Damage to the target and applies [Intensive Break Enhancement] to nearby party members for 10 seconds.\n[Intensive Break Enhancement]\n• Limit Break Cap increased \n(Every 20 Support Stat = +20, Capped at +2000)\nModifier: 140 | Stiffness: 200",
+        "affinity": "Weapon-Based",
         "family": "Technique",
-        "actionType": "Support",
+        "actionType": "Rapid",
         "activationType": "Active",
         "categoryType": "Magical",
         "stack": 6,
-        "range": 150,
-        "targetType": "Ally",
+        "range": 40,
+        "targetType": "Enemy",
         "statDependency": "Support",
-        "formula": "None",
-        "damage": 0,
-        "stiffness": 370,
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 200,
         "cooldown": 5000,
         "incantation": 150,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
             "areaType": "None",
-            "validTargetType": "Ally",
+            "validTargetType": "Enemy",
             "distance": 0,
             "lineWidth": 0
         },
@@ -277573,12 +277509,7 @@
                 "itemID": 0
             }
         ],
-        "statuses": [
-            {
-                "statusID": 7025,
-                "percentChance": 100
-            }
-        ]
+        "statuses": []
     },
     {
         "id": 160631,
@@ -278868,7 +278799,7 @@
         "id": 160660,
         "name": "Blood Ties",
         "icon": "SI01_0126a",
-        "description": "A switch Skill that grants Super Armor and strengthens the user's partner while lowering the user's offensive and defensive stats.\n[Plus Effect]\n• Null Knockback, Null Incapacitate, Null Shock to demon partner\n• Demon partner CLS-R, LNG-R and Spell damage taken -50%\n• Demon partner CLS-R, LNG-R and Spell damage dealt +50%\n[Minus Effect]\n・Summoner CLS-R, LNG-R and Spell damage taken +15%\n• Summoner's Limit Break Cap is decreased by 1000000.\n• Summoner's Pursuit Chance and Power -999%\n• Summoner's TA Chance and Power -999%\n• Summoner Max MP -10%",
+        "description": "A switch Skill that grants Super Armor and strengthens the user's partner while lowering the user's offensive and defensive stats.\n[Plus Effect]\n• Null Knockback, Null Incapacitate, Null Shock to demon partner\n• Demon partner CLS-R, LNG-R and Spell damage taken -50%\n• Demon partner CLS-R, LNG-R and Spell damage dealt +50%\n• Demon Partner benefits from 30% of Summoner's LB Cap Damage Bonuses that don't contain any Affinity/Action/Expertise conditions.\n[Minus Effect]\n• Summoner can no longer deal extra LB Cap Damage. ・Summoner CLS-R, LNG-R and Spell damage taken +15%\n• Summoner's Pursuit Chance and Power -999%\n• Summoner's TA Chance and Power -999%\n• Summoner Max MP -10%",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -279069,7 +279000,7 @@
         "id": 160666,
         "name": "Bloody Handshake",
         "icon": "SB01_BloodyHandshake",
-        "description": "Passive skill. Fighting alongside your partner all this time has earned you their trust. You may now witness more of it's innate power.\n\n• If Open Hearts With your summoned partner, their Final Crit Correction is increased by 10% \n• If Bonded, their LB Cap is increased by +500",
+        "description": "Passive skill. Fighting alongside your partner all this time has earned you their trust. You may now witness more of its innate power.\n\n• If Open Hearts With your summoned partner, their Final Crit Correction is increased by 10% \n• If Bonded, their LB Cap is increased by +500\n• If Enhancement is Class 8-0+, partner's LB Cap Damage is increased by the summoner's (Support x 0.5)",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -279734,7 +279665,7 @@
         "id": 160681,
         "name": "Ragnarok",
         "icon": "Ragnarok",
-        "description": "Unleash the fury of the end times.\nFor 30 seconds, gains [Ragnarok] status:\n[Plus effect]\n• Close-Range Damage +50%\n• 100% Clench, Received Healing Rate +50%, +25% movement speed\n• When Curse of the Wretched is Class 8-0 or higher, all Attack-based skills have 5% chance to trigger [Bloodthirst].\n• For all Attack skills, increases LB Cap by (CLSR x 1.7), and +20% LB Power\n• If Spellblade Stance is NOT active and Einheri is active, Flame/Freezing/Thunder/Sonic Weapon also grants (CLSR x 1) LB Cap Damage to all Attack-based skills.\n• When Vanguard is Class 7-0 or higher, Cleave's Stiffness is reduced by 550.\n[Minus effect]\n• Prevents usage of any Spin, Rush, Shot and Rapid skills.\n• Continously loses HP",
+        "description": "Unleash the fury of the end times.\nFor 30 seconds, gains [Ragnarok] status:\n[Plus effect]\n• Close-Range Damage +50%\n• 100% Clench, Received Healing Rate +50%, +25% movement speed\n• Crit increased by (CLSR x 1)\n• When Curse of the Wretched is Class 8-0 or higher, all Attack-based skills have 5% chance to trigger [Bloodthirst].\n• For all Attack skills, increases LB Cap by (CLSR x 2 + Crit x 2), and +20% LB Power\n• If Spellblade Stance is NOT active and Einheri is active: - Flame/Freezing/Thunder/Sonic Weapon also grants (CLSR x 1) LB Cap Damage to all Attack-based skills.\n• When Vanguard is Class 7-0 or higher, Cleave's Stiffness is reduced by 550.\n[Minus effect]\n• Prevents usage of any Shot and Rapid skills.\n• When Demolition is under Class 8-0, prevents usage of Rush skills.\n• When Vanguard is under Class 7-0, prevents usage of Spin skills.\n• Continously loses HP",
         "affinity": "Support",
         "family": "Technique",
         "actionType": "Support",
@@ -282361,7 +282292,7 @@
         "id": 160743,
         "name": "Gunslinger",
         "icon": "SB01_Grit",
-        "description": "A switch skill that grants Super Armor to the user while lowering their Support and Close-range damage. Also gains a stack of [Grit] for each consecutive usage of 13 Shots to Hell, Qi Shot, Boogie-Woogie. [Grit] stacks up to 10 times. At [Grit]'s max stack, gains [Full Grit]. When Curse of the Wretched is Class 8-0 or higher:\n• +(Support x 0.3) Crit\n• +(Support x 0.2) LNGR\n• 13 Shots to Hell, Qi Shot, Boogie-Woogie and all offensive Ashes and Dust skills apply unblockable [Bullet Hex] to its target(s).\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Rapid Skills' LB Power +10%\n• Charged Rapid skills can be used while moving.\n• Gain a stack of [Grit] for each consecutive 13 Shots to Hell Qi Shot and Boogie-Woogie.\n[Minus Effect]\n• Support and Close-range Damage -200%\n• Spell Damage -50%\n• Max MP -10%\n[Grit]\n• For all rapid skills, a stack grants +2% LB Power, and +(LNG-R x 0.15) LB Cap. Stacks dissipate after 10 seconds. Using 13 Shots to Hell and Boogie-Woogie skills refreshes the buff and adds 1 counter.",
+        "description": "A switch skill that grants Super Armor to the user while lowering their Support and Close-range damage. Also gains a stack of [Grit] for each consecutive usage of 13 Shots to Hell, Qi Shot, Boogie-Woogie. [Grit] stacks up to 10 times. At [Grit]'s max stack, gains [Full Grit]. When Curse of the Wretched is Class 8-0 or higher:\n• +(Support x 0.3) Crit\n• +(Support x 0.2) LNGR\n• 13 Shots to Hell, Qi Shot, Boogie-Woogie and all offensive Ashes and Dust skills apply unblockable [Bullet Hex] to its target(s).\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Rapid Skills' LB Power +10%\n• Charged Rapid skills can be used while moving.\n• Gain a stack of [Grit] for each consecutive 13 Shots to Hell Qi Shot and Boogie-Woogie.\n[Minus Effect]\n• Close-range Damage -200%\n• Spell Damage -50%\n• Max MP -10%\n[Grit]\n• For all rapid skills, a stack grants +2% LB Power, and +(LNG-R x 0.15) LB Cap. Stacks dissipate after 10 seconds. Using 13 Shots to Hell and Boogie-Woogie skills refreshes the buff and adds 1 counter.",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -282410,7 +282341,7 @@
         "id": 160744,
         "name": "Desperado",
         "icon": "SB01_Desperado",
-        "description": "Instantly unleashes a flurry of bullets around the user with low damage modifier and high knockback. Each [Grit] stack increases its damage mod by 25.\nWhen the user has [Full Grit], the usage of this skill will consume all [Grit] and [Full Grit] buff stacks and will grant [High Noon] buff for 30 seconds.\nWhen Curse of the Wretched is Class 8-0 or higher and Gunslinger is alive, Desperado has 15% chance to apply [Damage Hex] to all its targets. (Every 15 User's LNGR = 300 Damage Per Tick, 20 LB Cap Damage Received)\nWhen Gunslinger is active and Magic Bullet is Class 8-0, [Hollow Point] will also reduce Desperado’s stiffness by 350.\nWhen Limit Break Up: Speed (Crushing Tech Class 10-0) is active, [Hollow Point] removes Desperado's fixed restrictions (Cooldown, Skill Stack).\n[High Noon]\nFor 30 seconds:\n• Grants the user LNGR x 1.5 LB Cap to all Rapid skills\n• When Sharpshooter is Class 8-0 or higher, grants additional (Crit x 1.5) LB Cap Damage to all Rapid skills\n• Feeling Lucky during [High Noon], you have 75% chance to get [Gambler's Ruin: Heads] when casting Gambler's Ruin.\nUnder [High Noon], the skill damage modifier is increased.\nModifier: 40 | Stiffness: 400",
+        "description": "Instantly unleashes a flurry of bullets around the user with low damage modifier and high knockback. Each [Grit] stack increases its damage mod by 25.\nWhen the user has [Full Grit], the usage of this skill will consume all [Grit] and [Full Grit] buff stacks and will grant [High Noon] buff for 30 seconds.\nWhen Curse of the Wretched is Class 8-0 or higher and Gunslinger is alive, Desperado has 15% chance to apply [Damage Hex] to all its targets. (Every 15 User's LNGR = 300 Damage Per Tick, 20 LB Cap Damage Received)\nWhen Gunslinger is active and Magic Bullet is Class 8-0, [Hollow Point] will also reduce Desperado’s stiffness by 200.\nWhen Limit Break Up: Speed (Crushing Tech Class 10-0) is active, [Hollow Point] removes Desperado's fixed restrictions (Cooldown, Skill Stack).\n[High Noon]\nFor 30 seconds:\n• Grants the user LNGR x 1.5 LB Cap to all Rapid skills\n• When Sharpshooter is Class 8-0 or higher, grants additional (Crit x 1.5) LB Cap Damage to all Rapid skills\n• Feeling Lucky during [High Noon], you have 75% chance to get [Gambler's Ruin: Heads] when casting Gambler's Ruin.\nUnder [High Noon], the skill damage modifier is increased.\nModifier: 40 | Stiffness: 400",
         "affinity": "Weapon-Based",
         "family": "Technique",
         "actionType": "Rapid",
@@ -285294,6 +285225,153 @@
                 "numberOrPercent": "NUMERIC",
                 "amount": 5000,
                 "itemID": 800
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170034,
+        "name": "Combat Medic",
+        "icon": "SI01_0076a",
+        "description": "Switch Skill.\n[Plus Effect]\n• Support + (50 + (LNGR x 0.5))\n• Curative Boost +50%\n• All offensive Tuner skills now deals Physical-based damage instead of Support-based (Affected by Long-range Damage received, Physical NRA). Its damage however is calculated using (Support) and is affected by Support Damage Boosts.\n• When Radiant Hands is also active, all offensive Tuner skills have 5% chance to trigger [Inspiring Presence] on the user and 2% to trigger Diarahan on all party members. - When Enhancement is Class 8-0+ LB Cap damage is increased by (Support x 1 + Max MP x 0.3) for all offensive Tuner skills - If Gunslinger is active, all Tuner skills also grant a stack of [Grit] to the user.\n[Minus Effect]\n• Close-range and Long-range damage -500%\n• Max HP -15%",
+        "affinity": "Special",
+        "family": "Technique",
+        "actionType": "Support",
+        "activationType": "Switch",
+        "categoryType": "Misc",
+        "stack": 1,
+        "range": 0,
+        "targetType": "None",
+        "statDependency": "None",
+        "formula": "None",
+        "damage": 0,
+        "stiffness": 150,
+        "cooldown": 0,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Ally",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "PERCENT",
+                "amount": 25,
+                "itemID": 0
+            },
+            {
+                "costType": "ITEM",
+                "numberOrPercent": "NUMERIC",
+                "amount": 5000,
+                "itemID": 800
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170035,
+        "name": "Break Shooter",
+        "icon": "SI01_0059a",
+        "description": "Fire Almighty based shots in a quick succession. \nActivating this skill will:\n• Consume all [Grit] and [Full Grit] stacks\n• For each Tuner buff applied to the user, applies a stack of [Break Bullet] buff for 30 seconds. (7 stacks Max)\n• When Combat Medic is active, [Full Grit] grants an additional (Support x 2.5) LB Cap Damage to this attack.\n[Break Bullet]\n• Increase all party members' LB Cap Damage by the user's (Support x 0.2)\nModifier: 350 | Stiffness: 200",
+        "affinity": "Almighty",
+        "family": "Technique",
+        "actionType": "Rapid",
+        "activationType": "Active",
+        "categoryType": "Magical",
+        "stack": 3,
+        "range": 50,
+        "targetType": "Enemy",
+        "statDependency": "Support",
+        "formula": "Normal",
+        "damage": 350,
+        "stiffness": 200,
+        "cooldown": 10000,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Enemy",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": true,
+            "fixedCooldown": true,
+            "fixedCharge": true,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 15,
+                "itemID": 0
+            },
+            {
+                "costType": "BULLET",
+                "numberOrPercent": "NUMERIC",
+                "amount": 1,
+                "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170036,
+        "name": "Recall",
+        "icon": "SD01_0128a",
+        "description": "Instantly teleport your demon partner to your position.\n\n• If Blood Ties is active, applies [Wickedness], x2 [Tetrakarn], x2 [Makarakarn] to your partner.\n• If Blood Ties and Radiant Hands are active, applies Linked by Fate [Summon Synchro], [Hero's Radiance]\n[Radiant Super Armor +] and [Radiance] to your partner.",
+        "affinity": "Support",
+        "family": "Technique",
+        "actionType": "Support",
+        "activationType": "Active",
+        "categoryType": "Magical",
+        "stack": 1,
+        "range": 100,
+        "targetType": "Player",
+        "statDependency": "Support",
+        "formula": "None",
+        "damage": 0,
+        "stiffness": 150,
+        "cooldown": 30000,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Ally",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": true,
+            "fixedCooldown": true,
+            "fixedCharge": true,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "ITEM",
+                "numberOrPercent": "NUMERIC",
+                "amount": 15,
+                "itemID": 800
+            },
+            {
+                "costType": "MP",
+                "numberOrPercent": "PERCENT",
+                "amount": 20,
+                "itemID": 0
             }
         ],
         "statuses": []
