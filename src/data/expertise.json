@@ -4049,34 +4049,34 @@
       {
         "class": 5,
         "rank": 0,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
-          170034,
-          50405
+          170034
         ]
       },
       {
         "class": 6,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
+          50405,
           5167
         ]
       },
       {
         "class": 8,
         "rank": 0,
-        "pickAmount": 2,
+        "pickAmount": 1,
         "skills": [
-          5168,
           170035
         ]
       },
       {
         "class": 8,
         "rank": 5,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
+          5168,
           160630
         ]
       }
