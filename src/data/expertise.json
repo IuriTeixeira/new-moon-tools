@@ -3598,6 +3598,14 @@
           5172,
           5173
         ]
+      },
+      {
+        "class": 1,
+        "rank": 8,
+        "pickAmount": 1,
+        "skills": [
+          170042
+        ]
       }
     ],
     "singularExpertise": [
@@ -4656,10 +4664,11 @@
       {
         "class": 8,
         "rank": 5,
-        "pickAmount": 2,
+        "pickAmount": 3,
         "skills": [
           5546,
-          170033
+          170033,
+          170044
         ]
       }
     ],
@@ -4930,11 +4939,21 @@
         ]
       },
       {
+        "class": 6,
+        "rank": 5,
+        "pickAmount": 2,
+        "skills": [
+          170039,
+          170040
+        ]
+      },
+      {
         "class": 7,
         "rank": 0,
-        "pickAmount": 1,
+        "pickAmount": 2,
         "skills": [
-          50400
+          50400,
+          170038
         ]
       },
       {
