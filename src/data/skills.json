@@ -47652,7 +47652,12 @@
                 "itemID": 0
             }
         ],
-        "statuses": []
+        "statuses": [
+            {
+                "statusID": 7123,
+                "percentChance": 100
+            }
+        ]
     },
     {
         "id": 5221,
@@ -56312,7 +56317,7 @@
         "id": 5485,
         "name": "Radiant Hands",
         "icon": "SD02_0039a",
-        "description": "A switch skill that grants Super Armor to the user and improves their Healing and Enhancing skills while lowering their overall damage.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Curative Boost +50%, Curative MP Cost -50%\n• When Blood Ties or Seal of Command switches are not active and using Diarahan, Mediarahan, and Divine Blessing, 45% chance to apply [Radiance] on the target(s) and [Inspiring Presence] on the user. When using Salvation, 100% chance to apply [Radiance] on the target(s) and [Inspiring Presence] on the user for 10 seconds.\n• Various skills in Enhancement are improved when using them while under Radiance Hands.\n[Minus Effect]\n• Spell, Close-range, Long-range Damage -500%\n• Max MP -10%\n[Radiance]\n• Increases HP by 5%, Gains 5% General Damage Reduction for 30 seconds.\n[Inspiring Presence]\n• All nearby party members' Limit Break Cap is increased by the user's (Support x 1.5)\n• Nearby Party Members' Received Healing +15%",
+        "description": "A switch skill that grants Super Armor to the user and improves their Healing and Enhancing skills while lowering their overall damage.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Curative Boost +50%, Curative MP Cost -50%\n• When Blood Ties or Seal of Command switches are not active and using Diarahan, Mediarahan, and Divine Blessing, 45% chance to apply [Radiance] on the target(s) and [Inspiring Presence] on the user. When using Salvation, 100% chance to apply [Radiance] on the target(s) and [Inspiring Presence] on the user for 10 seconds.\n• Various skills in Enhancement are improved when using them while under Radiance Hands.\n• When Cataclysmic Mind is active, increases Support by (Spell x 0.05).\n[Minus Effect]\n• Spell, Close-range, Long-range Damage -500%\n• Max MP -10%\n[Radiance]\n• Increases HP by 5%, Gains 5% General Damage Reduction for 30 seconds.\n[Inspiring Presence]\n• All nearby party members' Limit Break Cap is increased by the user's (Support x 1.5)\n• Nearby Party Members' Received Healing +15%",
         "affinity": "Curative",
         "family": "Technique",
         "actionType": "Support",
@@ -276571,7 +276576,7 @@
         "id": 160610,
         "name": "Dyne Accel",
         "icon": "DyneAccel",
-        "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n• +3 extra skill stacks to Agidyne, Bufudyne, Ziodyne, Zandyne, Maragidyne, Mabufudyne, Maziodyne and Mazandyne\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When [Full Momentum] is active, casting -dyne spells from Destruction Magic and Essence of Magic skills (except Ethereal Greatsword) will also grant [Arcane Overdrive] of its respective affinity for 30 seconds.\n[Penalty]\n• -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Fire/Ice/Electric/Force/Mystic affinity and affinity cap is increased by +5%.\n• When Enhancement is Class 8-0+, Limit Break Cap increased by the user's (Spell x 0.75).",
+        "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n• +3 extra skill stacks to Agidyne, Bufudyne, Ziodyne, Zandyne, Maragidyne, Mabufudyne, Maziodyne and Mazandyne\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When [Full Momentum] is active, casting -dyne spells from Destruction Magic and Essence of Magic skills (except Ethereal Greatsword) will also grant [Arcane Overdrive] of its respective affinity for 30 seconds.\n• When Sanctuary (Enhancement) is active, have 5% chance to trigger [Inspiring Presence] on the user when using -dyne spells from Destruction Magic and Essence of Magic skills (except Ethereal Greatsword).\n[Penalty]\n• -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Fire/Ice/Electric/Force/Mystic affinity and affinity cap is increased by +5%.\n• When Enhancement is Class 8-0+, Limit Break Cap increased by the user's (Spell x 1).",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -276614,7 +276619,7 @@
         "id": 160612,
         "name": "Megi Accel",
         "icon": "MegiAccel",
-        "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n• +3 extra skill stacks to Megido, Megidora and Megidoraon\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When [Full Momentum] is active, casting Megido and Megidora will also grant [Arcane Overdrive: Almighty] for 30 seconds.\n[Penalty]\n• -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Almighty affinity and affinity cap is increased by +5%\n• When Enhancement is Class 8-0+, Almighty Limit Break Cap is increased by their (Spell x 0.75).",
+        "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n• +3 extra skill stacks to Megido, Megidora and Megidoraon\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When [Full Momentum] is active, casting Megido and Megidora will also grant [Arcane Overdrive: Almighty] for 30 seconds.\n• When Sanctuary (Enhancement) is active, have 5% chance to trigger [Inspiring Presence] on the user when using Megido and Megidora.\n[Penalty]\n• -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Almighty affinity and affinity cap is increased by +5%\n• When Enhancement is Class 8-0+, Almighty Limit Break Cap is increased by their (Spell x 1).",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -277515,7 +277520,7 @@
         "id": 160631,
         "name": "Lord of Malevolence",
         "icon": "SP04_LordMalevolence",
-        "description": "Switch skill Gains a stack of [Cursebearer] for each consecutive usage of Erosion Hex, Corrosion Hex, Seductive Hex, Curse of the Broken Mirror or offensive skills from Curse Magic, Curse Trigger, Curse Grudge and Defiled Sword. [Cursebearer] stacks up to 10 times, and lasts for 30 minutes.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Nerve Boost, Mind Boost and Death Boost +50%, LB Power +10%\n• Skills from Curse of the Wretched and Debilitate from Curse Magic that don't grant a [Cursebearer] stack and apply a debuff will apply its unblockable version when Lord of Malevolence is active.\n• Gains a stack of [Cursebearer] for each usage of various Death-based skills or COTW skills \n[Minus Effect]\n• Curative Boost -500%\n• Fire, Ice, Electric, Force Boost -50%\n• HP Regen is reduced to 0\n[Cursebearer]\n• Support Damage +20%\n• All Nerve, Mind, Death-based Skill's LB Power +10%, Affinity cap boost +10%, -30 Stiffness, (Support x 0.5) LB Cap Damage\n• 50 HP Drained every 3 seconds (for all stacks)",
+        "description": "Switch skill Gains a stack of [Cursebearer] for each consecutive usage of Erosion Hex, Corrosion Hex, Seductive Hex, Curse of the Broken Mirror or offensive skills from Curse Magic, Curse Trigger, Curse Grudge and Defiled Sword. [Cursebearer] stacks up to 10 times, and lasts for 30 minutes.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Nerve Boost, Mind Boost and Death Boost +50%, LB Power +10%\n• Skills from Curse of the Wretched and Debilitate from Curse Magic that don't grant a [Cursebearer] stack and apply a debuff will apply its unblockable version when Lord of Malevolence is active.\n• Gains a stack of [Cursebearer] for each usage of various Death-based skills or COTW skills \n[Minus Effect]\n• Fire, Ice, Electric, Force Boost -50%\n• HP Regen is reduced to 0\n[Cursebearer]\n• Support Damage +20%\n• Shadow Scythe and all Nerve, Mind, Death-based Skill's LB Power +10%, Affinity cap boost +10%, (Support x 0.5) LB Cap Damage\n• All Nerve, Mind, Death-based Skill's -30 Stiffness,\n• 10 HP and MP Drained every 3 seconds.",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -277613,7 +277618,7 @@
         "damage": 350,
         "stiffness": 750,
         "cooldown": 20000,
-        "incantation": 1500,
+        "incantation": 500,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
             "areaType": "Around Self",
@@ -277622,9 +277627,9 @@
             "lineWidth": 0
         },
         "skillFlags": {
-            "fixedStack": true,
-            "fixedCooldown": true,
-            "fixedCharge": true,
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
             "fixedHPCost": false,
             "fixedMPCost": false
         },
@@ -278799,7 +278804,7 @@
         "id": 160660,
         "name": "Blood Ties",
         "icon": "SI01_0126a",
-        "description": "A switch Skill that grants Super Armor and strengthens the user's partner while lowering the user's offensive and defensive stats.\n[Plus Effect]\n• Null Knockback, Null Incapacitate, Null Shock to demon partner\n• Demon partner CLS-R, LNG-R and Spell damage taken -50%\n• Demon partner CLS-R, LNG-R and Spell damage dealt +50%\n• Demon Partner benefits from 30% of Summoner's LB Cap Damage Bonuses that don't contain any Affinity/Action/Expertise conditions.\n[Minus Effect]\n• Summoner can no longer deal extra LB Cap Damage. ・Summoner CLS-R, LNG-R and Spell damage taken +15%\n• Summoner's Pursuit Chance and Power -999%\n• Summoner's TA Chance and Power -999%\n• Summoner Max MP -10%",
+        "description": "A switch Skill that grants Super Armor and strengthens the user's partner while lowering the user's offensive and defensive stats.\n[Plus Effect]\n• Null Knockback, Null Incapacitate, Null Shock to demon partner\n• Demon partner CLS-R, LNG-R and Spell damage taken -50%\n• Demon partner CLS-R, LNG-R and Spell damage dealt +50%\n• Demon Partner benefits from 15% of Summoner's LB Cap Damage Bonuses that don't contain any Affinity/Action/Expertise conditions.\n[Minus Effect]\n• Summoner can no longer deal extra LB Cap Damage. ・Summoner CLS-R, LNG-R and Spell damage taken +15%\n• Summoner's Pursuit Chance and Power -999%\n• Summoner's TA Chance and Power -999%\n• Summoner Max MP -10%",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -278885,7 +278890,7 @@
         "id": 160663,
         "name": "Seal of Command - Magician",
         "icon": "SP04_SealCommandMagician",
-        "description": "Switch Skill. Enhances demon partner's Support and spell capabilities.\n[Plus Effect]\nFor summoned partner:\n• Spell +25\n• Skill stack is increased by 4.\n• Fire, Ice, Electric, Force, Mystic, Almighty boost +50%.\n• LB Cap Damage is further increased by (Spell x 1) for all skills.\nWhen Blood Ties is active,\n• All Fire/Ice/Electric/Force/ Mystic/Almighty skills now grants the partner a stack of [Momentum] (4 stacks max) for 90 seconds.\n[Minus Effect]\n• Summoner damage taken increased by 10%\n• Summoner Max MP -10%\n• Summoner Support -25%\n[Momentum]\n• For all skills using the respective affinity, a stack grants +5% LB Power, +5% affinity Boost and (Spell x 0.5) LB Cap.",
+        "description": "Switch Skill. Enhances demon partner's Support and spell capabilities.\n[Plus Effect]\nFor summoned partner:\n• Spell +25\n• Skill stack is increased by 4.\n• Fire, Ice, Electric, Force, Mystic, Almighty boost +50%.\n• Support Boost +50%\n• LB Cap Damage is further increased by (Spell x 0.5) for all skills.\nWhen Blood Ties is active,\n• All Fire/Ice/Electric/Force/ Mystic/Almighty skills now grants the partner a stack of [Momentum] (4 stacks max) for 90 seconds.\n[Minus Effect]\n• Summoner damage taken increased by 10%\n• Summoner Max MP -10%\n• Summoner Support -25%\n[Momentum]\n• For all skills using the respective affinity, a stack grants +5% LB Power, +5% affinity Boost and (Spell x 0.5) LB Cap.",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -279036,7 +279041,7 @@
         "id": 160667,
         "name": "Order of the Absolute - Strength",
         "icon": "SB01_OrderStrength",
-        "description": "Forcefully remove the chains holding your partner back... at a price. Grants [Demon Smile-Strength] for 30 minutes.\n[Demon Smile-Strength]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's CLSR Damage +25%,\n• +500 LB Cap to Partner\n• Additionally grants LB Cap by Partner's (CLSR x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner CLS-R +5%\n• When Seal of Command - Knight is active, partner gains 2% chance to trigger [Power Charge] on themselves when using Attack, Spin or Rush-based skills.\n• When Seal of Command - Knight and Einheri/Gale Form/Way of the Celestial Fist are active, partner gains 2% chance to trigger when the summoner uses Berserker, Vanguard or Demolition Dash related Skills.\n[Power Charge]\nFor 30 seconds,\n• Close-Range Damage +50%\n• 100% Clench, +25% movement speed\n• For all Attack, Spin and Rush-based skills, increases LB Cap by (CLSR x 1.5)",
+        "description": "Forcefully remove the chains holding your partner back... at a price. Grants [Demon Smile-Strength] for 30 minutes.\n[Demon Smile-Strength]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's CLSR Damage +25%\n• Additionally grants LB Cap by Partner's (CLSR x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner CLS-R +5%\n• When Seal of Command - Knight is active, partner gains 2% chance to trigger [Power Charge] on themselves when using Attack, Spin or Rush-based skills.\n• When Seal of Command - Knight and Einheri/Gale Form/Way of the Celestial Fist are active, partner gains 2% chance to trigger when the summoner uses Berserker, Vanguard or Demolition Dash related Skills.\n[Power Charge]\nFor 30 seconds,\n• Close-Range Damage +50%\n• 100% Clench, +25% movement speed\n• For all Attack, Spin and Rush-based skills, increases LB Cap by (CLSR x 1.5)",
         "affinity": "Support",
         "family": "Technique",
         "actionType": "Support",
@@ -279049,7 +279054,7 @@
         "formula": "None",
         "damage": 0,
         "stiffness": 980,
-        "cooldown": 50000,
+        "cooldown": 5000,
         "incantation": 800,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
@@ -279059,9 +279064,9 @@
             "lineWidth": 0
         },
         "skillFlags": {
-            "fixedStack": false,
-            "fixedCooldown": false,
-            "fixedCharge": false,
+            "fixedStack": true,
+            "fixedCooldown": true,
+            "fixedCharge": true,
             "fixedHPCost": false,
             "fixedMPCost": false
         },
@@ -279616,7 +279621,7 @@
         "id": 160680,
         "name": "Undying Soul",
         "icon": "UndyingSoul",
-        "description": "Switch Skill\n[Plus Effect]\n• Vit +50\n• At 75% HP or Above, gains CLSR by (VIT * 0.5)\n• At 50% HP or below, Lifesteal Chance +20%, Lifesteal Power +20%, Clench +25%\n• Successfully surviving a lethal blow will also trigger [Undying Rage] for 10 seconds. [Undying Rage] has a 30 seconds cooldown and increases CLS-R by 150.\n[Undying Rage]\n• Crit +500\n• User becomes invincible.\n• When Limit Break Up: Strength (Crushing Tech C10) and Einheri are active, gains (CLS-R x 1) + (Crit x 3) LB Cap Damage to all Attack skills and additional (CLS-R x 1) to Devastate.\n[Minus Effect]\n• Support and Long-range Damage -200%\n• Spell Damage -500%\n• Max MP -10%",
+        "description": "Switch Skill\n[Plus Effect]\n• Vit +50\n• Learns \"Enrage\" Skill\n• At 75% HP or Above, gains CLSR by (VIT * 0.5)\n• At 50% HP or below, Lifesteal Chance +20%, Lifesteal Power +20%, Clench +25%\n• Successfully surviving a lethal blow will also trigger [Undying Rage] for 10 seconds. [Undying Rage] has a 30 seconds cooldown and increases CLS-R by 150.\n[Undying Rage]\n• Crit +500\n• User becomes invincible.\n• When Limit Break Up: Strength (Crushing Tech C10) and Einheri are active, gains (CLS-R x 1) + (Crit x 3) LB Cap Damage to all Attack skills and additional (CLS-R x 1) to Devastate.\n[Minus Effect]\n• Support and Long-range Damage -200%\n• Spell Damage -500%\n• Max MP -10%",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -280009,7 +280014,7 @@
         "id": 160689,
         "name": "Unrelenting Soul",
         "icon": "SB01_MagicFistStack",
-        "description": "Passive skill.\n• CLSR-R +20\n• Rush-based Skill stack +2\n• All Rush-based skills can no longer be countered.\n• HP Cost -50% for all Rush-based skills \n• If Undying Soul is also active, - Usage of Final Strike will now keep the user alive at 1 HP and trigger [Undying Rage].\n• When Vanguard is Class 7-5 or higher, gains (MAX HP x 0.05) for all Rush-based skills",
+        "description": "Passive skill.\n• CLSR-R +20\n• Rush-based Skill stack +2\n• All Rush-based skills can no longer be countered.\n• HP Cost -50% for all Rush-based skills \n• If Undying Soul is also active, - Usage of Final Strike will now keep the user alive at 35% of current HP and trigger [Undying Rage].\n• When Vanguard is Class 7-5 or higher, gains (MAX HP x 0.05) for all Rush-based skills",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -282583,7 +282588,7 @@
         "id": 160750,
         "name": "Order of the Absolute - Magic",
         "icon": "SB01_OrderMagic",
-        "description": "Forcefully remove the chains holding your partner back... at a price. Grants [Demon Smile-Magic] for 30 minutes.\n[Demon Smile-Magic]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's Spell Damage +25%,\n• +500 LB Cap to Partner\n• Additionally grants LB Cap by Partner's (Spell x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner Spell +5%\n• When Seal of Command - Magician is active, partner gains 2% chance to trigger [Concentrated] on themselves when using Spell based skill.\n• When Seal of Command - Magician and Destructive Mind are active, partner gains 2% chance to trigger [Concentrated] when the summoner uses Essence of Magic, Demolition Dash or Magic Bullet related skills.\n[Concentrated]\nFor 30 seconds,\n• Spell Damage +50%\n• Null all conventional \"Mute\" and \"Muddle\" status\n• Increases LB Cap by (Spell x 1.5)",
+        "description": "Forcefully remove the chains holding your partner back... at a price. Grants [Demon Smile-Magic] for 30 minutes.\n[Demon Smile-Magic]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's Spell Damage +25%\n• Additionally grants LB Cap by Partner's (Spell x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner Spell +5%\n• When Seal of Command - Magician is active, partner gains 2% chance to trigger [Concentrated] on themselves when using Spell based skill.\n• When Seal of Command - Magician and Destructive Mind are active, partner gains 2% chance to trigger [Concentrated] when the summoner uses Essence of Magic, Demolition Dash or Magic Bullet related skills.\n[Concentrated]\nFor 30 seconds,\n• Spell Damage +50%\n• Null all conventional \"Mute\" and \"Muddle\" status\n• Increases LB Cap by (Spell x 1.5)",
         "affinity": "Support",
         "family": "Technique",
         "actionType": "Support",
@@ -282596,7 +282601,7 @@
         "formula": "None",
         "damage": 0,
         "stiffness": 980,
-        "cooldown": 50000,
+        "cooldown": 5000,
         "incantation": 800,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
@@ -282606,9 +282611,9 @@
             "lineWidth": 0
         },
         "skillFlags": {
-            "fixedStack": false,
-            "fixedCooldown": false,
-            "fixedCharge": false,
+            "fixedStack": true,
+            "fixedCooldown": true,
+            "fixedCharge": true,
             "fixedHPCost": false,
             "fixedMPCost": false
         },
@@ -282624,7 +282629,7 @@
         "id": 160751,
         "name": "Order of the Absolute - Speed",
         "icon": "SB01_OrderSpeed",
-        "description": "Forcefully remove the chains holding your partner back... at a price. Grants [Demon Smile-Speed] for 30 minutes.\n[Demon Smile-Speed]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's LNGR Damage +25%,\n• +500 LB Cap to Partner\n• Additionally grants LB Cap by Partner's (LNGR x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner LNG-R +5%\n• When Seal of Command - Archer is active, partner gains 2% chance to trigger [High Noon] on themselves when using Spell based skill.\n• When Seal of Command - Archer and Gunslinger/Der Freischutz are active, partner gains 2% chance to trigger [High Noon] when the summoner uses Magic Bullet and Ashes and Dust related Skills.\n[High Noon]\nFor 30 seconds,\n• Long-range Damage +50%\n• For all Shot and Rapid based skills, increases LB Cap by (LNGR x 1.5)",
+        "description": "Forcefully remove the chains holding your partner back... at a price. Grants [Demon Smile-Speed] for 30 minutes.\n[Demon Smile-Speed]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's LNGR Damage +25%\n• Additionally grants LB Cap by Partner's (LNGR x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner LNG-R +5%\n• When Seal of Command - Archer is active, partner gains 2% chance to trigger [High Noon] on themselves when using Spell based skill.\n• When Seal of Command - Archer and Gunslinger/Der Freischutz are active, partner gains 2% chance to trigger [High Noon] when the summoner uses Magic Bullet and Ashes and Dust related Skills.\n[High Noon]\nFor 30 seconds,\n• Long-range Damage +50%\n• For all Shot and Rapid based skills, increases LB Cap by (LNGR x 1.5)",
         "affinity": "Support",
         "family": "Technique",
         "actionType": "Support",
@@ -282637,7 +282642,7 @@
         "formula": "None",
         "damage": 0,
         "stiffness": 980,
-        "cooldown": 50000,
+        "cooldown": 5000,
         "incantation": 800,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
@@ -282647,9 +282652,9 @@
             "lineWidth": 0
         },
         "skillFlags": {
-            "fixedStack": false,
-            "fixedCooldown": false,
-            "fixedCharge": false,
+            "fixedStack": true,
+            "fixedCooldown": true,
+            "fixedCharge": true,
             "fixedHPCost": false,
             "fixedMPCost": false
         },
@@ -282660,7 +282665,7 @@
         "id": 160752,
         "name": "Order of the Absolute - Support",
         "icon": "SB01_OrderSupport",
-        "description": "Forcefully remove the chains holding your partner back... at a price. Grants [Demon Smile-Support] for 30 minutes.\n[Demon Smile-Support]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's Support Damage +25%,\n• +500 LB Cap to Partner\n• Additionally grants LB Cap by Partner's (Support x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner Support +5%\n• Partner gains 2% chance to trigger [Stolen Essence] on themselves when using any skill.\n• When Lord of Malevolence is active, partner gains 2% chance to trigger [Stolen Essence] on themselves when the summoner uses Magic Bullet and Curse of the Wretched Skills.\n[Stolen Essence]\nFor 30 seconds,\n• Support Damage +50%\n• Increases LB Cap by (Support x 1.5)",
+        "description": "Forcefully remove the chains holding your partner back... at a price. Grants [Demon Smile-Support] for 30 minutes.\n[Demon Smile-Support]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's Support Damage +25%\n• Additionally grants LB Cap by Partner's (Support x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner Support +5%\n• Partner gains 2% chance to trigger [Stolen Essence] on themselves when using any skill.\n• When Lord of Malevolence is active, partner gains 2% chance to trigger [Stolen Essence] on themselves when the summoner uses Magic Bullet and Curse of the Wretched Skills.\n[Stolen Essence]\nFor 30 seconds,\n• Support Damage +50%\n• Increases LB Cap by (Support x 1.5)",
         "affinity": "Support",
         "family": "Technique",
         "actionType": "Support",
@@ -282673,7 +282678,7 @@
         "formula": "None",
         "damage": 0,
         "stiffness": 980,
-        "cooldown": 50000,
+        "cooldown": 5000,
         "incantation": 800,
         "inheritanceRestriction": "Impossible",
         "areaOfEffect": {
@@ -282683,9 +282688,9 @@
             "lineWidth": 0
         },
         "skillFlags": {
-            "fixedStack": false,
-            "fixedCooldown": false,
-            "fixedCharge": false,
+            "fixedStack": true,
+            "fixedCooldown": true,
+            "fixedCharge": true,
             "fixedHPCost": false,
             "fixedMPCost": false
         },
@@ -285148,7 +285153,7 @@
         "id": 160611,
         "name": "Cataclysmic Mind",
         "icon": "SD01_0146a",
-        "description": "Passive skill.\n\n• Spell +50\n• At 75% MP or Above, gains Spell by (MAG x 0.75 + INT x 0.25).\n• If Curse of the Wretched is Class 8-0+ and [Full Momentum] is active, Destruction Magic (Class 5-0+) and all offensive Essence of Magic skills (except Ethereal Greatsword) apply [Arcane Burn] of their affinity (Fire/Ice/Elec/Force/Mystic/Almighty) for 30 seconds. Only one [Arcane Burn] can be active per target.\n• While [Ethereal] and [Full Momentum] are active, Ethereal Greatsword has a 3% chance to trigger an advanced spell of the same affinity: Ma-dyne (Fire/Ice/Elec/Force), Magic Blast (Mystic), Megidora (Almighty).\n[Arcane Burn]\n• Deals damage over time and increases LB Cap Damage taken from its affinity.\n• Scales with Spell (300 DoT + 10 LB Cap per 15 Spell).\n• Max: 30,000 DoT / +1,000 LB Cap Damage taken.",
+        "description": "Passive skill.\n\n• Spell +50\n• At 75% MP or Above, gains Spell by (MAG x 0.75 + INT x 0.25).\n• When Radiant Hands is active, Spell Damage +500%\n• If Curse of the Wretched is Class 8-0+ and [Full Momentum] is active, Destruction Magic (Class 5-0+) and all offensive Essence of Magic skills (except Ethereal Greatsword) apply [Arcane Burn] of their affinity (Fire/Ice/Elec/Force/Mystic/Almighty) for 30 seconds. Only one [Arcane Burn] can be active per target.\n• While [Ethereal] and [Full Momentum] are active, Ethereal Greatsword has a 3% chance to trigger an advanced spell of the same affinity: Ma-dyne (Fire/Ice/Elec/Force), Magic Blast (Mystic), Megidora (Almighty).\n[Arcane Burn]\n• Deals damage over time and increases LB Cap Damage taken from its affinity.\n• Scales with Spell (300 DoT + 10 LB Cap per 15 Spell).\n• Max: 30,000 DoT / +1,000 LB Cap Damage taken.",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -285184,7 +285189,7 @@
         "id": 170033,
         "name": "Ghost Form",
         "icon": "SD02_0037a",
-        "description": "Switch Skill.\n[Plus Effect]\n• Support +50\n• When Lord of Malevolence is also active, for all offensive Curse Magic: - Deals Spell-based damage instead of Support-based (Affected by Spell Damage received, Magic NRA). Its damage however is calculated using (Support) and is affected by Support Damage Boosts. - applies 1 additional stacks of [Cursebearer]\n• Applies [Weakness] from Curse of the Four Wounds that removes Mystic/Nerve/Mind/Death NRA and lowers -150% resistance. - LB Cap damage is increased by (Support x 1 + Max MP x 0.3) - Stiffness reduced by 500\n[Minus Effect]\n• CLSR, Spell, LNGR Damage -500%\n• Max HP -15%",
+        "description": "Switch Skill.\n[Plus Effect]\n• Support + (50 + (Spell x 0.1))\n• +30% to evade all conventional projectile attacks\n• Heals all party members for 0.3% of damage dealt with Curse Magic and Curse of the Wretched\n• When Lord of Malevolence is also active, Erosion/Seductive/Corrosion Hex and Curse of the Broken Mirror now apply [Damage Hex] to all their targets.\n• All offensive Curse Magic Stiffness is reduced by 500\n• When Lord of Malevolence is also active, for all offensive Curse Magic and Shadow Scythe: - Deals Spell-based damage instead of Support-based (Affected by Spell Damage received, Magic NRA). Its damage however is calculated using (Support) and is affected by Support Damage Boosts. - LB Cap damage is increased by (Support x 1 + Max MP x 0.3)\n[Minus Effect]\n• CLSR, Spell, LNGR Damage -500%\n• Curative Boost -500%\n• Max HP -15%",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -285233,7 +285238,7 @@
         "id": 170034,
         "name": "Combat Medic",
         "icon": "SI01_0076a",
-        "description": "Switch Skill.\n[Plus Effect]\n• Support + (50 + (LNGR x 0.5))\n• Curative Boost +50%\n• All offensive Tuner skills now deals Physical-based damage instead of Support-based (Affected by Long-range Damage received, Physical NRA). Its damage however is calculated using (Support) and is affected by Support Damage Boosts.\n• When Radiant Hands is also active, all offensive Tuner skills have 5% chance to trigger [Inspiring Presence] on the user and 2% to trigger Diarahan on all party members. - When Enhancement is Class 8-0+ LB Cap damage is increased by (Support x 1 + Max MP x 0.3) for all offensive Tuner skills - If Gunslinger is active, all offensive Tuner skills also grant a stack of [Grit] to the user. Each stack of [Grit] also grants +5% Support Damage. - If Ghost Form is active, all offensive Tuner skills also grant a stack of [Cursebearer] to the user.\n[Minus Effect]\n• Close-range and Long-range damage -500%\n• Max HP -15%",
+        "description": "Switch Skill.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Support + (50 + (LNGR x 0.5))\n• Curative Boost +50%\n• All offensive Tuner skills now deals Physical-based damage instead of Support-based (Affected by Long-range Damage received, Physical NRA). Its damage however is calculated using (Support) and is affected by Support Damage Boosts.\n• When Radiant Hands is also active, all offensive Tuner skills have 5% chance to trigger [Inspiring Presence] on the user and 3% to heal all nearby party members (250 Mod). - When Enhancement is Class 8-0+ LB Cap damage is increased by (Support x 1 + Max MP x 0.3) for all offensive Tuner skills - If Gunslinger is active, all offensive Tuner skills also grant a stack of [Grit] to the user. Each stack of [Grit] also grants +5% Support Damage. - If Lord of Malevolence is active, all offensive Tuner skills also grant a stack of [Cursebearer] to the user.\n[Minus Effect]\n• Close-range and Long-range damage -500%\n• Max HP -15%",
         "affinity": "Special",
         "family": "Technique",
         "actionType": "Support",
@@ -285282,7 +285287,7 @@
         "id": 170035,
         "name": "Break Shooter",
         "icon": "SI01_0059a",
-        "description": "Fire Almighty based shots in a quick succession. \nActivating this skill will:\n• Applies every Tuner buffs to all party members.\n• Consume all [Grit] and [Full Grit] stacks\n• For each [Grit] applied to the user, applies a stack of [Break Bullet] buff for 30 seconds. (10 stacks Max)\n• When Combat Medic is active, [Full Grit] grants an additional (Support x 2.5) LB Cap Damage to this attack.\n• When Combat Medic and Radiant Hands are active, also casts Diarahan to all members. If [Full Grit] is also active, applies x2 [Tetrakarn] and x2 [Makarakarn] to all members.\n[Break Bullet]\n• Increase all party members' LB Cap Damage by the user's (Support x 0.2)\nModifier: 350 | Stiffness: 200",
+        "description": "Fire Almighty based shots in a quick succession. When used:\n\n• When Combat Medic is active, applies all offensive tuner buffs.\n• Consumes all [Grit] and [Full Grit] stacks\n• For each [Grit] applied to the user, applies a stack of [Break Bullet] buff for 30 seconds. (10 stacks Max)\n• When Combat Medic is active, [Full Grit] grants an additional (Support x 2.5) LB Cap Damage to this attack.\n• When Combat Medic and Radiant Hands are active, also heals all nearby members (250 Mod). If [Full Grit] is also active, applies x2 [Tetrakarn] and x2 [Makarakarn] to all members.\n[Break Bullet]\n• Increase all party members' LB Cap Damage by the user's (Support x 0.2)\nModifier: 350 | Stiffness: 200",
         "affinity": "Almighty",
         "family": "Technique",
         "actionType": "Rapid",
@@ -285372,6 +285377,374 @@
                 "numberOrPercent": "PERCENT",
                 "amount": 20,
                 "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170037,
+        "name": "Support Bullet Healing",
+        "icon": null,
+        "description": "Modifier: 250 | Stiffness: 980",
+        "affinity": "Curative",
+        "family": "Arcane Art",
+        "actionType": "Support",
+        "activationType": "Active",
+        "categoryType": "Magical",
+        "stack": 1,
+        "range": 150,
+        "targetType": "None",
+        "statDependency": "Support",
+        "formula": "Normal Healing",
+        "damage": 250,
+        "stiffness": 980,
+        "cooldown": 8500,
+        "incantation": 1500,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "Around Self",
+            "validTargetType": "Ally",
+            "distance": 999,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 32,
+                "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170038,
+        "name": "Grand Tack (Mystic)",
+        "icon": null,
+        "description": "Deals mystic damage to all enemies around the target.\nUnder [Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Mystic resistance by 10% per shot (50% at max stack). (Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
+        "affinity": "Mystic",
+        "family": "Technique",
+        "actionType": "Shot",
+        "activationType": "Active",
+        "categoryType": "Physical",
+        "stack": 1,
+        "range": 110,
+        "targetType": "Enemy",
+        "statDependency": "Long-Range + Spell/2",
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 800,
+        "cooldown": 5000,
+        "incantation": 1200,
+        "inheritanceRestriction": "All",
+        "areaOfEffect": {
+            "areaType": "Around Target",
+            "validTargetType": "Enemy",
+            "distance": 55,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "BULLET",
+                "numberOrPercent": "NUMERIC",
+                "amount": 1,
+                "itemID": 0
+            },
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 12,
+                "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170039,
+        "name": "Grand Tack (Nerve)",
+        "icon": null,
+        "description": "Deals nerve damage to all enemies around the target.\nUnder [Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Nerve resistance by 10% per shot (50% at max stack). (Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
+        "affinity": "Nerve",
+        "family": "Technique",
+        "actionType": "Shot",
+        "activationType": "Active",
+        "categoryType": "Physical",
+        "stack": 1,
+        "range": 110,
+        "targetType": "Enemy",
+        "statDependency": "Long-Range + Spell/2",
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 800,
+        "cooldown": 5000,
+        "incantation": 1200,
+        "inheritanceRestriction": "All",
+        "areaOfEffect": {
+            "areaType": "Around Target",
+            "validTargetType": "Enemy",
+            "distance": 55,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "BULLET",
+                "numberOrPercent": "NUMERIC",
+                "amount": 1,
+                "itemID": 0
+            },
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 12,
+                "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170040,
+        "name": "Grand Tack (Mind)",
+        "icon": null,
+        "description": "Deals mind damage to all enemies around the target.\nUnder [Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Mind resistance by 10% per shot (50% at max stack). (Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
+        "affinity": "Mind",
+        "family": "Technique",
+        "actionType": "Shot",
+        "activationType": "Active",
+        "categoryType": "Physical",
+        "stack": 1,
+        "range": 110,
+        "targetType": "Enemy",
+        "statDependency": "Long-Range + Spell/2",
+        "formula": "Normal",
+        "damage": 140,
+        "stiffness": 800,
+        "cooldown": 5000,
+        "incantation": 1200,
+        "inheritanceRestriction": "All",
+        "areaOfEffect": {
+            "areaType": "Around Target",
+            "validTargetType": "Enemy",
+            "distance": 55,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "BULLET",
+                "numberOrPercent": "NUMERIC",
+                "amount": 1,
+                "itemID": 0
+            },
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 12,
+                "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170041,
+        "name": "Enrage",
+        "icon": "SD03_0019a",
+        "description": "Manually activates [Undying Rage]. Only usable when [Undying Rage] is not on cooldown.",
+        "affinity": "Support",
+        "family": "Special Skill",
+        "actionType": "Support",
+        "activationType": "Active",
+        "categoryType": "Magical",
+        "stack": 1,
+        "range": 0,
+        "targetType": "None",
+        "statDependency": "Support",
+        "formula": "None",
+        "damage": 0,
+        "stiffness": 200,
+        "cooldown": 30000,
+        "incantation": 80,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Ally",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": true,
+            "fixedCooldown": true,
+            "fixedCharge": true,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "PERCENT",
+                "amount": 10,
+                "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170042,
+        "name": "Guardian Angel",
+        "icon": "SB01_0087a",
+        "description": "A switch Skill that grants strengthens the partner's supportive abilities and its survivability.\n[Plus Effect]\n• Null Knockback, Null Incapacitate, Null Shock to demon partner\n• When Blood Ties is not active: - Partner CLS-R, LNG-R and Spell damage taken -200% - Partner Curative Boost +100%, Curative affinity Cap +50% - Partner Clench +100%, Ailment Resist +9999 - When partner uses any skills, there's 5% chance to them to heal all nearby allies (150 mod). When Linked by Fate, they also apply [Partner Synchro] buff to the summoner that lasts 30 seconds.\n[Minus Effect]\n• Partner can no longer deal extra LB Cap Damage. \n• Partner's Pursuit Chance and Power -999%\n• Partner's TA Chance and Power -999%\n• Summoner Max MP -10%\n[Partner Synchro]\n• Increases CLSR, LNGR, Spell, Support Damage by 30%\n• Increases CLSR/LNGR/SPELL/SUPPORT by 5%",
+        "affinity": "Special",
+        "family": "Technique",
+        "actionType": "Support",
+        "activationType": "Switch",
+        "categoryType": "Misc",
+        "stack": 1,
+        "range": 0,
+        "targetType": "None",
+        "statDependency": "None",
+        "formula": "None",
+        "damage": 0,
+        "stiffness": 980,
+        "cooldown": 0,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Ally",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "PERCENT",
+                "amount": 20,
+                "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170043,
+        "name": "Partner Healing",
+        "icon": null,
+        "description": "Modifier: 150 | Stiffness: 980",
+        "affinity": "Curative",
+        "family": "Arcane Art",
+        "actionType": "Support",
+        "activationType": "Active",
+        "categoryType": "Magical",
+        "stack": 1,
+        "range": 150,
+        "targetType": "None",
+        "statDependency": "Support",
+        "formula": "Normal Healing",
+        "damage": 150,
+        "stiffness": 980,
+        "cooldown": 8500,
+        "incantation": 1500,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "Around Self",
+            "validTargetType": "Ally",
+            "distance": 999,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "NUMERIC",
+                "amount": 32,
+                "itemID": 0
+            }
+        ],
+        "statuses": []
+    },
+    {
+        "id": 170044,
+        "name": "Shadow Scythe",
+        "icon": "SI01_0036a",
+        "description": "Deals Support-based Almighty Damage in a quick succession.\nWhen Lord of Malevolence and Ghost Form are active, +5% chance to apply [Lifebreak] to its target for 20 seconds. Only the strongest [Lifebreak] debuff will be applied and will not be overwritten.\n[Lifebreak]\n• Increases LB Cap damage received from all source of damage (25 Support Stat = 50 LB Cap Damage, Capped at +5000)\nModifier: 175 | Stiffness: 200",
+        "affinity": "Almighty",
+        "family": "Technique",
+        "actionType": "Shot",
+        "activationType": "Active",
+        "categoryType": "Magical",
+        "stack": 14,
+        "range": 40,
+        "targetType": "Enemy",
+        "statDependency": "Support",
+        "formula": "Normal",
+        "damage": 175,
+        "stiffness": 200,
+        "cooldown": 0,
+        "incantation": 1000,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Enemy",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [
+            {
+                "costType": "MP",
+                "numberOrPercent": "PERCENT",
+                "amount": 2,
+                "itemID": 0
+            },
+            {
+                "costType": "ITEM",
+                "numberOrPercent": "NUMERIC",
+                "amount": 15,
+                "itemID": 800
             }
         ],
         "statuses": []
