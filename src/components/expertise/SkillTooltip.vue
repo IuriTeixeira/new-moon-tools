@@ -98,10 +98,8 @@ export default {
 
 			// Format the expertise string if found
 			if (foundBreakpoint && parentExpertise) {
-				const classVal = foundBreakpoint.class.toString();
-				const rankVal = foundBreakpoint.rank.toString().padStart(3, '0');
+				const reqValue = (foundBreakpoint.class * 1000) + (foundBreakpoint.rank * 100);
 				
-				const reqValue = classVal + rankVal; 
 				expertise = `${parentExpertise.name} ${this.classRank(reqValue)}`
 			}
 
