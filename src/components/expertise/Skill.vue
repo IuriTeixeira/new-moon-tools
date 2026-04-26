@@ -4,7 +4,7 @@
       <template v-slot:content>
         <skill-tooltip :skill="skill" />
       </template>
-      <figure class="image is-32x32 is-skill">
+      <figure class="image is-32x32 is-skill" :class="{'is-unavailable': skill.isLocked}">
         <img :src="'./img/skill/' + skill.icon + '.png'" @error="handleImageError">
       </figure>
     </o-tooltip>
@@ -42,6 +42,10 @@ export default {
 .is-skill {
   margin: 0px;
   padding: 0px;
+}
+
+.is-unavailable{
+  filter: grayscale(1)
 }
 
 .o-tip__content {

@@ -92,21 +92,31 @@ const total = computed(() => {
 
 const skills = computed(() => {
   const response = [];
-  const s = [];
-  if (unlocked.value){
-    props.expertise.breakpoints.forEach(b =>{
-      const breakpoint = Number.parseInt( b.class.toString() + b.rank.toString()) 
-      if (breakpoint <= total.value){
-        s.push(...b.skills)
+  
+  // Checks if chain is unlocked
+  const isExpertiseUnlocked = unlocked.value;
+
+  props.expertise.breakpoints.forEach(b => {
+    const breakpoint = Number.parseInt(b.class.toString() + b.rank.toString());
+    
+    // Checks if skill is available
+    const isAvailable = isExpertiseUnlocked && (breakpoint <= total.value);
+
+    b.skills.forEach(skillId => {
+      const skillData = skillService.get(skillId);
+      if (skillData) {
+        // Push skill with 'isLocked' status
+        response.push({
+          ...skillData,
+          isLocked: !isAvailable
+        });
       }
-    })
-  }
-  s.forEach(x => {
-    let skill = skillService.get(x)
-    response.push(skill);
-  })
+    });
+  });
+
   return response;
-})
+});
+
 
 function toPercent(amount){
   return amount.toLocaleString(undefined,{style: 'percent', minimumFractionDigits:0})

@@ -32,21 +32,26 @@ const match = computed(() => {
 })
 
 const skills = computed(() => {
-  const response = [];
-  const s = [];
+  const availableSkills = [];
+  const unavailableSkills = [];
 
-  props.expertise.breakpoints.forEach(b =>{
-    const breakpoint = Number.parseInt( b.class.toString() + b.rank.toString()) 
-    if (breakpoint <= match.value.value){
-      s.push(...b.skills)
-    }
-  })
+  props.expertise.breakpoints.forEach(b => {
+    const breakpoint = Number.parseInt(b.class.toString() + b.rank.toString());
+    // check for availability
+    const isAvailable = breakpoint <= match.value.value;
+    
+    b.skills.forEach(skillId => {
+      const skillData = skillService.get(skillId);
+      // Push an object containing the data and the status
+      if (isAvailable) {
+        availableSkills.push({ ...skillData, isLocked: false });
+      } else {
+        unavailableSkills.push({ ...skillData, isLocked: true });
+      }
+    });
+  });
 
-  s.forEach(x => {
-    let skill = skillService.get(x)
-    response.push(skill);
-  })
-  return response;
+  return [...availableSkills, ...unavailableSkills];
 });
 
 const isVisible = computed(() => {
