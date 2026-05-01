@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed } from 'vue'
 import skillService from "@/services/skillService";
 
 import Skill from "@/components/expertise/Skill.vue";
@@ -18,13 +18,16 @@ const props = defineProps({
   },
   hideZeroes: {
     type: Boolean
+  },
+  hideUnlearned: {
+    type: Boolean
   }
 })
 
 const match = computed(() => {
   let response = {};
   props.selection.forEach(s => {
-    if (props.expertise.id === s.id){
+    if (props.expertise.id === s.id) {
       response = s
     }
   })
@@ -39,7 +42,7 @@ const skills = computed(() => {
     const breakpoint = Number.parseInt(b.class.toString() + b.rank.toString());
     // check for availability
     const isAvailable = breakpoint <= match.value.value;
-    
+
     b.skills.forEach(skillId => {
       const skillData = skillService.get(skillId);
       // Push an object containing the data and the status
@@ -54,14 +57,19 @@ const skills = computed(() => {
   return [...availableSkills, ...unavailableSkills];
 });
 
+const visibleSkills = computed(() => {
+  return skills.value.filter(skill => !props.hideUnlearned || (props.hideUnlearned && !skill.isLocked));
+});
+
 const isVisible = computed(() => {
-  if (props.hideZeroes){
+  if (props.hideZeroes) {
     return match.value.value !== 0;
   }
-  return skills.value.length > 0;
+  return visibleSkills.value.length > 0;
 })
 
-function classRank (amount) {
+
+function classRank(amount) {
   var a = amount;
   var b = a.toString();
   if (a === 0) {
@@ -79,25 +87,22 @@ function classRank (amount) {
 
 <template>
   <div v-if="isVisible">
-      <span class="option-title">{{ expertise.name }}</span> -
-      {{ classRank(match.value) }}
-      <div class="skill-summary">
-        <Skill v-for="skill in skills"
-            :key="skill.id"
-            :skill="skill"/>
-      </div>
+    <span class="option-title">{{ expertise.name }}</span> -
+    {{ classRank(match.value) }}
+    <div class="skill-summary">
+      <Skill v-for="skill in visibleSkills" :key="'learned' + skill.id" :skill="skill" />
     </div>
+  </div>
 </template>
 <script>
 </script>
 
 <style lang="scss">
-
-.toggle-header{
-	cursor: pointer;
+.toggle-header {
+  cursor: pointer;
 }
 
-#chain-expertise{
+#chain-expertise {
   margin: 0.25em auto;
 }
 

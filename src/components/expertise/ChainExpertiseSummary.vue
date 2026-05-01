@@ -6,6 +6,7 @@ import ChainExpertise from "@/components/expertise/ChainExpertise.vue";
 
 //-- Data
 const hideLocked = ref(false);
+const hideUnlearned = ref(false)
 
 const props = defineProps({
   selection: {
@@ -21,7 +22,7 @@ const expertise = expertiseService.all();
 let s = [];
 expertise.forEach(e => {
   const obj = e;
-  if (e.singularExpertise.length > 0 && e.name !== "--Unused--"){
+  if (e.singularExpertise.length > 0 && e.name !== "--Unused--") {
     s.push(obj);
   }
 });
@@ -36,22 +37,17 @@ const chains = s;
         <h4 class="title is-4">Chain Expertise</h4>
       </div>
       <div class="level-right">
+        <o-switch size="small" v-model="hideUnlearned">Hide unlearned skills</o-switch>
+      </div>
+      <div class="level-right">
         <o-switch size="small" v-model="hideLocked">Hide Locked</o-switch>
       </div>
     </div>
     <div class="content">
-      <ChainExpertise
-        v-for="expertise in chains"
-        :key="expertise.id"
-        :hideLocked="hideLocked"
-        :expertise="expertise"
-        :selection="selection"
-        :options="options"
-      />
+      <ChainExpertise v-for="expertise in chains" :key="expertise.id" :hideUnlearned="hideUnlearned" :hideLocked="hideLocked" :expertise="expertise"
+        :selection="selection" :options="options" />
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

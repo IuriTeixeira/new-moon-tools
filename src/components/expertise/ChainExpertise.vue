@@ -35,6 +35,9 @@ const props = defineProps({
   },
   hideLocked: {
     type: Boolean
+  },
+  hideUnlearned: {
+    type: Boolean
   }
 })
 
@@ -117,6 +120,9 @@ const skills = computed(() => {
   return response;
 });
 
+const visibleSkills = computed(() => {
+  return skills.value.filter(skill => !props.hideUnlearned || (props.hideUnlearned && !skill.isLocked));
+});
 
 function toPercent(amount){
   return amount.toLocaleString(undefined,{style: 'percent', minimumFractionDigits:0})
@@ -205,7 +211,7 @@ function maxSingles() {
         </table>
         <span class="subtitle">Unlocked Skills</span>
         <div>
-          <Skill v-for="skill in skills"
+          <Skill v-for="skill in visibleSkills"
             :key="skill.id"
             :skill="skill"/>
         </div>
