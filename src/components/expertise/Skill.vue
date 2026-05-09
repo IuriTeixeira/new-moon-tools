@@ -1,10 +1,16 @@
 <template>
   <div class="skill-wrapper">
-    <o-tooltip multiline size="large" :teleport="true">
+    <o-tooltip :active="isPinned || isHovered" :triggers="[]" :always="isPinned" multiline size="large" :teleport="true"
+      :auto-close="['outside']" @close="isPinned = false">
       <template v-slot:content>
-        <skill-tooltip :skill="skill" />
+        <!-- Keep tooltip open if mouse moves into the tooltip itself -->
+        <div @mouseenter="isHovered = true" @mouseleave="isHovered = false">
+          <skill-tooltip :skill="skill" />
+        </div>
       </template>
-      <figure class="image is-32x32 is-skill" :class="{'is-unavailable': skill.isLocked}">
+
+      <figure class="image is-32x32 is-skill" :class="{ 'is-unavailable': skill.isLocked }"
+        @mouseenter="isHovered = true" @mouseleave="isHovered = false" @click.stop="togglePin">
         <img :src="'./img/skill/' + skill.icon + '.png'" @error="handleImageError">
       </figure>
     </o-tooltip>
@@ -16,19 +22,23 @@ import SkillTooltip from "@/components/expertise/SkillTooltip.vue";
 
 export default {
   name: 'Skill',
-  components: {
-    SkillTooltip
-  },
-  methods: {
-    handleImageError(event) {
-      event.target.src = './img/Default.png';
+  components: { SkillTooltip },
+  data() {
+    return {
+      isPinned: false,
+      isHovered: false
     }
   },
   props: {
-    skill: {
-      type: Object,
-      required: true,
+    skill: { type: Object, required: true }
+  },
+  methods: {
+    togglePin() {
+      this.isPinned = !this.isPinned;
     },
+    handleImageError(event) {
+      event.target.src = './img/Default.png';
+    }
   }
 }
 </script>
@@ -44,7 +54,7 @@ export default {
   padding: 0px;
 }
 
-.is-unavailable{
+.is-unavailable {
   filter: grayscale(1)
 }
 
