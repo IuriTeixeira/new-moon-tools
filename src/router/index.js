@@ -10,6 +10,7 @@ import DemonPlanner from "@/views/DemonPlannerView.vue";
 import Fusion from "@/views/FusionView.vue";
 import SkillList from "@/views/SkillListView.vue"
 import DemonForce from "@/views/DFListView.vue"
+import Feature from "@/views/FeatureView.vue"
 
 const DEFAULT_TITLE = 'Project New Moon Tools';
 const routes = [
@@ -78,6 +79,12 @@ const routes = [
 		name: "Demon Force Items",
 		component: DemonForce,
 		meta: { title: "Demon Force Items" }
+	},
+	{
+		path: "/feature",
+		name: "Demon Features",
+		component: Feature,
+		meta: { title: "Demon Features" }
 	}
 ];
 
