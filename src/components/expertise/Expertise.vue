@@ -1,8 +1,9 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
+import { useOruga } from "@oruga-ui/oruga-next"
 import skillService from "@/services/skillService";
-
 import Skill from "@/components/expertise/Skill.vue";
+import SkillTooltip from "@/components/expertise/SkillTooltip.vue";
 
 //-- Data
 
@@ -23,6 +24,37 @@ const props = defineProps({
     type: Boolean
   }
 })
+
+// Initialize Oruga programmatic helper for notifications
+const oruga = useOruga()
+
+// Single tracker for the current active item
+const activeSkillId = ref(null)
+
+function handleHover(skillId) {
+  activeSkillId.value = skillId
+}
+
+function handleLeave() {
+  activeSkillId.value = null
+}
+
+// Copies description and fires an Oruga notification toast
+async function handleSkillClick(skill) {
+  if (!skill?.description) return
+  try {
+    await navigator.clipboard.writeText(skill.description)
+    oruga.notification.open({
+      message: `Copied description for <b>${skill.name}</b>!`,
+      position: "bottom",
+      variant: "success",
+      duration: 2000,
+      closable: false
+    })
+  } catch (err) {
+    console.error("Clipboard copy failed: ", err)
+  }
+}
 
 const match = computed(() => {
   let response = {};
@@ -68,7 +100,6 @@ const isVisible = computed(() => {
   return visibleSkills.value.length > 0;
 })
 
-
 function classRank(amount) {
   var a = amount;
   var b = a.toString();
@@ -82,7 +113,6 @@ function classRank(amount) {
     return "Class 0 Rank " + b.charAt(0);
   }
 }
-
 </script>
 
 <template>
@@ -90,12 +120,26 @@ function classRank(amount) {
     <span class="option-title">{{ expertise.name }}</span> -
     {{ classRank(match.value) }}
     <div class="skill-summary">
-      <Skill v-for="skill in visibleSkills" :key="'learned' + skill.id" :skill="skill" />
+      <template v-for="skill in visibleSkills" :key="'learned' + skill.id">
+
+        <o-tooltip v-if="activeSkillId === skill.id" :active="true" :triggers="[]" multiline size="large"
+          @mouseleave.native="handleLeave">
+          <template v-slot:content>
+            <div @mouseenter="handleHover(skill.id)" @mouseleave="handleLeave">
+              <SkillTooltip :skill="skill" />
+            </div>
+          </template>
+
+          <Skill :skill="skill" @click.native.stop="handleSkillClick(skill)" />
+        </o-tooltip>
+
+        <Skill v-else :skill="skill" @mouseenter.native="handleHover(skill.id)" @mouseleave.native="handleLeave"
+          @click.native.stop="handleSkillClick(skill)" />
+
+      </template>
     </div>
   </div>
 </template>
-<script>
-</script>
 
 <style lang="scss">
 .toggle-header {
@@ -117,5 +161,13 @@ function classRank(amount) {
 
 .collapse.card {
   margin: 1em auto;
+}
+
+.skill-summary {
+  overflow: visible !important;
+}
+
+.o-tip {
+  display: inline-block;
 }
 </style>

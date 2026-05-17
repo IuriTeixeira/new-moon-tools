@@ -8,12 +8,9 @@
 					</figure>
 				</div>
 				<div class="media-content">
-					<p class="title is-6">{{ skill.name }}</p>
+					<p class="title is-5">{{ skill.name }}</p>
 					<div class="subtitle is-7">
 						{{ info.family }}
-					</div>
-					<div v-if="info.expertise" class="expertise-requirement subtitle is-7">
-						<strong>Required Expertise:</strong> {{ info.expertise }}
 					</div>
 					<div class="info-columns subtitle is-7">
 						<div class="column">
@@ -33,6 +30,10 @@
 			</div>
 			<div class="description-text">
 				{{ skill.description }}
+			</div>
+			<br />
+			<div v-if="info.expertise" class="expertise-requirement subtitle is-7">
+				<strong>Required Expertise:</strong> {{ info.expertise }}
 			</div>
 		</div>
 	</div>
@@ -78,17 +79,17 @@ export default {
 		info() {
 			let family = `${this.skill.family} • ${this.skill.activationType} • ${this.skill.categoryType} • ID: ${this.skill.id}`
 			let expertise = ``
-			
+
 			// Get all expertise records
-            const allExpertise = expertiseService.all();
+			const allExpertise = expertiseService.all();
 
 			// Find which expertise and breakpoint contains this skill ID
-            let foundBreakpoint = null;
-            let parentExpertise = null;
+			let foundBreakpoint = null;
+			let parentExpertise = null;
 
 			allExpertise.forEach(exp => {
 				if (foundBreakpoint) return; // Stop if already found
-				
+
 				const bp = exp.breakpoints.find(b => b.skills.includes(this.skill.id));
 				if (bp) {
 					parentExpertise = exp;
@@ -99,12 +100,12 @@ export default {
 			// Format the expertise string if found
 			if (foundBreakpoint && parentExpertise) {
 				const reqValue = (foundBreakpoint.class * 1000) + (foundBreakpoint.rank * 100);
-				
+
 				expertise = `${parentExpertise.name} ${this.classRank(reqValue)}`
 			}
 
 			let body = []
-			if(this.skill.costs.length > 0){
+			if (this.skill.costs.length > 0) {
 				let cost = []
 				this.skill.costs.forEach((element, index) => {
 					let text = index === 0 ? '' : ' '
@@ -112,7 +113,7 @@ export default {
 						if (element.costType !== 'BULLET') {
 							const percent = element.numberOrPercent === 'PERCENT' ? '% ' : ' '
 							text += element.amount + percent + element.costType
-						}else{
+						} else {
 							text += element.amount + ' Bullet'
 							element.amount > 1 ? text += 's' : ''
 						}

@@ -16,21 +16,31 @@ const selectedValue = ref("")
 const selectedSource = ref("")
 const filterBySkillName = ref("");
 const results = ref([]);
+const ALLOWED_FAMILIES = new Set(["Arcane Art", "Technique", "Special Skill"]);
 
-// Get all skills
-const allSkills = computed(() =>
-  (skillService.all() ?? []).filter(
-    skill =>
-      (skill.family === "Arcane Art" ||
-        skill.family === "Technique" ||
-        skill.family === "Special Skill") &&
-      skill.activationType !== "Special" &&
-      !skill.description?.toLowerCase().includes("fusion skill") &&
-      !skill.name?.toLowerCase().includes("debug") &&
-      !skill.name?.includes("【ＧＭ】")
-  )
-)
 
+// Get all valid skills
+
+function isValidSkill(skill) {
+  if (!ALLOWED_FAMILIES.has(skill.family)) return false;
+  if (skill.activationType === "Special") return false;
+
+  const name = skill.name;
+  if (name) {
+    if (name.includes("【ＧＭ】")) return false;
+    if (name.toLowerCase().includes("debug")) return false;
+  }
+
+  if (skill.description?.toLowerCase().includes("fusion skill")) return false;
+
+  return true;
+}
+
+const allSkills = computed(() => {
+  return (skillService.all() ?? []).filter(isValidSkill);
+});
+
+// get all demons that have skills
 const allDemons = computed(() =>
   (demonService.all() ?? []).filter(
     demon => demon.skills.length > 0
@@ -63,26 +73,17 @@ const onInput = debounce(() => {
 )
 
 async function findSkills() {
-  if (!filterBySkillName.value || filterBySkillName.value.length < 3) {
-    results.value = []
-    return
+  const query = filterBySkillName.value?.toLowerCase().trim();
+
+  if (!query || query.length < 3) {
+    results.value = [];
+    return;
   }
 
-  let found = await Promise.resolve(
-    skillService.searchByName(filterBySkillName.value)
-  )
-
-  // Apply the same filters used for allSkills
-  results.value = (found ?? []).filter(
-    skill =>
-      (skill.family === "Arcane Art" ||
-        skill.family === "Technique" ||
-        skill.family === "Special Skill") &&
-      skill.activationType !== "Special" &&
-      !skill.description?.toLowerCase().includes("fusion skill") &&
-      !skill.name?.toLowerCase().includes("debug") &&
-      !skill.name?.includes("【ＧＭ】")
-  )
+  // Search locally against the pre-filtered computed list
+  results.value = allSkills.value.filter(skill =>
+    skill.name?.toLowerCase().includes(query)
+  );
 }
 
 // Dynamically compute possible values based on selected attribute
@@ -108,82 +109,95 @@ const availableValues = computed(() => {
 
 // Filtered skills
 const filteredSkills = computed(() => {
+  // 1. Early exit condition
   if (filterBySkillName.value.length >= 3) {
-    return results.value
+    return results.value;
   }
 
-  let skillsToFilter = results.value.length > 0 ? results.value : allSkills.value
+  let skillsToFilter = results.value.length > 0 ? results.value : allSkills.value;
+  const source = selectedSource.value;
 
-  if (selectedSource.value !== "") {
-    let acquireSkills = []
-    switch (selectedSource.value) {
-      case "player":
-        const expertise = expertiseService.all()
-        const exp_skills = expertise.flatMap(exp => exp.breakpoints.flatMap(bp => bp.skills))
-        acquireSkills = skillsToFilter.filter(
-          (skill) => exp_skills.includes(skill.id) ||
-            exchangeSkills.find(sk => sk.id === skill.id && sk.type === "SKILL_CHARACTER") ||
-            gearSkills.find(sk => sk.id === skill.id)
-        )
-        break
-      case "allDemons":
-        acquireSkills = skillsToFilter.filter(
-          (skill) => allDemons.value.some((demon) =>
-            demon.skills.includes(skill.id) ||
-            demon.acquiredSkills.includes(skill.id) ||
-            demon.enemyOnlySkills.includes(skill.id) ||
-            exchangeSkills.find(sk => sk.id === skill.id && sk.type === "SKILL_DEMON")
-          )
-        )
-        break
-      case "alliedDemons":
-        acquireSkills = skillsToFilter.filter(
-          (skill) => allDemons.value.some((demon) =>
-            (demon.skills.includes(skill.id) ||
-              demon.acquiredSkills.includes(skill.id) ||
-              exchangeSkills.find(sk => sk.id === skill.id && sk.type === "SKILL_DEMON")
-            )
-            &&
-            Object.values(demon.acquisition).some(value => value === true)
-          )
-        )
-        break
-      case "enemyDemons":
-        acquireSkills = skillsToFilter.filter(
-          (skill) => allDemons.value.some((demon) =>
-            demon.enemyOnlySkills.includes(skill.id)
-            &&
-            !Object.values(demon.acquisition).some(value => value === true)
-          )
-        )
-        break
+  // 2. Pre-compile Data Structures & Sets *BEFORE* filtering
+  if (source !== "") {
+    // Cache Lookups for "player"
+    if (source === "player") {
+      const expSkillsSet = new Set(
+        expertiseService.all().flatMap(exp => exp.breakpoints.flatMap(bp => bp.skills))
+      );
+      const playerExchangeSet = new Set(
+        exchangeSkills.filter(sk => sk.type === "SKILL_CHARACTER").map(sk => sk.id)
+      );
+      const gearSkillsSet = new Set(gearSkills.map(sk => sk.id));
+
+      skillsToFilter = skillsToFilter.filter(skill =>
+        expSkillsSet.has(skill.id) ||
+        playerExchangeSet.has(skill.id) ||
+        gearSkillsSet.has(skill.id)
+      );
     }
-    skillsToFilter = acquireSkills
+
+    // Cache Lookups for Demon categories
+    else {
+      const demonExchangeSet = new Set(
+        exchangeSkills.filter(sk => sk.type === "SKILL_DEMON").map(sk => sk.id)
+      );
+
+      // Pre-aggregate demon skill IDs into Sets based on source type to avoid nested loops
+      const aggregateDemonSkills = new Set();
+
+      for (const demon of allDemons.value) {
+        // Optimize acquisition check into a fast boolean step
+        const hasAcquisition = Object.values(demon.acquisition).includes(true);
+
+        if (source === "allDemons") {
+          demon.skills.forEach(id => aggregateDemonSkills.add(id));
+          demon.acquiredSkills.forEach(id => aggregateDemonSkills.add(id));
+          demon.enemyOnlySkills.forEach(id => aggregateDemonSkills.add(id));
+        }
+        else if (source === "alliedDemons" && hasAcquisition) {
+          demon.skills.forEach(id => aggregateDemonSkills.add(id));
+          demon.acquiredSkills.forEach(id => aggregateDemonSkills.add(id));
+        }
+        else if (source === "enemyDemons" && !hasAcquisition) {
+          demon.enemyOnlySkills.forEach(id => aggregateDemonSkills.add(id));
+        }
+      }
+
+      // Filter skills instantly using the pre-built Set
+      skillsToFilter = skillsToFilter.filter(skill =>
+        aggregateDemonSkills.has(skill.id) ||
+        (source !== "enemyDemons" && demonExchangeSet.has(skill.id))
+      );
+    }
   }
 
-  if (!selectedAttribute.value || !selectedValue.value) {
-    return selectedAttribute.value === "expertise"
+  // 3. Attribute Filtering Optimization
+  const attr = selectedAttribute.value;
+  const val = selectedValue.value;
+
+  if (!attr || !val) {
+    return attr === "expertise"
       ? expertiseSkills.value
-      : selectedAttribute.value === "gearSkill"
+      : attr === "gearSkill"
         ? allGearSkills.value
-        : skillsToFilter
+        : skillsToFilter;
   }
 
-  if (selectedAttribute.value === "expertise") {
-    const selectedExpertise = expertiseService.all().find(
-      exp => exp.name === selectedValue.value
-    )
-    if (!selectedExpertise) return []
+  if (attr === "expertise") {
+    const selectedExpertise = expertiseService.all().find(exp => exp.name === val);
+    if (!selectedExpertise) return [];
+
     const selectedSkillIDs = new Set(
-      selectedExpertise.breakpoints.flatMap(bp => bp.skills)
-    )
-    return skillsToFilter.filter(skill => selectedSkillIDs.has(Number(skill.id)))
+      selectedExpertise.breakpoints.flatMap(bp => bp.skills).map(Number)
+    );
+    return skillsToFilter.filter(skill => selectedSkillIDs.has(Number(skill.id)));
   }
 
   return skillsToFilter.filter(
-    skill => getNestedValue(skill, selectedAttribute.value) === selectedValue.value
-  )
-})
+    skill => getNestedValue(skill, attr) === val
+  );
+});
+
 
 const filterOptions = [
   { path: "expertise", label: "Expertise" },
@@ -267,7 +281,8 @@ const filterSource = [
               </label>
               <div class="control">
                 <div class="select is-fullwidth">
-                  <select v-model="selectedValue" :disabled="!selectedAttribute || selectedAttribute === 'gearSkill' || filterBySkillName.length > 0">
+                  <select v-model="selectedValue"
+                    :disabled="!selectedAttribute || selectedAttribute === 'gearSkill' || filterBySkillName.length > 0">
                     <option value="">All</option>
                     <option v-for="value in availableValues" :key="value" :value="value">
                       {{ value }}
@@ -297,6 +312,7 @@ const filterSource = [
             </div>
           </div>
         </div>
+        <p><em>Note: Click a skill to copy its description to clipboard.</em></p>
         <br />
         <!-- Skill List -->
         <skill-list :skills="filteredSkills" />
