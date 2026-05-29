@@ -60394,7 +60394,7 @@
     {
         "id": 5559,
         "name": "Gae Bolg",
-        "icon": "SD11_0003a",
+        "icon": "SP09_0009a",
         "description": "When thrown, countless arrowheads scatter, skewering your foes. Special Skill that inflicts pierce-damage on a single enemy. Damage will not affect spellcast, but knockback can.\nModifier: 400 | Stiffness: 2100",
         "affinity": "Penetrate",
         "family": "Special Skill",
