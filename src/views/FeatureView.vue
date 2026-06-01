@@ -172,7 +172,7 @@ const featureDemons = computed(() => {
                             <label class="label">Search:</label>
                             <o-field>
                                 <o-input v-model="filterByFeatureName" @input="onInput"
-                                    placeholder="Search by Skill Name..."></o-input>
+                                    placeholder="Search by Feature Name..."></o-input>
                             </o-field>
                         </div>
                     </div>
