@@ -204,6 +204,7 @@ const filterOptions = [
   { path: "statDependency", label: "Stat" },
   { path: "affinity", label: "Affinity" },
   { path: "categoryType", label: "Category" },
+  { path: "family", label: "Family" },
   { path: "actionType", label: "Action Type" },
   { path: "activationType", label: "Activation Type" },
   { path: "areaOfEffect.areaType", label: "Area of Effect Type" },
