@@ -85,7 +85,7 @@ const FILTER_OPTION_REDUCTION = [
 
 // Get all DF items
 const allDFItems = computed(() =>
-    (dfService.all() ?? [])
+    (dfService.all() ?? []).filter(item => !item.name.toLowerCase().includes("debug"))
 )
 
 // Search field stuff
