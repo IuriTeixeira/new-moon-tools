@@ -171,6 +171,10 @@ export default {
 				body.push(` • Modifier: ${this.skill.damage}\n`)
 			}
 
+			if (this.skill.mpdamage > 0) {
+				body.push(` • Modifier (MP): ${this.skill.mpdamage}\n`)
+			}
+
 			if (this.skill.stiffness > 0) {
 				body.push(` • Stiffness: ${this.skill.stiffness}\n`)
 			}
