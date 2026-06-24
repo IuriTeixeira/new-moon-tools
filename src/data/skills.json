@@ -27824,9 +27824,9 @@
     },
     {
         "id": 901,
-        "name": "二元の鼓動",
+        "name": "Duality Pulse",
         "icon": "SI01_0094a",
-        "description": "「陰」「陽」で示される有形無形の力を発生させ、 付与する対象を一時的に無欠の存在にする特殊スキル。\n自分自身に対して5分間、以下の状態変化を付与する。\n・物理ダメージを無効にする状態変化\n・魔法ダメージを無効にする状態変化\nこの効果は、\n・物理ダメージを2回受ける\n・魔法ダメージを2回受ける\n・死亡 以上の場合にも消失する。\nこのスキルは、 ダメージ、ノックバックによって 詠唱を中断されない。",
+        "description": "A special skill that generates tangible and intangible forces represented by “Yin” and “Yang,” temporarily rendering the user and its partner invulnerable.\nApplies x5 [Dual Heartbreak - Yin] and x5 [Dual Heartbreak - Yang] to the user and its partner for 5 minutes:\n・[Dual Heartbreak - Yang] nullifies physical damage\n・[Dual Heartbreak - Yin] nullifies magical damage",
         "affinity": "Support",
         "family": "Special Skill",
         "feat_exclusion": [],
@@ -27842,7 +27842,7 @@
         "mpdamage": 0,
         "stiffness": 980,
         "cooldown": 10000,
-        "incantation": 1500,
+        "incantation": 500,
         "inheritanceRestriction": "All",
         "areaOfEffect": {
             "areaType": "None",
@@ -27851,9 +27851,9 @@
             "lineWidth": 0
         },
         "skillFlags": {
-            "fixedStack": false,
-            "fixedCooldown": false,
-            "fixedCharge": false,
+            "fixedStack": true,
+            "fixedCooldown": true,
+            "fixedCharge": true,
             "fixedHPCost": false,
             "fixedMPCost": false
         },
@@ -27869,6 +27869,12 @@
                 "numberOrPercent": "PERCENT",
                 "amount": 10,
                 "itemID": 0
+            },
+            {
+                "costType": "ITEM",
+                "numberOrPercent": "NUMERIC",
+                "amount": 5000,
+                "itemID": 800
             }
         ],
         "statuses": [
@@ -57794,7 +57800,7 @@
         "formula": "Normal",
         "damage": 175,
         "mpdamage": 0,
-        "stiffness": 500,
+        "stiffness": 700,
         "cooldown": 3000,
         "incantation": 1250,
         "inheritanceRestriction": "All",
@@ -58857,7 +58863,7 @@
         "id": 5485,
         "name": "Radiant Hands",
         "icon": "SD02_0039a",
-        "description": "A switch skill that grants Super Armor to the user and improves their Healing and Enhancing skills while lowering their overall damage.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Curative Boost +50%, Curative MP Cost -50%\n• When Blood Ties or Seal of Command switches are not active and using Diarahan, Mediarahan, and Divine Blessing, 45% chance to apply \n[Radiance] on the target(s) and [Inspiring Presence] on the user. When using Salvation, 100% chance to apply\n[Radiance] on the target(s) and [Inspiring Presence] on the user for 10 seconds.\n• Various skills in Enhancement are improved when using them while under Radiance Hands.\n• When Cataclysmic Mind is active, increases Support by (Spell x 0.05). \n[Minus Effect]\n• Spell, Close-range, Long-range Damage -500%\n• Max MP -10%\n\n[Radiance]\n• Increases HP by 5%, Gains 5% General Damage Reduction for 30 seconds.\n[Inspiring Presence]\n• All nearby party members' Limit Break Cap is increased by the user's (Support x 1.5)\n• Nearby Party Members' Received Healing +15%",
+        "description": "A switch skill that grants Super Armor to the user and improves their Healing and Enhancing skills while lowering their overall damage.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Curative Boost +50%, Curative MP Cost -50%\n• When Blood Ties or Seal of Command switches are not active and using Diarahan, Mediarahan, and Divine Blessing, 45% chance to apply \n[Radiance] on the target(s) and [Inspiring Presence] on the user. When using Salvation, 100% chance to apply\n[Radiance] on the target(s) and [Inspiring Presence] on the user for 10 seconds.\n• Various skills in Enhancement are improved when using them while under Radiance Hands.\n• When Essence of Magic is Class 9-0+, increases Support by (Spell x 0.1). \n[Minus Effect]\n• Spell, Close-range, Long-range Damage -500%\n• Max MP -10%\n\n[Radiance]\n• Increases HP by 5%, Gains 5% General Damage Reduction for 30 seconds.\n[Inspiring Presence]\n• All nearby party members' Limit Break Cap is increased by the user's (Support x 1.5)\n• Nearby Party Members' Received Healing +15%",
         "affinity": "Curative",
         "family": "Technique",
         "feat_exclusion": [],
@@ -305118,7 +305124,7 @@
         "id": 170024,
         "name": "Astral Eye",
         "icon": "AstralEye",
-        "description": "An otherworldly light emitted from the eyes. Inflict Spell-based Almighty damage to a target\nModifier: 150 | Stiffness: 500",
+        "description": "An otherworldly light emitted from the eyes. Inflict Spell-based Almighty damage to a target\nModifier: 150 | Stiffness: 750",
         "affinity": "Almighty",
         "family": "Technique",
         "feat_exclusion": [],
@@ -305132,7 +305138,7 @@
         "formula": "Normal",
         "damage": 150,
         "mpdamage": 0,
-        "stiffness": 500,
+        "stiffness": 750,
         "cooldown": 3000,
         "incantation": 1000,
         "inheritanceRestriction": "Impossible",
@@ -305442,7 +305448,7 @@
         "formula": "Normal",
         "damage": 175,
         "mpdamage": 0,
-        "stiffness": 500,
+        "stiffness": 700,
         "cooldown": 3000,
         "incantation": 1250,
         "inheritanceRestriction": "All",
@@ -306569,7 +306575,12 @@
             "fixedMPCost": false
         },
         "costs": [],
-        "statuses": []
+        "statuses": [
+            {
+                "statusID": 2176,
+                "percentChance": 100
+            }
+        ]
     },
     {
         "id": 180012,
@@ -306792,6 +306803,158 @@
             "areaType": "None",
             "validTargetType": "Enemy",
             "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [],
+        "statuses": []
+    },
+    {
+        "id": 180018,
+        "name": "PG- Heal",
+        "icon": null,
+        "description": "",
+        "affinity": "Curative",
+        "family": "Technique",
+        "feat_exclusion": [],
+        "actionType": "Support",
+        "activationType": "Instant Cast",
+        "categoryType": "Magical",
+        "stack": 1,
+        "range": 0,
+        "targetType": "None",
+        "statDependency": "Support",
+        "formula": "Max HP Percentage Heal",
+        "damage": 3,
+        "mpdamage": 0,
+        "stiffness": 0,
+        "cooldown": 0,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Ally",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [],
+        "statuses": []
+    },
+    {
+        "id": 180019,
+        "name": "Kirin Judgment - Light",
+        "icon": null,
+        "description": "Modifier: 30000 | Stiffness: 1500",
+        "affinity": "Unknown",
+        "family": "Technique",
+        "feat_exclusion": [],
+        "actionType": "Shot",
+        "activationType": "Instant Cast",
+        "categoryType": "Magical",
+        "stack": 1,
+        "range": 1000,
+        "targetType": "None",
+        "statDependency": "Support",
+        "formula": "Normal",
+        "damage": 30000,
+        "mpdamage": 0,
+        "stiffness": 1500,
+        "cooldown": 10000,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "Around Self",
+            "validTargetType": "Enemy",
+            "distance": 2000,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [],
+        "statuses": []
+    },
+    {
+        "id": 180020,
+        "name": "Kirin Judgment - Normal",
+        "icon": null,
+        "description": "Modifier: 30000 | Stiffness: 1500",
+        "affinity": "Unknown",
+        "family": "Technique",
+        "feat_exclusion": [],
+        "actionType": "Shot",
+        "activationType": "Instant Cast",
+        "categoryType": "Magical",
+        "stack": 1,
+        "range": 1000,
+        "targetType": "None",
+        "statDependency": "Support",
+        "formula": "Normal",
+        "damage": 30000,
+        "mpdamage": 0,
+        "stiffness": 1500,
+        "cooldown": 10000,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "Around Self",
+            "validTargetType": "Enemy",
+            "distance": 2000,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [],
+        "statuses": []
+    },
+    {
+        "id": 180021,
+        "name": "Kirin Judgment - Heavy",
+        "icon": null,
+        "description": "Modifier: 30000 | Stiffness: 1500",
+        "affinity": "Unknown",
+        "family": "Technique",
+        "feat_exclusion": [],
+        "actionType": "Shot",
+        "activationType": "Instant Cast",
+        "categoryType": "Magical",
+        "stack": 1,
+        "range": 1000,
+        "targetType": "None",
+        "statDependency": "Support",
+        "formula": "Normal",
+        "damage": 30000,
+        "mpdamage": 0,
+        "stiffness": 1500,
+        "cooldown": 10000,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "Around Self",
+            "validTargetType": "Enemy",
+            "distance": 2000,
             "lineWidth": 0
         },
         "skillFlags": {
