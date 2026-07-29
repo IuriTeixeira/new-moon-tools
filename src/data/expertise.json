@@ -1502,6 +1502,14 @@
           5381,
           5380
         ]
+      },
+      {
+        "class": 10,
+        "rank": 0,
+        "pickAmount": 1,
+        "skills": [
+          5356
+        ]
       }
     ],
     "singularExpertise": []
