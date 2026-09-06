@@ -39,7 +39,7 @@
                         <span v-else class="has-text-grey-light"><em>No category restrictions.</em></span>
                     </td>
                 </tr>
-                <tr class="card">
+                <tr v-if="!hideSource" class="card">
                     <th class="all-caps card-header toggle-header" @click="toggleExpand">
                         <a aria-label="expand">
                             <span class="icon">
@@ -50,7 +50,7 @@
                         Demons/Epitaphs
                     </th>
                 </tr>
-                <tr class="card-content" v-if="isExpanded">
+                <tr class="card-content" v-if="isExpanded && !hideSource">
                     <td class="demon-container">
                         <!-- Check if the demons array has items -->
                         <template v-if="demons && demons.length > 0">
@@ -138,7 +138,8 @@ export default {
     props: {
         feature: { type: Object, required: true },
         demons: { type: Array, required: true },
-        epitaphs: { type: Object }
+        epitaphs: { type: Object },
+        hideSource: {type: Boolean}
     }
 }
 

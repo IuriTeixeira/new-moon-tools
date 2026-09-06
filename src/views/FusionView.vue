@@ -1,18 +1,13 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
-import { useOruga } from "@oruga-ui/oruga-next";
+import { ref } from 'vue'
 
 import DemonSummary from "@/components/fusion/DemonSummary.vue"
-
 import demonService from "@/services/demonService";
-import skillService from "@/services/skillService";
 
 const demon = demonService.get(569);
 
 //-- Data
 const activeTab = ref("0");
-
-
 </script>
 
 

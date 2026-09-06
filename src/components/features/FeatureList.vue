@@ -12,8 +12,10 @@ const props = defineProps({
         required: true
     },
     epitaphs: {
-        type: Object,
-        required: true
+        type: Object
+    },
+    hideSource: {
+        type: Boolean
     }
 })
 
@@ -29,17 +31,22 @@ const demonsMap = computed(() => {
 
 // Build a dictionary map matching epitaph objects directly to feature IDs
 const epitaphsMap = computed(() => {
-    const map = {}
-    if (!props.features || !props.epitaphs) return map;
+    if (props.epitaphs) {
 
-    props.features.forEach((feature) => {
-        // Enforce a strict matching lookup rules only
-        const match = props.epitaphs.find(epi => epi && Number(epi.skillID) === Number(feature.id))
+        const map = {}
+        if (!props.features || !props.epitaphs) return map;
 
-        // FIX: Remove '|| props.epitaphs[index]'. Return match or undefined only.
-        map[feature.id] = match || undefined
-    })
-    return map
+        props.features.forEach((feature) => {
+            // Enforce a strict matching lookup rules only
+            const match = props.epitaphs.find(epi => epi && Number(epi.skillID) === Number(feature.id))
+
+            // FIX: Remove '|| props.epitaphs[index]'. Return match or undefined only.
+            map[feature.id] = match || undefined
+        })
+        return map
+    }else{
+        return []
+    }
 })
 </script>
 
@@ -47,7 +54,7 @@ const epitaphsMap = computed(() => {
     <div class="skill-summary">
         <!-- Loop features natively and extract lookup properties safely using feature.id -->
         <Feature v-for="feature in props.features" :key="feature.id" :feature="feature" :demons="demonsMap[feature.id]"
-            :epitaphs="epitaphsMap[feature.id]" />
+            :epitaphs="epitaphsMap[feature.id]" :hideSource="hideSource"/>
     </div>
 </template>
 

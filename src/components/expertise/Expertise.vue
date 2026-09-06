@@ -43,9 +43,10 @@ function handleLeave() {
 async function handleSkillClick(skill) {
   if (!skill?.description) return
   try {
-    await navigator.clipboard.writeText(skill.description)
+    await navigator.clipboard.writeText(skill.name + "\n\n" + skill.description)
+
     oruga.notification.open({
-      message: `Copied description for <b>${skill.name}</b>!`,
+      message: `Copied name and description for <b>${skill.name}</b>!`,
       position: "bottom",
       variant: "success",
       duration: 2000,
