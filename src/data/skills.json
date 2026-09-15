@@ -35512,9 +35512,9 @@
             "lineWidth": 0
         },
         "skillFlags": {
-            "fixedStack": true,
-            "fixedCooldown": true,
-            "fixedCharge": true,
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
             "fixedHPCost": false,
             "fixedMPCost": false
         },
@@ -290982,8 +290982,8 @@
         "family": "Demonic Feature",
         "feat_exclusion": [
             {
-                "id": 72,
-                "name": "Status Change Resistance UP"
+                "id": 101,
+                "name": "Summoner Boost"
             }
         ],
         "actionType": "Support",
@@ -296826,7 +296826,7 @@
     },
     {
         "id": 130517,
-        "name": "???",
+        "name": "Magician Black Set",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -296864,7 +296864,7 @@
     },
     {
         "id": 130518,
-        "name": "???",
+        "name": "Steampunk Reverse Set",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -304020,16 +304020,79 @@
         "statuses": []
     },
     {
-        "id": 160764,
+        "id": 23188,
         "name": "Calamity Protection",
         "icon": null,
-        "description": "Summoner's Maximum HP: +300\nTo Summoner: Null Mute, Null Muddle, Null Instant Death",
+        "description": "To Summoner and Partner: Maximum HP +500 Null Mute, Null Muddle, Null Instant Death",
         "affinity": "Special",
         "family": "Demonic Feature",
         "feat_exclusion": [
             {
+                "id": 11,
+                "name": "Max HP UP"
+            },
+            {
+                "id": 72,
+                "name": "Status Change Resistance UP"
+            },
+            {
                 "id": 101,
                 "name": "Summoner Boost"
+            }
+        ],
+        "actionType": "Support",
+        "activationType": "Passive",
+        "categoryType": "Misc",
+        "stack": 0,
+        "range": 0,
+        "targetType": "None",
+        "statDependency": "None",
+        "formula": "None",
+        "damage": 0,
+        "mpdamage": 0,
+        "stiffness": 0,
+        "cooldown": 0,
+        "incantation": 0,
+        "inheritanceRestriction": "Impossible",
+        "areaOfEffect": {
+            "areaType": "None",
+            "validTargetType": "Ally",
+            "distance": 0,
+            "lineWidth": 0
+        },
+        "skillFlags": {
+            "fixedStack": false,
+            "fixedCooldown": false,
+            "fixedCharge": false,
+            "fixedHPCost": false,
+            "fixedMPCost": false
+        },
+        "costs": [],
+        "statuses": []
+    },
+    {
+        "id": 160764,
+        "name": "Calamity Refuge",
+        "icon": null,
+        "description": "Close-range Damage suffered -50% Long-range Damage suffered -50% Spell Damage suffered -50%\n\nTo Summoner and Partner: Maximum HP +500 Null Mute, Null Muddle, Null Instant Death",
+        "affinity": "Special",
+        "family": "Demonic Feature",
+        "feat_exclusion": [
+            {
+                "id": 11,
+                "name": "Max HP UP"
+            },
+            {
+                "id": 72,
+                "name": "Status Change Resistance UP"
+            },
+            {
+                "id": 101,
+                "name": "Summoner Boost"
+            },
+            {
+                "id": 203,
+                "name": "Damage taken CUT"
             }
         ],
         "actionType": "Support",
@@ -304156,10 +304219,6 @@
         "affinity": "Special",
         "family": "Demonic Feature",
         "feat_exclusion": [
-            {
-                "id": 203,
-                "name": "Damage taken CUT"
-            },
             {
                 "id": 511,
                 "name": "Almighty Affinity"
