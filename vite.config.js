@@ -6,7 +6,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
-        vue(), 
+        vue(),
         VueDevTools()
     ],
     resolve: {
@@ -16,5 +16,10 @@ export default defineConfig({
     },
     server: {
         port: '3000'
-    }
+    },
+    build: {
+        rollupOptions: {
+            maxParallelFileOps: 20, // Lowers simultaneous memory consumption
+        },
+    },
 });
