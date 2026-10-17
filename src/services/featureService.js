@@ -1,4 +1,4 @@
-import Features from "@/data/skills.json"
+import Features from "@/data/features.json"
 import _ from 'lodash'
 
 const storage = Features;
