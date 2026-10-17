@@ -1980232,5 +1980232,3353 @@
             174
         ],
         "duplicate": false
+    },
+    {
+        "id": 2026001,
+        "baseDemonID": 569,
+        "icon": "D2_04_009a",
+        "name": "Jack Frost",
+        "title": "Halloween Enthusiast",
+        "family": "MAGICA",
+        "race": "FAIRY",
+        "gender": "MALE",
+        "alignment": "Neutral",
+        "lnc": -1000,
+        "baseLevel": 51,
+        "growthType": 7,
+        "inheritanceType": "7",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": true,
+            "Wings": false,
+            "Slam": true,
+            "Teeth": false,
+            "Claw": false,
+            "Needle": true,
+            "Weapon": false,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 0,
+            "fearThreshold": 0,
+            "personalityType": 10
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 10
+        },
+        "fusion": {
+            "difficulty": 20,
+            "fusionOption": "None",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 18,
+            "magic": 23,
+            "vitality": 20,
+            "intelligence": 22,
+            "speed": 14,
+            "luck": 22,
+            "maxHP": 1500,
+            "maxMP": 999,
+            "hpRegen": 50,
+            "mpRegen": 10,
+            "movement1": 15,
+            "movement2": 30,
+            "clsr": 36,
+            "lngr": 31,
+            "spell": 32,
+            "support": 27,
+            "critical": 20,
+            "summoningSpeed": 0,
+            "knockbackResist": 91,
+            "physicalDefense": 48,
+            "magicalDefense": 46,
+            "criticalDefense": 60,
+            "cooldownTime": 100,
+            "statusResistance": 75,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": 10,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": -30,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": -50,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": 90,
+                "null": 0,
+                "reflect": 100,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": 90,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 0,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            5012,
+            651,
+            100,
+            5027,
+            0,
+            0,
+            0,
+            0
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            26007,
+            174,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "traits": [
+            20002,
+            21005,
+            22004,
+            20013
+        ],
+        "duplicate": false
+    },
+    {
+        "id": 2026002,
+        "baseDemonID": 567,
+        "icon": "D2_04_007a",
+        "name": "Pyro Jack",
+        "title": "Halloween Enthusiast",
+        "family": "MAGICA",
+        "race": "FAIRY",
+        "gender": "MALE",
+        "alignment": "Neutral",
+        "lnc": -1000,
+        "baseLevel": 65,
+        "growthType": 89,
+        "inheritanceType": "6",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": true,
+            "Wings": false,
+            "Slam": true,
+            "Teeth": false,
+            "Claw": false,
+            "Needle": true,
+            "Weapon": false,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 0,
+            "fearThreshold": 0,
+            "personalityType": 10
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 250
+        },
+        "fusion": {
+            "difficulty": 20,
+            "fusionOption": "None",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 11,
+            "magic": 15,
+            "vitality": 12,
+            "intelligence": 13,
+            "speed": 9,
+            "luck": 14,
+            "maxHP": 450,
+            "maxMP": 999,
+            "hpRegen": 1,
+            "mpRegen": 2,
+            "movement1": 15,
+            "movement2": 30,
+            "clsr": 33,
+            "lngr": 35,
+            "spell": 33,
+            "support": 26,
+            "critical": 10,
+            "summoningSpeed": 0,
+            "knockbackResist": 61,
+            "physicalDefense": 18,
+            "magicalDefense": 18,
+            "criticalDefense": 18,
+            "cooldownTime": 100,
+            "statusResistance": 75,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": 5,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": 10,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": 15,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": 90,
+                "null": 0,
+                "reflect": 100,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": 90,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": 50,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": 15,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 0,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            5006,
+            5027,
+            650,
+            648,
+            0,
+            0,
+            0,
+            0
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            26006,
+            26004,
+            26008,
+            26007,
+            174,
+            0,
+            0,
+            0
+        ],
+        "traits": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "duplicate": false
+    },
+    {
+        "id": 2026003,
+        "baseDemonID": 728,
+        "icon": "D2_11_008a",
+        "name": "Incubus",
+        "title": "Halloween Enthusiast",
+        "family": "MAGICA",
+        "race": "NOCTURNE",
+        "gender": "MALE",
+        "alignment": "Neutral",
+        "lnc": 3000,
+        "baseLevel": 75,
+        "growthType": 82,
+        "inheritanceType": "13",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": true,
+            "Wings": true,
+            "Slam": true,
+            "Teeth": false,
+            "Claw": true,
+            "Needle": true,
+            "Weapon": true,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 0,
+            "fearThreshold": 0,
+            "personalityType": 6
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 11
+        },
+        "fusion": {
+            "difficulty": 30,
+            "fusionOption": "None",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 17,
+            "magic": 36,
+            "vitality": 12,
+            "intelligence": 29,
+            "speed": 29,
+            "luck": 12,
+            "maxHP": 153,
+            "maxMP": 65,
+            "hpRegen": 4,
+            "mpRegen": 2,
+            "movement1": 15,
+            "movement2": 30,
+            "clsr": 42,
+            "lngr": 25,
+            "spell": 41,
+            "support": 5,
+            "critical": 10,
+            "summoningSpeed": 0,
+            "knockbackResist": 61,
+            "physicalDefense": 22,
+            "magicalDefense": 23,
+            "criticalDefense": 20,
+            "cooldownTime": 100,
+            "statusResistance": 100,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": -30,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": -20,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": 15,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 100,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": 25,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": 50,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 100,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 40,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            115,
+            639,
+            5027,
+            652,
+            5018,
+            174,
+            5039,
+            68
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            26006,
+            26004,
+            26008,
+            26007,
+            0,
+            0,
+            0,
+            0
+        ],
+        "traits": [
+            25001,
+            20009,
+            21013,
+            20045
+        ],
+        "duplicate": false
+    },
+    {
+        "id": 2026004,
+        "baseDemonID": 727,
+        "icon": "D2_11_007a",
+        "name": "Succubus",
+        "title": "Halloween Enthusiast",
+        "family": "MAGICA",
+        "race": "NOCTURNE",
+        "gender": "FEMALE",
+        "alignment": "Neutral",
+        "lnc": 3000,
+        "baseLevel": 37,
+        "growthType": 92,
+        "inheritanceType": "8",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": false,
+            "Wings": true,
+            "Slam": false,
+            "Teeth": false,
+            "Claw": false,
+            "Needle": true,
+            "Weapon": false,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 0,
+            "fearThreshold": 0,
+            "personalityType": 2
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 15
+        },
+        "fusion": {
+            "difficulty": 30,
+            "fusionOption": "None",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 20,
+            "magic": 37,
+            "vitality": 18,
+            "intelligence": 32,
+            "speed": 30,
+            "luck": 17,
+            "maxHP": 152,
+            "maxMP": 70,
+            "hpRegen": 2,
+            "mpRegen": 6,
+            "movement1": 15,
+            "movement2": 30,
+            "clsr": 21,
+            "lngr": 27,
+            "spell": 50,
+            "support": 37,
+            "critical": 10,
+            "summoningSpeed": 0,
+            "knockbackResist": 61,
+            "physicalDefense": 17,
+            "magicalDefense": 37,
+            "criticalDefense": 20,
+            "cooldownTime": 100,
+            "statusResistance": 100,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": -30,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": -20,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": 15,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": 0,
+                "null": 30,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": 0,
+                "null": 30,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": 0,
+                "null": 30,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": 0,
+                "null": 30,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 50,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": 50,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 100,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 40,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            157,
+            156,
+            71,
+            5027,
+            356,
+            359,
+            115,
+            5027
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            26006,
+            26004,
+            26008,
+            26007,
+            174,
+            0,
+            0,
+            0
+        ],
+        "traits": [
+            25001,
+            20009,
+            21013,
+            20045
+        ],
+        "duplicate": false
+    },
+    {
+        "id": 2026005,
+        "baseDemonID": 1032,
+        "icon": "D3_02_012a",
+        "name": "Kin-Ki",
+        "title": "",
+        "family": "DEMONIAC",
+        "race": "BRUTE",
+        "gender": "MALE",
+        "alignment": "Chaos",
+        "lnc": 5300,
+        "baseLevel": 66,
+        "growthType": 205,
+        "inheritanceType": "8",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": true,
+            "Wings": false,
+            "Slam": true,
+            "Teeth": false,
+            "Claw": false,
+            "Needle": true,
+            "Weapon": true,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 48,
+            "fearThreshold": 58,
+            "personalityType": 6
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 15
+        },
+        "fusion": {
+            "difficulty": 0,
+            "fusionOption": "None",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 250,
+            "magic": 220,
+            "vitality": 85,
+            "intelligence": 200,
+            "speed": 90,
+            "luck": 70,
+            "maxHP": 600,
+            "maxMP": 9999,
+            "hpRegen": -1,
+            "mpRegen": 350,
+            "movement1": 40,
+            "movement2": 60,
+            "clsr": 29,
+            "lngr": 15,
+            "spell": 10,
+            "support": 8,
+            "critical": 40,
+            "summoningSpeed": 0,
+            "knockbackResist": 61,
+            "physicalDefense": 15,
+            "magicalDefense": 7,
+            "criticalDefense": 6,
+            "cooldownTime": 100,
+            "statusResistance": 100,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": 35,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": 100,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": 50,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": -50,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": -50,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": -50,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 100,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            656,
+            652,
+            638,
+            170021,
+            170022,
+            0,
+            0,
+            0
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            656,
+            652,
+            638,
+            170021,
+            170022,
+            0,
+            0,
+            0
+        ],
+        "traits": [
+            21002,
+            21009,
+            21006,
+            0
+        ],
+        "duplicate": false
+    },
+    {
+        "id": 2026006,
+        "baseDemonID": 1033,
+        "icon": "D3_02_013a",
+        "name": "Sui-Ki",
+        "title": "",
+        "family": "DEMONIAC",
+        "race": "BRUTE",
+        "gender": "MALE",
+        "alignment": "Chaos",
+        "lnc": 5300,
+        "baseLevel": 69,
+        "growthType": 205,
+        "inheritanceType": "7",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": true,
+            "Wings": false,
+            "Slam": true,
+            "Teeth": false,
+            "Claw": false,
+            "Needle": true,
+            "Weapon": true,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 48,
+            "fearThreshold": 58,
+            "personalityType": 6
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 17
+        },
+        "fusion": {
+            "difficulty": 0,
+            "fusionOption": "None",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 200,
+            "magic": 280,
+            "vitality": 65,
+            "intelligence": 240,
+            "speed": 100,
+            "luck": 70,
+            "maxHP": 600,
+            "maxMP": 9999,
+            "hpRegen": -1,
+            "mpRegen": 340,
+            "movement1": 40,
+            "movement2": 60,
+            "clsr": 15,
+            "lngr": 28,
+            "spell": 26,
+            "support": 13,
+            "critical": 25,
+            "summoningSpeed": 0,
+            "knockbackResist": 61,
+            "physicalDefense": 7,
+            "magicalDefense": 15,
+            "criticalDefense": 15,
+            "cooldownTime": 100,
+            "statusResistance": 100,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": 0,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": 35,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": 50,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 100,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            655,
+            651,
+            638,
+            170021,
+            170022,
+            0,
+            0,
+            0
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            655,
+            651,
+            638,
+            170021,
+            170022,
+            0,
+            0,
+            0
+        ],
+        "traits": [
+            21002,
+            21009,
+            21005,
+            0
+        ],
+        "duplicate": false
+    },
+    {
+        "id": 2026007,
+        "baseDemonID": 1034,
+        "icon": "D3_02_014a",
+        "name": "Fuu-Ki",
+        "title": "",
+        "family": "DEMONIAC",
+        "race": "BRUTE",
+        "gender": "MALE",
+        "alignment": "Chaos",
+        "lnc": 5300,
+        "baseLevel": 72,
+        "growthType": 205,
+        "inheritanceType": "9",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": true,
+            "Wings": false,
+            "Slam": true,
+            "Teeth": false,
+            "Claw": false,
+            "Needle": true,
+            "Weapon": true,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 48,
+            "fearThreshold": 58,
+            "personalityType": 6
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 19
+        },
+        "fusion": {
+            "difficulty": 0,
+            "fusionOption": "None",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 220,
+            "magic": 290,
+            "vitality": 70,
+            "intelligence": 240,
+            "speed": 75,
+            "luck": 70,
+            "maxHP": 600,
+            "maxMP": 9999,
+            "hpRegen": -1,
+            "mpRegen": 345,
+            "movement1": 40,
+            "movement2": 60,
+            "clsr": 27,
+            "lngr": 15,
+            "spell": 28,
+            "support": 10,
+            "critical": 35,
+            "summoningSpeed": 0,
+            "knockbackResist": 61,
+            "physicalDefense": 10,
+            "magicalDefense": 10,
+            "criticalDefense": 12,
+            "cooldownTime": 100,
+            "statusResistance": 100,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": 25,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": 35,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 100,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": 50,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 100,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            657,
+            653,
+            638,
+            170021,
+            170022,
+            0,
+            0,
+            0
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            657,
+            653,
+            638,
+            170021,
+            170022,
+            0,
+            0,
+            0
+        ],
+        "traits": [
+            21002,
+            21009,
+            21007,
+            0
+        ],
+        "duplicate": false
+    },
+    {
+        "id": 2026008,
+        "baseDemonID": 1021,
+        "icon": "D3_02_001a",
+        "name": "Ongyo-Ki",
+        "title": "",
+        "family": "DEMONIAC",
+        "race": "BRUTE",
+        "gender": "MALE",
+        "alignment": "Chaos",
+        "lnc": 5300,
+        "baseLevel": 91,
+        "growthType": 205,
+        "inheritanceType": "11",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": true,
+            "Wings": false,
+            "Slam": true,
+            "Teeth": false,
+            "Claw": false,
+            "Needle": true,
+            "Weapon": true,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 12,
+            "fearThreshold": 52,
+            "personalityType": 1
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 30
+        },
+        "fusion": {
+            "difficulty": 0,
+            "fusionOption": "None",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 280,
+            "magic": 300,
+            "vitality": 95,
+            "intelligence": 240,
+            "speed": 95,
+            "luck": 85,
+            "maxHP": 700,
+            "maxMP": 9999,
+            "hpRegen": -1,
+            "mpRegen": 420,
+            "movement1": 50,
+            "movement2": 70,
+            "clsr": 30,
+            "lngr": 20,
+            "spell": 26,
+            "support": 28,
+            "critical": 40,
+            "summoningSpeed": 0,
+            "knockbackResist": 61,
+            "physicalDefense": 15,
+            "magicalDefense": 2,
+            "criticalDefense": 10,
+            "cooldownTime": 100,
+            "statusResistance": 100,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": -100,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": -100,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": 0,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": -30,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": -50,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": 0,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": 75,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": 50,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": 35,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": 75,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 75,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 100,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 100,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            170016,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            170016,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "traits": [
+            21002,
+            21009,
+            0,
+            0
+        ],
+        "duplicate": false
+    },
+    {
+        "id": 2026009,
+        "baseDemonID": 569,
+        "icon": "D2_11_003a",
+        "name": "Black Frost",
+        "title": "The Mastermind",
+        "family": "MAGICA",
+        "race": "NOCTURNE",
+        "gender": "MALE",
+        "alignment": "Neutral",
+        "lnc": 3000,
+        "baseLevel": 98,
+        "growthType": 7,
+        "inheritanceType": "7",
+        "inheritanceRestrictions": {
+            "All": true,
+            "Breath": true,
+            "Wings": false,
+            "Slam": true,
+            "Teeth": false,
+            "Claw": false,
+            "Needle": true,
+            "Weapon": false,
+            "Impossible": false,
+            "Maiden": false,
+            "Unknown": true,
+            "Eyes": true
+        },
+        "negotiation": {
+            "affabilityThreshold": 87,
+            "fearThreshold": 67,
+            "personalityType": 10
+        },
+        "summon": {
+            "speed": 100,
+            "magnetiteModifier": 10
+        },
+        "fusion": {
+            "difficulty": 20,
+            "fusionOption": "SpecialFusion",
+            "fusionRates": [],
+            "mitamaFusionID": 0
+        },
+        "acquisition": {
+            "contract": false,
+            "fusion": false,
+            "specialFusion": false,
+            "eventReward": false,
+            "itemReward": false
+        },
+        "stats": {
+            "strength": 50,
+            "magic": 50,
+            "vitality": 50,
+            "intelligence": 50,
+            "speed": 50,
+            "luck": 50,
+            "maxHP": 999,
+            "maxMP": 999,
+            "hpRegen": -1,
+            "mpRegen": -1,
+            "movement1": 50,
+            "movement2": 50,
+            "clsr": 130,
+            "lngr": 130,
+            "spell": 130,
+            "support": 130,
+            "critical": 0,
+            "summoningSpeed": 0,
+            "knockbackResist": 255,
+            "physicalDefense": 0,
+            "magicalDefense": 0,
+            "criticalDefense": 0,
+            "cooldownTime": 100,
+            "statusResistance": 0,
+            "limitBreakChance": 0,
+            "limitBreakDamage": 200,
+            "finalCritChance": 0,
+            "defenseExpansion2": 0,
+            "chantTime": 100
+        },
+        "affinity": {
+            "Weapon": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Slash": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Thrust": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Blunt": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Projectile": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Penetrate": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Spread": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Fire": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Ice": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Electric": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Force": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Expel": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Death": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Almighty": {
+                "resist": 100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 100,
+                "boost": 0
+            },
+            "Curative": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Support": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mystic": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Nerve": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Mind": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "WSP": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Special": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Suicide": {
+                "resist": -100,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Default": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Physical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            },
+            "Magical": {
+                "resist": 0,
+                "null": 0,
+                "reflect": 0,
+                "absorb": 0,
+                "boost": 0
+            }
+        },
+        "rates": {
+            "experience": 100,
+            "magnetite": 0,
+            "macca": 0,
+            "expertise": 100,
+            "clsr": 100,
+            "lngr": 100,
+            "spell": 100,
+            "support": 100,
+            "heal": 100,
+            "clsrTaken": 100,
+            "lngrTaken": 100,
+            "spellTaken": 100,
+            "supportTaken": 100,
+            "healTaken": 100,
+            "character": 100,
+            "demon": 100,
+            "characterTaken": 100,
+            "demonTaken": 100
+        },
+        "skills": [
+            934,
+            935,
+            936,
+            937,
+            938,
+            939,
+            0,
+            0
+        ],
+        "acquiredSkills": [
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            },
+            {
+                "id": 0,
+                "level": 0
+            }
+        ],
+        "enemyOnlySkills": [
+            940,
+            941,
+            942,
+            0,
+            0,
+            0,
+            174,
+            846
+        ],
+        "traits": [
+            432,
+            21005,
+            22004,
+            26007
+        ],
+        "duplicate": false
     }
 ]
