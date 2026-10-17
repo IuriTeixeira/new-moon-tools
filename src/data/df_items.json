@@ -110951,7 +110951,7 @@
     {
         "icon": "38209",
         "id": 38209,
-        "name": "Demon Soul [Fafnir]",
+        "name": "Demon Soul (Fafnir) - Snipe",
         "boost_data": [
             {
                 "ID": 382091,
@@ -115223,6 +115223,222 @@
         "tokusei_description": [
             "\"Cosmic Needles\" damage +100%",
             "\"Cosmic Needles\" LB Cap is\nincreased by (LNGR x 1)"
+        ]
+    },
+    {
+        "icon": "38209",
+        "id": 55501,
+        "name": "Demon Soul (Fafnir) - Strike",
+        "boost_data": [
+            {
+                "ID": 545011,
+                "minLevel": -1,
+                "maxLevel": -1,
+                "growthType": -1,
+                "growthRank": -1,
+                "benefitGauge": -1,
+                "extraID": 10301,
+                "requirements": [
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    }
+                ],
+                "results": [
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    }
+                ]
+            }
+        ],
+        "tokusei_description": [
+            "Summoner Close-Range +60"
+        ]
+    },
+    {
+        "icon": "38209",
+        "id": 55502,
+        "name": "Demon Soul (Fafnir) - Ritual",
+        "boost_data": [
+            {
+                "ID": 545021,
+                "minLevel": -1,
+                "maxLevel": -1,
+                "growthType": -1,
+                "growthRank": -1,
+                "benefitGauge": -1,
+                "extraID": 10302,
+                "requirements": [
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    },
+                    {
+                        "type": "NONE",
+                        "value1": "-1",
+                        "value2": "-1",
+                        "value3": "-1",
+                        "value4": "-1"
+                    }
+                ],
+                "results": [
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    },
+                    {
+                        "type": "NONE",
+                        "minPoints": -1,
+                        "maxPoints": -1,
+                        "unused1": -1,
+                        "unused2": -1,
+                        "points": 0
+                    }
+                ]
+            }
+        ],
+        "tokusei_description": [
+            "Summoner Spell +60"
         ]
     }
 ]
