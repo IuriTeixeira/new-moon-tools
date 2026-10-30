@@ -474974,7 +474974,7 @@
         "name": "Luster Candy",
         "name2": "Luster Candy",
         "nameNO": "Luster Candy",
-        "description": "A special candy that \nholds support magic.\nThere is 90 days worth in this big set.\n\nFor 10 minutes from the time of use,\nCLS-R, LNG-R, magic, P Def, and M Def \nskills of surrounding party members \nand their demons are increased.\n\nThis effect is used in addition to -kaja\neffects without overwriting them.\n\n*Effects are overridden by \nothers use of Luster Candy.\n*Can be used once every 15 minutes.\n*Not affected by Cool Time changes.\n*Cannot be traded.",
+        "description": "A special candy that \nholds support magic.\nThere is 90 days worth in this big set.\n\nFor 10 minutes from the time of use,\nCLS-R, LNG-R, magic, P Def, and M Def \nof surrounding party members \nand their demons are increased by 10.\n\nThis effect is used in addition to -kaja\neffects without overwriting them.\n\n*Effects are overridden by \nothers use of Luster Candy.\n*Can be used once every 15 minutes.\n*Not affected by Cool Time changes.\n*Cannot be traded.",
         "equipType": "None",
         "weaponType": "NONE",
         "mainCategory": "Consumable",
@@ -1002954,7 +1002954,7 @@
         "name": "DP Incense (small, nontrade)",
         "name2": "DP Incense (small, nontrade)",
         "nameNO": "DP Incense (Sm., Bound)",
-        "description": "使用してから３０分間、自分自身の\nデジタライズポイント獲得量が\n１００％上昇する。\n\n※同じアイテム、もしくはより効果の高い\n　ＤＰの香の重複使用は上書きされる。\n※ＤＰの香以外の\n　デジタライズポイント獲得量が上昇する\n　アイテムの重複使用で上書きされない。",
+        "description": "ncreases your Digitalize \nPoint gain by 100% for 30 minutes after use.\n\n*Using this item again, or using a \nstronger DP Incense, will overwrite \nthe effect.\n*Using other items that increase \nDigitalize Point gain will not\noverwrite this effect.",
         "equipType": "None",
         "weaponType": "NONE",
         "mainCategory": "Consumable",
@@ -1087439,8 +1087439,8 @@
             }
         ],
         "flags": {
-            "trade": true,
-            "bazaar": true,
+            "trade": false,
+            "bazaar": false,
             "sell": true,
             "discard": true,
             "store": true,
@@ -1087449,7 +1087449,7 @@
             "repair": true,
             "tarot": true,
             "soulstone": true,
-            "unknown": false,
+            "unknown": true,
             "spiritualInfusion": false,
             "spiritualInfusionCrystal": false
         }
