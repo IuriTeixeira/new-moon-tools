@@ -35,6 +35,9 @@
 			<div v-if="info.expertise" class="expertise-requirement subtitle is-7">
 				<strong>Required Expertise:</strong> {{ info.expertise }}
 			</div>
+			<div class="expertise-requirement subtitle is-7">
+				<strong>Expertise Category:</strong> {{ info.expertCategory }}
+			</div>
 		</div>
 	</div>
 </template>
@@ -195,7 +198,9 @@ export default {
 				this.skill.skillFlags.fixedCooldown ? body.push(` • Cooldown: ${this.skill.cooldown / 1000}s (fixed)\n`) : body.push(` • Cooldown: ${this.skill.cooldown / 1000}s\n`)
 			}
 
-			return { family, expertise, body };
+			const expertCategory = this.skill.expertCategory;
+
+			return { family, expertise, expertCategory, body };
 		},
 
 	}
