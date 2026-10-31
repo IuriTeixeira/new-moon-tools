@@ -15,7 +15,12 @@ export default {
 
     getByName(name = '') {
         const feature = storage.find((item) => {
-            return item.name.toLowerCase() == name.toLowerCase() && item.family === "Demonic Feature"
+            return (
+                item.name.toLowerCase() == name.toLowerCase()
+                ||
+                item.nameNO.toLowerCase() == name.toLowerCase()
+            )
+            //&& item.family === "Demonic Feature"
         })
 
         return feature;
@@ -29,8 +34,16 @@ export default {
 
     searchByName(name = '') {
         if (name != '') {
-            let features = storage.filter(function (item) {
-                return item.name != null && item.name.length > 0 && item.name.toLowerCase().includes(name.toLowerCase()) && item.family === "Demonic Feature"
+            let features = storage.filter(function (feat) {
+                return feat.name != null
+                    && feat.name.length > 0
+                    &&
+                    (
+                        feat.name.toLowerCase().includes(name.toLowerCase())
+                        ||
+                        feat.nameNO.toLowerCase().includes(name.toLowerCase())
+                    )
+                //&& item.family === "Demonic Feature"
             })
             return features;
         }

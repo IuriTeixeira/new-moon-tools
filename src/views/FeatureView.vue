@@ -48,10 +48,15 @@ async function findFeatures() {
         featureService.searchByName(filterByFeatureName.value)
     )
 
-    // Apply the same filters used for allSkills
-    results.value = (found ?? []).filter(
-        feat => feat.family === "Demonic Feature"
-    )
+    const query = filterByFeatureName.value.toLowerCase()
+
+    // Filter by family AND check if name OR nameNO matches
+    results.value = (found ?? []).filter(feat => {
+        const foundName = feat.name?.toLowerCase().includes(query)
+        const foundNameNO = feat.nameNO?.toLowerCase().includes(query)
+
+        return foundName || foundNameNO
+    })
 }
 
 // Filtered skills
