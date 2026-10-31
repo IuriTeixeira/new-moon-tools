@@ -29,6 +29,7 @@ function isValidSkill(skill) {
   if (name) {
     if (name.includes("【ＧＭ】")) return false;
     if (name.toLowerCase().includes("debug")) return false;
+    if (skill.nameNO?.toLowerCase().includes("debug")) return  false;
   }
 
   if (skill.description?.toLowerCase().includes("fusion skill")) return false;
@@ -82,7 +83,7 @@ async function findSkills() {
 
   // Search locally against the pre-filtered computed list
   results.value = allSkills.value.filter(skill =>
-    skill.name?.toLowerCase().includes(query)
+    skill.name?.toLowerCase().includes(query) || skill.nameNO?.toLowerCase().includes(query)
   );
 }
 
