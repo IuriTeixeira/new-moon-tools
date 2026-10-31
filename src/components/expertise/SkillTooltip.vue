@@ -3,12 +3,19 @@
 		<div class="card-content">
 			<div class="media">
 				<div class="media-left">
-					<figure class="image is-48x48">
+					<figure class="image is-64x64 image-margin">
 						<img :src="'./img/skill/' + skill.icon + '.png'" :alt="skill.name" @error="handleImageError">
 					</figure>
 				</div>
 				<div class="media-content">
 					<p class="title is-5">{{ skill.name }}</p>
+					<div v-if="skill.nameNO !== ''"
+						class="subtitle is-7 expertise-requirement is-flex is-align-items-center">
+						<figure class="image is-36x36 m-0">
+							<img :src="'./img/NO_icon.png'" alt="New Order" class="is-square">
+						</figure>
+						<strong>{{ skill.nameNO }}</strong>
+					</div>
 					<div class="subtitle is-7">
 						{{ info.family }}
 					</div>
@@ -245,5 +252,9 @@ export default {
 	.media-left {
 		margin-right: 0;
 	}
+}
+
+.image-margin {
+	margin-right: 10px;
 }
 </style>

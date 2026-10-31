@@ -26447,7 +26447,7 @@
     {
         "id": 849,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -26492,7 +26492,7 @@
     {
         "id": 850,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -26844,7 +26844,7 @@
     {
         "id": 857,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -31925,7 +31925,7 @@
     {
         "id": 966,
         "name": "Super Status Null",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -47450,7 +47450,7 @@
     {
         "id": 5127,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -55530,7 +55530,7 @@
     {
         "id": 5356,
         "name": "Fusion・Entity",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "FusionEntity",
         "description": "Passive skill.\n\n・ If the summoned partner is of the 『Entity』 race, Fusion skills gain additional LB Cap equal to 30% of the partner’s total LB Cap bonus.",
         "affinity": "Special",
@@ -60044,7 +60044,7 @@
     {
         "id": 170032,
         "name": "Thunder Bullet Hole",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0022a",
         "description": "Vajrayaksa Myo-O mantra magic shot. Changes bullet to electric-based and inflicts Electrification effect at a low success rate.\nModifier: 175 | Stiffness: 700",
         "affinity": "Electric",
@@ -69665,7 +69665,7 @@
     {
         "id": 5685,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -69705,7 +69705,7 @@
     {
         "id": 5686,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -69745,7 +69745,7 @@
     {
         "id": 5687,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -69785,7 +69785,7 @@
     {
         "id": 5688,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -69825,7 +69825,7 @@
     {
         "id": 5689,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -69865,7 +69865,7 @@
     {
         "id": 5690,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -69905,7 +69905,7 @@
     {
         "id": 5691,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -69945,7 +69945,7 @@
     {
         "id": 5692,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -69985,7 +69985,7 @@
     {
         "id": 5693,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -70025,7 +70025,7 @@
     {
         "id": 5694,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -70065,7 +70065,7 @@
     {
         "id": 5695,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -70105,7 +70105,7 @@
     {
         "id": 5696,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -70145,7 +70145,7 @@
     {
         "id": 5697,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -70185,7 +70185,7 @@
     {
         "id": 5698,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -70225,7 +70225,7 @@
     {
         "id": 5699,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -71877,7 +71877,7 @@
     {
         "id": 5740,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -71924,7 +71924,7 @@
     {
         "id": 5741,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -71971,7 +71971,7 @@
     {
         "id": 5742,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -72018,7 +72018,7 @@
     {
         "id": 5743,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -72065,7 +72065,7 @@
     {
         "id": 5744,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -72112,7 +72112,7 @@
     {
         "id": 5745,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -72159,7 +72159,7 @@
     {
         "id": 5746,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -72206,7 +72206,7 @@
     {
         "id": 5747,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -76053,7 +76053,7 @@
     {
         "id": 5844,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -76093,7 +76093,7 @@
     {
         "id": 5847,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -77733,7 +77733,7 @@
     {
         "id": 5888,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -124609,7 +124609,7 @@
     {
         "id": 130105,
         "name": "Grace of Fuki Dodge",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "leafDodge",
         "description": "The user gets in a Dodge stance that nullifies Shot and Rapid damage, deals Almighty damage and reduces the elemental resistances of the opponent.\nModifier: 300 | Stiffness: 1000",
         "affinity": "Almighty",
@@ -124673,7 +124673,7 @@
     {
         "id": 103109,
         "name": "虚無への閃光",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD22_0043a",
         "description": "Modifier: 2525 | Stiffness: 1280",
         "affinity": "Almighty",
@@ -124726,7 +124726,7 @@
     {
         "id": 130108,
         "name": "Murderous Secret 4",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SK_pyrojack",
         "description": "Passive skill.\n\n・LB Upper Limit Increase +3500",
         "affinity": "Special",
@@ -124766,7 +124766,7 @@
     {
         "id": 103110,
         "name": "無尽無辺光",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0131a",
         "description": "Modifier: 30000 | Stiffness: 2500",
         "affinity": "Almighty",
@@ -124819,7 +124819,7 @@
     {
         "id": 130109,
         "name": "Damage Dealt Down",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0035a",
         "description": "Modifier: 200 | Stiffness: 1000",
         "affinity": "Almighty",
@@ -124877,7 +124877,7 @@
     {
         "id": 130110,
         "name": "Movement Speed Down",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0035a",
         "description": "Modifier: 200 | Stiffness: 1000",
         "affinity": "Almighty",
@@ -124935,7 +124935,7 @@
     {
         "id": 130111,
         "name": "Incantation Time Up",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0035a",
         "description": "Modifier: 200 | Stiffness: 1000",
         "affinity": "Almighty",
@@ -124993,7 +124993,7 @@
     {
         "id": 130112,
         "name": "Change BGM",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0103a",
         "description": "Play some music from your COMP to change the current zone's BGM. \nThis effect only lasts while you're in the zone and will not replace the zone's battle track.",
         "affinity": "Support",
@@ -125033,7 +125033,7 @@
     {
         "id": 130114,
         "name": "Change BGM 2",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0145a",
         "description": "Electric Boogaloo",
         "affinity": "Support",
@@ -125073,7 +125073,7 @@
     {
         "id": 130115,
         "name": "EnvAttack0",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Almighty",
@@ -125113,7 +125113,7 @@
     {
         "id": 130116,
         "name": "Slimeify",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM12_0021a",
         "description": "You're now a Mara Slime.",
         "affinity": "WSP",
@@ -125160,7 +125160,7 @@
     {
         "id": 130117,
         "name": "Special WSP Attack",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 100 | Stiffness: 750",
         "affinity": "WSP",
@@ -125200,7 +125200,7 @@
     {
         "id": 130118,
         "name": "Support-based Mazandyne",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM10_0024a",
         "description": "Discharges force suddenly and inflicts force damage and effect on all enemies in range. Damage will not affect spellcast, but knockback can.\nModifier: 450 | Stiffness: 440",
         "affinity": "Force",
@@ -125252,7 +125252,7 @@
     {
         "id": 130119,
         "name": "Miasma Shot Enemy",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM10_0025a",
         "description": "Destructive magic with apocalyptic results. Inflicts almighty-based damage on an enemy.\nModifier: 120 | Stiffness: 980",
         "affinity": "Almighty",
@@ -125304,7 +125304,7 @@
     {
         "id": 130121,
         "name": "Protection Spell",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0044a",
         "description": "Two tetrakarn stacks and heal.\nModifier: 250 | Stiffness: 980",
         "affinity": "Support",
@@ -125360,7 +125360,7 @@
     {
         "id": 130122,
         "name": "True Tarunda",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM12_0008a",
         "description": "Isolates a single enemy from the Assiah, temporarily lowering the power of its physical skills. Can be applied up to 4 times at once.\nModifier: 1 | Stiffness: 980",
         "affinity": "Special",
@@ -125412,7 +125412,7 @@
     {
         "id": 130123,
         "name": "True Makanda",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM12_0009a",
         "description": "Isolates a single enemy from the Atziluth, temporarily lowering the power of its magical skills. Can be applied up to 4 times at once.\nModifier: 1 | Stiffness: 980",
         "affinity": "Special",
@@ -125464,7 +125464,7 @@
     {
         "id": 130124,
         "name": "True Sukunda",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM12_0010a",
         "description": "Isolates one of target from the realm of Atziluth and temporarily lowers an enemy resistance to critical hit. Can be multiplied up to 4 times.\nModifier: 1 | Stiffness: 980",
         "affinity": "Special",
@@ -125516,7 +125516,7 @@
     {
         "id": 130125,
         "name": "True Rakunda",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM12_0011a",
         "description": "Disrupts one enemy's connection to the Assiah, temporarily lowering their physical defense. Can be applied up to 4 times at once.\nModifier: 1 | Stiffness: 980",
         "affinity": "Special",
@@ -125568,7 +125568,7 @@
     {
         "id": 130126,
         "name": "True Samanda",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM12_0012a",
         "description": "Disrupts one enemy's connection to the Atziluth, temporarily lowering their magical defense. Can be applied up to 4 times at once.\nModifier: 1 | Stiffness: 980",
         "affinity": "Special",
@@ -125620,7 +125620,7 @@
     {
         "id": 130127,
         "name": "Dissolve",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Deals support-based Nerve damage.\nModifier: 10 | Stiffness: 1150",
         "affinity": "Nerve",
@@ -125660,7 +125660,7 @@
     {
         "id": 130128,
         "name": "Support-based Mabufudyne",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM10_0012a",
         "description": "Pours a rain of hail on an enemy and inflicts ice-based damage and effect. Damage will not affect spellcast, but knockback can.\nModifier: 450 | Stiffness: 1180",
         "affinity": "Ice",
@@ -125712,7 +125712,7 @@
     {
         "id": 130129,
         "name": "Support-based Ice Breath",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0013a",
         "description": "Special skill. Sprays a freezing blast on all enemies in front of the user, inflicting ice-based damage and Frozen effect.\nModifier: 800 | Stiffness: 980",
         "affinity": "Ice",
@@ -125764,7 +125764,7 @@
     {
         "id": 130130,
         "name": "Weapon Break Hex",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0030a",
         "description": "Deals extremely high durability damage to weapons.\nModifier: 666 | Stiffness: 1000",
         "affinity": "WSP",
@@ -125811,7 +125811,7 @@
     {
         "id": 130132,
         "name": "Alm Support Rush with Death Poison",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0043a",
         "description": "Modifier: 350 | Stiffness: 1600",
         "affinity": "Almighty",
@@ -125869,7 +125869,7 @@
     {
         "id": 130133,
         "name": "God Arrow MK2",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 777 | Stiffness: 800",
         "affinity": "Almighty",
@@ -125927,7 +125927,7 @@
     {
         "id": 130134,
         "name": "Improved Vinyl Strike",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0126a",
         "description": "Enemy-only support-based variant of Vinyl Strike that also inflicts Shock.\nModifier: 450 | Stiffness: 1600",
         "affinity": "Suicide",
@@ -125979,7 +125979,7 @@
     {
         "id": 130135,
         "name": "WSP Empowered Cup of Babylon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0127a",
         "description": "Modifier: 215 | Stiffness: 1500",
         "affinity": "WSP",
@@ -126039,7 +126039,7 @@
     {
         "id": 130136,
         "name": "Support WSP Megidoraon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SM10_0027a",
         "description": "Modifier: 700 | Stiffness: 980",
         "affinity": "WSP",
@@ -126092,7 +126092,7 @@
     {
         "id": 130141,
         "name": "Player Cameo: Hua Po",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as a Hua Po.",
         "affinity": "Support",
@@ -126132,7 +126132,7 @@
     {
         "id": 130142,
         "name": "Demon Cameo: Hua Po",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as a Hua Po.",
         "affinity": "Support",
@@ -126172,7 +126172,7 @@
     {
         "id": 130143,
         "name": "Player Cameo: Mothman",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as a Mothman.",
         "affinity": "Support",
@@ -126212,7 +126212,7 @@
     {
         "id": 130144,
         "name": "Demon Cameo: Mothman",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as a Mothman.",
         "affinity": "Support",
@@ -126252,7 +126252,7 @@
     {
         "id": 130145,
         "name": "Player Cameo: Cerberus",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as a Cerberus.",
         "affinity": "Support",
@@ -126292,7 +126292,7 @@
     {
         "id": 130146,
         "name": "Demon Cameo: Cerberus",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as a Cerberus.",
         "affinity": "Support",
@@ -126332,7 +126332,7 @@
     {
         "id": 130147,
         "name": "Player Cameo: Nyx",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Nyx.",
         "affinity": "Support",
@@ -126372,7 +126372,7 @@
     {
         "id": 130148,
         "name": "Demon Cameo: Nyx",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Nyx.",
         "affinity": "Support",
@@ -126412,7 +126412,7 @@
     {
         "id": 130149,
         "name": "Player Cameo: Alice",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Alice.",
         "affinity": "Support",
@@ -126452,7 +126452,7 @@
     {
         "id": 130150,
         "name": "Demon Cameo: Alice",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Alice.",
         "affinity": "Support",
@@ -126492,7 +126492,7 @@
     {
         "id": 130151,
         "name": "Player Cameo: Jack Frost",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Jack Frost.",
         "affinity": "Support",
@@ -126532,7 +126532,7 @@
     {
         "id": 130152,
         "name": "Demon Cameo: Jack Frost",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Jack Frost.",
         "affinity": "Support",
@@ -126572,7 +126572,7 @@
     {
         "id": 130153,
         "name": "Player Cameo: Pyro Jack",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Pyro Jack.",
         "affinity": "Support",
@@ -126612,7 +126612,7 @@
     {
         "id": 130154,
         "name": "Demon Cameo: Pyro Jack",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Pyro Jack.",
         "affinity": "Support",
@@ -126652,7 +126652,7 @@
     {
         "id": 130155,
         "name": "Player Cameo: Black Frost",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Black Frost.",
         "affinity": "Support",
@@ -126692,7 +126692,7 @@
     {
         "id": 130156,
         "name": "Demon Cameo: Black Frost",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Black Frost.",
         "affinity": "Support",
@@ -126732,7 +126732,7 @@
     {
         "id": 130157,
         "name": "Player Cameo: Clotho",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Clotho.",
         "affinity": "Support",
@@ -126772,7 +126772,7 @@
     {
         "id": 130158,
         "name": "Demon Cameo: Clotho",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Clotho.",
         "affinity": "Support",
@@ -126812,7 +126812,7 @@
     {
         "id": 130159,
         "name": "Player Cameo: Lachesis",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Lachesis.",
         "affinity": "Support",
@@ -126852,7 +126852,7 @@
     {
         "id": 130160,
         "name": "Demon Cameo: Lachesis",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Lachesis.",
         "affinity": "Support",
@@ -126892,7 +126892,7 @@
     {
         "id": 130161,
         "name": "Player Cameo: Atropos",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Atropos.",
         "affinity": "Support",
@@ -126932,7 +126932,7 @@
     {
         "id": 130162,
         "name": "Demon Cameo: Atropos",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Atropos.",
         "affinity": "Support",
@@ -126972,7 +126972,7 @@
     {
         "id": 130163,
         "name": "Player Cameo: Ara Mitama",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Ara Mitama.",
         "affinity": "Support",
@@ -127012,7 +127012,7 @@
     {
         "id": 130164,
         "name": "Demon Cameo: Ara Mitama",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Ara Mitama.",
         "affinity": "Support",
@@ -127052,7 +127052,7 @@
     {
         "id": 130165,
         "name": "Player Cameo: Nigi Mitama",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Nigi Mitama.",
         "affinity": "Support",
@@ -127092,7 +127092,7 @@
     {
         "id": 130166,
         "name": "Demon Cameo: Nigi Mitama",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Nigi Mitama.",
         "affinity": "Support",
@@ -127132,7 +127132,7 @@
     {
         "id": 130167,
         "name": "Player Cameo: Kusi Mitama",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Kusi Mitama.",
         "affinity": "Support",
@@ -127172,7 +127172,7 @@
     {
         "id": 130168,
         "name": "Demon Cameo: Kushi Mitama",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Kushi Mitama.",
         "affinity": "Support",
@@ -127212,7 +127212,7 @@
     {
         "id": 130169,
         "name": "Player Cameo: Saki Mitama",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Saki Mitama.",
         "affinity": "Support",
@@ -127252,7 +127252,7 @@
     {
         "id": 130170,
         "name": "Demon Cameo: Saki Mitama",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Saki Mitama.",
         "affinity": "Support",
@@ -127292,7 +127292,7 @@
     {
         "id": 130171,
         "name": "Player Cameo: Matador",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Matador.",
         "affinity": "Support",
@@ -127332,7 +127332,7 @@
     {
         "id": 130172,
         "name": "Demon Cameo: Matador",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Matador.",
         "affinity": "Support",
@@ -127372,7 +127372,7 @@
     {
         "id": 130173,
         "name": "Player Cameo: David",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as David.",
         "affinity": "Support",
@@ -127412,7 +127412,7 @@
     {
         "id": 130174,
         "name": "Demon Cameo: David",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as David.",
         "affinity": "Support",
@@ -127452,7 +127452,7 @@
     {
         "id": 130175,
         "name": "Player Cameo: Hell Biker",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Hell Biker.",
         "affinity": "Support",
@@ -127492,7 +127492,7 @@
     {
         "id": 130176,
         "name": "Demon Cameo: Hell Biker",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Hell Biker.",
         "affinity": "Support",
@@ -127532,7 +127532,7 @@
     {
         "id": 130177,
         "name": "Player Cameo: Daisoujou",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise yourself as Daisoujou.",
         "affinity": "Support",
@@ -127572,7 +127572,7 @@
     {
         "id": 130178,
         "name": "Demon Cameo: Daisoujou",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Disguise your partner as Daisoujou.",
         "affinity": "Support",
@@ -127612,7 +127612,7 @@
     {
         "id": 130179,
         "name": "Secret of Spread・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SpreadLB",
         "description": "Passive skill.\n\n・When using spread affinity skills: 　\tLimit Break chance +40%\n・When using spread affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -127652,7 +127652,7 @@
     {
         "id": 130180,
         "name": "Secret of Spread・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SpreadTA",
         "description": "Passive skill.\n\n・When using spread affinity skills: 　\tTechnical Attack chance +40%\n・When using spread affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -127692,7 +127692,7 @@
     {
         "id": 130181,
         "name": "Secret of Spread・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SpreadFCC",
         "description": "Passive skill.\n\n・When using spread affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -127732,7 +127732,7 @@
     {
         "id": 130182,
         "name": "Secret of Penetrate・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "PenetrateLB",
         "description": "Passive skill.\n\n・When using penetrate affinity skills: 　\tLimit Break chance +40%\n・When using penetrate affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -127772,7 +127772,7 @@
     {
         "id": 130183,
         "name": "Secret of Penetrate・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "PenetrateTA",
         "description": "Passive skill.\n\n・When using penetrate affinity skills: 　\tTechnical Attack chance +40%\n・When using penetrate affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -127812,7 +127812,7 @@
     {
         "id": 130184,
         "name": "Secret of Penetrate・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "PenetrateFCC",
         "description": "Passive skill.\n\n・When using penetrate affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -127852,7 +127852,7 @@
     {
         "id": 130185,
         "name": "Secret of Handgun・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "HandgunLB",
         "description": "Passive skill.\n\n・When using handgun affinity skills: 　\tLimit Break chance +40%\n・When using handgun affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -127892,7 +127892,7 @@
     {
         "id": 130186,
         "name": "Secret of Handgun・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "HandgunTA",
         "description": "Passive skill.\n\n・When using handgun affinity skills: 　\tTechnical Attack chance +40%\n・When using handgun affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -127932,7 +127932,7 @@
     {
         "id": 130187,
         "name": "Secret of Handgun・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "HandgunFCC",
         "description": "Passive skill.\n\n・When using Handgun affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -127972,7 +127972,7 @@
     {
         "id": 130188,
         "name": "Secret of Blunt・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "BluntLB",
         "description": "Passive skill.\n\n・When using blunt affinity skills: 　\tLimit Break chance +40%\n・When using blunt affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -128012,7 +128012,7 @@
     {
         "id": 130189,
         "name": "Secret of Blunt・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "BluntTA",
         "description": "Passive skill.\n\n・When using blunt affinity skills: 　\tTechnical Attack chance +40%\n・When using blunt affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -128052,7 +128052,7 @@
     {
         "id": 130190,
         "name": "Secret of Blunt・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "BluntFCC",
         "description": "Passive skill.\n\n・When using blunt affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -128092,7 +128092,7 @@
     {
         "id": 130191,
         "name": "Secret of Thrust・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ThrustLB",
         "description": "Passive skill.\n\n・When using thrust affinity skills: 　\tLimit Break chance +40%\n・When using thrust affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -128132,7 +128132,7 @@
     {
         "id": 130192,
         "name": "Secret of Thrust・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ThrustTA",
         "description": "Passive skill.\n\n・When using thrust affinity skills: 　\tTechnical Attack chance +40%\n・When using thrust affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -128172,7 +128172,7 @@
     {
         "id": 130193,
         "name": "Secret of Thrust・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ThrustFCC",
         "description": "Passive skill.\n\n・When using thrust affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -128212,7 +128212,7 @@
     {
         "id": 130194,
         "name": "Secret of Slash・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SlashLB",
         "description": "Passive skill.\n\n・When using slash affinity skills: 　\tLimit Break chance +40%\n・When using slash affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -128252,7 +128252,7 @@
     {
         "id": 130195,
         "name": "Secret of Slash・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SlashTA",
         "description": "Passive skill.\n\n・When using slash affinity skills: 　\tTechnical Attack chance +40%\n・When using slash affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -128292,7 +128292,7 @@
     {
         "id": 130196,
         "name": "Secret of Slash・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SlashFCC",
         "description": "Passive skill.\n\n・When using slash affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -128332,7 +128332,7 @@
     {
         "id": 130197,
         "name": "Secret of Mind・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MindLB",
         "description": "Passive skill.\n\n・When using mind affinity skills: 　\tLimit Break chance +40%\n・When using mind affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -128372,7 +128372,7 @@
     {
         "id": 130198,
         "name": "Secret of Mind・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MindTA",
         "description": "Passive skill.\n\n・When using mind affinity skills: 　\tTechnical Attack chance +40%\n・When using mind affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -128412,7 +128412,7 @@
     {
         "id": 130199,
         "name": "Secret of Mind・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MindFCC",
         "description": "Passive skill.\n\n・When using mind affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -128452,7 +128452,7 @@
     {
         "id": 130200,
         "name": "Secret of Nerve・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "NerveLB",
         "description": "Passive skill.\n\n・When using nerve affinity skills: 　\tLimit Break chance +40%\n・When using nerve affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -128492,7 +128492,7 @@
     {
         "id": 130201,
         "name": "Secret of Nerve・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "NerveTA",
         "description": "Passive skill.\n\n・When using nerve affinity skills: 　\tTechnical Attack chance +40%\n・When using nerve affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -128532,7 +128532,7 @@
     {
         "id": 130202,
         "name": "Secret of Nerve・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "NerveFCC",
         "description": "Passive skill.\n\n・When using nerve affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -128572,7 +128572,7 @@
     {
         "id": 130203,
         "name": "Secret of Mystic・Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MysticLB",
         "description": "Passive skill.\n\n・When using mystic affinity skills: 　\tLimit Break chance +40%\n・When using mystic affinity skills: 　\tLimit Break power +40%",
         "affinity": "Special",
@@ -128612,7 +128612,7 @@
     {
         "id": 130204,
         "name": "Secret of Mystic・Spiral",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MysticTA",
         "description": "Passive skill.\n\n・When using mystic affinity skills: 　\tTechnical Attack chance +40%\n・When using mystic affinity skills: Technical Attack power +40%",
         "affinity": "Special",
@@ -128652,7 +128652,7 @@
     {
         "id": 130205,
         "name": "Secret of Mystic・Deathblow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MysticFCC",
         "description": "Passive skill.\n\n・When using mystic affinity skills: 　Final Critical correction +40%",
         "affinity": "Special",
@@ -128692,7 +128692,7 @@
     {
         "id": 130211,
         "name": "Black Sun",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0131a",
         "description": "錬金術の変容の三段階、その一段階目で 敢えて止め、対象を腐敗させる特殊スキル。\n使用者の周囲にいる敵に対して、 近接攻撃力、射撃攻撃力、魔法効果量の 全てを加味した 魔法ダメージを与えると共に、 低確率で即死させる。\n更に、高確率で対象に9～15秒間、 黒化の状態変化を付与する。\nこのスキルは、 ダメージによって詠唱を中断されず、 ノックバックによって詠唱を止められる。\nModifier: 160 | Stiffness: 2500",
         "affinity": "Almighty",
@@ -128754,7 +128754,7 @@
     {
         "id": 130214,
         "name": "Grand Tack (Force)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GrandTack",
         "description": "Deals force damage to all enemies around the target.\nUnder\n[Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Force resistance by 10% per shot (50% at max stack). (Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
         "affinity": "Force",
@@ -128807,7 +128807,7 @@
     {
         "id": 130215,
         "name": "Thor's Attack",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0019a",
         "description": "Modifier: 20 | Stiffness: 750",
         "affinity": "WSP",
@@ -128863,7 +128863,7 @@
     {
         "id": 130216,
         "name": "Thor's Digi Break AOE",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0127a",
         "description": "Modifier: 369 | Stiffness: 4000",
         "affinity": "WSP",
@@ -128910,7 +128910,7 @@
     {
         "id": 130217,
         "name": "Lightning Cannon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD04_0012a",
         "description": "Shots Lighting Cannon and inflicts electric-based damage on an enemy. Slow moving shot.\nModifier: 600 | Stiffness: 1500",
         "affinity": "WSP",
@@ -128966,7 +128966,7 @@
     {
         "id": 130222,
         "name": "Palladium",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SK_16569",
         "description": "Damages all enemies in a straight line. Grants the user a buff that raises their Ailment Resistance by 20 and Critical Defense by 100 for 1 minute.\nModifier: 200 | Stiffness: 750",
         "affinity": "Nerve",
@@ -129006,7 +129006,7 @@
     {
         "id": 130223,
         "name": "Thorman Thunder Attack",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -129051,7 +129051,7 @@
     {
         "id": 130224,
         "name": "ICBM Detonation",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "WSP",
@@ -129096,7 +129096,7 @@
     {
         "id": 130505,
         "name": "Yo-Yo Blast",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SK_8167",
         "description": "Deals Force damage to all targets in range.\nGrants a stack of Wind Up on use, raising your Force Limit Break Cap by 100 per stack, up to 20 stacks.\nModifier: 250 | Stiffness: 1180",
         "affinity": "Force",
@@ -129154,7 +129154,7 @@
     {
         "id": 130504,
         "name": "Delinquent Juggernaut",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SK_8168",
         "description": "Resilience developed after suffering multiple physical traumas.\n\n・Max HP +400\n・Close-range Damage Dealt +25%\n・Slash Resistance +50%\n・Blunt Resistance +50%",
         "affinity": "Special",
@@ -129194,7 +129194,7 @@
     {
         "id": 130603,
         "name": "Fairy Trance",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "I99_130603",
         "description": "Using the staff, both the user and their fairy partner are energized.\nWhen using Spell Runner, damage dealt is increased by 25% and Limit Break Cap is increased by 2500.\nIf your partner belongs to the Fairy race, their movement speed is increased by 10% and they gain +25% Null Mystic.",
         "affinity": "Special",
@@ -129234,7 +129234,7 @@
     {
         "id": 160615,
         "name": "Grand Tack (Fire)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GrandTackFire",
         "description": "Deals fire damage to all enemies around the target.\nUnder\n[Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Fire resistance by 10% per shot (50% at max stack). (Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
         "affinity": "Fire",
@@ -129287,7 +129287,7 @@
     {
         "id": 130607,
         "name": "Grand Tack (Ice)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GrandTackIce",
         "description": "Deals ice damage to all enemies around the target.\nUnder\n[Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Ice resistance by 10% per shot (50% at max stack). Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
         "affinity": "Ice",
@@ -129340,7 +129340,7 @@
     {
         "id": 130608,
         "name": "Grand Tack (Electric)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GrandTackElec",
         "description": "Deals Electric damage to all enemies around the target.\nUnder\n[Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Electric resistance by 10% per shot (50% at max stack). Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
         "affinity": "Electric",
@@ -129393,7 +129393,7 @@
     {
         "id": 160610,
         "name": "Dyne Accel",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "DyneAccel",
         "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n. +3 extra skill stacks to Agidyne, Bufudyne, Ziodyne, Zandyne, Maragidyne, Mabufudyne, Maziodyne and Mazandyne\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When\n[Full Momentum] is active, casting -dyne spells from Destruction Magic and Essence of Magic skills (except Ethereal Greatsword) will also grant\n[Arcane Overdrive] of its respective affinity for 30 seconds.\n• When Sanctuary (Enhancement) is active, have 5% chance to trigger\n[Inspiring Presence] on the user when using -dyne spells from Destruction Magic and Essence of Magic skills (except Ethereal Greatsword).\n[Penalty]\n. -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Fire/Ice/Electric/Force/Mystic affinity and affinity cap is increased by +5%.\n• When Enhancement is Class 8-0+, Limit Break Cap increased by the user's (Spell x 1).",
         "affinity": "Special",
@@ -129440,7 +129440,7 @@
     {
         "id": 160612,
         "name": "Megi Accel",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MegiAccel",
         "description": "Switch Skill (can be toggled on/off).\n[Bonus]\n. +3 extra skill stacks to Megido, Megidora and Megidoraon\n• When Essence of Magic is Class 8-0 or higher, reduces Stiffness by 150 for these skills.\n• When\n[Full Momentum] is active, casting Megido and Megidora will also grant [Arcane Overdrive: Almighty] for 30 seconds.\n• When Sanctuary (Enhancement) is active, have 5% chance to trigger\n[Inspiring Presence] on the user when using Megido and Megidora.\n[Penalty]\n. -25% Incantation\n• Max MP -10%\n[Arcane Overdrive]\nFor all nearby party members, \n• Almighty affinity and affinity cap is increased by +5%\n• When Enhancement is Class 8-0+, Almighty Limit Break Cap is increased by their (Spell x 1).",
         "affinity": "Special",
@@ -129487,7 +129487,7 @@
     {
         "id": 160613,
         "name": "Concentrate",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "Concentrate",
         "description": "Empowers the user's magic abilities while draining their MP indefinitely.\n[Concentrated]:\n. +50% Spell Damage\n• Null all conventional \"Mute\" and \"Muddle\" status\n• When using any Destruction Magic, UB Dora Crush, Essence of Magic, and Demolition Dash, Limit Break Cap is increased by (Spell x 1.7).\n• Megidolaon and UB Dora Crush deals additional LB Cap Damage by (Spell x Number of\n[Momentum] stack).\n• The usage of Megidolaon and UB Dora Crush while on\n[Momentum] will grant\n[Ethereal] buff of the current\n[Momentum]'s affinity for 180 secs.\n• Destruction Magic and UB Dora Crush stiffness is reduced by 350.\n• When Demolition Dash is Class 8-0+, all Spell-based skills in Demolition Dash stiffness is reduced by 150.\n• MP is continuously reduced.\n[Ethereal]\n• Megidoraon and UB Dora Crush incantation is reduced by 100%\n. \"Ethereal Greatsword\" affinity is also changed from Mystic to Fire/Ice/Electric/Force/Almighty. If Mystic\n[Momentum] was active, Ethereal Greatsword's LB Cap is increased further by (Spell x 0.5)",
         "affinity": "Support",
@@ -129539,7 +129539,7 @@
     {
         "id": 160614,
         "name": "Destructive Mind",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0017a",
         "description": "Switch skill Also gains a stack of\n[Momentum] for each consecutive usage of Class 5+ Destruction Magic (except Megidolaon) and Essence of Magic (except Ethereal Greatsword).\n[Momentum] stacks up to 4 times. At max stack of\n[Momentum], the user gains\n[Full Momentum] effect in addtion to\n[Momentum]. When Curse of the Wretched is Class 8-0 or higher: +(Support x 0.3) Crit, +(Support x 0.2) Spell, Class 5+ Destruction Magic (except Megidolaon) and Essence of Magic skills apply unblockable\n[Spell Hex] to its target(s).\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Destruction Magic, UB Dora Crush and Essence of Magic LB Power +10%, +2 Skill Stack\n• Mystic Boost +50%\n[Minus Effect]\n• Close-range, Long-range, and Support damage -50%\n• Max MP -10%\n[Momentum]\n• For all skills using the respective affinity, a stack grants +5% LB Power, +5% affinity Boost and (Spell x 0.5) LB Cap. Stacks dissipate after 90 seconds.\n[Full Momentum]\n• Affinity skill stack +3\n• Affinity LB Power +25%\n• Affinity LB Cap damage increased by (Spell x 1.2) Dissipates after 3 minutes.",
         "affinity": "Special",
@@ -129592,7 +129592,7 @@
     {
         "id": 130609,
         "name": "Magic Shot",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD04_0007a",
         "description": "Special skill. Shoots a magic bullet that inflicts Mystic-based damage.\nModifier: 100 | Stiffness: 1500",
         "affinity": "Mystic",
@@ -129632,7 +129632,7 @@
     {
         "id": 160620,
         "name": "Enchanted Slicer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI_BladeDanceSpell",
         "description": "Passive skill obtained though the mastery of Spell-based Rush.\nFor All Rush-based skills:\n• Rush boost +30%\n• Final Crit +5%\n• Increases LB Damage Cap by (Spell x 1)\n• When Way of the Celestial Fist and Destructive Mind are active, increases LB Cap by (Spell x 1.5 + CLS-R)\n• If Way of the Celestial Fist is active, usage of Spell-based Rush skills in Demolition Dash (Kamaitachi, Freezing Lance, Sonic Through, Delorean, Spell Runner, Devil Heartbreaker) gains a stack of\n[Arcane Focus] on each consecutive usage of these skills, up to 5 stacks.\n[Arcane Focus] lasts for 30 seconds.\n[Arcane Focus]\n• Increases Rush-based skills' LB Power by +5%, LB Cap damage by (Spell x 0.1) and reduces Stiffness by 25 per stack.\n• When Destructive Mind is active and Curse of the Wretched is Class 8-0 or higher, all Spell-based Rush skills in Demolition Dash has 10% chance per stack of applying an unblockable debuff that lowers Spell Defense to the target by (+50% chance at max stack)",
         "affinity": "Special",
@@ -129672,7 +129672,7 @@
     {
         "id": 160621,
         "name": "Accursed Ranger",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SK_729",
         "description": "Applies\n[Accursed Ranger] status to the user upon usage.\n[Accursed Ranger]\n• Continuously lose HP\n• Learns \"Uncurse\" skill\n• UB Evil Shot, MB and Shot Expertise skills Stiffness is reduced by 350.\n• While using UB Evil Shot, MB and Shot Skills, +15% Long-range damage, +20% LB Power and LB Cap increased by (2 x LNGR + Spell).\n• If Der Freischutz and Lord of Malevolence are also active, Mystic Mind and Nerve Magic Bullet skills will also grant 1 stacks of\n[Cursebearer].\n• When Curse of the Wretched is Class 8-0 or higher, all Magic Bullet skills grant Lifesteal Chance +100% and Lifesteal Power +5%\n• All damaging Magic Bullet skills and UB Evil Shot now curse the target and apply an unblockable debuff for 30 seconds.",
         "affinity": "Support",
@@ -129724,7 +129724,7 @@
     {
         "id": 160622,
         "name": "Steady Hands",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_0068a",
         "description": "After dispatching countless foes from afar, you have mastered your art. Passive Skill:\n[Bonus]\n• Increases Long Range by 30.\n• Increase LB Cap by LNGR * 0.5 for all Rapid-based skills.\n• Increase LB Cap by LNGR * 1.5 all skills from Shot Expertise, UB Evil Shot and Magic Bullet Expertise.",
         "affinity": "Special",
@@ -129771,7 +129771,7 @@
     {
         "id": 160623,
         "name": "Polarity Switch",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GrandeFinale",
         "description": "Switch Skill.\n[Plus Effect]\n• Spell Damage +50%\n• Converts all Magic Bullet skills into spell-based attacks. Their damage calculation changes from (LNGR + Spell/2) to (Spell + LNGR/2), prioritizing spell power over firearm proficiency. \n• If Der Freischutz and Destructive Mind are also active, Elemental Magic Bullet skills also grant\n[Momentum] stacks.\n• When Essence of Magic is Class 8-0 or higher: - Spell is increased by (LNGR x 0.75) - Each\n[Killshot] stack will also additionally increase all Magic Bullet skills' LB Damage Cap by (Spell x 0.2).\n[Minus Effect]\n• Close-range Damage -200%\n• Long-range Damage -500%\n• Max MP -10%",
         "affinity": "Special",
@@ -129824,7 +129824,7 @@
     {
         "id": 160618,
         "name": "Blessing of Saraswati",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB_Bless4",
         "description": "Passive skill. All party members' Experience and Expertise +10%. ※Must be on the same map.",
         "affinity": "Special",
@@ -129864,7 +129864,7 @@
     {
         "id": 160616,
         "name": "Blessing of Kartikeya",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB_Bless8",
         "description": "Passive skill. All party members' Movement Speed +5%, Speed +10 if the user is alive. ※Must be on the same map.",
         "affinity": "Special",
@@ -129904,7 +129904,7 @@
     {
         "id": 160617,
         "name": "Blessing of Brahma",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB_Bless9",
         "description": "Passive skill. All party members' HP Regen + 25%, MP Regen + 25%, Int +25, Luck +25 if the user is alive. ※Must be on the same map.",
         "affinity": "Special",
@@ -129944,7 +129944,7 @@
     {
         "id": 160619,
         "name": "Luster Candy",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB_LusterCandy",
         "description": "A special candy that holds support magic.\nApplies x4 Rakukaja, Sukukaja, Makakaja, Samakaja, Tarukaja on all allies in the Area once. (Lasts 10 minutes)",
         "affinity": "Support",
@@ -130012,7 +130012,7 @@
     {
         "id": 160624,
         "name": "Fleetfoot",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "Fleetfoot",
         "description": "Grants 50% Movement Speed Buff for 30 minutes to nearby party members.",
         "affinity": "Support",
@@ -130064,7 +130064,7 @@
     {
         "id": 160625,
         "name": "Impulse of Solid Assault",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0039a",
         "description": "Combines both pulsating hearts to amps up and harden up the party members in a single cast. It also additionally increases LB Power (Capped at 50%).",
         "affinity": "Support",
@@ -130124,7 +130124,7 @@
     {
         "id": 160626,
         "name": "Encouragement of a Hero",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0077a",
         "description": "A special skill that grants the Encouragment of a Hero, increasing the number of times you can act.\nAll party members around the user are granted a status that grants 2 stacks to all skills.\nWhile Radiant Hands is active, the improved version of the buff additionally grants 3 more skill stacks.",
         "affinity": "Support",
@@ -130182,7 +130182,7 @@
     {
         "id": 160627,
         "name": "Doping",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI_Doping",
         "description": "Increase MAX HP and LB Cap of an ally for 10 minutes.\n[Effect]\n• Increase the target's MAX HP by 50 for every 10 SUPPORT of the caster (Cap at +5000 HP)\n• Increase the target's LB Cap by +10 for every 10 SUPPORT of the caster (Cap at +1000)",
         "affinity": "Support",
@@ -130240,7 +130240,7 @@
     {
         "id": 160628,
         "name": "Healing Tuner",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD_HealingTuner",
         "description": "A Special Technique to shoot bullets filled with energy. Shoot a bullet and increase you or your allies HP Regen, MP Regen and Received Healing for 2 minutes and heals the target from a long distance. If Radiant Hands is active, also restores MP and grants\n[Radiance] to the target, and 45% chance to trigger\n[Inspiring Presence].\n(Every 10 Support Stat = +1%, Capped at 50%)\nModifier: 150 | Stiffness: 200",
         "affinity": "Curative",
@@ -130299,7 +130299,7 @@
     {
         "id": 160629,
         "name": "Affinity Tuner",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD_LimitTuner",
         "description": "A Special Technique to shoot bullets filled with energy. Applies\n[Physical Enhancement] and\n[Element Up] to an ally and its surrounding for 25 seconds.\n[Element Up]\n• Fire, Ice, Electric and Force damage increased (Every 15 Support Stat = +1%, Capped at +100%)\n[Physical Enhancement]\n• Slash, Thrust, Blunt, Penetrate, Spread, and Handgun damage increased (Every 15 Support Stat = +1%, Capped at +100%)",
         "affinity": "Curative",
@@ -130358,7 +130358,7 @@
     {
         "id": 160630,
         "name": "Critical Tuner",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0066a",
         "description": "A Special Technique to shoot bullets filled with energy. Applies\n[Critical Up] and\n[Intensive Break Enhancement] to an ally and its surrounding for 25 seconds.\n[Critical Up]\n• Final Crit Correction increased (Every 20 Support Stat = +1%, Capped at +100%)\n[Intensive Break Enhancement]\n• Limit Break Cap increased (Every 20 Support Stat = +20, Capped at +2000)",
         "affinity": "Curative",
@@ -130417,7 +130417,7 @@
     {
         "id": 160631,
         "name": "Lord of Malevolence",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_LordMalevolence",
         "description": "Switch skill Gains a stack of\n[Cursebearer] for each consecutive usage of Erosion Hex, Corrosion Hex, Seductive Hex, Curse of the Broken Mirror or offensive skills from Curse Magic, Curse Trigger, Curse Grudge and Defiled Sword.\n[Cursebearer] stacks up to 10 times, and lasts for 30 minutes.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Nerve Boost, Mind Boost and Death Boost +50%, LB Power +10%\n• Skills from Curse of the Wretched and Debilitate from Curse Magic that don't grant a\n[Cursebearer] stack and apply a debuff will apply its unblockable version when Lord of Malevolence is active.\n• Gains a stack of\n[Cursebearer] for each usage of various Death-based skills or COTW skills\n[Minus Effect]\n• Fire, Ice, Electric, Force Boost -50%\n• HP Regen is reduced to 0\n[Cursebearer]\n• Support Damage +20%\n• Shadow Scythe and all Nerve, Mind, Death-based Skill's LB Power +10%, Affinity cap boost +10%, (Support x 0.5) LB Cap Damage\n• All Curse Magic and offensive Curse of the Wretched (except Shadow Scythe) Skill's -30 Stiffness,\n• 10 HP and MP Drained every 3 seconds.",
         "affinity": "Special",
@@ -130457,7 +130457,7 @@
     {
         "id": 160632,
         "name": "Seductive Hex",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_SeductiveHex",
         "description": "A curse that seduces surrounding enemies. Inflicts mind-base damage and has a low probabilty of inflicting charm.\n[Player]\nWhen Lord of Malevolence is active, using this skill will grant the user a stack of\n[Cursebearer].\nModifier: 50 | Stiffness: 1000",
         "affinity": "Mind",
@@ -130509,7 +130509,7 @@
     {
         "id": 160633,
         "name": "Essence Theft",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "Lifraeningi",
         "description": "Deals Support-based Almighty damage and restores HP and MP by 30% of the damage inflicted on enemies around the user. Its LB Cap Damage is increased by (500 x\n[Cursebearer] stacks). All\n[Cursebearer] stacks are consumed, and gains the same amount of\n[Stolen Essence] stacks as the amount of consumed\n[Cursebearer] stack for 180 seconds.\n[Stolen Essence]\n• When Lord of Malevolence is active, all Curse Magic and Curse of the Wretched skills' (Support x 0.5) LB Cap Damage\n• When Lord of Malevolence and Ghost Form is alive, +0.1% party healing with Curse Magic and COTW skills\n• Max MP +10%\nModifier: 350 | Stiffness: 750",
         "affinity": "Almighty",
@@ -130562,7 +130562,7 @@
     {
         "id": 160634,
         "name": "Curative UP I",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0086a",
         "description": "Passive skill.\n\n・Increases your Curative affinity by 5%",
         "affinity": "Special",
@@ -130602,7 +130602,7 @@
     {
         "id": 160635,
         "name": "Curative UP II",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0086a",
         "description": "Passive skill.\n\n・Increases your Curative affinity by 10%",
         "affinity": "Special",
@@ -130642,7 +130642,7 @@
     {
         "id": 160636,
         "name": "Curative UP III",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0086a",
         "description": "Passive skill.\n\n・Increases your Curative affinity by 15%",
         "affinity": "Special",
@@ -130682,7 +130682,7 @@
     {
         "id": 160637,
         "name": "Curative UP IV",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0086a",
         "description": "Passive skill.\n\n・Increases your Curative affinity by 20%",
         "affinity": "Special",
@@ -130722,7 +130722,7 @@
     {
         "id": 160638,
         "name": "Panacea",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_Panacea",
         "description": "Removes a large variety of negative status effects to all nearby allies. (Bind, Sleep, Blind, Paralyse, Happy, Charm, Panic, Berserk, Poison, Plague, Mute and Muddle)",
         "affinity": "Curative",
@@ -130832,7 +130832,7 @@
     {
         "id": 160639,
         "name": "Salvation",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0103a",
         "description": "Fully recovers the HP of a targeted nearby ally and cures Mute and Muddle.\nModifier: 100 | Stiffness: 1000",
         "affinity": "Curative",
@@ -130888,7 +130888,7 @@
     {
         "id": 160640,
         "name": "Circle of Fire",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD20_0041a",
         "description": "Generates a temporary circle of protection that can absorb up to 3 fire-based attacks for yourself and nearby allies.\nWhile Radiant Hands is active, the improved version of the buff additionally grants +5% Fire Boost, and +5% Fire Affinity Cap, and 15% Fire resistance per stack.",
         "affinity": "Support",
@@ -130946,7 +130946,7 @@
     {
         "id": 160641,
         "name": "Circle of Ice",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD20_0042a",
         "description": "Generates a temporary circle of protection that can absorb up to 3 ice-based attacks for yourself and nearby allies.\nWhile Radiant Hands is active, the improved version of the buff additionally grants +5% Ice Boost, and +5% Ice Affinity Cap, and 15% Ice resistance per stack.",
         "affinity": "Support",
@@ -131004,7 +131004,7 @@
     {
         "id": 160642,
         "name": "Circle of Electric",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD20_0043a",
         "description": "Generates a temporary circle of protection that can absorb up to 3 electric-based attacks for yourself and nearby allies.\nWhile Radiant Hands is active, the improved version of the buff additionally grants +5% Electric Boost, and +5% Electric Affinity Cap, and 15% Electric resistance per stack.",
         "affinity": "Support",
@@ -131062,7 +131062,7 @@
     {
         "id": 160643,
         "name": "Circle of Force",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD20_0044a",
         "description": "Generates a temporary circle of protection that can absorb up to 3 force-based attacks for yourself and nearby allies.\nWhile Radiant Hands is active, the improved version of the buff additionally grants +5% Force Boost, and +5% Force Affinity Cap, and 15% Force resistance per stack.",
         "affinity": "Support",
@@ -131120,7 +131120,7 @@
     {
         "id": 160644,
         "name": "Mitama Demon Encouragement 1",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_MitamaEncouragement1",
         "description": "Passive skill. reduces Close-Range damage taken of your summoned Demon \n. -10% CLS-R damage taken by Mitama fused Demon",
         "affinity": "Special",
@@ -131160,7 +131160,7 @@
     {
         "id": 160645,
         "name": "Mitama Demon Encouragement 2",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_MitamaEncouragement2",
         "description": "Passive skill. reduces Long-Range damage taken of your summoned Demon \n. -10% LNG-R damage taken by Mitama fused Demon",
         "affinity": "Special",
@@ -131200,7 +131200,7 @@
     {
         "id": 160646,
         "name": "Mitama Demon Encouragement 3",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_MitamaEncouragement3",
         "description": "Passive skill. reduces Spell damage taken of your summoned Demon \n. -10% Spell damage taken by Mitama fused Demon",
         "affinity": "Special",
@@ -131240,7 +131240,7 @@
     {
         "id": 160647,
         "name": "Mitama Demon Command - Offense",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_MitamaOffense",
         "description": "Passive skill. Increases Strength, Magic and Speed of your summoned Demon by 20 \n\n• STR, MAG, SPD +20 to Mitama fused Demon",
         "affinity": "Special",
@@ -131280,7 +131280,7 @@
     {
         "id": 160648,
         "name": "Mitama Demon Command - Defense",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_MitamaDefense",
         "description": "Passive skill. Increases Vitality, Intelligence and Luck of your summoned Demon by 20 \n\n• VIT, INT, LCK +20 to Mitama fused Demon",
         "affinity": "Special",
@@ -131320,7 +131320,7 @@
     {
         "id": 160649,
         "name": "Protected Summon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_ProtectedSummon",
         "description": "Passive skill. Automatically casts Tetraja on your Demon when summoned.",
         "affinity": "Special",
@@ -131360,7 +131360,7 @@
     {
         "id": 160650,
         "name": "Tuned Summon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_TunedSummon",
         "description": "Passive skill. Automatically casts on your summoned Demon buffs: Sukukaja at \"Good Friends With\" or higher, Rakukaja at \"Trusting of\" or higher, Samakaja at \"Open Hearts With\" or higher, and Tarukaja and Makakaja at \"Bonded\" friendship.",
         "affinity": "Special",
@@ -131400,7 +131400,7 @@
     {
         "id": 160651,
         "name": "Mitama Demon Overgrowth",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_MitamaOvergrowth",
         "description": "Passive skill. Increases Limit Break Cap by 1000 for your summoned Mitama Demon.",
         "affinity": "Special",
@@ -131440,7 +131440,7 @@
     {
         "id": 160652,
         "name": "Shielded Summon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_ShieldedSummon",
         "description": "Passive skill. Automatically casts a buff that increases Physical and Magical Defense by 30 on your summoned Demon for 15 minutes.",
         "affinity": "Special",
@@ -131480,7 +131480,7 @@
     {
         "id": 160653,
         "name": "Armed Summon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_ArmedSummon",
         "description": "Passive skill. Automatically casts a buff that increases Close-Range, Long-Range, and Spell by 30 on your summoned Demon for 15 minutes.",
         "affinity": "Special",
@@ -131520,7 +131520,7 @@
     {
         "id": 160654,
         "name": "Haste",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0062a",
         "description": "Passive skill. Demon Incantation and Cooldown time reduced by 10%.\nWhen Enhancement is Class 8-0+, they are further reduced by 40% and their movement speed is increased by 5%.",
         "affinity": "Special",
@@ -131560,7 +131560,7 @@
     {
         "id": 160655,
         "name": "Transfusion",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_Transfusion",
         "description": "Switch Skill. Share your blood with the currently summoned Demon.\n[Plus Effect]\n・Summoned Demon HP +20%\n[Minus Effect]\n・Summoner HP -10%",
         "affinity": "Special",
@@ -131607,7 +131607,7 @@
     {
         "id": 160656,
         "name": "Spirit Transfer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD04_0023a",
         "description": "Switch Skill. Share your magic power with the currently summoned Demon.\n[Plus Effect]\n・Summoned Demon MP +20%\n[Minus Effect]\n・Summoner MP -10%",
         "affinity": "Special",
@@ -131654,7 +131654,7 @@
     {
         "id": 160657,
         "name": "Emergency Shield",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_EmergencyShield",
         "description": "Passive skill. Automatically casts Tetrakarn on your summoned Demon.",
         "affinity": "Special",
@@ -131694,7 +131694,7 @@
     {
         "id": 160658,
         "name": "Emergency Barrier",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_EmergencyBarrier",
         "description": "Passive skill. Automatically casts Makarakarn on your summoned Demon.",
         "affinity": "Special",
@@ -131734,7 +131734,7 @@
     {
         "id": 160659,
         "name": "Call of the Crown",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_CallCrown",
         "description": "Passive skill. Your summoned partner gains additional stat bonuses:\n• Partner's Strength, Magic, Vitality, Intelligence Speed, Luck +5% \n• While Digitalized, Partner's Strength, Magic, Vitality, Intelligence Speed, Luck +25% (30% in total)",
         "affinity": "Special",
@@ -131774,7 +131774,7 @@
     {
         "id": 160661,
         "name": "Seal of Command - Knight",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_SealCommandKnight",
         "description": "Switch Skill.\n[Plus Effect]\nFor summoned partner:\n• CLS-R +25\n• Stiffness for All Attack, Spin and Rush skills is reduced by 150.\n• Charged Spin skills can be used while moving.\n• LB Cap Damage is further increased by (CLSR x 0.5) for Attack, Spin, and Rush-based skills and can no longer be countered.\n• When Blood Ties is also active,\n- Spin Stiffness is further reduced by 100 and Rush Stiffness is further reduced by 250.\n- All Attack skills will grant the partner a stack of\n[Yfirthirmandi].\n- All Spin skills will grant the partner a stack of\n[Rampaging Whirlwind].\n- All Physical/Spell Rush skill will grant a stack of\n[Steel Focus]/\n[Arcane Focus].\n[Minus Effect]\n• Summoner damage taken increased by 10%\n• Summoner Max MP -10%\n• Summoner Support -25%\n[Yfirthirmandi]\n• For all attack skills, a stack grants +(CLS-R x 0.1) LB Cap and +2% LB Power.\n[Rampaging Whirlwind]\n• Increases Spin-based skills LB Power by +5% and LB Cap damage by (CLS-R x 0.2) per stack.\n• Decreases Spin-based skills stiffness by 50 per stack. \n[Steel/Arcane Focus]\n• Increases Rush-based skills' LB Power by +5%, LB Cap damage by (CLS-R/Spell x 0.1) and reduces Stiffness by 25 per stack.",
         "affinity": "Special",
@@ -131821,7 +131821,7 @@
     {
         "id": 160660,
         "name": "Blood Ties",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0126a",
         "description": "A switch Skill that grants Super Armor and strengthens the user's partner while lowering the user's offensive and defensive stats.\n[Plus Effect]\n• Null Knockback, Null Incapacitate, Null Shock to demon partner\n• Demon partner CLS-R, LNG-R and Spell damage taken -50%\n• Demon partner CLS-R, LNG-R and Spell damage dealt +50%\n• Demon Partner benefits from 15% of Summoner's LB Cap Damage Bonuses that don't contain any Affinity/Action/Expertise conditions.\n[Minus Effect]\n• Summoner can no longer deal extra LB Cap Damage. \n・Summoner CLS-R, LNG-R and Spell damage taken +15%\n• Summoner's Pursuit Chance and Power -999%\n• Summoner's TA Chance and Power -999%\n• Summoner Max MP -10%",
         "affinity": "Special",
@@ -131868,7 +131868,7 @@
     {
         "id": 160662,
         "name": "Seal of Command - Archer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_SealCommandArcher",
         "description": "Switch Skill. Enhances demon partner's Shot and Rapid capabilities.\n[Plus Effect]\nFor summoned partner:\n• LNGR +25\n• Charged Rapid skills can be used while moving.\n• Stiffness for All Shot skills is reduced by 500.\n• All Rapid and Shot skills gains +25 Range.\n• LB Cap Damage is further increased by (LNGR x 1) for Rapid and Shot based skills.\nWhen Blood Ties is active,\n- All rapid skills will grant the partner a stack of\n[Grit]\n(10 stacks max).\n• All Shot skills will grant the partner a stack of\n[Killshot]\n(5 stacks max).\n[Minus Effect]\n・Summoner LNG-R damage taken +10%\n• Summoner Max MP -10%\n• Summoner Support -25%\n[Grit]\n• For all rapid skills, a stack grants +2% LB Power, and +(LNG-R x 0.15) LB Cap.\n[Killshot]\n• For all Shot skills, a stack grants +5% LB Power and +(LNG-R x 0.2) LB Cap (5 stacks max).",
         "affinity": "Special",
@@ -131915,7 +131915,7 @@
     {
         "id": 160663,
         "name": "Seal of Command - Magician",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_SealCommandMagician",
         "description": "Switch Skill. Enhances demon partner's Support and spell capabilities.\n[Plus Effect]\nFor summoned partner:\n• Spell +25\n• Skill stack is increased by 4.\n• Fire, Ice, Electric, Force, Mystic, Almighty boost +50%.\n• Support Boost +50%\n• LB Cap Damage is further increased by (Spell x 0.5) for all skills.\nWhen Blood Ties is active,\n• All Fire/Ice/Electric/Force/ Mystic/Almighty skills now grants the partner a stack of\n[Momentum] (4 stacks max) for 90 seconds.\n[Minus Effect]\n• Summoner damage taken increased by 10%\n• Summoner Max MP -10%\n• Summoner Support -25%\n[Momentum]\n• For all skills using the respective affinity, a stack grants +5% LB Power, +5% affinity Boost and (Spell x 0.5) LB Cap.",
         "affinity": "Special",
@@ -131962,7 +131962,7 @@
     {
         "id": 160664,
         "name": "Cracked Chains",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_CrackedChains",
         "description": "Passive skill. Temporarily unlock a layer of the sealed power of your summoned Demon.\n\n• While not Digialized, Summoned Demon damage taken -10%\n• While Digitalized, Summoned Demon damage taken -30%",
         "affinity": "Special",
@@ -132002,7 +132002,7 @@
     {
         "id": 160665,
         "name": "Wickedness",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SE01_Wickedness",
         "description": "Passive skill. Automatically casts a buff that increases all affinity damage by 30%, TA Chance and Power by 5%, and Limit Break Power by 15% on your summoned Demon for 15 minutes.",
         "affinity": "Special",
@@ -132042,7 +132042,7 @@
     {
         "id": 160666,
         "name": "Bloody Handshake",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_BloodyHandshake",
         "description": "Passive skill. Fighting alongside your partner all this time has earned you their trust. You may now witness more of its innate power.\n\n• Fusion Skills now gain 100% of the partner demon’s LB Chance and LB Power, and 50% of their Final Crit Correction.\n• If Open Hearts With your summoned partner, their Final Crit Correction is increased by 10% \n• If Bonded, their LB Cap is increased by +500\n• If Enhancement is Class 8-0+, partner's LB Cap Damage is increased by the summoner's (Support x 0.5)",
         "affinity": "Special",
@@ -132082,7 +132082,7 @@
     {
         "id": 160667,
         "name": "Order of the Absolute - Strength",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_OrderStrength",
         "description": "Forcefully remove the chains holding your partner back... at a price. Grants\n[Demon Smile-Strength] for 30 minutes.\n[Demon Smile-Strength]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's CLSR Damage +25%\n• Additionally grants LB Cap by Partner's (CLSR x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner CLS-R +5%\n• When Seal of Command - Knight is active, partner gains 2% chance to trigger\n[Power Charge] on themselves when using Attack, Spin or Rush-based skills.\n• When Seal of Command - Knight and Einheri/Gale Form/Way of the Celestial Fist are active, partner gains 2% chance to trigger when the summoner uses Berserker, Vanguard or Demolition Dash related Skills.\n[Power Charge]\nFor 30 seconds,\n• Close-Range Damage +50%\n• 100% Clench, +25% movement speed\n• For all Attack, Spin and Rush-based skills, increases LB Cap by (CLSR x 1.5)",
         "affinity": "Support",
@@ -132122,7 +132122,7 @@
     {
         "id": 160668,
         "name": "Freezing Weapon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "FreezingWeapon",
         "description": "For 10 minutes, Weapon-based affinity becomes Ice. For all attack skills, LBP +5%, CLS-R damage +20%, Attack Boost +5%.\nAlso learns \"Remove Enhancement\" to remove the effect.",
         "affinity": "Support",
@@ -132180,7 +132180,7 @@
     {
         "id": 160669,
         "name": "Thunderous Weapon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ThunderWeapon",
         "description": "For 10 minutes, Weapon-based affinity becomes Electric. For all attack skills, LBP +5%, CLS-R damage +20%, Attack Boost +5%.\nAlso learns \"Remove Enhancement\" to remove the effect.",
         "affinity": "Support",
@@ -132238,7 +132238,7 @@
     {
         "id": 160670,
         "name": "Flame Weapon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "FlameWeapon",
         "description": "For 10 minutes, Weapon-based affinity becomes Fire. For all attack skills, LBP +5%, CLS-R damage +20%, Attack Boost +5%\nAlso learns \"Remove Enhancement\" to remove the effect.",
         "affinity": "Support",
@@ -132296,7 +132296,7 @@
     {
         "id": 160671,
         "name": "Sonic Weapon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SonicWeapon",
         "description": "For 10 minutes, Weapon-based affinity becomes Force. For all attack skills, LBP +5%, CLS-R damage +20%, Attack Boost +5%\nAlso learns \"Remove Enhancement\" to remove the effect.",
         "affinity": "Support",
@@ -132354,7 +132354,7 @@
     {
         "id": 160672,
         "name": "Aldar Rok",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "AldarRok",
         "description": "Unleashes an Almighty based Attack to the target and its surrounding. Each\n[Yfirthirmandi] stack increases its damage mod by 25. Consumes\n[Yfirthirmandi] stacks upon use. At\n[Yfirthirmandi]'s max stack, the skill refreshes\n[Ragnarok] duration.\nWhen Gale Form and\n[Ragnarok] are active, the skill gains additional 50 Range, and its fixed restrictions (Cooldown, Skill Stack) are removed.\nAt\n[Yfirthirmandi]'s max stack, when Lord of Frenzy is active, gains 15% chance of\n[Yfirthirmandi] and [Yfirthirmandi: FULL] not being consumed.\nModifier: 130 | Stiffness: 350",
         "affinity": "Almighty",
@@ -132401,7 +132401,7 @@
     {
         "id": 160673,
         "name": "Skuld's Respite",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "Skuld",
         "description": "Restores all 10 stacks of\n[Yfirthirmandi] and removes the ongoing\n[Ragnarok] status effect.",
         "affinity": "Support",
@@ -132454,7 +132454,7 @@
     {
         "id": 160674,
         "name": "Devastate",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "Devastate",
         "description": "Delivers weapon-based Attack on the target. Each\n[Yfirthirmandi] stack increases its damage mod by 25. Consumes all\n[Yfirthirmandi] stacks upon use. At\n[Yfirthirmandi]'s max stack, the skill will deal (CLSR x 2.5) additional LB Cap Damage, and refreshes\n[Ragnarok] duration.\nAt\n[Yfirthirmandi]'s max stack, when Lord of Frenzy is active, gains 15% chance of\n[Yfirthirmandi] and [Yfirthirmandi: FULL] not being consumed and gains all stacks of\n[Coup de Grace] if Phantom Strike is learnt and Spellblade Stance isn't active.\nModifier: 150 | Stiffness: 100",
         "affinity": "Weapon-Based",
@@ -132501,7 +132501,7 @@
     {
         "id": 160675,
         "name": "Lord of Frenzy",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0012a",
         "description": "Switch Skill -\n[Bonus]\n• Crit +50\n• All Attack skills gains +5 Skill stack and have their Stiffness reduced by 150.\n[Penalty]\n. -50% Close-range Damage\n• Max MP -10%",
         "affinity": "Special",
@@ -132554,7 +132554,7 @@
     {
         "id": 160676,
         "name": "Quickdraw",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0073a",
         "description": "Passive skill that increases Long Range by 30 and Limit Break Cap of Qi Shot, 13 Shots to Hell, Boogie-Woogie, Desperado, Curtain Call, Purify Trigger, Curse Trigger by (LNGR x 2).",
         "affinity": "Special",
@@ -132594,7 +132594,7 @@
     {
         "id": 160677,
         "name": "Spiral of the End",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_SpiralEnd",
         "description": "\"Give and take. Take. And take. It's all yours, isn't it?\"\nPassive skill: \n• Increases Rapid damage dealt by 25%\n• TA power +10% for Rapid skills\n• Pursuit power +10% for Rapid skills\n• While using 13 Shots to Hell, Qi Shot, Boogie-Woogie and Curtain Call: - Limit Break Cap +1000, Limit Break Power +10%",
         "affinity": "Special",
@@ -132634,7 +132634,7 @@
     {
         "id": 160678,
         "name": "Rush Mastery",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_RushMastery",
         "description": "Passive Skill:\n・Rush Incantation -25%",
         "affinity": "Special",
@@ -132674,7 +132674,7 @@
     {
         "id": 160679,
         "name": "Lifraeningi",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP09_0016a",
         "description": "Attack that makes enemies' blood gush out and makes it your own. Deals Weapon-based damage and grants\n[Bloodthirst] for 10 seconds.\nWhen Curse of The Wretched is Class 8-0 or higher and\n[Ragnarok] is active: Deals extra (CLS-R x 1.5) LB Cap Damage if the user hits the enemy's weakness.\n[Bloodthirst]\n- Increases Close-Range Damage by 5%\n- Increases Lifesteal Chance and Power by 100% for all Attack skills.\n- When Limit Break Up: Strength (Crushing Tech Class 10-0) and Einheri is active, gains (Crit x 1.5) LB Cap Damage to all Attack skills\nModifier: 90 | Stiffness: 550",
         "affinity": "Weapon-Based",
@@ -132714,7 +132714,7 @@
     {
         "id": 160680,
         "name": "Undying Soul",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "UndyingSoul",
         "description": "Switch Skill\n[Plus Effect]\n• Vit +50\n• Learns \"Enrage\" Skill\n• At 75% HP or Above, gains CLSR by (VIT * 0.5)\n• At 50% HP or below, Lifesteal Chance +20%, Lifesteal Power +20%, Clench +25%\n• Successfully surviving a lethal blow will also trigger\n[Undying Rage] for 10 seconds.\n[Undying Rage] has a 30 seconds cooldown and increases CLS-R by 150.\n[Undying Rage]\n• Crit +500\n• User becomes invincible.\n• When Limit Break Up: Strength (Crushing Tech C10) and Einheri are active, gains (CLS-R x 1) + (Crit x 3) LB Cap Damage to all Attack skills and additional (CLS-R x 1) to Devastate.\n[Minus Effect]\n• Support and Long-range Damage -200%\n• Spell Damage -500%\n• Max MP -10%",
         "affinity": "Special",
@@ -132767,7 +132767,7 @@
     {
         "id": 160681,
         "name": "Ragnarok",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "Ragnarok",
         "description": "Unleash the fury of the end times.\nFor 30 seconds, gains\n[Ragnarok] status:\n[Plus effect]\n• Close-Range Damage +50%\n• 100% Clench, Received Healing Rate +50%, +25% movement speed\n• Crit increased by (CLSR x 1)\n• When Curse of the Wretched is Class 8-0 or higher, all Attack-based skills have 5% chance to trigger\n[Bloodthirst].\n• For all Attack skills, increases LB Cap by (CLSR x 2 + Crit x 2), and +20% LB Power\n• If Spellblade Stance is NOT active and Einheri is active:\n- Flame/Freezing/Thunder/Sonic Weapon also grants (CLSR x 1) LB Cap Damage to all Attack-based skills.\n• When Vanguard is Class 7-0 or higher, Cleave's Stiffness is reduced by 550.\n[Minus effect]\n• Prevents usage of any Shot and Rapid skills.\n• When Demolition is under Class 8-0, prevents usage of Rush skills.\n• When Vanguard is under Class 7-0, prevents usage of Spin skills.\n• Continously loses HP",
         "affinity": "Support",
@@ -132819,7 +132819,7 @@
     {
         "id": 160682,
         "name": "Close-Quarters Combat",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0041a",
         "description": "Passive skill obtained though the mastery of Physical-based Rush.\nFor ALL Rush-based skills,\n• Rush Boost +30%\n• Final Crit +5%\n• Increase LB Cap Damage by (CLS-R x 1)\n• When Way of the Celestial Fist and Lord of Execution are active, increases LB Cap by (CLS-R x 1.5 + Spell)\n• If Way of the Celestial Fist is active, usage of Physical-based Rush skills in Demolition Dash (Killing Wind, Hail Assault, Lightning Thrust, Heat Wave, Mysterious Defense-Breaking Yaburi) and Blade of the King Beast gains a stack of\n[Steel Focus] on each consecutive usage of these skills, up to 5 stacks.\n[Steel Focus] lasts for 30 seconds.\n[Steel Focus]\n• Increases Rush-based skills' LB Power by +5%, LB Cap damage by (CLS-R x 0.1) and reduces Stiffness by 25 per stack.\n• When Einheri is active and Curse of the Wretched is Class 8-0 or higher, all Physical-based Rush skills in Demolition Dash and Blade of the King Beast has 10% chance per stack of applying an unblockable debuff that lowers CLSR Defense to the target by (+50% chance at max stack)",
         "affinity": "Special",
@@ -132859,7 +132859,7 @@
     {
         "id": 160683,
         "name": "Iron Fist",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_Massacre",
         "description": "Deals massive Physical damage to a single target. It has a fixed Cooldown Timer and Skill Stack. Shares Cooldown Timer with Magic Fist.\nWhen the user has\n[Full Steel Focus], the usage of this skill will consume all\n[Steel Focus] and\n[Full Steel Focus] buff stacks and will grant\n[Steel Barrage] buff for 120 seconds. If\n[Steel Barrage] is already active, the skill will refresh its duration and not consume\n[Steel Focus] and\n[Full Steel Focus].\nWhen Way of the Celestial Fist is active:\n• Having 10 Stacks of\n[Yfirthirmandi] grants additional (CLS-R x 1.2) LB Cap Damage to this skill.\n• Having\n[Full Momentum] grants additional (Spell x 0.5) LB Cap Damage to this skill.\n• When Limit Break Up: Strength (Crushing Tech Class 10-0) is also active, grants additional (Crit x 3.5) LB Cap Damage to this skill.\n[Steel Barrage]\n• Additionally increases LB Cap Damage by (CLS-R x 2) for all Rush-based skill\n. +50% Rush Boost\n. +100% CLSR Damage Boost\n• When Lord of Execution and Way of the Celestial Fist are active, additionally increases LB Cap Damage by (Max HP x 0.1)\nModifier: 450 | Stiffness: 750",
         "affinity": "Weapon-Based",
@@ -132906,7 +132906,7 @@
     {
         "id": 160684,
         "name": "Wake of Morningstar",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_WakeMorningstar",
         "description": "Grants the user\n[At World's End] for 30 seconds, with 30 seconds Cooldown. Also grants 5 stacks of\n[Rampaging Whirlwind] if Gale Form is active.\n\n[At World's End]\nFor All Spin skills:\n• Spin skill stack +5\n• Increases Spin damage by 15%\n• Increases Limit Break Cap by (CLSR x 1.5) and Limit Break Power by 50%",
         "affinity": "Support",
@@ -132958,7 +132958,7 @@
     {
         "id": 160685,
         "name": "Ariadne's Thread (Unlimited)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "I22_0014a",
         "description": "A piece of thread sent down by the gods that can take you immediately to the location of your choice.",
         "affinity": "Unknown",
@@ -132998,7 +132998,7 @@
     {
         "id": 160686,
         "name": "Orb of Speed (Unlimited)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "I06_0001a",
         "description": "Increases your movement and that of your demon by 50% times for 60 minutes.",
         "affinity": "Unknown",
@@ -133043,7 +133043,7 @@
     {
         "id": 160687,
         "name": "Magic Fist",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_FourWingedCrusader",
         "description": "Deals massive Spell damage to a single target. It has a fixed Cooldown Timer and Skill Stack. Shares Cooldown Timer with Iron Fist.\nWhen the user has\n[Full Arcane Focus], the usage of this skill will consume all\n[Arcane Focus] and\n[Full Arcane Focus] buff stacks and will grant\n[Arcane Surge] buff for 120 seconds. If\n[Arcane Surge] is already active, the skill will refresh its duration and not consume\n[Arcane Focus] and\n[Full Arcane Focus].\nIf\n[Arcane Focus] or\n[Steel Focus] is at max Stack, switching to this stance will grant the user\n[Arcane Surge] buff for 2 minutes.\nWhen Way of the Celestial Fist is active:\n• Having 10 Stacks of\n[Yfirthirmandi] grants additional (CLS-R x 0.5) LB Cap Damage to this skill.\n• Having\n[Full Momentum] grants additional (Spell x 1.2) LB Cap Damage to this skill.\n• When Limit Break Up: Magic (Crushing Tech Class 10-0) is also active, grants additional (Crit x 3.5) LB Cap Damage to this skill.\n[Arcane Surge]\n• Additionally increases LB Cap Damage by (Spell x 2) for all Rush-based skill\n. +50% Rush Boost\n. +100% Spell Damage Boost\n• When\n[Concentrated] and Way of the Celestial Fist are active, additionally increases LB Cap Damage by (Max MP x 0.3)\nModifier: 450 | Stiffness: 750",
         "affinity": "Weapon-Based",
@@ -133090,7 +133090,7 @@
     {
         "id": 160688,
         "name": "Way of the Celestial Fist",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0032a",
         "description": "Switch skill - If\n[Destructive Mind] is also active, the usage of all elemental (Physical and Spell) Rush-based skills in Demolition Dash will also grant\n[Momentum] stacks.\nIf\n[Einheri] is also active, the usage of Physical-based Rush skills in Demolition Dash (Killing Wind, Hail Assault, Lightning Thrust, Heat Wave, Mysterious Defense-Breaking Yaburi) and Blade of the King Beast also grants 2\n[Yfirthirmandi] stacks.\n[Plus Effect]\n• Fire, Ice, Force, Electric Boost +15%\n• Null Knockback, Null Incapacitate\n• Rush Boost +50%, Rush-based skills LB Power +50%, Rush Stiffness reduced by 250\n• If\n[Destructive Mind] is also active, each\n[Momentum] stack also grants +(Spell x 0.3) LB Cap LB Power +10% and +1 Skill Stack to all Rush-based skills.\n• If\n[Einheri] is also active, each\n[Yfirthirmandi] stack also grants +(CLS-R x 0.15) LB Cap to all Rush-based skills.\n[Minus Effect]\n• Long-range and Support damage\n-300%\n• Max MP -10%",
         "affinity": "Special",
@@ -133143,7 +133143,7 @@
     {
         "id": 160689,
         "name": "Unrelenting Soul",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_MagicFistStack",
         "description": "Passive skill.\n• CLSR-R +20\n• Rush-based Skill stack +2\n• All Rush-based skills can no longer be countered.\n• HP Cost -50% for all Rush-based skills \n• If Undying Soul is also active, - Usage of Final Strike will now keep the user alive at 35% of current HP and trigger\n[Undying Rage].\n• When Vanguard is Class 7-5 or higher, gains (MAX HP x 0.05) for all Rush-based skills",
         "affinity": "Special",
@@ -133183,7 +133183,7 @@
     {
         "id": 160690,
         "name": "Purifying Dash",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_PurifyingDash",
         "description": "A special skill that causes Expel damage in a straight line against all enemies, depending on user's Magic and 50% of their Close-range attack power.\nHas a low chance of causing Paraylse for 10 seconds. \nModifier: 295 | Stiffness: 1600",
         "affinity": "Expel",
@@ -133241,7 +133241,7 @@
     {
         "id": 160691,
         "name": "Curse Trigger",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_CurseTrigger",
         "description": "Special skill that fires a series of shots of cursing energy.\nFires 6 shots after incantation, that cause physical Death damage, depending on the user's long-range attack power, with a low chance to cause Instant Death.\nAfter the skill is charged, MP will slowly decrease.\nModifier: 180 | Stiffness: 300",
         "affinity": "Death",
@@ -133293,7 +133293,7 @@
     {
         "id": 160692,
         "name": "Spectral Needles - Burn",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD22_0017a",
         "description": "A special skill that instantly cuts up an enemy with burning needles.\nCauses 13 blasts of Fire damage against one enemy, based on the user's LNGR, with just one incantation.\n\nAfter you finish readying this skill, MP will slowly decrease.\nModifier: 125 | Stiffness: 200",
         "affinity": "Fire",
@@ -133340,7 +133340,7 @@
     {
         "id": 160693,
         "name": "Spectral Needles - Pain",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD22_0018a",
         "description": "A special skill that instantly cuts up an enemy with freezing needles.\nCauses 13 blasts of Ice damage against one enemy, based on the user's LNGR, with just one incantation.\n\nAfter you finish readying this skill, MP will slowly decrease.\nModifier: 125 | Stiffness: 200",
         "affinity": "Ice",
@@ -133387,7 +133387,7 @@
     {
         "id": 160694,
         "name": "Spectral Needles - Sonic",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD22_0020a",
         "description": "A special skill that instantly cuts up an enemy with razor wind needles.\nCauses 13 blasts of Force damage against one enemy, based on the user's LNGR, with just one incantation.\n\nAfter you finish readying this skill, MP will slowly decrease.\nModifier: 125 | Stiffness: 200",
         "affinity": "Force",
@@ -133434,7 +133434,7 @@
     {
         "id": 160695,
         "name": "Spectral Needles - Spark",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD22_0019a",
         "description": "A special skill that instantly cuts up an enemy with high voltage needles.\nCauses 13 blasts of Electric damage against one enemy, based on the user's LNGR, with just one incantation.\n\nAfter you finish readying this skill, MP will slowly decrease.\n\nModifier: 125 | Stiffness: 200",
         "affinity": "Electric",
@@ -133481,7 +133481,7 @@
     {
         "id": 160696,
         "name": "Magic Missiles - Burn",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_MagicMissileBurn",
         "description": "A special skill that instantly cuts up an enemy with burning missiles.\nCauses 13 blasts of Fire damage against one enemy, based on the user's Spell, with just one incantation.\n\nAfter you finish readying this skill, MP will slowly decrease.\nModifier: 125 | Stiffness: 200",
         "affinity": "Fire",
@@ -133528,7 +133528,7 @@
     {
         "id": 160697,
         "name": "Magic Missiles - Pain",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_MagicMissilePain",
         "description": "A special skill that instantly cuts up an enemy with freezing missiles.\nCauses 13 blasts of Ice damage against one enemy, based on the user's Spell, with just one incantation.\n\nAfter you finish readying this skill, MP will slowly decrease.\nModifier: 125 | Stiffness: 200",
         "affinity": "Ice",
@@ -133575,7 +133575,7 @@
     {
         "id": 160698,
         "name": "Magic Missiles - Sonic",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_MagicMissileSonic",
         "description": "A special skill that instantly cuts up an enemy with razor wind missiles.\nCauses 13 blasts of Force damage against one enemy, based on the user's Spell, with just one incantation.\n\nAfter you finish readying this skill, MP will slowly decrease.\nModifier: 125 | Stiffness: 200",
         "affinity": "Force",
@@ -133622,7 +133622,7 @@
     {
         "id": 160699,
         "name": "Magic Missiles - Spark",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_MagicMissileSpark",
         "description": "A special skill that instantly cuts up an enemy with high voltage missiles.\nCauses 13 blasts of Electric damage against one enemy, based on the user's Spell, with just one incantation.\n\nAfter you finish readying this skill, MP will slowly decrease.\n\nModifier: 125 | Stiffness: 200",
         "affinity": "Electric",
@@ -133669,7 +133669,7 @@
     {
         "id": 160707,
         "name": "Specialist",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_1000a",
         "description": "Recipes for creating\n• M103-L\n• Lost:Sight\n• Barrel of the Floret with the Gunsmith skill.",
         "affinity": "Special",
@@ -133709,7 +133709,7 @@
     {
         "id": 160708,
         "name": "Professional",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_1000a",
         "description": "Recipes for creating\n• Jackpot\n• The Punisher\n• Brutregen with the Gunsmith skill.",
         "affinity": "Special",
@@ -133749,7 +133749,7 @@
     {
         "id": 160709,
         "name": "Profane",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_1000a",
         "description": "Recipes for creating\n• Teni Muho\n• Judgement Day\n• GAMIC-20 with the Gunsmith skill.",
         "affinity": "Special",
@@ -133789,7 +133789,7 @@
     {
         "id": 160710,
         "name": "Accursed",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_1000a",
         "description": "Recipes for creating\n• Tanegashima (Bound)\n• Evil Blaster\n• Shangri-la with the Gunsmith skill.",
         "affinity": "Special",
@@ -133829,7 +133829,7 @@
     {
         "id": 160711,
         "name": "Professional II",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_1000a",
         "description": "Recipes for creating\n• Avalon-24\n• Highlander Musket\n• Red Rain with the Gunsmith skill.",
         "affinity": "Special",
@@ -133869,7 +133869,7 @@
     {
         "id": 160712,
         "name": "Inferno",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_1000a",
         "description": "Recipes for creating\n• Mobile Police Assault Rifle\n• GSL36-9\n• Crossfire (Fierce Attack Light) with the Gunsmith skill.",
         "affinity": "Special",
@@ -133909,7 +133909,7 @@
     {
         "id": 160713,
         "name": "Handguns",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_1000a",
         "description": "Recipes for creating\n• MPK89\n• Hengel 280\n• Pepoler-SDP with the Gunsmith skill.",
         "affinity": "Special",
@@ -133949,7 +133949,7 @@
     {
         "id": 160714,
         "name": "Modern Warfare",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_1000a",
         "description": "Recipes for creating\n• GSL36-8\n• C-M16\n• Night Shocker with the Gunsmith skill.",
         "affinity": "Special",
@@ -133989,7 +133989,7 @@
     {
         "id": 160715,
         "name": "Bestial",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Pachipachiou\n• Beast Slaughter\n• Kitty Cat Claws with the Blacksmith skill.",
         "affinity": "Special",
@@ -134029,7 +134029,7 @@
     {
         "id": 160716,
         "name": "Fiery",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Schwarzritter\n• Fire Sword Agni\n• Flammeberge with the Blacksmith skill.",
         "affinity": "Special",
@@ -134069,7 +134069,7 @@
     {
         "id": 160717,
         "name": "Vortex",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• SACHE\n• Buer Scalpel\n• Floral Whirlwind with the Blacksmith skill.",
         "affinity": "Special",
@@ -134109,7 +134109,7 @@
     {
         "id": 160718,
         "name": "Glow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Twirling Tonfas\n• Glowing Swallowtail\n• Club of Rashomon with the Blacksmith skill.",
         "affinity": "Special",
@@ -134149,7 +134149,7 @@
     {
         "id": 160719,
         "name": "Bewitched",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Comet Sweeper\n• Red Crystal Rod\n• Royal Scepter of Demonic Blood with the Blacksmith skill.",
         "affinity": "Special",
@@ -134189,7 +134189,7 @@
     {
         "id": 160720,
         "name": "Elemental",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Thunder Fang\n• Poliahu\n• Spear of Duftach with the Blacksmith skill.",
         "affinity": "Special",
@@ -134229,7 +134229,7 @@
     {
         "id": 160721,
         "name": "Photon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Photon Slasher\n• Photon Beaters\n• Orcrist with the Blacksmith skill.",
         "affinity": "Special",
@@ -134269,7 +134269,7 @@
     {
         "id": 160722,
         "name": "Saber",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Kotetsu II (Worship God)\n• Shadowslash\n• Sparrowblade with the Blacksmith skill.",
         "affinity": "Special",
@@ -134309,7 +134309,7 @@
     {
         "id": 160723,
         "name": "Edge",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Ruptured Edge\n• Brave Awaker\n• Focus Lance with the Blacksmith skill.",
         "affinity": "Special",
@@ -134349,7 +134349,7 @@
     {
         "id": 160724,
         "name": "Bonded",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Chaos Hero Blade\n• Violence Knife\n• Berial's Wiper with the Blacksmith skill.",
         "affinity": "Special",
@@ -134389,7 +134389,7 @@
     {
         "id": 160725,
         "name": "Fierce Attack Light",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Black Whirlwind (Fierce Attack Light)\n• Dainslef (Fierce Attack Light) with the Blacksmith skill.",
         "affinity": "Special",
@@ -134429,7 +134429,7 @@
     {
         "id": 160726,
         "name": "Griefing",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• Wakizashi (Bound)\n• Heixunfeng (Bound) with the Blacksmith skill.",
         "affinity": "Special",
@@ -134469,7 +134469,7 @@
     {
         "id": 160727,
         "name": "King",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SS01_0000a",
         "description": "Recipes for creating\n• King Gloves (God's Fist)\n• Alice's Stick (Happy)\n• Golden Metal Club with the Blacksmith skill.",
         "affinity": "Special",
@@ -134509,7 +134509,7 @@
     {
         "id": 160728,
         "name": "Lord of the Stampede",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_LordOfStampede",
         "description": "Passive Skill\nWhen using any Rush Skills:\n・Rush boost +10%\n・Crit +40",
         "affinity": "Special",
@@ -134549,7 +134549,7 @@
     {
         "id": 160729,
         "name": "Einheri",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "BerserkerEinheri",
         "description": "A switch skill that grants Super Armor to the user while lowering their Support and Long-range damage. Armor Break's debuff has a longer duration and becomes unblockable when Einheri is active. Also gains a stack of\n[Yfirthirmandi] for each consecutive Armor Break, Gatling Strike and Cleave use.\n[Yfirthirmandi] stacks up to 10 times.\nWhen Curse of the Wretched is Class 8-0 or higher: +(Support x 0.3) Crit, +(Support x 0.2) CLS-R, Gatling Strike, Cleave, and all offensive Berserker skills apply unblockable\n[Slash Hex] to its target(s).\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Attack Skills' LB Power +10%\n• Gain a stack of\n[Yfirthirmandi] for each consecutive Armor Break, Gatling Strike and Cleave.\n[Minus Effect]\n• Support and Long-range Damage -200%\n• Spell Damage -50%\n• Max MP -10%\n[Yfirthirmandi]\n• For all attack skills, a stack grants +(CLS-R x 0.1) LB Cap and +2% LB Power. Stacks last for 10 seconds. Using Gatling Strike and Cleave refreshes the duration and adds 1 stack to the count.",
         "affinity": "Special",
@@ -134602,7 +134602,7 @@
     {
         "id": 160730,
         "name": "Phantom Strike",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "PhantomStrike",
         "description": "Passive skill.\n• CLSR +25\n• All Attack-based skills' Base Damage is increased by 5%.\nAlso gains a stack of\n[Coup de Grace] for each consecutive Gatling Strike usage.\n[Coup de Grace] last 180 seconds and stacks up to 5 times.\n[Coup de Grace]\nIf Spellblade Stance is not active and Einheri is active:\n• Increases LB Cap Damage by (CLSR x 0.5 + Crit x 0.5) to all Attack-based skills.\n• When Ragnarok is active, reduces all Attack-based skills Stiffness by 10.\n• Increases the chance of trigger an extra Gatling Strike attack by 10%\n• When the extra Gatling Strike attack is triggered all\n[Coup de Grace] stacks are consumed.",
         "affinity": "Special",
@@ -134642,7 +134642,7 @@
     {
         "id": 160731,
         "name": "Hasso-Happa",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0056a",
         "description": "An explosive special technique. Causes Almighty damage against enemies in front of the user, according to their Close-Range attack power.\nModifier: 500 | Stiffness: 750",
         "affinity": "Almighty",
@@ -134695,7 +134695,7 @@
     {
         "id": 160732,
         "name": "Thunderous Bullet",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_ThunderousApplause",
         "description": "Infuse your bullets with crackling thunder. For 10 minutes, Weapon-based affinity becomes Electric. For all rapid skills, LBP +5%, LNG-R damage +20%, Rapid Boost +5%.\nAlso learns \"Remove Enhancement\" to remove the effect.",
         "affinity": "Support",
@@ -134759,7 +134759,7 @@
     {
         "id": 160733,
         "name": "Freezing Bullet",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_TouchOfFrost",
         "description": "Infuse your bullets with chilling ice. For 10 minutes, Weapon-based affinity becomes Ice. For all rapid skills, LBP +5%, LNG-R damage +20%, Rapid Boost +5%.\nAlso learns \"Remove Enhancement\" to remove the effect.",
         "affinity": "Support",
@@ -134823,7 +134823,7 @@
     {
         "id": 160734,
         "name": "Flame Bullet",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_InfernalBloom",
         "description": "Infuse your bullets with raging flame. For 10 minutes, Weapon-based affinity becomes Fire. For all rapid skills, LBP +5%, LNG-R damage +20%, Rapid Boost +5%.\nAlso learns \"Remove Enhancement\" to remove the effect.",
         "affinity": "Support",
@@ -134887,7 +134887,7 @@
     {
         "id": 160735,
         "name": "Sonic Bullet",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_Stormcaller",
         "description": "Infuse your bullets with the power of a storm. For 10 minutes, Weapon-based affinity becomes Force For all rapid skills, LBP +5%, LNG-R damage +20%, Rapid Boost +5%.\nAlso learns \"Remove Enhancement\" to remove the effect.",
         "affinity": "Support",
@@ -134951,7 +134951,7 @@
     {
         "id": 160736,
         "name": "Frontier Justice",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_RapidStack",
         "description": "Switch Skill.\n[Plus Effect]\n• Rapid Skills' skill stack +2\n• Crit +150\n• Boogie-Woogie Stiffness reduced by 150\n• When Sharpshooter is Class 8-0 or higher and Gunslinger is active: - 13 Shots to Hell's Base Damage is increased by 5%\n• When Limit Break Up: Speed (Crushing Tech Class 10-0) and Gunslinger are active:\n- 13 Shots to Hell's Base Damage is increased by 3%\n[Minus Effect]\n• Support and Close-range Damage -200%\n• Spell Damage -50%\n• Max MP -10%\n• 13 Shots to Hell Skill Range reduced by 40",
         "affinity": "Special",
@@ -135004,7 +135004,7 @@
     {
         "id": 160737,
         "name": "Firestarter",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_Firestarter",
         "description": "Switch Skill.\n[Plus Effect]\n• LNG-R Damage +5%\n• For all rapid skills, Rapid +5%, LB Power +5%\n• When Magic Bullet is Class 7-5 or higher: Flame/Freezing/Thunderous/Sonic Bullet also increase LB Cap Damage by (LNGR x 1) for all Rapid-based skills.\n[Minus Effect]\n• Support and Close-range Damage -200%\n• Spell Damage -50%\n• Max MP -10%",
         "affinity": "Special",
@@ -135057,7 +135057,7 @@
     {
         "id": 160738,
         "name": "Rolling Guard",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_RollingGuard",
         "description": "A special skill that dashes towards the target while granting and 5 stacks of Grit. It also heals the user for 5% of its damage dealt. The skill can only be used with a long range weapon.\nWhen Firestarter is active and Curse of the Wretched is Class 8-0 or higher, Rolling Guard gains additional 50% Lifesteal Power and grants all 10 stacks of\n[Grit].\nModifier: 100 | Stiffness: 50",
         "affinity": "Weapon-Based",
@@ -135104,7 +135104,7 @@
     {
         "id": 160739,
         "name": "Vanishing Act",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0026a",
         "description": "A technique for hiding one's self in the shadows to avoid enemy targeting for 5 seconds while granting Tetrakarn x4, Makarakarn x4 and Tetraja x4.\nIf Deadeye is learnt, also grants\n[Hollow Point].\nWhen Survival Techinique is Class 7-0 (Vitality UP5), also grants\n[Serpent Coil] for 10 seconds.",
         "affinity": "Support",
@@ -135174,7 +135174,7 @@
     {
         "id": 160740,
         "name": "Extended Scope",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0002a",
         "description": "Switch Skill -\n[Bonus]\n• All Rapid and Shot action-based skills gains +5 Skill stack and +25 Range\n• All Magic Bullet skills' Stiffness is reduced by 150.\n[Penalty]\n. -50% Long-range Damage\n• Max MP -10%",
         "affinity": "Special",
@@ -135227,7 +135227,7 @@
     {
         "id": 160741,
         "name": "Gambler's Ruin",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0125a",
         "description": "You play a game of coin toss against the Devil. Gains a buff for 5 minutes based on its outcome. If Deadeye is learnt, using this skill will trigger\n[Hollow Point] for 15 seconds.\n[Heads] - 50% Chance\n• Gains LNGR by (Luck * 0.5)\n• Gains LB Cap by (LNGR * 1.2)\n[Tails] - 50% Chance\n• Gains LB Cap by (LNGR * 0.5)",
         "affinity": "Support",
@@ -135280,7 +135280,7 @@
     {
         "id": 160742,
         "name": "Deadeye",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_GaleBarrage",
         "description": "Passive Skill\n\n• Gains +20 LNGR\n• When using any offensive Ashes and Dust skills, 13 Shots to Hell, Qi shot and Boogie-Woogie, grants 5% chance to proc\n[Hollow Point]. Under\n[High Noon], the proc chance is increased to 10%.\n[Hollow Point]\n• For 15 seconds, gains LB Cap by (LNGR x 1.5) for all Rapid-based skills.",
         "affinity": "Special",
@@ -135320,7 +135320,7 @@
     {
         "id": 160743,
         "name": "Gunslinger",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_Grit",
         "description": "A switch skill that grants Super Armor to the user while lowering their Support and Close-range damage. Also gains a stack of\n[Grit] for each consecutive usage of 13 Shots to Hell, Qi Shot, Boogie-Woogie.\n[Grit] stacks up to 10 times. At\n[Grit]'s max stack, gains\n[Full Grit]. When Curse of the Wretched is Class 8-0 or higher:\n. +(Support x 0.3) Crit\n. +(Support x 0.2) LNGR\n• 13 Shots to Hell, Qi Shot, Boogie-Woogie and all offensive Ashes and Dust skills apply unblockable\n[Bullet Hex] to its target(s).\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Rapid Skills' LB Power +10%\n• Charged Rapid skills can be used while moving.\n• Gain a stack of\n[Grit] for each consecutive 13 Shots to Hell Qi Shot and Boogie-Woogie.\n[Minus Effect]\n• Close-range Damage -200%\n• Spell Damage -50%\n• Max MP -10%\n[Grit]\n• For all rapid skills, a stack grants +2% LB Power, and +(LNG-R x 0.15) LB Cap. Stacks dissipate after 10 seconds. Using 13 Shots to Hell and Boogie-Woogie skills refreshes the buff and adds 1 counter.",
         "affinity": "Special",
@@ -135373,7 +135373,7 @@
     {
         "id": 160744,
         "name": "Desperado",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_Desperado",
         "description": "Instantly unleashes a flurry of bullets around the user with low damage modifier and high knockback. Each\n[Grit] stack increases its damage mod by 25.\nWhen the user has\n[Full Grit], the usage of this skill will consume all\n[Grit] and\n[Full Grit] buff stacks and will grant\n[High Noon] buff for 30 seconds.\nWhen Curse of the Wretched is Class 8-0 or higher and Gunslinger is alive, Desperado has 15% chance to apply\n[Damage Hex] to all its targets. (Every 15 User's LNGR = 300 Damage Per Tick, 20 LB Cap Damage Received)\nWhen Gunslinger is active and Magic Bullet is Class 8-0,\n[Hollow Point] will also reduce Desperado’s stiffness by 200.\n[High Noon]\nFor 30 seconds:\n• Grants the user LNGR x 1.5 LB Cap to all Rapid skills\n• When Sharpshooter is Class 8-0 or higher, grants additional (Crit x 1.5) LB Cap Damage to all Rapid skills\n• Feeling Lucky during\n[High Noon], you have 75% chance to get \n[Gambler's Ruin: Heads] when casting Gambler's Ruin.\nUnder\n[High Noon], the skill damage modifier is increased.\nModifier: 40 | Stiffness: 400",
         "affinity": "Weapon-Based",
@@ -135426,7 +135426,7 @@
     {
         "id": 160745,
         "name": "Curtain Call",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_CurtainCall",
         "description": "Fire Almighty based shots in a quick succession. Each\n[Grit] stack increases its damage mod by 25.\nIf the user has\n[Full Grit], activating this skill will:\n• Consume all\n[Grit] and\n[Full Grit] stacks\n• Trigger the\n[High Noon] buff for 30 seconds\n• Apply an additional (LNG-R x 2.5) LB Cap Damage to this attack.\n[High Noon]\nFor 30 seconds:\n• Grants the user LNGR x 1.5 LB Cap to all Rapid skills\n• When Sharpshooter is Class 8-0 or higher, grants additional (Crit x 1.5) LB Cap Damage to all Rapid skills\n• Feeling Lucky during\n[High Noon], you have 75% chance to get \n[Gambler's Ruin: Heads] when casting Gambler's Ruin.\nUnder\n[High Noon], the skill damage modifier is vastly increased.\nModifier: 50 | Stiffness: 150",
         "affinity": "Almighty",
@@ -135479,7 +135479,7 @@
     {
         "id": 160746,
         "name": "Excalibur",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_Excalibur",
         "description": "Passive Skill\n\n• Increases Close Range by 30,\n• Increases LB Cap by CLS-R x 1 for all Attack-based skills\n• Increases LB Cap by CLS-R x 1 for all Spin-based skills\n• Increases LB Cap by CLS-R x 2 for all Rush-based skills",
         "affinity": "Special",
@@ -135519,7 +135519,7 @@
     {
         "id": 160747,
         "name": "Grand Duelist",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_GrandDuelist",
         "description": "Passive skill that increases Close Range by 30 and Limit Break Cap for Gatling Strike, Improved Basic Attack, Aldar Rok, Devastate, Ruthless Sword and Defiled Sword by (CLSR * 2).",
         "affinity": "Special",
@@ -135559,7 +135559,7 @@
     {
         "id": 160748,
         "name": "Zenith Blade",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_ZenithBlade",
         "description": "Passive skill: \n• Increases Attack damage dealt by 25%\n• TA power +10% for Attack skills\n• Pursuit power +10% for Attack skills\n• While using Gatling Strike or Devastate: - Limit Break Cap +1000, Limit Break Power +10%",
         "affinity": "Special",
@@ -135599,7 +135599,7 @@
     {
         "id": 160749,
         "name": "Destruction Magic Mastery",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD20_0093a",
         "description": "Passive skill\n• Spell Damage is increased by 10%.\n• For all Destruction Magic Skills above Class 5, Essence of Magic and Infinite Light: 10% LB Power, +1000 LB Cap\n• Fire, Ice, Electric, Force, Almighty, Mystic Affinity Boost +10%",
         "affinity": "Special",
@@ -135639,7 +135639,7 @@
     {
         "id": 160750,
         "name": "Order of the Absolute - Magic",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_OrderMagic",
         "description": "Forcefully remove the chains holding your partner back... at a price. Grants\n[Demon Smile-Magic] for 30 minutes.\n[Demon Smile-Magic]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's Spell Damage +25%\n• Additionally grants LB Cap by Partner's (Spell x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner Spell +5%\n• When Seal of Command - Magician is active, partner gains 2% chance to trigger\n[Concentrated] on themselves when using Spell based skill.\n• When Seal of Command - Magician and Destructive Mind are active, partner gains 2% chance to trigger\n[Concentrated] when the summoner uses Essence of Magic, Demolition Dash or Magic Bullet related skills.\n[Concentrated]\nFor 30 seconds,\n• Spell Damage +50%\n• Null all conventional \"Mute\" and \"Muddle\" status\n• Increases LB Cap by (Spell x 1.5)",
         "affinity": "Support",
@@ -135684,7 +135684,7 @@
     {
         "id": 160751,
         "name": "Order of the Absolute - Speed",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_OrderSpeed",
         "description": "Forcefully remove the chains holding your partner back... at a price. Grants\n[Demon Smile-Speed] for 30 minutes.\n[Demon Smile-Speed]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's LNGR Damage +25%\n• Additionally grants LB Cap by Partner's (LNGR x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner LNG-R +5%\n• When Seal of Command - Archer is active, partner gains 2% chance to trigger\n[High Noon] on themselves when using Spell based skill.\n• When Seal of Command - Archer and Gunslinger/Der Freischutz are active, partner gains 2% chance to trigger\n[High Noon] when the summoner uses Magic Bullet and Ashes and Dust related Skills.\n[High Noon]\nFor 30 seconds,\n• Long-range Damage +50%\n• For all Shot and Rapid based skills, increases LB Cap by (LNGR x 1.5)",
         "affinity": "Support",
@@ -135724,7 +135724,7 @@
     {
         "id": 160752,
         "name": "Order of the Absolute - Support",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_OrderSupport",
         "description": "Forcefully remove the chains holding your partner back... at a price. Grants\n[Demon Smile-Support] for 30 minutes.\n[Demon Smile-Support]\nFor 30 minutes, when Blood Ties is active,\n• Summoned Partners's Support Damage +25%\n• Additionally grants LB Cap by Partner's (Support x 2) to partner.\n• When Digitalized and Mitama Demon Growth is Class 8-0+, Partner Support +5%\n• Partner gains 2% chance to trigger\n[Stolen Essence] on themselves when using any skill.\n• When Lord of Malevolence is active, partner gains 2% chance to trigger\n[Stolen Essence] on themselves when the summoner uses Magic Bullet and Curse of the Wretched Skills.\n[Stolen Essence]\nFor 30 seconds,\n• Support Damage +50%\n• Increases LB Cap by (Support x 1.5)",
         "affinity": "Support",
@@ -135764,7 +135764,7 @@
     {
         "id": 160753,
         "name": "Partner Sympathy I",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_PartnerSympathy",
         "description": "Passive Skill Fighting alongside your partner all this time has earned you their trust You may now witness more of their innate power.\n• If Bonded, Partner's LB Cap +1000",
         "affinity": "Special",
@@ -135804,7 +135804,7 @@
     {
         "id": 160755,
         "name": "Uncurse",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP09_0011a",
         "description": "Accursed Ranger Status is removed from the user.",
         "affinity": "Support",
@@ -135856,7 +135856,7 @@
     {
         "id": 160756,
         "name": "Locked On",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP09_0024a",
         "description": "Passive Skill.\n[Bonus]\n• Increases Long Range by 15.\n• Increases Deadeye's\n[Hollow Point] proc chance by additional +10%",
         "affinity": "Special",
@@ -135896,7 +135896,7 @@
     {
         "id": 160757,
         "name": "Exploit Weakness",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SK_731",
         "description": "Passive Skill.\n[Bonus]\n• Increases Long Range by 15.\n• When using any Magic Bullet skill, if the user hits the enemy's weakness, the damage's LB Cap is additionally increased by (LNG-R x 2)",
         "affinity": "Special",
@@ -135936,7 +135936,7 @@
     {
         "id": 160758,
         "name": "Gale Form",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0072a",
         "description": "Switch skill -\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Spin Boost +50%, Spin-based skills LB Power +50%\n• Charged Spin skills can be used while moving\n• Spin skills no longer knock enemies back\n• When using elemental spins from Vanguard and Three Step Crescent Moon, gains a stack of\n[Rampaging Whirlwind], up to 10 stacks.\n[Rampaging Whirlwind] lasts for 15 seconds.\n[Minus Effect]\n• Spell, Long-range and Support damage -300%\n• Max MP -10%\n[Rampaging Whirlwind]\n• Increases Spin-based skills LB Power by +5% and LB Cap damage by (CLS-R x 0.2) per stack.\n• Decreases Spin-based skills stiffness by 50 per stack.\n• Increases Heaven Shaking Sword's LB Cap Damage by (CLS-R x 0.1) per stack.",
         "affinity": "Special",
@@ -135989,7 +135989,7 @@
     {
         "id": 160761,
         "name": "Awakening",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0126a",
         "description": "Grants the user、 for 30 seconds, Null knockback, Limit Break Power +15%, Rush skill stack +5 and Rush skills' Limit Break Cap +5000.",
         "affinity": "Support",
@@ -136041,7 +136041,7 @@
     {
         "id": 160763,
         "name": "Infernal Hail",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ice-hurricane2",
         "description": "Rapid skill that deals ice-based damage to all surrounding enemies\nModifier: 280 | Stiffness: 1000",
         "affinity": "Ice",
@@ -136094,7 +136094,7 @@
     {
         "id": 160769,
         "name": "Bound By Fate",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "boundbyfate",
         "description": "A switch skill that prevents friendship loss with your partner.\n[Plus Effect]\n• Partner's Friendship loss -100%",
         "affinity": "Special",
@@ -136147,7 +136147,7 @@
     {
         "id": 160777,
         "name": "Murderous Secret 1. Partner",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MSP1",
         "description": "Passive skill.\n\n• Partner's LB Cap Increase +500",
         "affinity": "Special",
@@ -136187,7 +136187,7 @@
     {
         "id": 160778,
         "name": "Murderous Secret 2. Partner",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MSP2",
         "description": "Passive skill.\n\n• Partner's LB Cap Increase +1000",
         "affinity": "Special",
@@ -136227,7 +136227,7 @@
     {
         "id": 160779,
         "name": "Murderous Secret 3. Partner",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MSP3",
         "description": "Passive skill.\n\n• Partner's LB Cap Increase +2000",
         "affinity": "Special",
@@ -136267,7 +136267,7 @@
     {
         "id": 160780,
         "name": "Murderous Secret 4. Partner",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "MSP4",
         "description": "Passive skill.\n\n• Partner's LB Cap Increase +3500",
         "affinity": "Special",
@@ -136307,7 +136307,7 @@
     {
         "id": 160781,
         "name": "Limit Break Chance Up Improvement 1",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0093a",
         "description": "Passive skill.\n\n・Limit Break Chance +5%",
         "affinity": "Special",
@@ -136347,7 +136347,7 @@
     {
         "id": 160782,
         "name": "Outlaw Marksman",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "OutlawMarksman",
         "description": "Switch Skill.\n[Plus Effect]\n• Long-range Damage +50%\n• Usage of Arm Snipe will grant an extra stack of\n[Killshot].\n• If Thunderous Bullet, Freezing Bullet, Flame Bullet, or Sonic Bullet is active: - Arm Snipe's Damage mod is increased by 150 - Arm Snipe's range is increased by 25\n• When Ashes and Dust is Class 8-0 or higher: - Long-range is increased by (Crit x 0.5) - When using Arm Snipe, gains 15% chance of\n[Full Killshot] not being consumed.\n[Minus Effect]\n• Support and Close-range Damage -200%\n• Spell Damage -500%\n• Max MP -10%",
         "affinity": "Special",
@@ -136400,7 +136400,7 @@
     {
         "id": 170000,
         "name": "Demon Sympathy 5",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "DemonSympathy5",
         "description": "Passive skill.\n\n・XP to summoned Demon +100%\n・Soul Point Boost to summoned Demon +50%",
         "affinity": "Special",
@@ -136440,7 +136440,7 @@
     {
         "id": 170001,
         "name": "Limit Break Up: Magic",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_0127a",
         "description": "Passive skill.\n\n・Increases LB Cap by User's Magic Stat * 1",
         "affinity": "Special",
@@ -136480,7 +136480,7 @@
     {
         "id": 170002,
         "name": "Limit Break Up: Speed",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_0129a",
         "description": "Passive skill.\n\n・Increases LB Cap by User's Speed Stat * 1",
         "affinity": "Special",
@@ -136520,7 +136520,7 @@
     {
         "id": 170003,
         "name": "Der Freischutz",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0061a",
         "description": "A switch skill that grants Super Armor to the user while lowering their Close-range Spell damage.\nAlso gains a stack of\n[Killshot] for each consecutive usage of all damaging Shot, Magic Bullet skills and UB Evil Shot.\n[Killshot] stacks up to 5 times.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Magic Bullet and Shot Expertise Skills' LB Power +10%.\n• Increases Magic Bullet and Shot Expertise skills' Range by +25\n• Gain a stack of\n[Killshot] for each consecutive damaging Magic Bullet skills.\n• Magic Bullet skills no longer knock enemies back.\n[Minus Effect]\n• Support and Close-range Damage -200%\n• Spell Damage -50%\n• Max MP -10%\n[Killshot]\n• For all Magic Bullet, Shot Expertise skills, and UB Evil Shot, a stack grants +5% LB Power and +100 LB Cap (5 stacks max). \n• At 5\n[Killshot] stacks, the next Shot Expertise or Magic Bullet Skill will be a guarenteed Critical hit, grants 100% LNGR Boost and its LB Cap Damage is increased by (4 x LNGR).\n[Killshot] is consumed afterwards.",
         "affinity": "Special",
@@ -136573,7 +136573,7 @@
     {
         "id": 170004,
         "name": "Ethereal Greatsword",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0045a",
         "description": "From the depths of arcane power, a spectral greatsword takes shape, weightless yet unstoppable. In a flurry of ethereal slashes, it rends the target apart. Deals Mystic damage to the target.\nWhen Limit Break Up: Magic (Crushing Tech Class 10-0) and Destructive Mind are active, deals additional (Crit x 1.5) Lb Cap Damage with this skill.\nModifier: 175 | Stiffness: 200",
         "affinity": "Mystic",
@@ -136626,7 +136626,7 @@
     {
         "id": 170005,
         "name": "Tranquil Mind",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD04_0003a",
         "description": "Relinquishes the user's heightened concentration, allowing their mind to flow freely once more.\nRemoves\n[Concentrated] and recovers full MP.",
         "affinity": "Curative",
@@ -136666,7 +136666,7 @@
     {
         "id": 170006,
         "name": "Lord of Execution",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0124a",
         "description": "Passive skill\n\n• CLS-R Damage +50%\n• When Demolition Dash is Class 8-0+, all Physical-based skills in Demolition Dash and Rush Expertise stiffness is reduced by 150.\n• Against a target enemy, if their HP is lower than 25%,\n- Limit Break Power +25%\n- All Rush skills' LB Cap Damage is increased by (CLSR x 2)",
         "affinity": "Special",
@@ -136706,7 +136706,7 @@
     {
         "id": 170007,
         "name": "Riposte",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0080a",
         "description": "Passive skill\n\n• Increases MAX HP by (Level x 15) \n• Counter Boost +50%\n• Counter skills' LB Power +50%\n• Counter skills' LB Cap Damage is increased by (MAX HP x 0.75)\n• While Gale Form is active, the usage of Strikeback・ＷＯＲＬＤ will grant the user [At World's End] additionally for 15 seconds.\n• While Bulwark is active, any Attack, or Rush based skills towards the user has 10% to be automatically countered with Strikeback・ＷＯＲＬＤ.\n• Each stack of\n[Protective Vortex] grants an addition 2% chance of automatic Counter.\n.\n[High Noon] increases the chance to automatically counter by 25%.",
         "affinity": "Special",
@@ -136746,7 +136746,7 @@
     {
         "id": 170008,
         "name": "Serpent Coil",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SmirkDodge",
         "description": "Passive skill\n\n• Movement Speed Boost +5%\n• Dodge Skill stack +3\n• While Gale Form is active, the usage of Ultrasonic Dodge will grant the user [At World's End] additionally for 15 seconds, and has 15% chance to gain\n[Serpent Coil] for 10 seconds.\n[Serpent Coil]\n• Increases LB Cap Damage by (CLS-R x 1)\n• Player’s Movement Speed Boost +5%\n• Player’s Chance to evade any projectile attacks +100%",
         "affinity": "Special",
@@ -136786,7 +136786,7 @@
     {
         "id": 170009,
         "name": "True Essence",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0020a",
         "description": "Passive skill\n• When using any Destruction Magic, UB Dora Crush, or Essence of Magic, LB Cap Damage is increased by (Spell x 2).",
         "affinity": "Special",
@@ -136826,7 +136826,7 @@
     {
         "id": 170010,
         "name": "Precision",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0074a",
         "description": "Passive skill\n• Long-range Damage is increased by 50%.\n• All skills in Shot Expertise UB Evil Shot, and Magic Bullet LB Cap is increased by (LNGR x 2).\n• All Magic Bullet skills and UB Evil Shot LB Cap Damage is additionally increased by (Spell x 1.5).",
         "affinity": "Special",
@@ -136866,7 +136866,7 @@
     {
         "id": 170011,
         "name": "Lionheart",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_0084a",
         "description": "Passive skill\n• Rush and Spin Action Boost +50%\n• All Rush and Spin based skills LB Power +50% and LB Cap Damage is increased by (CLSR x 2 + MAX HP x 0.25)",
         "affinity": "Special",
@@ -136906,7 +136906,7 @@
     {
         "id": 170012,
         "name": "Lord of Immortality",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0101a",
         "description": "Passive skill\n\n• Max HP +250 + (VIT x 2)\n• When HP is 2 or greater, 20% chance of surviving a lethal blow\n• Critical Defense +200",
         "affinity": "Special",
@@ -136946,7 +136946,7 @@
     {
         "id": 170013,
         "name": "Mitama Demon - Inner Power",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_0112a",
         "description": "Passive skill. Your Mitama-fused partner gains additonal power based on the fused Mitama and the number of Mitama Slot that can be allocated.\n[Ara Mitama]\n• Increases Partner's Strength by (Total Mitama Slot x 2) and Vitality by (Total Mitama Slot x 1)\n[Nigi Mitama]\n• Increases Partner's Magic by (Total Mitama Slot x 2) and Intelligence by (Total Mitama Slot x 1)\n[Kushi Mitama]\n• Increases Partner's Speed by (Total Mitama Slot x 2) and Luck by (Total Mitama Slot x 1)\n[Saki Mitama]\n• Increases Partner's Luck by (Total Mitama Slot x 2) and Intelligence by (Total Mitama Slot x 1)",
         "affinity": "Special",
@@ -136986,7 +136986,7 @@
     {
         "id": 170014,
         "name": "Mitama Demon Ascension",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_MitamaOvergrowth",
         "description": "Passive skill. Increases Limit Break Cap by (Allocated Mitama Slot x 25) for your summoned Mitama Demon.",
         "affinity": "Special",
@@ -137026,7 +137026,7 @@
     {
         "id": 170015,
         "name": "Partner Sympathy II",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_PartnerSympathy",
         "description": "Passive Skill\n• If they are fused with Ara Mitama, their LB Cap is increased by (CLSR x 1.5)\n• If they are fused with Nigi Mitama, their LB Cap is increased by (Spell x 1.5)\n• If they are fused with Kushi Mitama, their LB Cap is increased by (LNGR x 1.5)\n• If they are fused with Saki Mitama, their LB Cap is increased by (Luck x 1.5)",
         "affinity": "Special",
@@ -137066,7 +137066,7 @@
     {
         "id": 170016,
         "name": "Photon Edge",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "PhotonEdge",
         "description": "Deals Almighty-based physical damage on a single target. \nModifier: 135 | Stiffness: 350",
         "affinity": "Almighty",
@@ -137113,7 +137113,7 @@
     {
         "id": 170017,
         "name": "Devour",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "Devour",
         "description": "Deals massive Almighty-based physical damage on a single target and heals the user's by 15% of its damage dealt.\nModifier: 500 | Stiffness: 250",
         "affinity": "Almighty",
@@ -137160,7 +137160,7 @@
     {
         "id": 170018,
         "name": "Slash Spread",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SlashSpread",
         "description": "Delivers Slash-based Physical Attack on the target and surrounding enemies.\nModifier: 150 | Stiffness: 750",
         "affinity": "Slash",
@@ -137200,7 +137200,7 @@
     {
         "id": 170019,
         "name": "Thrust Spread",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ThrustSpread",
         "description": "Delivers Thrust-based Physical Attack on the target and surrounding enemies.\nModifier: 150 | Stiffness: 750",
         "affinity": "Thrust",
@@ -137240,7 +137240,7 @@
     {
         "id": 170020,
         "name": "Blunt Spread",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "BluntSpread",
         "description": "Delivers Blunt-based Physical Attack on the target and surrounding enemies.\nModifier: 150 | Stiffness: 750",
         "affinity": "Blunt",
@@ -137280,7 +137280,7 @@
     {
         "id": 170021,
         "name": "Gigantic Fist",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GiganticFist",
         "description": "Strikes with fists or weapons, inflicting physical Blunt-based damage.\nModifier: 135 | Stiffness: 350",
         "affinity": "Blunt",
@@ -137320,7 +137320,7 @@
     {
         "id": 170022,
         "name": "Hell Spear",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "HellSpear",
         "description": "Inflicts Thrust-based Physical damage on an enemy\nModifier: 135 | Stiffness: 350",
         "affinity": "Thrust",
@@ -137360,7 +137360,7 @@
     {
         "id": 170023,
         "name": "COMP: Repair Protocol",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Executes a COMP program that repairs gear on the field.",
         "affinity": "Unknown",
@@ -137400,7 +137400,7 @@
     {
         "id": 170024,
         "name": "Astral Eye",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "AstralEye",
         "description": "An otherworldly light emitted from the eyes. Inflict Spell-based Almighty damage to a target\nModifier: 150 | Stiffness: 750",
         "affinity": "Almighty",
@@ -137453,7 +137453,7 @@
     {
         "id": 170025,
         "name": "Cosmic Needles",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "CosmicNeedles",
         "description": "Countless points of creation pierce the target.\nDeals Almighty damage to the target in rapid succession, based on the user's LNGR.\n\nModifier: 135 | Stiffness: 200",
         "affinity": "Almighty",
@@ -137500,7 +137500,7 @@
     {
         "id": 170026,
         "name": "ARS Full Booster 2",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ARS2",
         "description": "Passive skill.\n\n・Attack +50%\n・Rush +50%\n・Spin +50%\n・LB Upper Limit Increase +1000",
         "affinity": "Special",
@@ -137540,7 +137540,7 @@
     {
         "id": 170027,
         "name": "SR Full Booster 2",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SR2",
         "description": "Passive skill.\n\n・Shot +50% 　※Includes Destruction Magic \n・Rapid +50%\n・LB Upper Limit Increase +1000",
         "affinity": "Special",
@@ -137580,7 +137580,7 @@
     {
         "id": 170028,
         "name": "Noble Evolve",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "NobleEvolve",
         "description": "Passive skill.\n\n・Limit Break Chance +40%\n・Limit Break Power +60%\n・Technical Attack power +10%\n・Critical +340",
         "affinity": "Special",
@@ -137620,7 +137620,7 @@
     {
         "id": 170029,
         "name": "Squall Bullet Hole",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0023a",
         "description": "Atavaka mantra magic shot. Changes bullet to force-based and inflicts Stun effect at low success rate.\nModifier: 175 | Stiffness: 700",
         "affinity": "Force",
@@ -137672,7 +137672,7 @@
     {
         "id": 170030,
         "name": "Scorching Bullet Hole",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0020a",
         "description": "Ucchusama mantra magic-shot. Changes bullet to fire-based and inflicts fire-based effect.\nModifier: 175 | Stiffness: 700",
         "affinity": "Fire",
@@ -137724,7 +137724,7 @@
     {
         "id": 170031,
         "name": "Hailing Bullet Hole",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0021a",
         "description": "Yamantaka Myo-O mantra magic shot. Changes bullet to ice-based property and inflicts freeze effect with a high success rate.\nModifier: 175 | Stiffness: 700",
         "affinity": "Ice",
@@ -137776,7 +137776,7 @@
     {
         "id": 160611,
         "name": "Cataclysmic Mind",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0146a",
         "description": "Passive skill.\n\n• Spell +50\n• At 75% MP or Above, gains Spell by (MAG x 0.75 + INT x 0.25).\n• When Radiant Hands is active, Spell Damage +500%\n• If Curse of the Wretched is Class 8-0+ and\n[Full Momentum] is active, Destruction Magic (Class 5-0+) and all offensive Essence of Magic skills (except Ethereal Greatsword) apply\n[Arcane Burn] of their affinity (Fire/Ice/Elec/Force/Mystic/Almighty) for 30 seconds. Only one\n[Arcane Burn] can be active per target.\n• While\n[Ethereal] and\n[Full Momentum] are active, Ethereal Greatsword has a 3% chance to trigger an advanced spell of the same affinity: Ma-dyne (Fire/Ice/Elec/Force), Magic Blast (Mystic), Megidora (Almighty).\n[Arcane Burn]\n• Deals damage over time and increases LB Cap Damage taken from its affinity.\n• Scales with Spell (300 DoT + 10 LB Cap per 15 Spell).\n• Max: 30,000 DoT / +1,000 LB Cap Damage taken.",
         "affinity": "Special",
@@ -137816,7 +137816,7 @@
     {
         "id": 170033,
         "name": "Ghost Form",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0037a",
         "description": "Switch Skill.\n[Plus Effect]\n• Support + (50 + (Spell x 0.1))\n. +30% to evade all conventional projectile attacks\n• Heals all party members for 0.3% of damage dealt with Curse Magic and Curse of the Wretched\n• When Lord of Malevolence is also active, Erosion/Seductive/Corrosion Hex and Curse of the Broken Mirror now apply\n[Damage Hex] to all their targets.\n• All offensive Curse Magic Stiffness is reduced by 500\n• When Lord of Malevolence is also active, for all offensive Curse Magic and Shadow Scythe:\n- Deals Spell-based damage instead of Support-based (Affected by Spell Damage received, Magic NRA). Its damage however is calculated using (Support) and is affected by Support Damage Boosts.\n- LB Cap damage is increased by (Support x 1 + Max MP x 0.3)\n[Minus Effect]\n• CLSR, Spell, LNGR Damage -500%\n• Curative Boost -500%\n• Max HP -15%",
         "affinity": "Special",
@@ -137869,7 +137869,7 @@
     {
         "id": 170034,
         "name": "Combat Medic",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0076a",
         "description": "Switch Skill.\n[Plus Effect]\n• Null Knockback, Null Incapacitate\n• Support + (50 + (LNGR x 0.5))\n• Curative Boost +50%\n• All offensive Tuner skills now deals Physical-based damage instead of Support-based (Affected by Long-range Damage received, Physical NRA). Its damage however is calculated using (Support) and is affected by Support Damage Boosts.\n• When Radiant Hands is also active, all offensive Tuner skills have 5% chance to trigger\n[Inspiring Presence] on the user and 3% to heal all nearby party members (250 Mod).\n- When Enhancement is Class 8-0+ LB Cap damage is increased by (Support x 1 + Max MP x 0.3) for all offensive Tuner skills\n- If Gunslinger is active, all offensive Tuner skills also grant a stack of\n[Grit] to the user. Each stack of\n[Grit] also grants +5% Support Damage.\n- If Lord of Malevolence is active, all offensive Tuner skills also grant a stack of\n[Cursebearer] to the user.\n[Minus Effect]\n• Close-range and Long-range damage -500%\n• Max HP -15%",
         "affinity": "Special",
@@ -137922,7 +137922,7 @@
     {
         "id": 170035,
         "name": "Break Shooter",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0059a",
         "description": "Fire Almighty based shots in a quick succession. When used:\n\n• When Combat Medic is active, applies all offensive tuner buffs.\n• Consumes all\n[Grit] and\n[Full Grit] stacks\n• For each\n[Grit] applied to the user, applies a stack of\n[Break Bullet] buff for 30 seconds. (10 stacks Max)\n• When Combat Medic is active,\n[Full Grit] grants an additional (Support x 2.5) LB Cap Damage to this attack.\n• When Combat Medic and Radiant Hands are active, also heals all nearby members (250 Mod). If\n[Full Grit] is also active, applies x2\n[Tetrakarn] and x2\n[Makarakarn] to all members.\n[Break Bullet]\n• Increase all party members' LB Cap Damage by the user's (Support x 0.2)\nModifier: 350 | Stiffness: 200",
         "affinity": "Almighty",
@@ -137975,7 +137975,7 @@
     {
         "id": 170036,
         "name": "Recall",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0128a",
         "description": "Instantly teleport your demon partner to your position.\n\n• If Blood Ties is active, applies\n[Wickedness], x2\n[Tetrakarn], x2\n[Makarakarn] to your partner.\n• If Blood Ties and Radiant Hands are active, applies Linked by Fate\n[Summon Synchro], [Hero's Radiance]\n[Radiant Super Armor +] and\n[Radiance] to your partner.",
         "affinity": "Support",
@@ -138028,7 +138028,7 @@
     {
         "id": 170037,
         "name": "Support Bullet Healing",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 250 | Stiffness: 0",
         "affinity": "Curative",
@@ -138075,7 +138075,7 @@
     {
         "id": 170038,
         "name": "Grand Tack (Mystic)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GrandTackMystic",
         "description": "Deals mystic damage to all enemies around the target.\nUnder\n[Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Mystic resistance by 10% per shot (50% at max stack). (Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
         "affinity": "Mystic",
@@ -138128,7 +138128,7 @@
     {
         "id": 170039,
         "name": "Grand Tack (Nerve)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GrandTackNerve",
         "description": "Deals nerve damage to all enemies around the target.\nUnder\n[Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Nerve resistance by 10% per shot (50% at max stack). (Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
         "affinity": "Nerve",
@@ -138181,7 +138181,7 @@
     {
         "id": 170040,
         "name": "Grand Tack (Mind)",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "GrandTackMind",
         "description": "Deals mind damage to all enemies around the target.\nUnder\n[Accursed Ranger], the shot also curses the targets and applies an unblockable debuff that lowers the targets' Mind resistance by 10% per shot (50% at max stack). (Does not affect the target's NRA stat)\nModifier: 140 | Stiffness: 800",
         "affinity": "Mind",
@@ -138234,7 +138234,7 @@
     {
         "id": 170041,
         "name": "Enrage",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD03_0019a",
         "description": "Manually activates\n[Undying Rage]. Only usable when\n[Undying Rage] is not on cooldown.",
         "affinity": "Support",
@@ -138281,7 +138281,7 @@
     {
         "id": 170042,
         "name": "Guardian Angel",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SB01_0087a",
         "description": "A switch Skill that grants strengthens the partner's supportive abilities and its survivability.\n[Plus Effect]\n• Null Knockback, Null Incapacitate, Null Shock to demon partner\n• When Blood Ties is not active:\n- Partner CLS-R, LNG-R and Spell damage taken -200%\n- Partner Curative Boost +50%, Curative affinity Cap +50%\n- Partner Clench +100%, Ailment Resist +9999\n- When partner uses any skills, there's 5% chance to them to heal all nearby allies (150 mod). When Linked by Fate, they also apply\n[Partner Synchro] buff to the summoner that lasts 30 seconds.\n[Minus Effect]\n• Partner can no longer deal extra LB Cap Damage. \n• Partner's Pursuit Chance and Power -999%\n• Partner's TA Chance and Power -999%\n• Summoner Max MP -10%\n[Partner Synchro]\n• Increases CLSR, LNGR, Spell, Support Damage by 30%\n• Increases CLSR/LNGR/SPELL/SUPPORT by 5%",
         "affinity": "Special",
@@ -138328,7 +138328,7 @@
     {
         "id": 170043,
         "name": "Partner Healing",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 150 | Stiffness: 0",
         "affinity": "Curative",
@@ -138375,7 +138375,7 @@
     {
         "id": 170044,
         "name": "Shadow Scythe",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0036a",
         "description": "Deals Support-based Almighty Damage in a quick succession.\nWhen Lord of Malevolence and Ghost Form are active, +5% chance to apply\n[Lifebreak] to its target for 20 seconds.\n[Lifebreak]\n• Increases LB Cap damage received from all source of damage (25 Support Stat = 50 LB Cap Damage, Capped at +5000)\nModifier: 175 | Stiffness: 200",
         "affinity": "Almighty",
@@ -138428,7 +138428,7 @@
     {
         "id": 180000,
         "name": "Dissolution Breath",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0014a",
         "description": "Enemy-only skill. Breathe Gas to damage all players.\nModifier: 500 | Stiffness: 200",
         "affinity": "Support",
@@ -138468,7 +138468,7 @@
     {
         "id": 180001,
         "name": "Abaddon's Bite",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "・Modifier 250 - Life steal - Almighty - Pierces Through NRA\nModifier: 250 | Stiffness: 350",
         "affinity": "Almighty",
@@ -138508,7 +138508,7 @@
     {
         "id": 180002,
         "name": "Insect Swarm",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0051a",
         "description": "Modifier: 3000 | Stiffness: 980",
         "affinity": "Unknown",
@@ -138548,7 +138548,7 @@
     {
         "id": 180003,
         "name": "Insect Swarm Prepare",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0051a",
         "description": "",
         "affinity": "Almighty",
@@ -138588,7 +138588,7 @@
     {
         "id": 180004,
         "name": "Despawn",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Support",
@@ -138628,7 +138628,7 @@
     {
         "id": 180006,
         "name": "Soul Severance",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 30000 | Stiffness: 1500",
         "affinity": "Almighty",
@@ -138673,7 +138673,7 @@
     {
         "id": 180007,
         "name": "Fly Explosion",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SP04_0095a",
         "description": "Suicide Affinity - cast on death\nModifier: 250 | Stiffness: 1500",
         "affinity": "Suicide",
@@ -138713,7 +138713,7 @@
     {
         "id": 180008,
         "name": "Abaddon's Black Sun",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0131a",
         "description": "Deals massive damage to everyone inside his domain.",
         "affinity": "Almighty",
@@ -138758,7 +138758,7 @@
     {
         "id": 180009,
         "name": "Abaddon's Black Sun Prepare",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SI01_0131a",
         "description": "",
         "affinity": "Almighty",
@@ -138798,7 +138798,7 @@
     {
         "id": 180010,
         "name": "Zhu Que Bombardment",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -138843,7 +138843,7 @@
     {
         "id": 180011,
         "name": "Xuan Wu Bombardment",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -138888,7 +138888,7 @@
     {
         "id": 180012,
         "name": "Qing Long Thunder",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Unknown",
@@ -138933,7 +138933,7 @@
     {
         "id": 180013,
         "name": "PG-Thread of the Forest",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0106a",
         "description": "",
         "affinity": "Penetrate",
@@ -138973,7 +138973,7 @@
     {
         "id": 180014,
         "name": "PG-Exorcism Bow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0099a",
         "description": "",
         "affinity": "Handgun",
@@ -139013,7 +139013,7 @@
     {
         "id": 180015,
         "name": "PG-Heaven's Bow",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0075a",
         "description": "",
         "affinity": "Spread",
@@ -139053,7 +139053,7 @@
     {
         "id": 180016,
         "name": "PG-Eclipse",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD01_0107a",
         "description": "",
         "affinity": "Almighty",
@@ -139093,7 +139093,7 @@
     {
         "id": 180017,
         "name": "PG-Myriad Arrows",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0055a",
         "description": "",
         "affinity": "Handgun",
@@ -139133,7 +139133,7 @@
     {
         "id": 180018,
         "name": "PG- Heal",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Curative",
@@ -139173,7 +139173,7 @@
     {
         "id": 180019,
         "name": "Kirin Judgment - Light",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 30000 | Stiffness: 1500",
         "affinity": "Unknown",
@@ -139213,7 +139213,7 @@
     {
         "id": 180020,
         "name": "Kirin Judgment - Normal",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 30000 | Stiffness: 1500",
         "affinity": "Unknown",
@@ -139253,7 +139253,7 @@
     {
         "id": 180021,
         "name": "Kirin Judgment - Heavy",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 30000 | Stiffness: 1500",
         "affinity": "Unknown",
@@ -139293,7 +139293,7 @@
     {
         "id": 180022,
         "name": "MZ Alm Attack",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ThrustSpread",
         "description": "Modifier: 350 | Stiffness: 300",
         "affinity": "Almighty",
@@ -139333,7 +139333,7 @@
     {
         "id": 180023,
         "name": "MZ Thrust Attack",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ThrustSpread",
         "description": "Modifier: 350 | Stiffness: 300",
         "affinity": "Thrust",
@@ -139373,7 +139373,7 @@
     {
         "id": 180024,
         "name": "MZ Elec Attack",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "ThrustSpread",
         "description": "Modifier: 350 | Stiffness: 300",
         "affinity": "Electric",
@@ -139413,7 +139413,7 @@
     {
         "id": 180025,
         "name": "GZ Akasha Arts",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0054a",
         "description": "Modifier: 260 | Stiffness: 980",
         "affinity": "Blunt",
@@ -139460,7 +139460,7 @@
     {
         "id": 180026,
         "name": "GZ Trembling Vacuum Blade",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD22_0008a",
         "description": "Modifier: 250 | Stiffness: 980",
         "affinity": "Force",
@@ -139520,7 +139520,7 @@
     {
         "id": 180027,
         "name": "GZ Hasso-Happa",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0056a",
         "description": "Modifier: 500 | Stiffness: 750",
         "affinity": "Almighty",
@@ -139572,7 +139572,7 @@
     {
         "id": 180028,
         "name": "LS Special Slash",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 5 | Stiffness: 200",
         "affinity": "Almighty",
@@ -139612,7 +139612,7 @@
     {
         "id": 180029,
         "name": "LS Deathbound",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD03_0014a",
         "description": "Modifier: 30 | Stiffness: 200",
         "affinity": "Slash",
@@ -139659,7 +139659,7 @@
     {
         "id": 180030,
         "name": "LS Piercing Shot",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Modifier: 10 | Stiffness: 200",
         "affinity": "Penetrate",
@@ -139699,7 +139699,7 @@
     {
         "id": 180033,
         "name": "BF Hee-Ho Reinforcements",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Summons ten I.C.B.M. Jack Frosts to join the battle.",
         "affinity": "Support",

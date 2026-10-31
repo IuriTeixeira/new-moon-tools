@@ -70,8 +70,19 @@ function handleLeave() { activeSkillId.value = null; }
 async function handleSkillClick(skill) {
   if (!skill?.description) return;
   try {
-    await navigator.clipboard.writeText(skill.description);
-    oruga.notification.open({ message: `Copied: ${skill.name}`, position: "bottom-right", variant: "success", duration: 2000 });
+    skill.nameNO !== ""
+      ?
+      await navigator.clipboard.writeText(skill.name + "\n\n" + skill.nameNO + "\n\n" + skill.description)
+      :
+      await navigator.clipboard.writeText(skill.name + "\n\n" + skill.description)
+
+    oruga.notification.open({
+      message: `Copied name and description for <b>${skill.name}</b>!`,
+      position: "bottom",
+      variant: "success",
+      duration: 2000,
+      closable: false
+    })
   } catch (err) { console.error(err); }
 }
 function toPercent(amount) { return amount.toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 0 }); }

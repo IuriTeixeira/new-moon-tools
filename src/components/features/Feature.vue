@@ -8,7 +8,19 @@
                     </th>
                 </tr>
                 <tr class="card-content">
-                    <td class="feature-name">{{ feature.name }}</td>
+                    <td class="feature-name">
+                        <div>
+                            {{ feature.name }}
+                        </div>
+                        <div v-if="feature.nameNO !== ''"
+                            class="subtitle is-7 expertise-requirement is-flex is-align-items-center"
+                            style="gap: 0.5rem;">
+                            <figure class="image m-0">
+                                <img :src="'./img/NO_icon.png'" alt="New Order" class="is-square">
+                            </figure>
+                            {{ feature.nameNO }}
+                        </div>
+                    </td>
                 </tr>
                 <tr class="card">
                     <th class="all-caps card-header">
@@ -139,7 +151,7 @@ export default {
         feature: { type: Object, required: true },
         demons: { type: Array, required: true },
         epitaphs: { type: Object },
-        hideSource: {type: Boolean}
+        hideSource: { type: Boolean }
     }
 }
 
@@ -202,14 +214,20 @@ export default {
 }
 
 /* Remove borders from the content rows and table cells */
-tr.card-content, 
+tr.card-content,
 tr.card-content td {
     border-bottom: none !important;
 }
 
 /* Ensure the border only applies to the bottom of the header row */
 tr.card {
-    border-bottom: 0.1px /* Adjust thickness/color as needed */
+    border-bottom: 0.1px
+        /* Adjust thickness/color as needed */
 }
 
+.subtitle.is-7 {
+    font-style: italic;
+    margin-bottom: 0.1rem;
+    margin-left: 0.25rem;
+}
 </style>

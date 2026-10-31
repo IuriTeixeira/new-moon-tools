@@ -12840,7 +12840,7 @@
     {
         "id": 20260,
         "name": "Hospitable",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A cheerful demon who warmly welcomes others, offering aid and moral support.\n\nSummoner's Fire Affinity Cap: +10%\nSummoner's Limit Break Power and Chance: +5%\nParty Members' Limit Break Power and Chance: +5%\nParty Members' Final Critical Correction: +5%",
         "affinity": "Special",
@@ -12889,7 +12889,7 @@
     {
         "id": 20261,
         "name": "Naughty",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A mischievous demon who loves to play pranks and cause chaos during Halloween.\n\nFire Boost: +30%\nFire Skills' Consecutive Uses: +1\nFire Affinity Cap: +50% Malaterndyne's Limit Break Cap +1500",
         "affinity": "Special",
@@ -16425,7 +16425,7 @@
     {
         "id": 21072,
         "name": "Eye of the Storm",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Force Boost: 50%\nForce Affinity Cap: +50%\nForce Skills' Final Critical Correction: +10%",
         "affinity": "Special",
@@ -24853,7 +24853,7 @@
     {
         "id": 23175,
         "name": "Chaotic",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon who holds a grudge against authority.\n\nDamage dealt to LAW enemies: +20%",
         "affinity": "Special",
@@ -24898,7 +24898,7 @@
     {
         "id": 23176,
         "name": "Locust Swarm",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "The fallen angel of the abyss that leads a swarm of destruction Against LAW enemies, Damage dealt +30%, Limit Break Power +30%, Final Crit Correction +15%, Limit Break Cap +2500",
         "affinity": "Special",
@@ -24943,7 +24943,7 @@
     {
         "id": 23177,
         "name": "King of the Abyss",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Almighty Boost +30%, Lifesteal Power/Chance +15% When using \"Devour\", Abaddon gains\n[Avarice] up to 5 stacks, that lasts 5 minutes.\n[Avarice] grants Abaddon +500 LB Cap, LB Power +10%, All Physical, Spell and Almighty Null +5%. Cannot be learnt using Digi.",
         "affinity": "Special",
@@ -24988,7 +24988,7 @@
     {
         "id": 23178,
         "name": "Pestilent Eyes",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon whose cursed eyes inflict ruin upon \nall who meet its gaze.\n• Support: +(Level x 1)\n• Petra Eyes, Evil Eyes, Hell's Eyes, Silent Eyes, Paral Eyes, Sexy Eyes, Shining Eye Stiffness reduced by 550.\n• Mind, Nerve and Death Boost +50%",
         "affinity": "Special",
@@ -25045,7 +25045,7 @@
     {
         "id": 23179,
         "name": "Nuisance",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A frail demon whose elusiveness allows it to slip away from danger.\n. +66% Chance to evade any conventional projectile-based attack.\n• Astral Eye Skill Stack +6.\n• Astral Eye Damage Modifier +250 Cannot be learnt using Digitalization",
         "affinity": "Special",
@@ -25085,7 +25085,7 @@
     {
         "id": 23180,
         "name": "Beelzebub's Servant",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "• If partied with Fly: +10 Support\n• If partied with Beelzebub(Fly): +50 Support\n• When using Astral Eye, 6% Chance to receive [Beelzebub's Blessing] status, gaining (Support x 1) LB Cap for 15 seconds.",
         "affinity": "Special",
@@ -25125,7 +25125,7 @@
     {
         "id": 23181,
         "name": "Equilibrium",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon that corrects imbalance by compressing extremes.\n• All damaging skills gain Damage, LB Power and LB Cap against LAW and CHAOS-aligned enemies, scaling with how far their family deviates from Neutral.",
         "affinity": "Special",
@@ -25170,7 +25170,7 @@
     {
         "id": 23182,
         "name": "World-bearing",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon that forms the world \nupon its death.\n• Chance to Drain Almighty: +(Level x 1)%\n• When HP is at 0, Summoner's LB Power +30%, Summoner's LB Cap +2500, Summoner's Almighty Affinity Boost and Cap +30%",
         "affinity": "Special",
@@ -25219,7 +25219,7 @@
     {
         "id": 23183,
         "name": "Cosmic Cannon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "• Penetrate/Spread/Handgun Boost +50%.\n• All Long-range related skills' damage calculation becomes (LNGR+CLSR+Spell).\n• All Shot and Rapid-based skills' base damage is increased by 8%.",
         "affinity": "Special",
@@ -25272,7 +25272,7 @@
     {
         "id": 23184,
         "name": "Underworld Pursuer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "• All Rush attacks have 15% chance to apply\n[Condemned] status to the target, increasing their damage taken by 30% and nullifying their Expel and Death Resistance and NRA for 15 seconds.\n• When attacking a\n[Condemned] target, all skills' base damage is increased by 15%.",
         "affinity": "Special",
@@ -25317,7 +25317,7 @@
     {
         "id": 23185,
         "name": "Underworld Warden",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "• When using Attack skills/attacked, 5% chance to apply\n[Condemned] status to the attacker/target, increasing their damage t aken by 30% and nullifying their Expel and Death Resistance and NRA for 15 seconds.\n• Attack/Counter Boost +100%, Attack/Counter LB Cap +1500",
         "affinity": "Special",
@@ -25370,7 +25370,7 @@
     {
         "id": 23186,
         "name": "Hellbound Pursuer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Enemy Only\n• Attack cannot be countered\n• Electric, Death, Thrust +100%\n• 75% chance to apply\n[Condemned]\n• 75% to Auto-Dodge",
         "affinity": "Special",
@@ -25410,7 +25410,7 @@
     {
         "id": 23187,
         "name": "Hellbound Warden",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Enemy Only\n• Spin Unlock\n• Force, Death, Blunt +100%\n• 75% chance to apply\n[Condemned]\n• 75% to Auto-Counter/Guard",
         "affinity": "Special",
@@ -27258,7 +27258,7 @@
     {
         "id": 26009,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -27307,7 +27307,7 @@
     {
         "id": 26010,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -27360,7 +27360,7 @@
     {
         "id": 26011,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -27413,7 +27413,7 @@
     {
         "id": 26012,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -27466,7 +27466,7 @@
     {
         "id": 26013,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -36860,7 +36860,7 @@
     {
         "id": 26215,
         "name": "Violent Wings",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -37220,7 +37220,7 @@
     {
         "id": 26008,
         "name": "???",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -37265,7 +37265,7 @@
     {
         "id": 130100,
         "name": "Epitaph Parts【Protection】",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Null Instant Death",
         "affinity": "Special",
@@ -37310,7 +37310,7 @@
     {
         "id": 130104,
         "name": "One That Lives Under Fuki",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A small, human-shaped demon of Ainu legend. It is believed to have a calm and kind disposition. Party Movement Speed +5% Party MP Regeneration +15",
         "affinity": "Special",
@@ -37355,7 +37355,7 @@
     {
         "id": 130106,
         "name": "Elusive",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon who is hard to hit with physical attacks due to its small stature. Dodge stack +2 Null All Physical Lv*0.5%",
         "affinity": "Special",
@@ -37400,7 +37400,7 @@
     {
         "id": 130107,
         "name": "King of Gehenna",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "The \"Black Sun\" who lives in the underworld in Babylonian lore. +30% CLS-R/LNG-R/Spell Damage Black Sun will not inflict knockback on targets. Black Sun stack +1",
         "affinity": "Special",
@@ -37440,7 +37440,7 @@
     {
         "id": 130137,
         "name": "Fallen Guardian",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "-100% MP Cost for Ice-based skills, +50% Ice damage Against LAW and NEUTRAL Enemies, Close-range, Long-range and Magic Damage +30% Final Crit +10%",
         "affinity": "Special",
@@ -37480,7 +37480,7 @@
     {
         "id": 130138,
         "name": "Epitaph Parts 【Reason】",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "To Summoner,\nWhen using 『死亡遊戯』,『破邪の光弾』,『至高の魔弾』or 『原色の舞踏』:\nLimit Break Cap +8000 +30% Almighty Affinity",
         "affinity": "Special",
@@ -37529,7 +37529,7 @@
     {
         "id": 130139,
         "name": "Epitaph Parts 【Divine Comedy】",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "To Partner, Close Range, Long Range and Spell damage taken -30%. Max HP -30% Cooldown -10%",
         "affinity": "Special",
@@ -37578,7 +37578,7 @@
     {
         "id": 130600,
         "name": "Holy Nightmare",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A nightmare who appears on the Holy Night. +100% Attack Damage When using Ice or Fire skills, +30% Final Crit and Limit Break Damage +1000",
         "affinity": "Special",
@@ -37618,7 +37618,7 @@
     {
         "id": 130218,
         "name": "Hiketeria",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A symbol of peace and victory. Almighty Resistance +40% Cannot be inherited via Digitalization.",
         "affinity": "Special",
@@ -37663,7 +37663,7 @@
     {
         "id": 130219,
         "name": "Athene Noctua",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "TA Chance +5%, TA Power +15% Close Range +25 Spell +50",
         "affinity": "Special",
@@ -37712,7 +37712,7 @@
     {
         "id": 130220,
         "name": "Promachos",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A war goddess that charges first into battle. Chance to Drain Handgun and Spread + (Lvl x 1) All Skills HP Cost -100%",
         "affinity": "Special",
@@ -37757,7 +37757,7 @@
     {
         "id": 130221,
         "name": "Glaukopis",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon with a gleam in her eyes. Mystic Boost +50%, Nerve Boost +50%\nAttack Damage +40%\nWhen HP is 1 or greater:\n・Clench 10%",
         "affinity": "Special",
@@ -37810,7 +37810,7 @@
     {
         "id": 130501,
         "name": "Delinquent",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon who committed an unforgivable act. \nForce Affinity +50%\nWhen using Force-affinity skills:\n20% Limit Break Chance Chance of inflicting Force Trauma on knockback.",
         "affinity": "Special",
@@ -37855,7 +37855,7 @@
     {
         "id": 130502,
         "name": "Soul Devouring Yo-Yo",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A Demon who unlocked mysterious yo-yo powers.\n\nWhen using Yo-Yo Blast:\n・Limit Break Power +50%\n・Technical Attack Power +20%\nWhen HP is 30% or less:\n・Yo-Yo Blast Damage +30%",
         "affinity": "Special",
@@ -37900,7 +37900,7 @@
     {
         "id": 130503,
         "name": "Exiled Guardian of the South",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "An exiled member from the household of Zouchouten, one of the Four Heavenly Kings. Damage taken from Guardians +30% Damage dealt to Guardians +50%",
         "affinity": "Special",
@@ -37945,7 +37945,7 @@
     {
         "id": 160759,
         "name": "Undying Sword",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Null Instant Death Incantation time is cut by 50% and cool-down time decreases by 70%",
         "affinity": "Special",
@@ -37998,7 +37998,7 @@
     {
         "id": 160760,
         "name": "Self Defense Force",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Slash/Rush/Spin +30%\nFinal Critical Correction: +20%",
         "affinity": "Special",
@@ -38055,7 +38055,7 @@
     {
         "id": 160762,
         "name": "Demonic Lethargy",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Support + LVL * 1 All Status-Changing Skills Success Rate +30% Death-based skills are 50% more effective. Mind-based skills are 50% more effective.",
         "affinity": "Special",
@@ -38104,7 +38104,7 @@
     {
         "id": 23188,
         "name": "Calamity Protection",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "To Summoner and Partner: Maximum HP +500 Null Mute, Null Muddle, Null Instant Death",
         "affinity": "Special",
@@ -38157,7 +38157,7 @@
     {
         "id": 160764,
         "name": "Calamity Refuge",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Close-range Damage suffered -50% Long-range Damage suffered -50% Spell Damage suffered -50%\n\nTo Summoner and Partner: Maximum HP +500 Null Mute, Null Muddle, Null Instant Death",
         "affinity": "Special",
@@ -38214,7 +38214,7 @@
     {
         "id": 160765,
         "name": "Hail Storm",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Ice Boost: 50%\nIce Affinity Cap: +50%\nIce Skills' Final Critical Correction: +10%",
         "affinity": "Special",
@@ -38259,7 +38259,7 @@
     {
         "id": 160766,
         "name": "Tiny Deity",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Ice Boost: 50%\nRapid Boost: +50%\nCurative Boost: +50%",
         "affinity": "Special",
@@ -38304,7 +38304,7 @@
     {
         "id": 160767,
         "name": "Purple Veil",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Chance to Drain Almighty: +(Level x 1)%\n\nPrevents NRA of: Slash/Thrust/Blunt/Handgun/ Penetrate/Spread/Fire/Ice/Electric/Force Prevents All Physical/Magic NRA if no 100% NRA Physical/Magic DF effects are active.",
         "affinity": "Special",
@@ -38349,7 +38349,7 @@
     {
         "id": 160768,
         "name": "Our Black Lady",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon whose body is dyed in a color that symbolizes the mother of the earth.\n\nSummoner's Limit Break Cap: +2000\nSummoner Fire/Ice/Electric/Force Boost: 30%",
         "affinity": "Special",
@@ -38394,7 +38394,7 @@
     {
         "id": 160770,
         "name": "Agile",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Chance to Null Slash: +(Level x 1)%\nNull All Physical: +5%\nNull All Magic: +5%",
         "affinity": "Special",
@@ -38447,7 +38447,7 @@
     {
         "id": 160771,
         "name": "Bait",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon that was used as bait multiple times and survived.\n\nChance to Null Slash: +(Level x 1)%\nNull All Physical: +5%\nNull All Magic: +5%\nNull Almighty: +5%",
         "affinity": "Special",
@@ -38500,7 +38500,7 @@
     {
         "id": 160772,
         "name": "Red Bowl",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon that was born inside a red bowl.\n\nFire Skills' Affinity Cap: +50%\nFire Skills' FCC: +10%",
         "affinity": "Special",
@@ -38540,7 +38540,7 @@
     {
         "id": 160773,
         "name": "Black Bowl",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon that was born inside a black bowl.\n\nIce Skills' Affinity Cap: +50%\nIce Skills' FCC: +10%",
         "affinity": "Special",
@@ -38580,7 +38580,7 @@
     {
         "id": 160774,
         "name": "White Bowl",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon that was born inside a white bowl.\n\nForce Skills' Affinity Cap: +50%\nForce Skills' FCC: +10%",
         "affinity": "Special",
@@ -38620,7 +38620,7 @@
     {
         "id": 160775,
         "name": "Golden Bowl",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A demon that was born inside a luxurious gold bowl.\n\nElectric Skills' Affinity Cap: +50%\nElectric Skills' FCC: +10% Summoner's Macca, Magnetite and Expertise +150% Party Experience +50%",
         "affinity": "Special",
@@ -38665,7 +38665,7 @@
     {
         "id": 160776,
         "name": "Baby School",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "A school of powerful fish-like demons. \nWhen Red/Black/White Demon Goldfish (Mitama-fused) \nis in party:\nFire/Ice/Force Skills' Affinity Cap: +50%\nFire/Ice/Force Skills' FCC: +10%",
         "affinity": "Special",
@@ -38705,7 +38705,7 @@
     {
         "id": 160783,
         "name": "Creator",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Summoner's LB Power +30%, Summoner's LB Cap +2500, Summoner's Almighty Affinity Boost and Cap +30%",
         "affinity": "Special",
@@ -38750,7 +38750,7 @@
     {
         "id": 180005,
         "name": "King of Destruction",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "Enemy Feature\n• 100% Lifesteal Power and Chance\n. -150% Damage Taken\n• 66% Damge Boost\n• 666% Healing Received",
         "affinity": "Special",
@@ -38790,7 +38790,7 @@
     {
         "id": 180031,
         "name": "Watermelon",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "",
         "affinity": "Special",
@@ -38830,7 +38830,7 @@
     {
         "id": 180032,
         "name": "Overlord",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": "SD02_0077a",
         "description": "Immune to DoT, deals Boss Damage (retains at least 25% of its damage regardless of DMR, and inflict 1% of the target’s maximum HP at minimum.)",
         "affinity": "Special",
@@ -38870,7 +38870,7 @@
     {
         "id": 180034,
         "name": "Evil Aura",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "15% chance to inflict Evil Aura",
         "affinity": "Special",
@@ -38910,7 +38910,7 @@
     {
         "id": 180035,
         "name": "Warbringer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "15% chance to inflict Defense Shred",
         "affinity": "Special",
@@ -38950,7 +38950,7 @@
     {
         "id": 180036,
         "name": "Plaguebearer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "15% chance to inflict Plague",
         "affinity": "Special",
@@ -38990,7 +38990,7 @@
     {
         "id": 180037,
         "name": "Faminebearer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "15% chance to inflict Famine.",
         "affinity": "Special",
@@ -39030,7 +39030,7 @@
     {
         "id": 180038,
         "name": "Deathbringer",
-        "nameNO": "???",
+        "nameNO": "",
         "icon": null,
         "description": "15% chance to inflict Instant Death.",
         "affinity": "Special",

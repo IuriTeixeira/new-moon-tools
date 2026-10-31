@@ -63,7 +63,11 @@ const features = computed(() => {
 async function handleSkillClick(skill) {
 	if (!skill?.description) return
 	try {
-		await navigator.clipboard.writeText(skill.name + "\n\n" + skill.description)
+		skill.nameNO !== ""
+			?
+			await navigator.clipboard.writeText(skill.name + "\n\n" + skill.nameNO + "\n\n" + skill.description)
+			:
+			await navigator.clipboard.writeText(skill.name + "\n\n" + skill.description)
 
 		oruga.notification.open({
 			message: `Copied name and description for <b>${skill.name}</b>!`,
@@ -271,29 +275,30 @@ async function handleSkillClick(skill) {
 										<Skill :skill="skill" @click.native.stop="handleSkillClick(skill)" />
 									</o-tooltip>
 
-									<Skill class="centered-cell" v-else :skill="skill" @mouseenter.native="handleHover(skill.id)"
-										@mouseleave.native="handleLeave" @click.native.stop="handleSkillClick(skill)" /> {{ skill.name }} <br/>
+									<Skill class="centered-cell" v-else :skill="skill"
+										@mouseenter.native="handleHover(skill.id)" @mouseleave.native="handleLeave"
+										@click.native.stop="handleSkillClick(skill)" /> {{ skill.name }} <br />
 
 								</template>
 							</td>
 						</tr>
-						<tr v-for="(skill, index) in acquiredSkills"
-							:key="skill.id + index + 'header'">
+						<tr v-for="(skill, index) in acquiredSkills" :key="skill.id + index + 'header'">
 							<td class="centered-cell">{{ demon.acquiredSkills[index].level }}</td>
 							<td>
 								<o-tooltip v-if="activeSkillId === skill.id" :active="true" :triggers="[]" multiline
-										size="large" @mouseleave.native="handleLeave">
-										<template v-slot:content>
-											<div @mouseenter="handleHover(skill.id)" @mouseleave="handleLeave">
-												<SkillTooltip :skill="skill" />
-											</div>
-										</template>
+									size="large" @mouseleave.native="handleLeave">
+									<template v-slot:content>
+										<div @mouseenter="handleHover(skill.id)" @mouseleave="handleLeave">
+											<SkillTooltip :skill="skill" />
+										</div>
+									</template>
 
-										<Skill :skill="skill" @click.native.stop="handleSkillClick(skill)" />
-									</o-tooltip>
+									<Skill :skill="skill" @click.native.stop="handleSkillClick(skill)" />
+								</o-tooltip>
 
-									<Skill class="centered-cell" v-else :skill="skill" @mouseenter.native="handleHover(skill.id)"
-										@mouseleave.native="handleLeave" @click.native.stop="handleSkillClick(skill)" /> {{ skill.name }}
+								<Skill class="centered-cell" v-else :skill="skill"
+									@mouseenter.native="handleHover(skill.id)" @mouseleave.native="handleLeave"
+									@click.native.stop="handleSkillClick(skill)" /> {{ skill.name }}
 							</td>
 						</tr>
 					</tbody>
