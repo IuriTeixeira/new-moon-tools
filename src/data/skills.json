@@ -134604,7 +134604,7 @@
         "name": "Phantom Strike",
         "nameNO": "",
         "icon": "PhantomStrike",
-        "description": "Passive skill.\n• CLSR +25\n• All Attack-based skills' Base Damage is increased by 5%.\nAlso gains a stack of\n[Coup de Grace] for each consecutive Gatling Strike usage.\n[Coup de Grace] last 180 seconds and stacks up to 5 times.\n[Coup de Grace]\nIf Spellblade Stance is not active and Einheri is active:\n• Increases LB Cap Damage by (CLSR x 0.5 + Crit x 0.5) to all Attack-based skills.\n• When Ragnarok is active, reduces all Attack-based skills Stiffness by 10.\n• Increases the chance of trigger an extra Gatling Strike attack by 10%\n• When the extra Gatling Strike attack is triggered all\n[Coup de Grace] stacks are consumed.",
+        "description": "Passive skill.\n• CLSR +25.\n• All Attack-based skills' Base Damage is increased by 5%.\nWhile Einheri is active: Gains a stack of\n[Coup de Grace] when Gatling Strike does not trigger an extra attack.\n[Coup de Grace] lasts 180 seconds and stacks up to 5 times.\n[Coup de Grace]\n• Each stack grants a 15% chance to trigger an extra Gatling Strike. When triggered, all stacks are consumed. This effect also works while Spellblade Stance is active.\nWhile Einheri is active and Spellblade Stance is not active, each stack also grants:\n. (CLSR x 0.5 + Crit x 0.5) additional LB Cap to all Attack skills.\n• When Ragnarok is active, reduces all Attack skills' Stiffness by 10 per stack.",
         "affinity": "Special",
         "family": "Technique",
         "feat_exclusion": [],
