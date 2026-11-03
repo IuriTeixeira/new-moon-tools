@@ -100,7 +100,7 @@ async function handleSkillClick(skill) {
 				<div class="column">
 					<div class="content">
 						<h3>Base Stats</h3>
-						<table class="table is-striped is-fullwidth">
+						<table class="table is-striped is-fullwidth centered-cell">
 							<tbody>
 								<tr>
 									<th>HP</th>
@@ -127,7 +127,7 @@ async function handleSkillClick(skill) {
 					</div>
 					<div class="content">
 						<h3>Combat Stats</h3>
-						<table class="table is-striped is-fullwidth">
+						<table class="table is-striped is-fullwidth centered-cell">
 							<tbody>
 								<tr>
 									<th>CLS-R</th>
@@ -156,7 +156,7 @@ async function handleSkillClick(skill) {
 				<div class="column">
 					<div class="content">
 						<h3>Affinities</h3>
-						<table class="table is-striped is-fullwidth">
+						<table class="table is-striped is-fullwidth centered-cell">
 							<tbody>
 								<tr>
 									<th colspan="3">Physical</th>
