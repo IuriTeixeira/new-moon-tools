@@ -45,6 +45,9 @@
 			<div class="expertise-requirement subtitle is-7">
 				<strong>Expertise Category:</strong> {{ info.expertCategory }}
 			</div>
+			<div class="expertise-requirement subtitle is-7">
+				<strong>Digitalization Requirement:</strong> {{ info.digi_restrict ? "Impossible" : info.digi_weapon_requirement }}
+			</div>
 		</div>
 	</div>
 </template>
@@ -207,7 +210,16 @@ export default {
 
 			const expertCategory = this.skill.expertCategory;
 
-			return { family, expertise, expertCategory, body };
+			const digi_restrict = this.skill.restrictions.restriction_digi === "true" ? true : false
+
+			const digi_weapon_restrict = this.skill.restrictions.restriction_weapon
+			let digi_weapon_requirement = "None"
+			switch(digi_weapon_restrict){
+				case "CLOSE_RANGE": digi_weapon_requirement = "Melee Weapon"; break
+				case "LONG_RANGE": digi_weapon_requirement = "Ranged Weapon"; break
+			}
+
+			return { family, expertise, expertCategory, body, digi_restrict, digi_weapon_requirement };
 		},
 
 	}
