@@ -632,60 +632,66 @@ function handleImageError(event) {
 				</table>
 			</div>
 			<div class="content">
-				<h3>Skills</h3>
-				<table class="table is-striped is-fullwidth exempt-table">
-					<tbody>
-						<tr>
-							<th class="centered-cell">Level</th>
-							<th>Skill</th>
-						</tr>
-						<tr>
-							<td class="centered-cell">Base</td>
-							<td>
-								<template v-for="skill in baseSkills" :key="'learned' + skill.id">
-									<o-tooltip v-if="activeSkillId === skill.id" :active="true" :triggers="[]" multiline
-										size="large" @mouseleave.native="handleLeave">
-										<template v-slot:content>
-											<div @mouseenter="handleHover(skill.id)" @mouseleave="handleLeave">
-												<SkillTooltip :skill="skill" />
-											</div>
+				<div class="columns">
+					<div class="column is-7">
+						<h3>Features</h3>
+						<FeatureList :features="features" :demons="[demon]" :hideSource="true" />
+					</div>
+					<div class="column is-5">
+						<h3>Skills</h3>
+						<table class="table is-striped is-fullwidth exempt-table">
+							<tbody>
+								<tr>
+									<th class="centered-cell">Level</th>
+									<th>Skill</th>
+								</tr>
+								<tr>
+									<td class="centered-cell">Base</td>
+									<td>
+										<template v-for="skill in baseSkills" :key="'learned' + skill.id">
+											<o-tooltip v-if="activeSkillId === skill.id" :active="true" :triggers="[]"
+												multiline size="large" @mouseleave.native="handleLeave">
+												<template v-slot:content>
+													<div @mouseenter="handleHover(skill.id)" @mouseleave="handleLeave">
+														<SkillTooltip :skill="skill" />
+													</div>
+												</template>
+
+												<Skill :skill="skill" @click.native.stop="handleSkillClick(skill)" />
+											</o-tooltip>
+
+											<Skill class="centered-cell" v-else :skill="skill"
+												@mouseenter.native="handleHover(skill.id)"
+												@mouseleave.native="handleLeave"
+												@click.native.stop="handleSkillClick(skill)" /> {{ skill.name }} <br />
+
 										</template>
+									</td>
+								</tr>
+								<tr v-for="(skill, index) in acquiredSkills" :key="skill.id + index + 'header'">
+									<td class="centered-cell">{{ demon.acquiredSkills[index].level }}</td>
+									<td class="left-cell">
+										<o-tooltip v-if="activeSkillId === skill.id" :active="true" :triggers="[]"
+											multiline size="large" @mouseleave.native="handleLeave">
+											<template v-slot:content>
+												<div @mouseenter="handleHover(skill.id)" @mouseleave="handleLeave">
+													<SkillTooltip :skill="skill" />
+												</div>
+											</template>
 
-										<Skill :skill="skill" @click.native.stop="handleSkillClick(skill)" />
-									</o-tooltip>
+											<Skill :skill="skill" @click.native.stop="handleSkillClick(skill)" />
+										</o-tooltip>
 
-									<Skill class="centered-cell" v-else :skill="skill"
-										@mouseenter.native="handleHover(skill.id)" @mouseleave.native="handleLeave"
-										@click.native.stop="handleSkillClick(skill)" /> {{ skill.name }} <br />
+										<Skill class="centered-cell" v-else :skill="skill"
+											@mouseenter.native="handleHover(skill.id)" @mouseleave.native="handleLeave"
+											@click.native.stop="handleSkillClick(skill)" /> {{ skill.name }}
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
-								</template>
-							</td>
-						</tr>
-						<tr v-for="(skill, index) in acquiredSkills" :key="skill.id + index + 'header'">
-							<td class="centered-cell">{{ demon.acquiredSkills[index].level }}</td>
-							<td class="left-cell">
-								<o-tooltip v-if="activeSkillId === skill.id" :active="true" :triggers="[]" multiline
-									size="large" @mouseleave.native="handleLeave">
-									<template v-slot:content>
-										<div @mouseenter="handleHover(skill.id)" @mouseleave="handleLeave">
-											<SkillTooltip :skill="skill" />
-										</div>
-									</template>
-
-									<Skill :skill="skill" @click.native.stop="handleSkillClick(skill)" />
-								</o-tooltip>
-
-								<Skill class="centered-cell" v-else :skill="skill"
-									@mouseenter.native="handleHover(skill.id)" @mouseleave.native="handleLeave"
-									@click.native.stop="handleSkillClick(skill)" /> {{ skill.name }}
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="content">
-				<h3>Features</h3>
-				<FeatureList :features="features" :demons="[demon]" :hideSource="true" />
+				</div>
 			</div>
 		</div>
 	</div>
