@@ -68,16 +68,16 @@ const changeDemon = (id) => {
     //filterByDemonName.value = ""; // Optional: clears the search input
 }
 
-function alignmentColor(alignment){
-	switch(alignment){
-		case "Law": return "blue"
-		case "Neutral": return "green"
-		case "Chaos": return "red"
-	}
+function alignmentColor(alignment) {
+    switch (alignment) {
+        case "Law": return "blue"
+        case "Neutral": return "green"
+        case "Chaos": return "red"
+    }
 }
 
 function handleImageError(event) {
-	event.target.src = './img/Default.png';
+    event.target.src = './img/Default.png';
 }
 </script>
 
@@ -141,12 +141,30 @@ function handleImageError(event) {
                             <div v-for="demon in results" :key="demon.id" class="media">
                                 <div class="media-left">
                                     <figure class="image is-48x48">
-                                        <img :src="'./img/demon/' + demon.icon + '.png'" :alt="demon.name"  @error="handleImageError">
+                                        <img :src="'./img/demon/' + demon.icon + '.png'" :alt="demon.name"
+                                            @error="handleImageError">
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-6"><a href="#" @click.prevent="changeDemon(demon.id)">{{demon.title}} {{ demon.name }}</a> <span class="subtitle is-7">(ID: {{ demon.id }})</span></p>
-                                    <p class="subtitle is-7">{{demon.family}} • {{ demon.race }} • <span :class="alignmentColor(demon.alignment)">{{demon.alignment}}</span><br />Lv {{ demon.baseLevel }}</p>
+                                    <p class="title is-6"><a href="#" @click.prevent="changeDemon(demon.id)">{{
+                                            demon.title }} {{ demon.name }}</a>
+                                        <span
+                                            v-if="
+                                                (demon.nameNO !== '' && demon.name !== demon.nameNO) || (demon.titleNO !== '' && demon.title !== demon.titleNO)"
+                                            class="subtitle is-7 expertise-requirement is-flex is-align-items-center"
+                                            style="gap: 0.5rem;">
+                                            <figure class="image m-0">
+                                                <img :src="'./img/NO_icon.png'" alt="New Order" class="is-square">
+                                            </figure>
+                                            {{ demon.titleNO }} {{ demon.nameNO }}
+                                        </span>
+                                    </p>
+                                    <p class="subtitle is-7">
+                                        Lv {{ demon.baseLevel }} • ID: {{ demon.id }}
+                                        <br />{{ demon.family }} • {{ demon.race }} • <span
+                                            :class="alignmentColor(demon.alignment)">{{
+                                                demon.alignment }}</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -164,13 +182,15 @@ function handleImageError(event) {
 
 <style lang="scss" scoped>
 .red {
-	color: #f14668 !important
+    color: #f14668 !important
 }
 
 .green {
-	color: #48c774 !important
+    color: #48c774 !important
 }
 
 .blue {
-    color: #3273dc; /* or #3e8ed0 */
-}</style>
+    color: #3273dc;
+    /* or #3e8ed0 */
+}
+</style>
