@@ -47,7 +47,8 @@ async function findDemons() {
 
     // Search locally against the pre-filtered computed list
     results.value = allDemons.value.filter(demon =>
-        demon.name?.toLowerCase().includes(query) || demon.nameNO?.toLowerCase().includes(query)
+        demon.name?.toLowerCase().includes(query) || demon.nameNO?.toLowerCase().includes(query) ||
+        demon.title?.toLowerCase().includes(query) || demon.titleNO?.toLowerCase().includes(query)
     );
 }
 
