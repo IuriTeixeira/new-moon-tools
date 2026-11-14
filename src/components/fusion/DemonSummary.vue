@@ -49,6 +49,11 @@ const baseSkills = computed(() => {
 	return skills
 })
 
+const enemyOnlySkills = computed(() => {
+	const skills = props.demon.enemyOnlySkills.map(id => skillService.get(id) || featureService.get(id)).filter(id => id !== null)
+	return skills
+})
+
 const acquiredSkills = computed(() => {
 	const skills = props.demon.acquiredSkills.map(skill => skillService.get(skill.id)).filter(id => id !== null)
 	return skills
@@ -56,7 +61,6 @@ const acquiredSkills = computed(() => {
 
 const features = computed(() => {
 	const features = props.demon.traits.filter(feat => feat !== 0).map(feat => featureService.get(feat))
-	console.log(features)
 	return features
 })
 
@@ -84,7 +88,6 @@ async function handleSkillClick(skill) {
 function inheritIcon(inherit) {
 	let icon = ""
 	inherit ? icon = "check" : icon = "close"
-	console.log(inherit)
 	return icon
 }
 
@@ -689,6 +692,39 @@ function handleImageError(event) {
 								</tr>
 							</tbody>
 						</table>
+						<div v-if="enemyOnlySkills && enemyOnlySkills.length">
+							<h3>Enemy Only Skills</h3>
+							<table class="table is-striped is-fullwidth exempt-table">
+								<tbody>
+									<tr>
+										<td>
+											<template v-for="skill in enemyOnlySkills" :key="'enemy' + skill.id">
+												<o-tooltip v-if="activeSkillId === skill.id" :active="true"
+													:triggers="[]" multiline size="large"
+													@mouseleave.native="handleLeave">
+													<template v-slot:content>
+														<div @mouseenter="handleHover(skill.id)"
+															@mouseleave="handleLeave">
+															<SkillTooltip :skill="skill" />
+														</div>
+													</template>
+
+													<Skill :skill="skill"
+														@click.native.stop="handleSkillClick(skill)" />
+												</o-tooltip>
+
+												<Skill class="centered-cell" v-else :skill="skill"
+													@mouseenter.native="handleHover(skill.id)"
+													@mouseleave.native="handleLeave"
+													@click.native.stop="handleSkillClick(skill)" /> {{ skill.name
+												}} <br />
+
+											</template>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 
 				</div>
