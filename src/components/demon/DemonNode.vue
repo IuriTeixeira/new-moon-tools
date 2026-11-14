@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch, markRaw } from 'vue'
 import { Handle, Position, useVueFlow, useNodesData, useHandleConnections } from '@vue-flow/core'
 import { NodeToolbar } from '@vue-flow/node-toolbar'
 
@@ -19,76 +19,98 @@ const props = defineProps({
 const emit = defineEmits(['cloneNode', 'removeNode'])
 //-----
 
-const demon = computed(() => {
-  if(props.data.demonId != 0){
-    return demonService.get(props.data.demonId)
-  }
-})
+// Local reactive resolved stores
+const resolvedDemon = ref(null);
+const resolvedSelectedSkills = ref([]);
+const resolvedInheritedSkills = ref([]);
+const resolvedInheritanceIssues = ref([]);
 
 const connections = useHandleConnections({
   type: 'target'
 })
 const sourceData = useNodesData(() => connections.value.map((connection) => connection.source))
 
-const inheritanceIssues = computed(() => {
-  const response = []
-  const demonInheritanceRestrictions = demon.value.inheritanceRestrictions;
-  inheritedSkills.value.forEach((skill) => {
-    const skillInheritance = skill.inheritanceRestriction;
-    if (!demonInheritanceRestrictions[skillInheritance.toLowerCase()]){
-      response.push(`${demon.value.name} cannot inherit ${skill.name}: Missing inheritance feature '${skillInheritance}'`)
+// Asynchronously resolve demon, selected skills, and inherited skills without circular triggers
+watch(
+  () => [props.data?.demonId, props.data?.options?.selectedSkills, sourceData.value],
+  async ([demonId, selectedIds]) => {
+    // 1. Resolve Demon asynchronously
+    if (demonId && demonId != 0) {
+      const d = await demonService.get(demonId);
+      resolvedDemon.value = d ? markRaw(d) : null;
+    } else {
+      resolvedDemon.value = null;
     }
-  })
-  return response;
-});
 
-const inheritedSkills = computed(() => {
-  const inhskills = []
-  const a = [];
-  sourceData.value.forEach(node => {
-    node.data.options.selectedSkills.forEach(id =>{
-      const skill = skillService.get(id);
-      if (skill){
-        a.push(skill);
-        inhskills.push(id);
+    const currentDemon = resolvedDemon.value;
+
+    // 2. Resolve Selected Skills asynchronously in parallel
+    const selIds = selectedIds || [];
+    const fetchedSelSkills = await Promise.all(selIds.map(id => skillService.get(id)));
+    resolvedSelectedSkills.value = markRaw(fetchedSelSkills.filter(Boolean));
+
+    // 3. Resolve Inherited Skills from source nodes asynchronously in parallel
+    const inhSkillIds = new Set();
+    const aPromises = [];
+    const bPromises = [];
+
+    const nodes = sourceData.value || [];
+    for (const node of nodes) {
+      if (node?.data?.options?.selectedSkills) {
+        for (const id of node.data.options.selectedSkills) {
+          aPromises.push(skillService.get(id).then(sk => {
+            if (sk) inhSkillIds.add(id);
+            return sk;
+          }));
+        }
       }
-    })
-  });
-
-  const b = [];
-  sourceData.value.forEach(node => {
-    node.data.options.inheritedSkills.forEach(id =>{
-      const skill = skillService.get(id);
-      if (skill){
-        b.push(skill);
-        inhskills.push(id);
+      if (node?.data?.options?.inheritedSkills) {
+        for (const id of node.data.options.inheritedSkills) {
+          bPromises.push(skillService.get(id).then(sk => {
+            if (sk) inhSkillIds.add(id);
+            return sk;
+          }));
+        }
       }
-    })
-  });
-
-  const res = [...new Set([...a, ...b])];
-  const distinct = [...new Set(inhskills)];
-  props.data.options.inheritedSkills = distinct;
-  return res;
-})
-
-
-const selectedSkills = computed(() => {
-  const res = [];
-  props.data.options.selectedSkills.forEach(id =>{
-    const skill = skillService.get(id);
-    if (skill){
-      res.push(skill);
     }
-  })
 
+    const [aSkills, bSkills] = await Promise.all([
+      Promise.all(aPromises),
+      Promise.all(bPromises)
+    ]);
 
-  return res;
-})
+    const combinedInh = [...new Set([...aSkills, ...bSkills].filter(Boolean))];
+    resolvedInheritedSkills.value = markRaw(combinedInh);
 
+    const distinctInhIds = [...inhSkillIds];
+    if (props.data?.options) {
+      props.data.options.inheritedSkills = distinctInhIds;
+    }
+
+    // 4. Compute Inheritance Issues
+    const issues = [];
+    if (currentDemon && currentDemon.inheritanceRestrictions) {
+      const demonInheritanceRestrictions = currentDemon.inheritanceRestrictions;
+      combinedInh.forEach((skill) => {
+        const skillInheritance = skill.inheritanceRestriction;
+        if (skillInheritance && !demonInheritanceRestrictions[skillInheritance.toLowerCase()]) {
+          issues.push(`${currentDemon.name} cannot inherit ${skill.name}: Missing inheritance feature '${skillInheritance}'`);
+        }
+      });
+    }
+    resolvedInheritanceIssues.value = issues;
+  },
+  { immediate: true, deep: true }
+);
+
+// Computed aliases matching template expectations
+const demon = computed(() => resolvedDemon.value);
+const selectedSkills = computed(() => resolvedSelectedSkills.value);
+const inheritedSkills = computed(() => resolvedInheritedSkills.value);
+const inheritanceIssues = computed(() => resolvedInheritanceIssues.value);
 
 onMounted(() => {
-  console.log(`DemonNode ${props.data.id} created`)
+  console.log(`DemonNode ${props.data?.id} created`)
 })
 
 // EditDemon Modal
@@ -115,7 +137,6 @@ function cloneNode() {
 function removeNode() {
   emit('removeNode', props.data.id)
 }
-
 </script>
 
 <script>
@@ -137,29 +158,29 @@ export default {
     </o-tooltip>
   </NodeToolbar>
 
-  <div class="card" :class="data.options.type">
-		<div class="card-content">
-			<div class="media">
-				<div class="media-left">
-					<figure class="image is-36x36">
-						<img :src="'./img/demon/' + demon.icon +'.png'" :alt="demon.name">
-					</figure>
-				</div>
-				<div class="media-content">
-					<p class="title is-6">{{demon.name}}</p>
-					<p class="subtitle is-7">Lv {{ data.options.level }} - {{ data.options.type }}</p>
-				</div>
+  <div class="card" :class="data.options.type" v-if="demon">
+    <div class="card-content">
+      <div class="media">
+        <div class="media-left">
+          <figure class="image is-36x36">
+            <img :src="'./img/demon/' + demon.icon +'.png'" :alt="demon.name">
+          </figure>
+        </div>
+        <div class="media-content">
+          <p class="title is-6">{{demon.name}}</p>
+          <p class="subtitle is-7">Lv {{ data.options.level }} - {{ data.options.type }}</p>
+        </div>
         <o-tooltip position="bottom" multiline v-if="inheritanceIssues.length > 0">
           <o-icon pack="mdi" class="icon has-text-warning node-alert" icon="alert" />
           <template #content>
-              <div v-for="msg in inheritanceIssues">
+              <div v-for="msg in inheritanceIssues" :key="msg">
                 <p class="inheritance-issue-message">{{ msg }}</p>
               </div>
           </template>
-    </o-tooltip>
-			</div>
+        </o-tooltip>
+      </div>
 
-			<div class="content"  v-if="selectedSkills.length > 0">
+      <div class="content" v-if="selectedSkills.length > 0">
         <h5>Selected Skills</h5>
         <skill-summary
           v-for="skill in selectedSkills"
@@ -167,23 +188,22 @@ export default {
           :skill="skill"
         />
       </div>
-      <div class="content"  v-if="inheritedSkills.length > 0">
-        <h5>Inhehrited Skills</h5>
+      <div class="content" v-if="inheritedSkills.length > 0">
+        <h5>Inherited Skills</h5>
         <skill-summary
           v-for="skill in inheritedSkills"
           :key="skill.id"
           :skill="skill"
         />
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
 
   <Handle type="source" :position="Position.Top" />
   <Handle type="target" :position="Position.Bottom" />
 </template>
 
 <style>
-
 div.card.level{
   margin-bottom: 0 !important;
 }
@@ -214,7 +234,7 @@ div.card.level{
 }
 
 .o-modal__content{
-	background-color: rgba(0,0,0,0) !important;
+  background-color: rgba(0,0,0,0) !important;
 }
 
 .vue-flow__node-toolbar button {

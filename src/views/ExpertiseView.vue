@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, markRaw } from 'vue'
 import dataService from "@/services/dataService";
 import expertiseService from "@/services/expertiseService";
 
@@ -19,47 +19,56 @@ const activeTab = ref("0");
 const expertiseFloor = ref(17000);
 const selection = ref([]);
 const options = ref({});
+const rawExpertise = ref([]);
 
 let uri = window.location.search.substring(0);
 let params = new URLSearchParams(uri);
 
-//-- OnCreate
-const expertise = expertiseService.all();
-reset();
-if (uri != "") {
-  let hydratedValues = dataService.fromExpertiseQueryParams(params);
-  selection.value = hydratedValues.expertise;
-  options.value = hydratedValues.options;
-  oruga.notification.open({
-    message: "Build Loaded!",
-    rootClass: "toast-notification",
-    position: "top",
-    variant: "success",
-    closable: true,
-    duration: 5000,
-  });
-}
+//-- OnMounted Initialization
+onMounted(async () => {
+  const data = await expertiseService.all() || [];
+  rawExpertise.value = markRaw(data);
+
+  reset();
+
+  if (uri != "") {
+    let hydratedValues = dataService.fromExpertiseQueryParams(params);
+    selection.value = hydratedValues.expertise;
+    options.value = hydratedValues.options;
+    oruga.notification.open({
+      message: "Build Loaded!",
+      rootClass: "toast-notification",
+      position: "top",
+      variant: "success",
+      closable: true,
+      duration: 5000,
+    });
+  }
+});
 
 const currentExpertise = computed(() => {
   let e = 0;
-  selection.value.forEach(function (v) {
-    e += v.value * 100;
+  (selection.value || []).forEach(function (v) {
+    e += (v.value || 0) * 100;
   });
   return e;
 });
 
 const bonusExpertise = computed(() => {
+  if (!options.value || Object.keys(options.value).length === 0) return 0;
   const values = Object.values(options.value);
   let e = 0;
   values.forEach(function (v) {
-    e += v.value;
+    e += (v?.value || 0);
   });
-  e -= options.value.level.value;
-  if (options.value.level.value !== 1) {
-    e += Math.floor(options.value.level.value / 10) * 1000;
-  }
-  if (options.value.level.value === 99) {
-    e += 1000;
+  if (options.value.level) {
+    e -= options.value.level.value;
+    if (options.value.level.value !== 1) {
+      e += Math.floor(options.value.level.value / 10) * 1000;
+    }
+    if (options.value.level.value === 99) {
+      e += 1000;
+    }
   }
   return e;
 })
@@ -70,16 +79,15 @@ const progressType = computed(() => {
   else return "is-danger";
 })
 
-
 function reset() {
   let s = [];
-  expertise.forEach(e => {
+  rawExpertise.value.forEach(e => {
     let obj = {};
     obj.id = e.id,
     obj.name = e.name,
     obj.description = e.description,
     obj.value = 0,
-    obj.max = Number.parseInt( e.maxClass.toString() + e.maxRank.toString())
+    obj.max = Number.parseInt(e.maxClass.toString() + e.maxRank.toString())
     if (e.singularExpertise.length === 0 && e.name !== "--Unused--"){
       s.push(obj);
     }
@@ -114,8 +122,6 @@ function onCopy() {
     variant: 'success'
   })
 }
-
-
 </script>
 
 <template>
@@ -148,14 +154,19 @@ function onCopy() {
               </div>
               <o-tabs v-model="activeTab" class="is-fullwidth" type="boxed">
                 <o-tab-item value="0" label="Expertise">
-                  <ExpertiseInput
-                    v-for="item in selection"
-                    :key="item.id"
-                    :expertise="item"
-                  />
+                  <!-- Defensive guard: only render inputs once selection data is ready -->
+                  <div v-if="selection.length > 0">
+                    <ExpertiseInput
+                      v-for="item in selection"
+                      :key="item.id"
+                      :expertise="item"
+                    />
+                  </div>
                 </o-tab-item>
                 <o-tab-item value="1" label="Options">
+                  <!-- Defensive guard: only render options once initialized -->
                   <options
+                    v-if="options && options.level"
                     :options="options"
                     @reset-expertise="reset"
                     @open-link-modal="expertiseLinkModal"
@@ -169,7 +180,9 @@ function onCopy() {
               <div class="content">
                 <h1>Summary</h1>
                 <h4 class="title is-4">Expertise Limit</h4>
+                <!-- Defensive guard: ensure options.level is present before computing max limits -->
                 <progressbar
+                  v-if="options && options.level"
                   :type="progressType"
                   size="is-large"
                   :value="currentExpertise"
@@ -178,7 +191,7 @@ function onCopy() {
                 >
                   {{ currentExpertise }}/{{ expertiseFloor + bonusExpertise }}
                 </progressbar>
-                <div class="columns">
+                <div class="columns" v-if="selection.length > 0 && options && options.level">
                   <div class="column is-one-third">
                     <expertise-summary
                       :selection="selection"
@@ -200,7 +213,6 @@ function onCopy() {
     </section>
   </div>
 </template>
-
 
 <style lang="scss">
 .o-tabs__content {

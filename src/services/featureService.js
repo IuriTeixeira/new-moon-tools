@@ -1,51 +1,63 @@
-import Features from "@/data/features.json"
 import _ from 'lodash'
 
-const storage = Features;
+let cachedFeatures = null;
+let cachedMap = null;
+let loadPromise = null;
+
+async function loadFeatures() {
+    if (cachedFeatures) return cachedFeatures;
+
+    if (!loadPromise) {
+        loadPromise = fetch('/data/features.json')
+            .then(res => res.json())
+            .then(data => {
+                cachedFeatures = data;
+                cachedMap = new Map(data.map(f => [Number(f.id), f]));
+                return data;
+            });
+    }
+    return loadPromise;
+}
 
 export default {
-
-    get(id = 0) {
+    async get(id = 0) {
         if (id != 0) {
-            let feat = storage.find(f => f.id == id);
-            return feat;
+            await loadFeatures();
+            return cachedMap.get(Number(id)) || null;
         }
-        return null
+        return null;
     },
 
-    getByName(name = '') {
-        const feature = storage.find((item) => {
+    async getByName(name = '') {
+        const storage = await loadFeatures();
+        return storage.find((item) => {
             return (
-                item.name.toLowerCase() == name.toLowerCase()
-                ||
-                item.nameNO.toLowerCase() == name.toLowerCase()
+                (item.name && item.name.toLowerCase() == name.toLowerCase()) ||
+                (item.nameNO && item.nameNO.toLowerCase() == name.toLowerCase())
             )
-            //&& item.family === "Demonic Feature"
-        })
-
-        return feature;
+        }) || null;
     },
 
-    all() {
+    async all() {
+        const storage = await loadFeatures();
         return storage.filter(function (item) {
-            return item.family === "Demonic Feature" && !item.name.includes("Debug")
+            return item.family === "Demonic Feature" && item.name && !item.name.includes("Debug");
         });
     },
 
-    searchByName(name = '') {
+    async searchByName(name = '') {
         if (name != '') {
-            let features = storage.filter(function (feat) {
+            const storage = await loadFeatures();
+            return storage.filter(function (feat) {
                 return feat.name != null
                     && feat.name.length > 0
                     &&
                     (
                         feat.name.toLowerCase().includes(name.toLowerCase())
                         ||
-                        feat.nameNO.toLowerCase().includes(name.toLowerCase())
+                        (feat.nameNO && feat.nameNO.toLowerCase().includes(name.toLowerCase()))
                     )
-                //&& item.family === "Demonic Feature"
-            })
-            return features;
+            });
         }
         return [];
     },

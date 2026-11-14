@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, watch, markRaw } from 'vue'
 import { Handle, Position, useVueFlow, useNodesData, useHandleConnections } from '@vue-flow/core'
 import { NodeToolbar } from '@vue-flow/node-toolbar'
 
@@ -18,23 +18,30 @@ const props = defineProps({
 const emit = defineEmits(['removeNode'])
 //-----
 
-onMounted(() => {
-  console.log(`NotesNode ${props.data.id} created`)
-})
+const resolvedSelectedSkills = ref([]);
 
-const selectedSkills = computed(() => {
-  const res = [];
-  props.data.options.selectedSkills.forEach(id =>{
-    const skill = skillService.get(id);
-    if (skill){
-      res.push(skill);
+// Watch selectedSkills IDs and asynchronously resolve them in parallel
+watch(
+  () => props.data?.options?.selectedSkills,
+  async (skillIds) => {
+    if (!skillIds || skillIds.length === 0) {
+      resolvedSelectedSkills.value = [];
+      return;
     }
-  })
+    const promises = skillIds.map(id => skillService.get(id));
+    const skills = await Promise.all(promises);
+    resolvedSelectedSkills.value = markRaw(skills.filter(Boolean));
+  },
+  { immediate: true, deep: true }
+);
 
-  return res;
+const selectedSkills = computed(() => resolvedSelectedSkills.value);
+
+onMounted(() => {
+  console.log(`NotesNode ${props.data?.id} created`)
 })
 
-// EditDemon Modal
+// EditNotes Modal
 const oruga = useOruga();
 
 function editNode() {
@@ -50,11 +57,9 @@ function editNode() {
   });
 }
 
-
 function removeNode() {
   emit('removeNode', props.data.id)
 }
-
 </script>
 
 <script>
@@ -74,14 +79,14 @@ export default {
   </NodeToolbar>
 
   <div class="card note">
-		<div class="card-content">
-			<div class="media">
-				<div class="media-content">
-					<p class="title is-6">Notes</p>
-				</div>
-			</div>
+    <div class="card-content">
+      <div class="media">
+        <div class="media-content">
+          <p class="title is-6">Notes</p>
+        </div>
+      </div>
 
-			<div class="content notes">
+      <div class="content notes">
         {{ data.options.notes }}
       </div>
       <div class="content"  v-if="selectedSkills.length > 0">
@@ -92,20 +97,19 @@ export default {
           :skill="skill"
         />
       </div>
-		</div>
-	</div>
+    </div>
+  </div>
 
   <Handle type="source" :position="Position.Top" />
 </template>
 
 <style>
-
 div.card.level{
   margin-bottom: 0 !important;
 }
 
 .o-modal__content{
-	background-color: rgba(0,0,0,0) !important;
+  background-color: rgba(0,0,0,0) !important;
 }
 
 .vue-flow__node-toolbar button {

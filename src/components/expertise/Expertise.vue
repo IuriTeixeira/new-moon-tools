@@ -1,11 +1,9 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, watch, markRaw } from 'vue'
 import { useOruga } from "@oruga-ui/oruga-next"
 import skillService from "@/services/skillService";
 import Skill from "@/components/expertise/Skill.vue";
 import SkillTooltip from "@/components/expertise/SkillTooltip.vue";
-
-//-- Data
 
 const props = defineProps({
   expertise: {
@@ -30,6 +28,7 @@ const oruga = useOruga()
 
 // Single tracker for the current active item
 const activeSkillId = ref(null)
+const resolvedSkills = ref([])
 
 function handleHover(skillId) {
   activeSkillId.value = skillId
@@ -38,6 +37,53 @@ function handleHover(skillId) {
 function handleLeave() {
   activeSkillId.value = null
 }
+
+// Asynchronously resolve all skills referenced in the expertise breakpoints when props change
+watch(() => props.expertise, async (newExpertise) => {
+  if (!newExpertise || !newExpertise.breakpoints) {
+    resolvedSkills.value = []
+    return
+  }
+
+  const allSkillIds = newExpertise.breakpoints.flatMap(b => b.skills || [])
+  const uniqueIds = [...new Set(allSkillIds)]
+
+  // Fetch all required skills in parallel via async skillService
+  const skillPromises = uniqueIds.map(id => skillService.get(id))
+  const fetchedSkills = await Promise.all(skillPromises)
+
+  // Map into a lookup dictionary for fast association
+  const skillMap = new Map()
+  fetchedSkills.filter(Boolean).forEach(skill => {
+    skillMap.set(Number(skill.id), skill)
+  })
+
+  // Build structured skill items with availability status matching breakpoints
+  const mappedSkills = []
+  newExpertise.breakpoints.forEach(b => {
+    const breakpoint = Number.parseInt(b.class.toString() + b.rank.toString());
+    const matchedSelection = props.selection?.find(s => s.id === newExpertise.id);
+    const selectionValue = typeof matchedSelection === 'object' ? matchedSelection.value : (matchedSelection || 0);
+    const isAvailable = breakpoint <= selectionValue;
+
+    (b.skills || []).forEach(skillId => {
+      const skillData = skillMap.get(Number(skillId))
+      if (skillData) {
+        mappedSkills.push({
+          ...skillData,
+          isLocked: !isAvailable,
+          // Sort helper: available skills first, then locked
+          _sortOrder: isAvailable ? 0 : 1
+        })
+      }
+    });
+  });
+
+  // Sort available skills before unavailable skills
+  mappedSkills.sort((a, b) => a._sortOrder - b._sortOrder)
+
+  resolvedSkills.value = markRaw(mappedSkills)
+}, { immediate: true, deep: true })
 
 // Copies description and fires an Oruga notification toast
 async function handleSkillClick(skill) {
@@ -63,50 +109,29 @@ async function handleSkillClick(skill) {
 
 const match = computed(() => {
   let response = {};
-  props.selection.forEach(s => {
-    if (props.expertise.id === s.id) {
+  (props.selection || []).forEach(s => {
+    if (props.expertise?.id === s.id) {
       response = s
     }
   })
   return response;
 })
 
-const skills = computed(() => {
-  const availableSkills = [];
-  const unavailableSkills = [];
-
-  props.expertise.breakpoints.forEach(b => {
-    const breakpoint = Number.parseInt(b.class.toString() + b.rank.toString());
-    // check for availability
-    const isAvailable = breakpoint <= match.value.value;
-
-    b.skills.forEach(skillId => {
-      const skillData = skillService.get(skillId);
-      // Push an object containing the data and the status
-      if (isAvailable) {
-        availableSkills.push({ ...skillData, isLocked: false });
-      } else {
-        unavailableSkills.push({ ...skillData, isLocked: true });
-      }
-    });
-  });
-
-  return [...availableSkills, ...unavailableSkills];
-});
-
 const visibleSkills = computed(() => {
-  return skills.value.filter(skill => !props.hideUnlearned || (props.hideUnlearned && !skill.isLocked));
+  return resolvedSkills.value.filter(skill => !props.hideUnlearned || (props.hideUnlearned && !skill.isLocked));
 });
 
 const isVisible = computed(() => {
+  const matchVal = typeof match.value === 'object' ? (match.value.value ?? 0) : match.value;
   if (props.hideZeroes) {
-    return match.value.value !== 0;
+    return matchVal !== 0;
   }
   return visibleSkills.value.length > 0;
 })
 
 function classRank(amount) {
-  var a = amount;
+  const val = typeof amount === 'object' ? (amount.value ?? 0) : amount;
+  var a = val;
   var b = a.toString();
   if (a === 0) {
     return "Class 0 Rank 0";

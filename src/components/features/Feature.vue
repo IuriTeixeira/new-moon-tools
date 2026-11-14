@@ -1,5 +1,6 @@
 <template>
-    <div class="feat-wrapper">
+    <!-- Add v-if="feature" so it doesn't render until data is ready -->
+    <div class="feat-wrapper" v-if="feature">
         <table class="table is-striped is-fullwidth">
             <tbody>
                 <!-- 1. Headers Row: Name and Category side-by-side -->
@@ -14,7 +15,7 @@
                         <div class="title is-6">
                             {{ feature.name }}
                         </div>
-                        <div v-if="feature.nameNO !== ''"
+                        <div v-if="feature.nameNO && feature.nameNO !== ''"
                             class="subtitle is-7 expertise-requirement is-flex is-align-items-center"
                             style="gap: 0.5rem;">
                             <figure class="image m-0">
@@ -24,7 +25,7 @@
                         </div>
                     </td>
                     <td>
-                        <span v-if="feature.feat_exclusion.length > 0">
+                        <span v-if="feature.feat_exclusion && feature.feat_exclusion.length > 0">
                             <div v-for="category, index in feature.feat_exclusion" :key="feature.id + index"
                                 class="category-item">
                                 • {{ category.name }}
@@ -98,15 +99,11 @@
                 </tr>
             </tbody>
         </table>
+        <br />
     </div>
-    <br />
 </template>
 
 <script>
-import demonService from "@/services/demonService"
-
-const allDemons = demonService.all()
-
 export default {
     name: 'Feature',
     data() {
@@ -115,15 +112,20 @@ export default {
         }
     },
     computed: {
+        // Convert array to a Set once for O(1) lightning-fast lookups
+        demonIdSet() {
+            return new Set((this.allDemons || []).map(d => d.id));
+        },
         enemyDemon() {
             const map = {};
+            if (!this.demons || !Array.isArray(this.demons)) return map;
+            
+            const demonSet = this.demonIdSet;
             this.demons.forEach((demon) => {
                 if (demon && demon.acquisition) {
+                    const hasBaseDemon = demonSet.has(demon.id - 10000);
                     map[demon.id] = Object.values(demon.acquisition).every(
-                        (acq) =>
-                            acq === false
-                            &&
-                            !allDemons.some(d => d.id === demon.id - 10000)
+                        (acq) => acq === false && !hasBaseDemon
                     );
                 }
             });
@@ -131,9 +133,12 @@ export default {
         },
         mitamaDemon() {
             const map = {};
+            if (!this.demons || !Array.isArray(this.demons)) return map;
+
+            const demonSet = this.demonIdSet;
             this.demons.forEach((demon) => {
                 if (demon) {
-                    map[demon.id] = allDemons.some(d => d.id === demon.id - 10000) || demon.id == 10616;
+                    map[demon.id] = demonSet.has(demon.id - 10000) || demon.id == 10616;
                 }
             });
             return map;
@@ -151,7 +156,8 @@ export default {
         feature: { type: Object, required: true },
         demons: { type: Array, required: true },
         epitaphs: { type: Object },
-        hideSource: { type: Boolean }
+        hideSource: { type: Boolean },
+        allDemons: { type: Array, default: () => [] } // Received from parent
     }
 }
 </script>
@@ -229,7 +235,7 @@ tr.table-content-row td {
     border-right: none !important;
 }
 
-.feature-name{
+.feature-name {
     vertical-align: middle !important;
 }
 </style>

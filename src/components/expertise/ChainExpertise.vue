@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, ref, watch, markRaw } from 'vue'
 import { useOruga } from "@oruga-ui/oruga-next"
 import skillService from "@/services/skillService";
 import expertiseService from "@/services/expertiseService";
@@ -21,52 +21,103 @@ const props = defineProps({
   hideUnlearned: Boolean
 });
 
-// Computed properties for logic
-const isVisible = computed(() => props.hideLocked ? unlocked.value : true);
-const singles = computed(() => props.expertise.singularExpertise.map(e => e.expertiseID));
-const lookup = computed(() => {
-  const response = [];
-  props.selection.forEach(s => {
-    if (singles.value.includes(s.id)) {
-      const single = props.expertise.singularExpertise.find(x => x.expertiseID === s.id);
-      if (single) {
-        const expertise = expertiseService.get(single.expertiseID);
-        response.push({
-          id: single.expertiseID,
-          name: expertise.name,
-          raw: s.value,
-          required: Number.parseInt(single.classRequired.toString() + single.rankRequired.toString()),
-          percentage: single.percentage,
-          calculated: s.value * single.percentage
-        });
-      }
-    }
+// Local reactive lookup and skill stores populated asynchronously
+const resolvedLookup = ref([]);
+const resolvedSkills = ref([]);
+const unlockedStatus = ref(false);
+
+// Watch props to asynchronously resolve all nested expertise and skill relations
+watch(() => [props.expertise, props.selection], async ([newExp]) => {
+  if (!newExp || !newExp.singularExpertise || !newExp.breakpoints) {
+    resolvedLookup.value = [];
+    resolvedSkills.value = [];
+    unlockedStatus.value = false;
+    return;
+  }
+
+  // 1. Resolve singular expertises for lookup
+  const singles = newExp.singularExpertise.map(e => e.expertiseID);
+  const matchedSelections = (props.selection || []).filter(s => singles.includes(s.id));
+
+  const lookupPromises = matchedSelections.map(async s => {
+    const single = newExp.singularExpertise.find(x => x.expertiseID === s.id);
+    if (!single) return null;
+    const expertiseObj = await expertiseService.get(single.expertiseID);
+    return {
+      id: single.expertiseID,
+      name: expertiseObj?.name || '',
+      raw: s.value,
+      required: Number.parseInt(single.classRequired.toString() + single.rankRequired.toString()),
+      percentage: single.percentage,
+      calculated: s.value * single.percentage
+    };
   });
-  return response;
-});
-const unlocked = computed(() => {
-  if (props.expertise.id === 45) return props.options.actxx.value == 2000;
-  return lookup.value.every(e => e.raw >= e.required);
-});
-const total = computed(() => unlocked.value ? lookup.value.reduce((sum, e) => sum + e.calculated, 0) : 0);
-const skills = computed(() => {
+
+  const rawLookup = await Promise.all(lookupPromises);
+  const validLookup = rawLookup.filter(Boolean);
+  resolvedLookup.value = markRaw(validLookup);
+
+  // 2. Check unlock status
+  let unlocked = false;
+  if (newExp.id === 45) {
+    unlocked = props.options?.actxx?.value == 2000;
+  } else {
+    unlocked = validLookup.every(e => e.raw >= e.required);
+  }
+  unlockedStatus.value = unlocked;
+
+  const totalVal = unlocked ? validLookup.reduce((sum, e) => sum + e.calculated, 0) : 0;
+
+  // 3. Resolve breakpoint skills asynchronously
+  const allSkillIds = newExp.breakpoints.flatMap(b => b.skills || []);
+  const uniqueSkillIds = [...new Set(allSkillIds)];
+  const fetchedSkills = await Promise.all(uniqueSkillIds.map(id => skillService.get(id)));
+  
+  const skillMap = new Map();
+  fetchedSkills.filter(Boolean).forEach(skill => {
+    skillMap.set(Number(skill.id), skill);
+  });
+
   const response = [];
-  props.expertise.breakpoints.forEach(b => {
+  newExp.breakpoints.forEach(b => {
     const breakpoint = Number.parseInt(b.class.toString() + b.rank.toString());
-    const isAvailable = unlocked.value && (breakpoint <= total.value);
-    b.skills.forEach(skillId => {
-      const skillData = skillService.get(skillId);
-      if (skillData) response.push({ ...skillData, isLocked: !isAvailable });
+    const isAvailable = unlocked && (breakpoint <= totalVal);
+    (b.skills || []).forEach(skillId => {
+      const skillData = skillMap.get(Number(skillId));
+      if (skillData) {
+        response.push({ ...skillData, isLocked: !isAvailable });
+      }
     });
   });
-  return response;
+
+  resolvedSkills.value = markRaw(response);
+}, { immediate: true, deep: true });
+
+// Computed properties for template presentation
+const lookup = computed(() => resolvedLookup.value);
+
+const unlocked = computed(() => unlockedStatus.value);
+
+const total = computed(() => {
+  if (!unlocked.value) return 0;
+  return resolvedLookup.value.reduce((sum, e) => sum + e.calculated, 0);
 });
-const visibleSkills = computed(() => skills.value.filter(skill => !props.hideUnlearned || !skill.isLocked));
+
+const isVisible = computed(() => {
+  if (props.hideLocked) {
+    if (props.expertise?.id === 45) return props.options?.actxx?.value == 2000;
+    return resolvedLookup.value.every(e => e.raw >= e.required);
+  }
+  return true;
+});
+
+const visibleSkills = computed(() => resolvedSkills.value.filter(skill => !props.hideUnlearned || !skill.isLocked));
 
 // Helper Functions
 function toggle() { isExpanded.value = !isExpanded.value; }
 function handleHover(skillId) { activeSkillId.value = skillId; }
 function handleLeave() { activeSkillId.value = null; }
+
 async function handleSkillClick(skill) {
   if (!skill?.description) return;
   try {
@@ -85,29 +136,36 @@ async function handleSkillClick(skill) {
     })
   } catch (err) { console.error(err); }
 }
+
 function toPercent(amount) { return amount.toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 0 }); }
+
 function classRank(amount) {
   var a = amount;
   var b = a.toString();
   return a === 0 ? "Class 0 Rank 0" : a >= 100 ? "Class " + b.charAt(0) + b.charAt(1) + " Rank " + b.charAt(2) : a >= 10 ? "Class " + b.charAt(0) + " Rank " + b.charAt(1) : "Class 0 Rank " + b.charAt(0)
 }
+
 function updateSingles(valFn) {
-  props.selection.forEach(sel => {
-    if (singles.value.includes(sel.id)) {
+  const singles = (props.expertise?.singularExpertise || []).map(e => e.expertiseID);
+  (props.selection || []).forEach(sel => {
+    if (singles.includes(sel.id)) {
       const single = props.expertise.singularExpertise.find(x => x.expertiseID === sel.id);
       if (single) sel.value = valFn(single);
     }
   });
 }
+
 function zeroSingles() { updateSingles(() => 0); }
 function reqSingles() { updateSingles(s => Number.parseInt(s.classRequired.toString() + s.rankRequired.toString())); }
-function maxSingles() {
-  props.selection.forEach(sel => {
-    if (singles.value.includes(sel.id)) {
-      const exp = expertiseService.get(sel.id);
+
+async function maxSingles() {
+  const singles = (props.expertise?.singularExpertise || []).map(e => e.expertiseID);
+  for (const sel of (props.selection || [])) {
+    if (singles.includes(sel.id)) {
+      const exp = await expertiseService.get(sel.id);
       if (exp) sel.value = Number.parseInt(exp.maxClass.toString() + exp.maxRank.toString());
     }
-  });
+  }
 }
 </script>
 
@@ -131,11 +189,11 @@ function maxSingles() {
             <th>Percentage</th>
             <th>Computed</th>
           </tr>
-          <tr v-for="expertise in lookup" :key="expertise.id">
-            <th>{{ expertise.name }}</th>
-            <td>{{ classRank(expertise.required) }}</td>
-            <td>{{ toPercent(expertise.percentage) }}</td>
-            <td>{{ classRank(expertise.calculated) }}</td>
+          <tr v-for="expItem in lookup" :key="expItem.id">
+            <th>{{ expItem.name }}</th>
+            <td>{{ classRank(expItem.required) }}</td>
+            <td>{{ toPercent(expItem.percentage) }}</td>
+            <td>{{ classRank(expItem.calculated) }}</td>
           </tr>
         </table>
         <span class="subtitle">Unlocked Skills</span>

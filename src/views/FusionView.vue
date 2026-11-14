@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted, markRaw, watch } from 'vue'
 import { debounce } from "lodash";
 import DemonSummary from "@/components/fusion/DemonSummary.vue"
 import demonService from "@/services/demonService";
@@ -10,6 +10,7 @@ const filterByDemonName = ref("");
 const selectedFilter = ref("")
 const selectedSource = ref("")
 const results = ref([]);
+const rawDemons = ref([]);
 
 const filterOptions = [
     { path: "alliedDemons", label: "Allied Demons" },
@@ -19,23 +20,38 @@ const filterOptions = [
 const props = defineProps({
     selectedDemon: {
         type: Object,
-        required: true,
-        default: () => demonService.get(569)
+        required: false,
+        default: null
     }
 })
 
-// Local reactive state initialized from the prop
+// Local reactive state
 const currentDemon = ref(props.selectedDemon)
 
-const allDemons = computed(() =>
-    demonService.all() ?? []
-)
+// Fetch all demons asynchronously on mount and apply markRaw to prevent browser lag
+onMounted(async () => {
+    const demons = await demonService.all() || []
+    rawDemons.value = markRaw(demons)
 
-// Search field stuff
+    // If no parent prop was passed, default to demon ID 569
+    if (!currentDemon.value && rawDemons.value.length > 0) {
+        currentDemon.value = rawDemons.value.find(d => d.id === 569) || rawDemons.value[0];
+    }
+})
+
+// Keep currentDemon in sync if parent prop updates
+watch(() => props.selectedDemon, (newVal) => {
+    if (newVal) {
+        currentDemon.value = newVal;
+    }
+})
+
+const allDemons = computed(() => rawDemons.value)
+
+// Search field debounced input
 const onInput = debounce(() => {
     findDemons()
-}, 500
-)
+}, 500)
 
 async function findDemons() {
     const query = filterByDemonName.value?.toLowerCase().trim();
@@ -45,11 +61,18 @@ async function findDemons() {
         return;
     }
 
-    // Search locally against the pre-filtered computed list
+    // Search locally against the pre-loaded raw list
     results.value = allDemons.value.filter(demon =>
-        demon.name?.toLowerCase().includes(query) || demon.nameNO?.toLowerCase().includes(query) ||
-        demon.title?.toLowerCase().includes(query) || demon.titleNO?.toLowerCase().includes(query)
+        demon.name?.toLowerCase().includes(query) ||
+        demon.nameNO?.toLowerCase().includes(query) ||
+        demon.title?.toLowerCase().includes(query) ||
+        demon.titleNO?.toLowerCase().includes(query)
     );
+}
+
+// Helper: safely read nested property values
+function getNestedValue(obj, path) {
+    return path.split(".").reduce((acc, key) => acc?.[key], obj)
 }
 
 // Dynamically compute possible values based on selected filter
@@ -63,9 +86,12 @@ const availableValues = computed(() => {
 })
 
 const changeDemon = (id) => {
-    currentDemon.value = demonService.get(id);
+    // Instant synchronous lookup from our local cached array
+    const found = rawDemons.value.find(d => d.id === id);
+    if (found) {
+        currentDemon.value = found;
+    }
     results.value = []; // Clears the search results list on click
-    //filterByDemonName.value = ""; // Optional: clears the search input
 }
 
 function alignmentColor(alignment) {
@@ -80,7 +106,6 @@ function handleImageError(event) {
     event.target.src = './img/Default.png';
 }
 </script>
-
 
 <template>
     <div id="expertise">
@@ -147,7 +172,7 @@ function handleImageError(event) {
                                 </div>
                                 <div class="media-content">
                                     <p class="title is-6"><a href="#" @click.prevent="changeDemon(demon.id)">{{
-                                            demon.title }} {{ demon.name }}</a>
+                                        demon.title }} {{ demon.name }}</a>
                                         <span
                                             v-if="
                                                 (demon.nameNO !== '' && demon.name !== demon.nameNO) || (demon.titleNO !== '' && demon.title !== demon.titleNO)"
@@ -168,7 +193,7 @@ function handleImageError(event) {
                                 </div>
                             </div>
                         </div>
-                        <DemonSummary :demon="currentDemon" />
+                        <DemonSummary v-if="currentDemon" :demon="currentDemon" />
                     </o-tab-item>
                     <o-tab-item value="1" label="Double Fusion">
                     </o-tab-item>
@@ -191,6 +216,5 @@ function handleImageError(event) {
 
 .blue {
     color: #3273dc;
-    /* or #3e8ed0 */
 }
 </style>

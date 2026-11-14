@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from "vue"
+import { ref, computed, onMounted, markRaw } from "vue"
 import featureList from "@/components/features/FeatureList.vue"
 import featureService from "@/services/featureService"
 import demonService from "@/services/demonService"
@@ -7,25 +7,37 @@ import itemService from "@/services/itemService"
 import epitaphService from "@/services/epitaphService"
 import { debounce } from "lodash";
 
-// State
+// Store raw data without reactive proxies
+const rawFeatures = ref([])
+const rawDemons = ref([])
+const rawEpitaphs = ref([])
+const rawItems = ref([])
+
 const selectedAttribute = ref("")
 const filterByFeatureName = ref("");
 const results = ref([]);
 
-// Get all features
-const allFeatures = computed(() =>
-    featureService.all()
-)
+// Fetch data on mount
+onMounted(async () => {
+    // markRaw prevents Vue from recursively tracking thousands of objects
+    const features = await featureService.all() || []
+    rawFeatures.value = markRaw(features)
 
-const allDemons = computed(() =>
-    (demonService.all() ?? []).filter(
-        demon => demon.traits.some((trait) => trait !== 0)
-    )
-)
+    const demonsData = await demonService.all() || []
+    const filteredDemons = demonsData.filter(demon => demon.traits?.some(trait => trait !== 0))
+    rawDemons.value = markRaw(filteredDemons)
 
-const allEpitaphs = computed(() => {
-    return epitaphService.all() ?? [];
-});
+    const epitaphs = await epitaphService.all() || []
+    rawEpitaphs.value = markRaw(epitaphs)
+
+    const items = await itemService.all() || []
+    rawItems.value = markRaw(items)
+})
+
+// Computed properties using reactive refs
+const allFeatures = computed(() => rawFeatures.value)
+const allDemons = computed(() => rawDemons.value)
+const allEpitaphs = computed(() => rawEpitaphs.value)
 
 // Helper: safely read nested property values
 function getNestedValue(obj, path) {
@@ -35,8 +47,7 @@ function getNestedValue(obj, path) {
 // Search field stuff
 const onInput = debounce(() => {
     findFeatures()
-}, 500
-)
+}, 500)
 
 async function findFeatures() {
     if (!filterByFeatureName.value || filterByFeatureName.value.length < 3) {
@@ -50,16 +61,14 @@ async function findFeatures() {
 
     const query = filterByFeatureName.value.toLowerCase()
 
-    // Filter by family AND check if name OR nameNO matches
     results.value = (found ?? []).filter(feat => {
         const foundName = feat.name?.toLowerCase().includes(query)
         const foundNameNO = feat.nameNO?.toLowerCase().includes(query)
-
         return foundName || foundNameNO
     })
 }
 
-// Filtered skills
+// Filtered features
 const filteredFeatures = computed(() => {
     if (filterByFeatureName.value.length >= 3) {
         return results.value;
@@ -71,72 +80,53 @@ const filteredFeatures = computed(() => {
         return featuresToFilter;
     }
 
-    // Handle the explicit "No Exclusions" filter selection
     if (selectedAttribute.value === 'feat_exclusion.empty') {
         return featuresToFilter.filter(feat =>
             !feat.feat_exclusion || feat.feat_exclusion.length === 0
         );
     }
 
-    // Handle regular exclusion name filters
     const targetName = selectedAttribute.value.replace('feat_exclusion.', '');
 
     return featuresToFilter.filter(feat => {
         if (!feat.feat_exclusion) return false;
-
         return feat.feat_exclusion.some(exclusion =>
             exclusion.name === targetName
         );
     });
 });
 
-
 const filterOptions = computed(() => {
-    // 1. Flatten all exclusion arrays and extract the names
+    // Only process if features are loaded
+    if (!allFeatures.value.length) return [];
+
     const names = allFeatures.value
         .flatMap(feat => feat.feat_exclusion || [])
         .map(exclusion => exclusion.name)
         .filter(Boolean);
 
-    // 2. Remove duplicate names
     const uniqueNames = [...new Set(names)];
 
-    // 3. Map to the object structure
-    const dynamicOptions = uniqueNames.map(name => ({
-        path: `feat_exclusion.${name}`,
-        label: name
-    }));
-
-    // 4. Prepend a custom option for empty exclusions
     return [
         { path: "feat_exclusion.empty", label: "No Category" },
-        ...dynamicOptions
+        ...uniqueNames.map(name => ({
+            path: `feat_exclusion.${name}`,
+            label: name
+        }))
     ];
 });
 
-
 const epitaphs = computed(() => {
-    // 1. Guard check to handle uninitialized state safely
     if (!filteredFeatures.value || !allEpitaphs.value) return [];
 
-    // 2. Map active feature IDs into a Set for rapid O(1) matching
     const featureIds = new Set(filteredFeatures.value.map(feat => Number(feat.id)));
-
-    // 3. Filter epitaphs down to only those matching our current active features
     const activeEpitaphs = allEpitaphs.value.filter(epi => featureIds.has(Number(epi.skillID)));
 
-    // 4. Map the matching item objects directly out of itemService
-    // Use .flatMap() to skip items that might be missing from itemService
-    const rawItems = itemService.all() ?? [];
-
     return activeEpitaphs.flatMap(epi => {
-        const matchingItem = rawItems.find(item => Number(item.id) === Number(epi.itemID));
-
-        // If an item is found, append the skillID onto it so the parent list can track it
+        const matchingItem = rawItems.value.find(item => Number(item.id) === Number(epi.itemID));
         return matchingItem ? [{ ...matchingItem, skillID: epi.skillID }] : [];
     });
 });
-
 
 const featureDemons = computed(() => {
     let demons = []
@@ -210,7 +200,8 @@ const featureDemons = computed(() => {
                 </em>
                 <br />
                 <!-- Features List -->
-                <featureList :features="filteredFeatures" :demons="featureDemons" :epitaphs="epitaphs" />
+                <featureList :features="filteredFeatures" :demons="featureDemons" :epitaphs="epitaphs"
+                    :allDemons="allDemons" />
             </div>
         </section>
     </div>

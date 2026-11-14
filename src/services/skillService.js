@@ -1,24 +1,41 @@
-import Skills from "@/data/skills.json"
 import _ from 'lodash'
 
-const storage = Skills;
+let cachedSkills = null;
+let cachedMap = null;
+let loadPromise = null;
+
+async function loadSkills() {
+    if (cachedSkills) return cachedSkills;
+    
+    // Deduplicate concurrent requests so fetch only happens ONCE
+    if (!loadPromise) {
+        loadPromise = fetch('/data/skills.json')
+            .then(res => res.json())
+            .then(data => {
+                cachedSkills = data;
+                cachedMap = new Map(data.map(d => [Number(d.id), d]));
+                return data;
+            });
+    }
+    return loadPromise;
+}
 
 export default {
-
-    get(id = 0) {
+    async get(id = 0) {
         if (id != 0) {
-            let skill = storage.find(d => d.id == id);
-            return skill;
+            await loadSkills();
+            return cachedMap.get(Number(id)) || null;
         }
-        return null
+        return null;
     },
 
-    getByName(name = '') {
-        const skill = storage.find((item) => {
+    async getByName(name = '') {
+        const skills = await loadSkills();
+        return skills.find((item) => {
             return (
                 (
-                    item.name.toLowerCase() == name.toLowerCase() ||
-                    item.nameNO.toLowerCase() == name.toLowerCase()
+                    item.name?.toLowerCase() == name.toLowerCase() ||
+                    item.nameNO?.toLowerCase() == name.toLowerCase()
                 )
                 &&
                 (
@@ -27,25 +44,24 @@ export default {
                     item.family === "Special Skill"
                 )
             )
-        })
-
-        return skill;
+        }) || null;
     },
 
-    all() {
-        return storage;
+    async all() {
+        return await loadSkills();
     },
 
-    searchByName(name = '') {
+    async searchByName(name = '') {
         if (name != '') {
-            let skills = storage.filter(function (item) {
+            const skills = await loadSkills();
+            return skills.filter(function (item) {
                 return item.name != null
                     && item.name.length > 0
                     &&
                     (
                         item.name.toLowerCase().includes(name.toLowerCase())
                         ||
-                        item.nameNO.toLowerCase().includes(name.toLowerCase())
+                        item.nameNO?.toLowerCase().includes(name.toLowerCase())
                     )
                     &&
                     (
@@ -53,8 +69,7 @@ export default {
                         item.family === "Arcane Art" ||
                         item.family === "Special Skill"
                     )
-            })
-            return skills;
+            });
         }
         return [];
     }

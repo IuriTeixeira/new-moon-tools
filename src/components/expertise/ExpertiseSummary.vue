@@ -1,12 +1,13 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, onMounted, ref, markRaw } from 'vue'
 import expertiseService from "@/services/expertiseService";
 
 import Expertise from "@/components/expertise/Expertise.vue";
 
 //-- Data
 const hideZeroes = ref(false);
-const hideUnlearned = ref(false)
+const hideUnlearned = ref(false);
+const singles = ref([]);
 
 const props = defineProps({
   selection: {
@@ -17,17 +18,17 @@ const props = defineProps({
   }
 })
 
-//-- OnCreate
-const expertise = expertiseService.all();
-let s = [];
-expertise.forEach(e => {
-  const obj = e;
-  if (e.singularExpertise.length === 0 && e.name !== "--Unused--") {
-    s.push(obj);
-  }
+//-- OnMounted Initialization
+onMounted(async () => {
+  const expertise = await expertiseService.all() || [];
+  let s = [];
+  expertise.forEach(e => {
+    if (e.singularExpertise.length === 0 && e.name !== "--Unused--") {
+      s.push(e);
+    }
+  });
+  singles.value = markRaw(s);
 });
-const singles = s;
-
 </script>
 
 <template>

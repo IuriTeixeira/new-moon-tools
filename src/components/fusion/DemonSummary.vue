@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from 'vue';
+import { ref, computed, watch, markRaw } from 'vue';
 import { useOruga } from "@oruga-ui/oruga-next"
 import skillService from "@/services/skillService";
 import Skill from "@/components/expertise/Skill.vue";
@@ -10,99 +10,130 @@ import FeatureList from '../features/FeatureList.vue';
 const oruga = useOruga()
 const activeSkillId = ref(null)
 
+const baseSkills = ref([])
+const enemyOnlySkills = ref([])
+const acquiredSkills = ref([])
+const features = ref([])
+
 function handleHover(skillId) {
-	activeSkillId.value = skillId
+    activeSkillId.value = skillId
 }
 
 function handleLeave() {
-	activeSkillId.value = null
+    activeSkillId.value = null
 }
 
 const props = defineProps({
-	demon: {
-		type: Object,
-		required: true,
-	}
+    demon: {
+        type: Object,
+        required: true,
+    }
 })
+
+// Watch for demon changes and asynchronously resolve all skills & traits
+watch(() => props.demon, async (newDemon) => {
+    if (!newDemon) {
+        baseSkills.value = []
+        enemyOnlySkills.value = []
+        acquiredSkills.value = []
+        features.value = []
+        return
+    }
+
+    // 1. Resolve base skills asynchronously
+    if (newDemon.skills && Array.isArray(newDemon.skills)) {
+        const resolved = await Promise.all(newDemon.skills.map(id => skillService.get(id)))
+        baseSkills.value = markRaw(resolved.filter(Boolean))
+    } else {
+        baseSkills.value = []
+    }
+
+    // 2. Resolve enemy-only skills (fallback to featureService if not found)
+    if (newDemon.enemyOnlySkills && Array.isArray(newDemon.enemyOnlySkills)) {
+        const resolved = await Promise.all(
+            newDemon.enemyOnlySkills.map(async id => (await skillService.get(id)) || (await featureService.get(id)))
+        )
+        enemyOnlySkills.value = markRaw(resolved.filter(Boolean))
+    } else {
+        enemyOnlySkills.value = []
+    }
+
+    // 3. Resolve acquired skills
+    if (newDemon.acquiredSkills && Array.isArray(newDemon.acquiredSkills)) {
+        const resolved = await Promise.all(
+            newDemon.acquiredSkills.map(skill => skillService.get(skill.id))
+        )
+        acquiredSkills.value = markRaw(resolved.filter(Boolean))
+    } else {
+        acquiredSkills.value = []
+    }
+
+    // 4. Resolve features/traits asynchronously
+    if (newDemon.traits && Array.isArray(newDemon.traits)) {
+        const validTraits = newDemon.traits.filter(feat => feat !== 0)
+        const resolved = await Promise.all(validTraits.map(feat => featureService.get(feat)))
+        features.value = markRaw(resolved.filter(Boolean))
+    } else {
+        features.value = []
+    }
+}, { immediate: true })
 
 const affinityColors = computed(() => {
-	let affinityColorList = {};
+    let affinityColorList = {};
+    const affinityData = props.demon?.affinity;
 
-	const affinityData = props.demon?.affinity;
+    if (affinityData) {
+        Object.entries(affinityData).forEach(([name, values]) => {
+            affinityColorList[name] = {
+                resistColor: values.resist > 0 ? 'green' : (values.resist < 0 ? 'red' : 'default'),
+                nullColor: values.null > 0 ? 'green' : 'default',
+                reflectColor: values.reflect > 0 ? 'green' : 'default',
+                absorbColor: values.absorb > 0 ? 'green' : 'default'
+            };
+        });
+    }
 
-	if (affinityData) {
-		Object.entries(affinityData).forEach(([name, values]) => {
-			affinityColorList[name] = {
-				resistColor: values.resist > 0 ? 'green' : (values.resist < 0 ? 'red' : 'default'),
-				nullColor: values.null > 0 ? 'green' : 'default',
-				reflectColor: values.reflect > 0 ? 'green' : 'default',
-				absorbColor: values.absorb > 0 ? 'green' : 'default'
-			};
-		});
-	}
-
-	return affinityColorList;
+    return affinityColorList;
 });
 
-const baseSkills = computed(() => {
-	const skills = props.demon.skills.map(id => skillService.get(id)).filter(id => id !== null)
-	return skills
-})
-
-const enemyOnlySkills = computed(() => {
-	const skills = props.demon.enemyOnlySkills.map(id => skillService.get(id) || featureService.get(id)).filter(id => id !== null)
-	return skills
-})
-
-const acquiredSkills = computed(() => {
-	const skills = props.demon.acquiredSkills.map(skill => skillService.get(skill.id)).filter(id => id !== null)
-	return skills
-})
-
-const features = computed(() => {
-	const features = props.demon.traits.filter(feat => feat !== 0).map(feat => featureService.get(feat))
-	return features
-})
-
 async function handleSkillClick(skill) {
-	if (!skill?.description) return
-	try {
-		skill.nameNO !== ""
-			?
-			await navigator.clipboard.writeText(skill.name + "\n\n" + skill.nameNO + "\n\n" + skill.description)
-			:
-			await navigator.clipboard.writeText(skill.name + "\n\n" + skill.description)
+    if (!skill?.description) return
+    try {
+        skill.nameNO !== ""
+            ?
+            await navigator.clipboard.writeText(skill.name + "\n\n" + skill.nameNO + "\n\n" + skill.description)
+            :
+            await navigator.clipboard.writeText(skill.name + "\n\n" + skill.description)
 
-		oruga.notification.open({
-			message: `Copied name and description for <b>${skill.name}</b>!`,
-			position: "bottom",
-			variant: "success",
-			duration: 2000,
-			closable: false
-		})
-	} catch (err) {
-		console.error("Clipboard copy failed: ", err)
-	}
+        oruga.notification.open({
+            message: `Copied name and description for <b>${skill.name}</b>!`,
+            position: "bottom",
+            variant: "success",
+            duration: 2000,
+            closable: false
+        })
+    } catch (err) {
+        console.error("Clipboard copy failed: ", err)
+    }
 }
 
 function inheritIcon(inherit) {
-	let icon = ""
-	inherit ? icon = "check" : icon = "close"
-	return icon
+    let icon = ""
+    inherit ? icon = "check" : icon = "close"
+    return icon
 }
 
 function alignmentColor(alignment) {
-	switch (alignment) {
-		case "Law": return "blue"
-		case "Neutral": return "green"
-		case "Chaos": return "red"
-	}
+    switch (alignment) {
+        case "Law": return "blue"
+        case "Neutral": return "green"
+        case "Chaos": return "red"
+    }
 }
 
 function handleImageError(event) {
-	event.target.src = './img/Default.png';
+    event.target.src = './img/Default.png';
 }
-
 </script>
 
 <template>

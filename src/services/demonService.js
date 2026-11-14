@@ -1,59 +1,81 @@
-import Demons from "@/data/demons.json"
-import _ from 'lodash'
+const DATA_URL = '/data/demons.json';
 
-const storage = Demons;
+let demonsPromise = null;
 
-import skillService from "@/services/skillService.js"
+async function getDemons() {
+    if (!demonsPromise) {
+        demonsPromise = (async () => {
+            const response = await fetch(DATA_URL);
+            if (!response.ok) {
+                throw new Error(`Failed to load demons data: ${response.status} ${response.statusText}`);
+            }
+            const data = await response.json();
+            return Array.isArray(data) ? data : [];
+        })().catch((err) => {
+            demonsPromise = null;
+            throw err;
+        });
+    }
+
+    return demonsPromise;
+}
+
+function isObtainable(demon) {
+    const acq = demon?.acquisition;
+    if (!acq) return false;
+    return Boolean(
+        acq.contract ||
+        acq.fusion ||
+        acq.specialFusion ||
+        acq.itemReward ||
+        acq.eventReward
+    );
+}
 
 export default {
-
-    get(id=0){
-        if (id != 0){
-            let demon = storage.find(d => d.id == id);
-            return demon;
-        }
-        return null
+    async get(id = 0) {
+        if (!id) return null;
+        const demons = await getDemons();
+        return demons.find((d) => d.id == id) ?? null;
     },
 
-    all(){
-        let demons = storage.filter(demon => demon.name)
-        return demons
+    async all() {
+        const demons = await getDemons();
+        return demons.filter((demon) => Boolean(demon?.name));
     },
 
-    searchByName(name='', obtainableOnly=true){
-        if (name !=''){
-            let demons = storage.filter(function (item){
-                return item.name != null && item.name.toLowerCase().includes(name.toLowerCase())
-            })
+    async searchByName(name = '', obtainableOnly = true) {
+        if (!name) return [];
+        const demons = await getDemons();
+        const query = name.toLowerCase();
 
-            if (obtainableOnly) {
-                demons = demons.filter(function (item){
-                    return item.acquisition.contract || item.acquisition.fusion || item.acquisition.specialFusion || item.acquisition.itemReward || item.acquisition.eventReward
-                })
-            }
-            
-            return demons;
+        let matches = demons.filter(
+            (item) => typeof item?.name === 'string' && item.name.toLowerCase().includes(query)
+        );
+
+        if (obtainableOnly) {
+            matches = matches.filter(isObtainable);
         }
-        return [];
+
+        return matches;
     },
 
-    searchBySkill(skillId='', obtainableOnly=true){
-        if (skillId !=''){
-            let demons = [];
-            for (const demon of storage){
-                if (demon.skills.includes(skillId) || demon.acquiredSkills.some((item) => { return item.id === skillId})){
-                    demons.push(demon);
-                }
-            }
+    async searchBySkill(skillId = '', obtainableOnly = true) {
+        if (!skillId) return [];
+        const demons = await getDemons();
 
-            if (obtainableOnly) {
-                demons = demons.filter(function (item){
-                    return item.acquisition.contract || item.acquisition.fusion || item.acquisition.specialFusion || item.acquisition.itemReward || item.acquisition.eventReward
-                })
-            }
+        let matches = demons.filter((demon) => {
+            const hasBaseSkill = Array.isArray(demon?.skills) && demon.skills.includes(skillId);
+            const hasAcquiredSkill =
+                Array.isArray(demon?.acquiredSkills) &&
+                demon.acquiredSkills.some((item) => item?.id === skillId);
+            return hasBaseSkill || hasAcquiredSkill;
+        });
 
-            return demons;
+        if (obtainableOnly) {
+            matches = matches.filter(isObtainable);
         }
-        return [];
-    }
-}
+
+        return matches;
+    },
+};
