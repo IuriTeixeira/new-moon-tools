@@ -93,7 +93,7 @@ function classRank(amount) {
 }
 
 const info = computed(() => {
-    let family = `${props.skill.family}\n${props.skill.activationType}\n${props.skill.categoryType}ID: \n${props.skill.id}`;
+    let family = `${props.skill.family} • ${props.skill.activationType} • ${props.skill.categoryType} • ID: ${props.skill.id}`;
     let expertiseStr = '';
 
     let foundBreakpoint = null;
