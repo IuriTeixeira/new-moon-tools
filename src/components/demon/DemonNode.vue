@@ -93,7 +93,7 @@ watch(
       const demonInheritanceRestrictions = currentDemon.inheritanceRestrictions;
       combinedInh.forEach((skill) => {
         const skillInheritance = skill.inheritanceRestriction;
-        if (skillInheritance && !demonInheritanceRestrictions[skillInheritance.toLowerCase()]) {
+        if (skillInheritance && !demonInheritanceRestrictions[skillInheritance]) {
           issues.push(`${currentDemon.name} cannot inherit ${skill.name}: Missing inheritance feature '${skillInheritance}'`);
         }
       });
