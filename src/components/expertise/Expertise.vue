@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref, onMounted, watch, markRaw } from 'vue'
+import { computed, ref, watch, markRaw } from 'vue'
 import { useOruga } from "@oruga-ui/oruga-next"
 import skillService from "@/services/skillService";
 import Skill from "@/components/expertise/Skill.vue";
@@ -28,7 +28,7 @@ const oruga = useOruga()
 
 // Single tracker for the current active item
 const activeSkillId = ref(null)
-const resolvedSkills = ref([])
+const rawSkillEntries = ref([])
 
 function handleHover(skillId) {
   activeSkillId.value = skillId
@@ -38,52 +38,61 @@ function handleLeave() {
   activeSkillId.value = null
 }
 
-// Asynchronously resolve all skills referenced in the expertise breakpoints when props change
+// 1. Only fetch skills when the expertise definition itself changes
 watch(() => props.expertise, async (newExpertise) => {
-  if (!newExpertise || !newExpertise.breakpoints) {
-    resolvedSkills.value = []
+  if (!newExpertise?.breakpoints) {
+    rawSkillEntries.value = []
     return
   }
 
   const allSkillIds = newExpertise.breakpoints.flatMap(b => b.skills || [])
   const uniqueIds = [...new Set(allSkillIds)]
 
-  // Fetch all required skills in parallel via async skillService
-  const skillPromises = uniqueIds.map(id => skillService.get(id))
-  const fetchedSkills = await Promise.all(skillPromises)
+  const fetchedSkills = await Promise.all(
+    uniqueIds.map(id => skillService.get(id))
+  )
 
-  // Map into a lookup dictionary for fast association
   const skillMap = new Map()
   fetchedSkills.filter(Boolean).forEach(skill => {
     skillMap.set(Number(skill.id), skill)
   })
 
-  // Build structured skill items with availability status matching breakpoints
-  const mappedSkills = []
+  const entries = []
   newExpertise.breakpoints.forEach(b => {
-    const breakpoint = Number.parseInt(b.class.toString() + b.rank.toString());
-    const matchedSelection = props.selection?.find(s => s.id === newExpertise.id);
-    const selectionValue = typeof matchedSelection === 'object' ? matchedSelection.value : (matchedSelection || 0);
-    const isAvailable = breakpoint <= selectionValue;
-
+    const breakpoint = Number.parseInt(b.class.toString() + b.rank.toString(), 10);
     (b.skills || []).forEach(skillId => {
       const skillData = skillMap.get(Number(skillId))
       if (skillData) {
-        mappedSkills.push({
-          ...skillData,
-          isLocked: !isAvailable,
-          // Sort helper: available skills first, then locked
-          _sortOrder: isAvailable ? 0 : 1
-        })
+        entries.push({ skillData, breakpoint })
       }
-    });
-  });
+    })
+  })
 
-  // Sort available skills before unavailable skills
-  mappedSkills.sort((a, b) => a._sortOrder - b._sortOrder)
+  rawSkillEntries.value = markRaw(entries)
+}, { immediate: true })
 
-  resolvedSkills.value = markRaw(mappedSkills)
-}, { immediate: true, deep: true })
+// 2. Match the current selection item for this expertise
+const match = computed(() => {
+  return (props.selection || []).find(s => String(s.id) === String(props.expertise?.id)) || {}
+})
+
+// 3. Re-evaluate availability reactively whenever selection changes
+const resolvedSkills = computed(() => {
+  const selectionValue = Number(
+    typeof match.value === 'object' ? (match.value.value ?? 0) : (match.value ?? 0)
+  )
+
+  return rawSkillEntries.value
+    .map(({ skillData, breakpoint }) => {
+      const isAvailable = breakpoint <= selectionValue
+      return {
+        ...skillData,
+        isLocked: !isAvailable,
+        _sortOrder: isAvailable ? 0 : 1
+      }
+    })
+    .sort((a, b) => a._sortOrder - b._sortOrder)
+})
 
 // Copies description and fires an Oruga notification toast
 async function handleSkillClick(skill) {
@@ -106,16 +115,6 @@ async function handleSkillClick(skill) {
     console.error("Clipboard copy failed: ", err)
   }
 }
-
-const match = computed(() => {
-  let response = {};
-  (props.selection || []).forEach(s => {
-    if (props.expertise?.id === s.id) {
-      response = s
-    }
-  })
-  return response;
-})
 
 const visibleSkills = computed(() => {
   return resolvedSkills.value.filter(skill => !props.hideUnlearned || (props.hideUnlearned && !skill.isLocked));
