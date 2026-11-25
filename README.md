@@ -1,7 +1,7 @@
 # For Project New Moon-tools
 A collection of tools useful for playing SMT: Imagine Online.
 
-https://new-moon-tools.vercel.app/
+https://new-moon-tools.irt-619.workers.dev
 
 I am not affiliated with the New Moon team.
 
