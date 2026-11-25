@@ -22,4 +22,16 @@ export default defineConfig({
             maxParallelFileOps: 20, // Lowers simultaneous memory consumption
         },
     },
+    css: {
+        preprocessorOptions: {
+            scss: {
+                quietDeps: true,
+                silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'if-function'],
+            },
+            sass: {
+                quietDeps: true,
+                silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'if-function'],
+            },
+        },
+    },
 });
