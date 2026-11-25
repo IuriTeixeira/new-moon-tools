@@ -8,7 +8,7 @@
 			</p>
 			<hr />
 			<p>
-				Currently being updated by <a href="https://github.com/IuriTeixeira">Glorienn</a>, and <a href="https://github.com/IuriTeixeira/new-moon-tools">the new source code is here</a>.<br/>Be sure to also check out my <a href="https://new-moon-fusion-tool.vercel.app/">Fusion Tool</a>!
+				Currently being updated by <a href="https://github.com/IuriTeixeira">Glorienn</a>, and <a href="https://github.com/IuriTeixeira/new-moon-tools">the new source code is here</a>.<br/>Be sure to also check out my <a href="https://newmoon-fusion-tool.irt-619.workers.dev/">Fusion Tool</a>!
 			</p>
 		</div>
 	</footer>
