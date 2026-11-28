@@ -13,7 +13,8 @@
             <span v-if="key.toLowerCase().includes('chance') || key.toLowerCase().includes('power') ||
                 key.toLowerCase().includes('cooldown') || key.toLowerCase().includes('incantation') ||
                 key.toLowerCase().includes('damage') || key.toLowerCase().includes('affinity') ||
-                key.toLowerCase().includes('final crit')">
+                key.toLowerCase().includes('resist') || key.toLowerCase().includes('absorb') ||
+                key.toLowerCase().includes('reflect') || key.toLowerCase().includes('final crit')">
                 {{ val > 0 ? '+' + val : val }}%
             </span>
 
