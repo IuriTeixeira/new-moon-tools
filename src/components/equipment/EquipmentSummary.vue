@@ -37,12 +37,12 @@ const wikiLink = computed(() => {
 						</span>
 					</a>
 					<div class="media">
-						<!-- <div class="media-left">
-							<figure class="image is-36x36">
+						<div class="media-left">
+							<!-- <figure class="image is-36x36">
 								<img :src="'./img/items/' + equipment.icon + '.png'" :alt="equipment.name + ' icon'"
 									@error="handleImageError">
-							</figure>
-						</div> -->
+							</figure> -->
+						</div>
 						<div class="media-content">
 							<div class="media-content">
 								<div class="title is-5">
@@ -76,19 +76,12 @@ const wikiLink = computed(() => {
 					<table class="table inner-bordered-table is-striped is-fullwidth">
 						<tbody>
 							<tr>
-								<th align="center" class="table-header">Image</th>
 								<th align="center" class="table-header">Description</th>
 								<th align="center" class="table-header">S1</th>
 								<th align="center" class="table-header">S2</th>
 								<th align="center" class="table-header">S3</th>
 							</tr>
 							<tr>
-								<td width="10%" align="center">
-									<!-- <figure class="image is-128x128">
-										<img :src="'./img/items/shop/' + equipment.icon + '.png'"
-											:alt="equipment.name + ' icon'" @error="handleImageError">
-									</figure> -->
-								</td>
 								<td width="25em">
 									{{ equipment.description }}
 								</td>
